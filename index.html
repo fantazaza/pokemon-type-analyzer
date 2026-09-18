@@ -3,12 +3,53 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <meta name="description" content="Pokémon Type Matchup Analyzer — Visualize type effectiveness with interactive radar charts showing weaknesses, resistances, and immunities for all 18 types.">
-  <title>Pokémon Type Analyzer</title>
+  
+  <!-- Primary Meta Tags -->
+  <title>Pokémon Type Analyzer | เช็คธาตุโปเกมอน แพ้ทาง ชนะทาง (Gen VI+)</title>
+  <meta name="title" content="Pokémon Type Analyzer | เช็คธาตุโปเกมอน แพ้ทาง ชนะทาง (Gen VI+)">
+  <meta name="description" content="เครื่องมือวิเคราะห์ธาตุโปเกมอน (Pokémon Type Matchup Analyzer) พร้อมกราฟเรดาร์คู่ ดูจุดอ่อน (Weaknesses) และจุดแข็ง (Resistances) ได้ครบทั้ง 18 ธาตุ">
+  <meta name="keywords" content="pokemon, type matchup, pokemon type, โปเกมอน, ตารางธาตุโปเกมอน, แพ้ทาง, ชนะทาง, radar chart, type effectiveness, pokemon go, scarlet violet">
+  <meta name="author" content="Fantazaza">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://pokemon-type-analyzer.vercel.app/">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://pokemon-type-analyzer.vercel.app/">
+  <meta property="og:title" content="Pokémon Type Analyzer | เช็คธาตุโปเกมอน">
+  <meta property="og:description" content="วิเคราะห์ธาตุโปเกมอนด้วยกราฟเรดาร์แบบอินเตอร์แอคทีฟ ดูจุดแข็ง-จุดอ่อนได้ครบทุกธาตุ รองรับการผสม 2 ธาตุ (Dual Types)">
+  <meta property="og:image" content="https://pokemon-type-analyzer.vercel.app/og-image.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://pokemon-type-analyzer.vercel.app/">
+  <meta property="twitter:title" content="Pokémon Type Analyzer | เช็คธาตุโปเกมอน">
+  <meta property="twitter:description" content="วิเคราะห์ธาตุโปเกมอนด้วยกราฟเรดาร์แบบอินเตอร์แอคทีฟ ดูจุดแข็ง-จุดอ่อนได้ครบทุกธาตุ รองรับการผสม 2 ธาตุ">
+  <meta property="twitter:image" content="https://pokemon-type-analyzer.vercel.app/og-image.png">
+
+  <!-- Fonts & Styles -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+Thai:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/src/style.css">
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Pokémon Type Analyzer",
+    "url": "https://pokemon-type-analyzer.vercel.app/",
+    "description": "เครื่องมือวิเคราะห์ธาตุโปเกมอน (Pokémon Type Matchup Analyzer) ตรวจสอบจุดแข็งจุดอ่อนด้วย Radar Chart แบบอินเตอร์แอคทีฟ",
+    "applicationCategory": "UtilitiesApplication",
+    "operatingSystem": "All",
+    "offers": {
+      "@type": "Offer",
+      "price": "0"
+    }
+  }
+  </script>
 </head>
 <body>
   <div id="app">
