@@ -17,6 +17,7 @@ import {
   getEffectiveness, fmtMult,
 } from './typeData.js';
 import { RadarChart } from './radarChart.js';
+import defaultMetaData from './meta.json';
 
 // ── App State ──────────────────────────────────────────────────
 const state = {
@@ -428,30 +429,29 @@ function renderBigCards(gridId, items, mode) {
 // ── Top 100 Meta Pokémon Table ──────────────────────────────────
 async function loadMetaPokemonData() {
   try {
-    const [singleRes, doubleRes] = await Promise.all([
-      fetch('/pokemon_data_single.json').catch(() => ({ ok: false })),
-      fetch('/pokemon_data_double.json').catch(() => ({ ok: false }))
-    ]);
-
-    if (!singleRes.ok && !doubleRes.ok) {
-      const oldRes = await fetch('/pokemon_data.json');
-      metaData.double = await oldRes.json();
+    const res = await fetch('/meta.json');
+    if (res.ok) {
+      const data = await res.json();
+      metaData.single = data.single || defaultMetaData.single || [];
+      metaData.double = data.double || defaultMetaData.double || [];
     } else {
-      metaData.single = singleRes.ok ? await singleRes.json() : [];
-      metaData.double = doubleRes.ok ? await doubleRes.json() : [];
+      metaData.single = defaultMetaData.single || [];
+      metaData.double = defaultMetaData.double || [];
     }
-
-    // Attach rank property if not present
-    ['single', 'double'].forEach(m => {
-      if (Array.isArray(metaData[m])) {
-        metaData[m].forEach((p, i) => { p.rank = i + 1; });
-      }
-    });
-
-    renderMetaTable();
   } catch (err) {
-    console.error("Failed to load meta pokemon:", err);
+    console.warn("Using bundled meta.json fallback:", err);
+    metaData.single = defaultMetaData.single || [];
+    metaData.double = defaultMetaData.double || [];
   }
+
+  // Ensure rank property is present
+  ['single', 'double'].forEach(m => {
+    if (Array.isArray(metaData[m])) {
+      metaData[m].forEach((p, i) => { if (!p.rank) p.rank = i + 1; });
+    }
+  });
+
+  renderMetaTable();
 }
 
 function renderMetaTable() {

@@ -1,0 +1,2158 @@
+{
+  "single": [
+    {
+      "rank": 1,
+      "originalName": "Salamence",
+      "name": "salamence",
+      "types": [
+        "dragon",
+        "flying"
+      ],
+      "status": "New",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/373.png"
+    },
+    {
+      "rank": 2,
+      "originalName": "Garchomp",
+      "name": "garchomp",
+      "types": [
+        "dragon",
+        "ground"
+      ],
+      "status": "1",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/445.png"
+    },
+    {
+      "rank": 3,
+      "originalName": "Primarina",
+      "name": "primarina",
+      "types": [
+        "water",
+        "fairy"
+      ],
+      "status": "1",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/730.png"
+    },
+    {
+      "rank": 4,
+      "originalName": "Hippowdon",
+      "name": "hippowdon",
+      "types": [
+        "ground"
+      ],
+      "status": "2",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/450.png"
+    },
+    {
+      "rank": 5,
+      "originalName": "Golisopod",
+      "name": "golisopod",
+      "types": [
+        "bug",
+        "water"
+      ],
+      "status": "New",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/768.png"
+    },
+    {
+      "rank": 6,
+      "originalName": "Baxcalibur",
+      "name": "baxcalibur",
+      "types": [
+        "dragon",
+        "ice"
+      ],
+      "status": "New",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/998.png"
+    },
+    {
+      "rank": 7,
+      "originalName": "Lucario",
+      "name": "lucario",
+      "types": [
+        "fighting",
+        "steel"
+      ],
+      "status": "22",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/448.png"
+    },
+    {
+      "rank": 8,
+      "originalName": "Archaludon",
+      "name": "archaludon",
+      "types": [
+        "steel",
+        "dragon"
+      ],
+      "status": "4",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1018.png"
+    },
+    {
+      "rank": 9,
+      "originalName": "Gholdengo",
+      "name": "gholdengo",
+      "types": [
+        "steel",
+        "ghost"
+      ],
+      "status": "15",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1000.png"
+    },
+    {
+      "rank": 10,
+      "originalName": "Rillaboom",
+      "name": "rillaboom",
+      "types": [
+        "grass"
+      ],
+      "status": "New",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/812.png"
+    },
+    {
+      "rank": 11,
+      "originalName": "Mimikyu",
+      "name": "mimikyu-disguised",
+      "types": [
+        "ghost",
+        "fairy"
+      ],
+      "status": "6",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/778.png"
+    },
+    {
+      "rank": 12,
+      "originalName": "Meowscarada",
+      "name": "meowscarada",
+      "types": [
+        "grass",
+        "dark"
+      ],
+      "status": "9",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/908.png"
+    },
+    {
+      "rank": 13,
+      "originalName": "Charizard",
+      "name": "charizard",
+      "types": [
+        "fire",
+        "flying"
+      ],
+      "status": "2",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/6.png"
+    },
+    {
+      "rank": 14,
+      "originalName": "Gyarados",
+      "name": "gyarados",
+      "types": [
+        "water",
+        "flying"
+      ],
+      "status": "7",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/130.png"
+    },
+    {
+      "rank": 15,
+      "originalName": "Aegislash (Shield Forme)",
+      "name": "aegislash-shield",
+      "types": [
+        "steel",
+        "ghost"
+      ],
+      "status": "8",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/681.png"
+    },
+    {
+      "rank": 16,
+      "originalName": "Cinderace",
+      "name": "cinderace",
+      "types": [
+        "fire"
+      ],
+      "status": "New",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/815.png"
+    },
+    {
+      "rank": 17,
+      "originalName": "Sneasler",
+      "name": "sneasler",
+      "types": [
+        "fighting",
+        "poison"
+      ],
+      "status": "31",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/903.png"
+    },
+    {
+      "rank": 18,
+      "originalName": "Glimmora",
+      "name": "glimmora",
+      "types": [
+        "rock",
+        "poison"
+      ],
+      "status": "=",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/970.png"
+    },
+    {
+      "rank": 19,
+      "originalName": "Basculegion (Male)",
+      "name": "basculegion-male",
+      "types": [
+        "water",
+        "ghost"
+      ],
+      "status": "7",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/902.png"
+    },
+    {
+      "rank": 20,
+      "originalName": "Corviknight",
+      "name": "corviknight",
+      "types": [
+        "flying",
+        "steel"
+      ],
+      "status": "7",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/823.png"
+    },
+    {
+      "rank": 21,
+      "originalName": "Indeedee (Male)",
+      "name": "indeedee-male",
+      "types": [
+        "psychic",
+        "normal"
+      ],
+      "status": "New",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/876.png"
+    },
+    {
+      "rank": 22,
+      "originalName": "Metagross",
+      "name": "metagross",
+      "types": [
+        "steel",
+        "psychic"
+      ],
+      "status": "12",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/376.png"
+    },
+    {
+      "rank": 23,
+      "originalName": "Greninja",
+      "name": "greninja",
+      "types": [
+        "water",
+        "dark"
+      ],
+      "status": "4",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/658.png"
+    },
+    {
+      "rank": 24,
+      "originalName": "Alolan Ninetales",
+      "name": "ninetales-alola",
+      "types": [
+        "ice",
+        "fairy"
+      ],
+      "status": "9",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10104.png"
+    },
+    {
+      "rank": 25,
+      "originalName": "Blastoise",
+      "name": "blastoise",
+      "types": [
+        "water"
+      ],
+      "status": "18",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/9.png"
+    },
+    {
+      "rank": 26,
+      "originalName": "Pawmot",
+      "name": "pawmot",
+      "types": [
+        "electric",
+        "fighting"
+      ],
+      "status": "New",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/923.png"
+    },
+    {
+      "rank": 27,
+      "originalName": "Wash Rotom",
+      "name": "rotom-wash",
+      "types": [
+        "electric",
+        "water"
+      ],
+      "status": "3",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10009.png"
+    },
+    {
+      "rank": 28,
+      "originalName": "Volcarona",
+      "name": "volcarona",
+      "types": [
+        "bug",
+        "fire"
+      ],
+      "status": "8",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/637.png"
+    },
+    {
+      "rank": 29,
+      "originalName": "Dragonite",
+      "name": "dragonite",
+      "types": [
+        "dragon",
+        "flying"
+      ],
+      "status": "20",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/149.png"
+    },
+    {
+      "rank": 30,
+      "originalName": "Empoleon",
+      "name": "empoleon",
+      "types": [
+        "water",
+        "steel"
+      ],
+      "status": "43",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/395.png"
+    },
+    {
+      "rank": 31,
+      "originalName": "Skeledirge",
+      "name": "skeledirge",
+      "types": [
+        "fire",
+        "ghost"
+      ],
+      "status": "3",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/911.png"
+    },
+    {
+      "rank": 32,
+      "originalName": "Hydreigon",
+      "name": "hydreigon",
+      "types": [
+        "dark",
+        "dragon"
+      ],
+      "status": "16",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/635.png"
+    },
+    {
+      "rank": 33,
+      "originalName": "Kingambit",
+      "name": "kingambit",
+      "types": [
+        "dark",
+        "steel"
+      ],
+      "status": "12",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/983.png"
+    },
+    {
+      "rank": 34,
+      "originalName": "Heat Rotom",
+      "name": "rotom-heat",
+      "types": [
+        "electric",
+        "fire"
+      ],
+      "status": "28",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10008.png"
+    },
+    {
+      "rank": 35,
+      "originalName": "Gengar",
+      "name": "gengar",
+      "types": [
+        "ghost",
+        "poison"
+      ],
+      "status": "18",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/94.png"
+    },
+    {
+      "rank": 36,
+      "originalName": "Sylveon",
+      "name": "sylveon",
+      "types": [
+        "fairy"
+      ],
+      "status": "8",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/700.png"
+    },
+    {
+      "rank": 37,
+      "originalName": "Swampert",
+      "name": "swampert",
+      "types": [
+        "water",
+        "ground"
+      ],
+      "status": "2",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/260.png"
+    },
+    {
+      "rank": 38,
+      "originalName": "Blaziken",
+      "name": "blaziken",
+      "types": [
+        "fire",
+        "fighting"
+      ],
+      "status": "16",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/257.png"
+    },
+    {
+      "rank": 39,
+      "originalName": "Delphox",
+      "name": "delphox",
+      "types": [
+        "fire",
+        "psychic"
+      ],
+      "status": "31",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/655.png"
+    },
+    {
+      "rank": 40,
+      "originalName": "Raichu",
+      "name": "raichu",
+      "types": [
+        "electric"
+      ],
+      "status": "25",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/26.png"
+    },
+    {
+      "rank": 41,
+      "originalName": "Umbreon",
+      "name": "umbreon",
+      "types": [
+        "dark"
+      ],
+      "status": "14",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/197.png"
+    },
+    {
+      "rank": 42,
+      "originalName": "Toxapex",
+      "name": "toxapex",
+      "types": [
+        "poison",
+        "water"
+      ],
+      "status": "5",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/748.png"
+    },
+    {
+      "rank": 43,
+      "originalName": "Banette",
+      "name": "banette",
+      "types": [
+        "ghost"
+      ],
+      "status": "35",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/354.png"
+    },
+    {
+      "rank": 44,
+      "originalName": "Clefable",
+      "name": "clefable",
+      "types": [
+        "fairy"
+      ],
+      "status": "3",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/36.png"
+    },
+    {
+      "rank": 45,
+      "originalName": "Scizor",
+      "name": "scizor",
+      "types": [
+        "bug",
+        "steel"
+      ],
+      "status": "31",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/212.png"
+    },
+    {
+      "rank": 46,
+      "originalName": "Armarouge",
+      "name": "armarouge",
+      "types": [
+        "fire",
+        "psychic"
+      ],
+      "status": "43",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/936.png"
+    },
+    {
+      "rank": 47,
+      "originalName": "Grimmsnarl",
+      "name": "grimmsnarl",
+      "types": [
+        "dark",
+        "fairy"
+      ],
+      "status": "2",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/861.png"
+    },
+    {
+      "rank": 48,
+      "originalName": "Staraptor",
+      "name": "staraptor",
+      "types": [
+        "normal",
+        "flying"
+      ],
+      "status": "22",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/398.png"
+    },
+    {
+      "rank": 49,
+      "originalName": "Pelipper",
+      "name": "pelipper",
+      "types": [
+        "water",
+        "flying"
+      ],
+      "status": "2",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/279.png"
+    },
+    {
+      "rank": 50,
+      "originalName": "Absol",
+      "name": "absol",
+      "types": [
+        "dark"
+      ],
+      "status": "111",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/359.png"
+    },
+    {
+      "rank": 51,
+      "originalName": "Ditto",
+      "name": "ditto",
+      "types": [
+        "normal"
+      ],
+      "status": "18",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/132.png"
+    },
+    {
+      "rank": 52,
+      "originalName": "Bellibolt",
+      "name": "bellibolt",
+      "types": [
+        "electric"
+      ],
+      "status": "16",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/939.png"
+    },
+    {
+      "rank": 53,
+      "originalName": "Tyranitar",
+      "name": "tyranitar",
+      "types": [
+        "rock",
+        "dark"
+      ],
+      "status": "7",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/248.png"
+    },
+    {
+      "rank": 54,
+      "originalName": "Mamoswine",
+      "name": "mamoswine",
+      "types": [
+        "ice",
+        "ground"
+      ],
+      "status": "2",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/473.png"
+    },
+    {
+      "rank": 55,
+      "originalName": "Ceruledge",
+      "name": "ceruledge",
+      "types": [
+        "fire",
+        "ghost"
+      ],
+      "status": "11",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/937.png"
+    },
+    {
+      "rank": 56,
+      "originalName": "Lopunny",
+      "name": "lopunny",
+      "types": [
+        "normal"
+      ],
+      "status": "24",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/428.png"
+    },
+    {
+      "rank": 57,
+      "originalName": "Samurott",
+      "name": "samurott",
+      "types": [
+        "water",
+        "dark"
+      ],
+      "status": "32",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/503.png"
+    },
+    {
+      "rank": 58,
+      "originalName": "Milotic",
+      "name": "milotic",
+      "types": [
+        "water"
+      ],
+      "status": "9",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/350.png"
+    },
+    {
+      "rank": 59,
+      "originalName": "Mawile",
+      "name": "mawile",
+      "types": [
+        "steel",
+        "fairy"
+      ],
+      "status": "9",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/303.png"
+    },
+    {
+      "rank": 60,
+      "originalName": "Dragapult",
+      "name": "dragapult",
+      "types": [
+        "dragon",
+        "ghost"
+      ],
+      "status": "22",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/887.png"
+    },
+    {
+      "rank": 61,
+      "originalName": "Floette",
+      "name": "floette",
+      "types": [
+        "fairy"
+      ],
+      "status": "21",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/670.png"
+    },
+    {
+      "rank": 62,
+      "originalName": "Venusaur",
+      "name": "venusaur",
+      "types": [
+        "grass",
+        "poison"
+      ],
+      "status": "31",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/3.png"
+    },
+    {
+      "rank": 63,
+      "originalName": "Goodra",
+      "name": "goodra-hisui",
+      "types": [
+        "steel",
+        "dragon"
+      ],
+      "status": "11",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10242.png"
+    },
+    {
+      "rank": 64,
+      "originalName": "Vanilluxe",
+      "name": "vanilluxe",
+      "types": [
+        "ice"
+      ],
+      "status": "6",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/584.png"
+    },
+    {
+      "rank": 65,
+      "originalName": "Starmie",
+      "name": "starmie",
+      "types": [
+        "water",
+        "psychic"
+      ],
+      "status": "30",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/121.png"
+    },
+    {
+      "rank": 66,
+      "originalName": "Espathra",
+      "name": "espathra",
+      "types": [
+        "psychic"
+      ],
+      "status": "6",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/956.png"
+    },
+    {
+      "rank": 67,
+      "originalName": "Zoroark",
+      "name": "zoroark-hisui",
+      "types": [
+        "normal",
+        "ghost"
+      ],
+      "status": "4",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10239.png"
+    },
+    {
+      "rank": 68,
+      "originalName": "Meganium",
+      "name": "meganium",
+      "types": [
+        "grass"
+      ],
+      "status": "19",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/154.png"
+    },
+    {
+      "rank": 69,
+      "originalName": "Scovillain",
+      "name": "scovillain",
+      "types": [
+        "grass",
+        "fire"
+      ],
+      "status": "27",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/952.png"
+    },
+    {
+      "rank": 70,
+      "originalName": "Excadrill",
+      "name": "excadrill",
+      "types": [
+        "ground",
+        "steel"
+      ],
+      "status": "23",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/530.png"
+    },
+    {
+      "rank": 71,
+      "originalName": "Sirfetch’d",
+      "name": "sirfetchd",
+      "types": [
+        "fighting"
+      ],
+      "status": "New",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/865.png"
+    },
+    {
+      "rank": 72,
+      "originalName": "Snorlax",
+      "name": "snorlax",
+      "types": [
+        "normal"
+      ],
+      "status": "15",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/143.png"
+    },
+    {
+      "rank": 73,
+      "originalName": "Toxtricity (Amped Form)",
+      "name": "toxtricity-amped",
+      "types": [
+        "electric",
+        "poison"
+      ],
+      "status": "New",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/849.png"
+    },
+    {
+      "rank": 74,
+      "originalName": "Skarmory",
+      "name": "skarmory",
+      "types": [
+        "steel",
+        "flying"
+      ],
+      "status": "3",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/227.png"
+    },
+    {
+      "rank": 75,
+      "originalName": "Victreebel",
+      "name": "victreebel",
+      "types": [
+        "grass",
+        "poison"
+      ],
+      "status": "20",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/71.png"
+    },
+    {
+      "rank": 76,
+      "originalName": "Sableye",
+      "name": "sableye",
+      "types": [
+        "dark",
+        "ghost"
+      ],
+      "status": "15",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/302.png"
+    },
+    {
+      "rank": 77,
+      "originalName": "Galarian Slowking",
+      "name": "slowking-galar",
+      "types": [
+        "poison",
+        "psychic"
+      ],
+      "status": "17",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10172.png"
+    },
+    {
+      "rank": 78,
+      "originalName": "Whimsicott",
+      "name": "whimsicott",
+      "types": [
+        "grass",
+        "fairy"
+      ],
+      "status": "25",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/547.png"
+    },
+    {
+      "rank": 79,
+      "originalName": "Kleavor",
+      "name": "kleavor",
+      "types": [
+        "bug",
+        "rock"
+      ],
+      "status": "14",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/900.png"
+    },
+    {
+      "rank": 80,
+      "originalName": "Annihilape",
+      "name": "annihilape",
+      "types": [
+        "fighting",
+        "ghost"
+      ],
+      "status": "14",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/979.png"
+    },
+    {
+      "rank": 81,
+      "originalName": "Arboliva",
+      "name": "arboliva",
+      "types": [
+        "grass",
+        "normal"
+      ],
+      "status": "New",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/930.png"
+    },
+    {
+      "rank": 82,
+      "originalName": "Froslass",
+      "name": "froslass",
+      "types": [
+        "ice",
+        "ghost"
+      ],
+      "status": "2",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/478.png"
+    },
+    {
+      "rank": 83,
+      "originalName": "Toxtricity (Low Key Form)",
+      "name": "toxtricity-low-key",
+      "types": [
+        "electric",
+        "poison"
+      ],
+      "status": "New",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10184.png"
+    },
+    {
+      "rank": 84,
+      "originalName": "Hatterene",
+      "name": "hatterene",
+      "types": [
+        "psychic",
+        "fairy"
+      ],
+      "status": "=",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/858.png"
+    },
+    {
+      "rank": 85,
+      "originalName": "Gardevoir",
+      "name": "gardevoir",
+      "types": [
+        "psychic",
+        "fairy"
+      ],
+      "status": "14",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/282.png"
+    },
+    {
+      "rank": 86,
+      "originalName": "Incineroar",
+      "name": "incineroar",
+      "types": [
+        "fire",
+        "dark"
+      ],
+      "status": "5",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/727.png"
+    },
+    {
+      "rank": 87,
+      "originalName": "Indeedee (Female)",
+      "name": "indeedee-female",
+      "types": [
+        "psychic",
+        "normal"
+      ],
+      "status": "New",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10186.png"
+    },
+    {
+      "rank": 88,
+      "originalName": "Araquanid",
+      "name": "araquanid",
+      "types": [
+        "water",
+        "bug"
+      ],
+      "status": "24",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/752.png"
+    },
+    {
+      "rank": 89,
+      "originalName": "Inteleon",
+      "name": "inteleon",
+      "types": [
+        "water"
+      ],
+      "status": "New",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/818.png"
+    },
+    {
+      "rank": 90,
+      "originalName": "Gallade",
+      "name": "gallade",
+      "types": [
+        "psychic",
+        "fighting"
+      ],
+      "status": "22",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/475.png"
+    },
+    {
+      "rank": 91,
+      "originalName": "Azumarill",
+      "name": "azumarill",
+      "types": [
+        "water",
+        "fairy"
+      ],
+      "status": "19",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/184.png"
+    },
+    {
+      "rank": 92,
+      "originalName": "Arcanine",
+      "name": "arcanine-hisui",
+      "types": [
+        "fire",
+        "rock"
+      ],
+      "status": "5",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10230.png"
+    },
+    {
+      "rank": 93,
+      "originalName": "Vaporeon",
+      "name": "vaporeon",
+      "types": [
+        "water"
+      ],
+      "status": "10",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/134.png"
+    },
+    {
+      "rank": 94,
+      "originalName": "Scolipede",
+      "name": "scolipede",
+      "types": [
+        "bug",
+        "poison"
+      ],
+      "status": "42",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/545.png"
+    },
+    {
+      "rank": 95,
+      "originalName": "Politoed",
+      "name": "politoed",
+      "types": [
+        "water"
+      ],
+      "status": "59",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/186.png"
+    },
+    {
+      "rank": 96,
+      "originalName": "Galarian Slowbro",
+      "name": "slowbro-galar",
+      "types": [
+        "poison",
+        "psychic"
+      ],
+      "status": "10",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10165.png"
+    },
+    {
+      "rank": 97,
+      "originalName": "Kangaskhan",
+      "name": "kangaskhan",
+      "types": [
+        "normal"
+      ],
+      "status": "43",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/115.png"
+    },
+    {
+      "rank": 98,
+      "originalName": "Chandelure",
+      "name": "chandelure",
+      "types": [
+        "ghost",
+        "fire"
+      ],
+      "status": "17",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/609.png"
+    },
+    {
+      "rank": 99,
+      "originalName": "Dragalge",
+      "name": "dragalge",
+      "types": [
+        "poison",
+        "dragon"
+      ],
+      "status": "24",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/691.png"
+    },
+    {
+      "rank": 100,
+      "originalName": "Maushold (Family of Three)",
+      "name": "maushold-family-of-three",
+      "types": [
+        "normal"
+      ],
+      "status": "41",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10257.png"
+    }
+  ],
+  "double": [
+    {
+      "rank": 1,
+      "originalName": "Rillaboom",
+      "name": "rillaboom",
+      "types": [
+        "grass"
+      ],
+      "status": "New",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/812.png"
+    },
+    {
+      "rank": 2,
+      "originalName": "Sneasler",
+      "name": "sneasler",
+      "types": [
+        "fighting",
+        "poison"
+      ],
+      "status": "1",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/903.png"
+    },
+    {
+      "rank": 3,
+      "originalName": "Salamence",
+      "name": "salamence",
+      "types": [
+        "dragon",
+        "flying"
+      ],
+      "status": "New",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/373.png"
+    },
+    {
+      "rank": 4,
+      "originalName": "Incineroar",
+      "name": "incineroar",
+      "types": [
+        "fire",
+        "dark"
+      ],
+      "status": "3",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/727.png"
+    },
+    {
+      "rank": 5,
+      "originalName": "Indeedee (Female)",
+      "name": "indeedee-female",
+      "types": [
+        "psychic",
+        "normal"
+      ],
+      "status": "New",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10186.png"
+    },
+    {
+      "rank": 6,
+      "originalName": "Kingambit",
+      "name": "kingambit",
+      "types": [
+        "dark",
+        "steel"
+      ],
+      "status": "5",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/983.png"
+    },
+    {
+      "rank": 7,
+      "originalName": "Basculegion (Male)",
+      "name": "basculegion-male",
+      "types": [
+        "water",
+        "ghost"
+      ],
+      "status": "3",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/902.png"
+    },
+    {
+      "rank": 8,
+      "originalName": "Golisopod",
+      "name": "golisopod",
+      "types": [
+        "bug",
+        "water"
+      ],
+      "status": "New",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/768.png"
+    },
+    {
+      "rank": 9,
+      "originalName": "Garchomp",
+      "name": "garchomp",
+      "types": [
+        "dragon",
+        "ground"
+      ],
+      "status": "7",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/445.png"
+    },
+    {
+      "rank": 10,
+      "originalName": "Gholdengo",
+      "name": "gholdengo",
+      "types": [
+        "steel",
+        "ghost"
+      ],
+      "status": "13",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1000.png"
+    },
+    {
+      "rank": 11,
+      "originalName": "Pelipper",
+      "name": "pelipper",
+      "types": [
+        "water",
+        "flying"
+      ],
+      "status": "3",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/279.png"
+    },
+    {
+      "rank": 12,
+      "originalName": "Archaludon",
+      "name": "archaludon",
+      "types": [
+        "steel",
+        "dragon"
+      ],
+      "status": "1",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1018.png"
+    },
+    {
+      "rank": 13,
+      "originalName": "Milotic",
+      "name": "milotic",
+      "types": [
+        "water"
+      ],
+      "status": "3",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/350.png"
+    },
+    {
+      "rank": 14,
+      "originalName": "Farigiraf",
+      "name": "farigiraf",
+      "types": [
+        "normal",
+        "psychic"
+      ],
+      "status": "5",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/981.png"
+    },
+    {
+      "rank": 15,
+      "originalName": "Charizard",
+      "name": "charizard",
+      "types": [
+        "fire",
+        "flying"
+      ],
+      "status": "7",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/6.png"
+    },
+    {
+      "rank": 16,
+      "originalName": "Gardevoir",
+      "name": "gardevoir",
+      "types": [
+        "psychic",
+        "fairy"
+      ],
+      "status": "31",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/282.png"
+    },
+    {
+      "rank": 17,
+      "originalName": "Raichu",
+      "name": "raichu",
+      "types": [
+        "electric"
+      ],
+      "status": "5",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/26.png"
+    },
+    {
+      "rank": 18,
+      "originalName": "Arcanine",
+      "name": "arcanine-hisui",
+      "types": [
+        "fire",
+        "rock"
+      ],
+      "status": "16",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10230.png"
+    },
+    {
+      "rank": 19,
+      "originalName": "Sylveon",
+      "name": "sylveon",
+      "types": [
+        "fairy"
+      ],
+      "status": "8",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/700.png"
+    },
+    {
+      "rank": 20,
+      "originalName": "Tyranitar",
+      "name": "tyranitar",
+      "types": [
+        "rock",
+        "dark"
+      ],
+      "status": "5",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/248.png"
+    },
+    {
+      "rank": 21,
+      "originalName": "Whimsicott",
+      "name": "whimsicott",
+      "types": [
+        "grass",
+        "fairy"
+      ],
+      "status": "16",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/547.png"
+    },
+    {
+      "rank": 22,
+      "originalName": "Armarouge",
+      "name": "armarouge",
+      "types": [
+        "fire",
+        "psychic"
+      ],
+      "status": "59",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/936.png"
+    },
+    {
+      "rank": 23,
+      "originalName": "Staraptor",
+      "name": "staraptor",
+      "types": [
+        "normal",
+        "flying"
+      ],
+      "status": "13",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/398.png"
+    },
+    {
+      "rank": 24,
+      "originalName": "Torkoal",
+      "name": "torkoal",
+      "types": [
+        "fire"
+      ],
+      "status": "2",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/324.png"
+    },
+    {
+      "rank": 25,
+      "originalName": "Sinistcha",
+      "name": "sinistcha",
+      "types": [
+        "grass",
+        "ghost"
+      ],
+      "status": "19",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1013.png"
+    },
+    {
+      "rank": 26,
+      "originalName": "Metagross",
+      "name": "metagross",
+      "types": [
+        "steel",
+        "psychic"
+      ],
+      "status": "7",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/376.png"
+    },
+    {
+      "rank": 27,
+      "originalName": "Indeedee (Male)",
+      "name": "indeedee-male",
+      "types": [
+        "psychic",
+        "normal"
+      ],
+      "status": "New",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/876.png"
+    },
+    {
+      "rank": 28,
+      "originalName": "Floette",
+      "name": "floette",
+      "types": [
+        "fairy"
+      ],
+      "status": "3",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/670.png"
+    },
+    {
+      "rank": 29,
+      "originalName": "Excadrill",
+      "name": "excadrill",
+      "types": [
+        "ground",
+        "steel"
+      ],
+      "status": "2",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/530.png"
+    },
+    {
+      "rank": 30,
+      "originalName": "Volcarona",
+      "name": "volcarona",
+      "types": [
+        "bug",
+        "fire"
+      ],
+      "status": "40",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/637.png"
+    },
+    {
+      "rank": 31,
+      "originalName": "Politoed",
+      "name": "politoed",
+      "types": [
+        "water"
+      ],
+      "status": "10",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/186.png"
+    },
+    {
+      "rank": 32,
+      "originalName": "Lucario",
+      "name": "lucario",
+      "types": [
+        "fighting",
+        "steel"
+      ],
+      "status": "51",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/448.png"
+    },
+    {
+      "rank": 33,
+      "originalName": "Grimmsnarl",
+      "name": "grimmsnarl",
+      "types": [
+        "dark",
+        "fairy"
+      ],
+      "status": "9",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/861.png"
+    },
+    {
+      "rank": 34,
+      "originalName": "Swampert",
+      "name": "swampert",
+      "types": [
+        "water",
+        "ground"
+      ],
+      "status": "13",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/260.png"
+    },
+    {
+      "rank": 35,
+      "originalName": "Froslass",
+      "name": "froslass",
+      "types": [
+        "ice",
+        "ghost"
+      ],
+      "status": "15",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/478.png"
+    },
+    {
+      "rank": 36,
+      "originalName": "Baxcalibur",
+      "name": "baxcalibur",
+      "types": [
+        "dragon",
+        "ice"
+      ],
+      "status": "New",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/998.png"
+    },
+    {
+      "rank": 37,
+      "originalName": "Gengar",
+      "name": "gengar",
+      "types": [
+        "ghost",
+        "poison"
+      ],
+      "status": "1",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/94.png"
+    },
+    {
+      "rank": 38,
+      "originalName": "Alolan Ninetales",
+      "name": "ninetales-alola",
+      "types": [
+        "ice",
+        "fairy"
+      ],
+      "status": "8",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10104.png"
+    },
+    {
+      "rank": 39,
+      "originalName": "Dragonite",
+      "name": "dragonite",
+      "types": [
+        "dragon",
+        "flying"
+      ],
+      "status": "20",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/149.png"
+    },
+    {
+      "rank": 40,
+      "originalName": "Glimmora",
+      "name": "glimmora",
+      "types": [
+        "rock",
+        "poison"
+      ],
+      "status": "8",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/970.png"
+    },
+    {
+      "rank": 41,
+      "originalName": "Pawmot",
+      "name": "pawmot",
+      "types": [
+        "electric",
+        "fighting"
+      ],
+      "status": "New",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/923.png"
+    },
+    {
+      "rank": 42,
+      "originalName": "Aerodactyl",
+      "name": "aerodactyl",
+      "types": [
+        "rock",
+        "flying"
+      ],
+      "status": "24",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/142.png"
+    },
+    {
+      "rank": 43,
+      "originalName": "Venusaur",
+      "name": "venusaur",
+      "types": [
+        "grass",
+        "poison"
+      ],
+      "status": "26",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/3.png"
+    },
+    {
+      "rank": 44,
+      "originalName": "Primarina",
+      "name": "primarina",
+      "types": [
+        "water",
+        "fairy"
+      ],
+      "status": "2",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/730.png"
+    },
+    {
+      "rank": 45,
+      "originalName": "Sableye",
+      "name": "sableye",
+      "types": [
+        "dark",
+        "ghost"
+      ],
+      "status": "16",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/302.png"
+    },
+    {
+      "rank": 46,
+      "originalName": "Hatterene",
+      "name": "hatterene",
+      "types": [
+        "psychic",
+        "fairy"
+      ],
+      "status": "29",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/858.png"
+    },
+    {
+      "rank": 47,
+      "originalName": "Blastoise",
+      "name": "blastoise",
+      "types": [
+        "water"
+      ],
+      "status": "20",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/9.png"
+    },
+    {
+      "rank": 48,
+      "originalName": "Delphox",
+      "name": "delphox",
+      "types": [
+        "fire",
+        "psychic"
+      ],
+      "status": "26",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/655.png"
+    },
+    {
+      "rank": 49,
+      "originalName": "Annihilape",
+      "name": "annihilape",
+      "types": [
+        "fighting",
+        "ghost"
+      ],
+      "status": "6",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/979.png"
+    },
+    {
+      "rank": 50,
+      "originalName": "Absol",
+      "name": "absol",
+      "types": [
+        "dark"
+      ],
+      "status": "126",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/359.png"
+    },
+    {
+      "rank": 51,
+      "originalName": "Corviknight",
+      "name": "corviknight",
+      "types": [
+        "flying",
+        "steel"
+      ],
+      "status": "2",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/823.png"
+    },
+    {
+      "rank": 52,
+      "originalName": "Maushold (Family of Three)",
+      "name": "maushold-family-of-three",
+      "types": [
+        "normal"
+      ],
+      "status": "24",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10257.png"
+    },
+    {
+      "rank": 53,
+      "originalName": "Talonflame",
+      "name": "talonflame",
+      "types": [
+        "fire",
+        "flying"
+      ],
+      "status": "18",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/663.png"
+    },
+    {
+      "rank": 54,
+      "originalName": "Kommo-o",
+      "name": "kommo-o",
+      "types": [
+        "dragon",
+        "fighting"
+      ],
+      "status": "4",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/784.png"
+    },
+    {
+      "rank": 55,
+      "originalName": "Ceruledge",
+      "name": "ceruledge",
+      "types": [
+        "fire",
+        "ghost"
+      ],
+      "status": "4",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/937.png"
+    },
+    {
+      "rank": 56,
+      "originalName": "Dragapult",
+      "name": "dragapult",
+      "types": [
+        "dragon",
+        "ghost"
+      ],
+      "status": "5",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/887.png"
+    },
+    {
+      "rank": 57,
+      "originalName": "Camerupt",
+      "name": "camerupt",
+      "types": [
+        "fire",
+        "ground"
+      ],
+      "status": "3",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/323.png"
+    },
+    {
+      "rank": 58,
+      "originalName": "Hydreigon",
+      "name": "hydreigon",
+      "types": [
+        "dark",
+        "dragon"
+      ],
+      "status": "1",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/635.png"
+    },
+    {
+      "rank": 59,
+      "originalName": "Blaziken",
+      "name": "blaziken",
+      "types": [
+        "fire",
+        "fighting"
+      ],
+      "status": "11",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/257.png"
+    },
+    {
+      "rank": 60,
+      "originalName": "Mawile",
+      "name": "mawile",
+      "types": [
+        "steel",
+        "fairy"
+      ],
+      "status": "23",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/303.png"
+    },
+    {
+      "rank": 61,
+      "originalName": "Typhlosion",
+      "name": "typhlosion-hisui",
+      "types": [
+        "fire",
+        "ghost"
+      ],
+      "status": "4",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10233.png"
+    },
+    {
+      "rank": 62,
+      "originalName": "Sirfetch’d",
+      "name": "sirfetchd",
+      "types": [
+        "fighting"
+      ],
+      "status": "New",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/865.png"
+    },
+    {
+      "rank": 63,
+      "originalName": "Gallade",
+      "name": "gallade",
+      "types": [
+        "psychic",
+        "fighting"
+      ],
+      "status": "8",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/475.png"
+    },
+    {
+      "rank": 64,
+      "originalName": "Inteleon",
+      "name": "inteleon",
+      "types": [
+        "water"
+      ],
+      "status": "New",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/818.png"
+    },
+    {
+      "rank": 65,
+      "originalName": "Vivillon",
+      "name": "vivillon",
+      "types": [
+        "bug",
+        "flying"
+      ],
+      "status": "13",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/666.png"
+    },
+    {
+      "rank": 66,
+      "originalName": "Zoroark",
+      "name": "zoroark-hisui",
+      "types": [
+        "normal",
+        "ghost"
+      ],
+      "status": "12",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10239.png"
+    },
+    {
+      "rank": 67,
+      "originalName": "Tsareena",
+      "name": "tsareena",
+      "types": [
+        "grass"
+      ],
+      "status": "27",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/763.png"
+    },
+    {
+      "rank": 68,
+      "originalName": "Wash Rotom",
+      "name": "rotom-wash",
+      "types": [
+        "electric",
+        "water"
+      ],
+      "status": "24",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10009.png"
+    },
+    {
+      "rank": 69,
+      "originalName": "Kleavor",
+      "name": "kleavor",
+      "types": [
+        "bug",
+        "rock"
+      ],
+      "status": "=",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/900.png"
+    },
+    {
+      "rank": 70,
+      "originalName": "Meowscarada",
+      "name": "meowscarada",
+      "types": [
+        "grass",
+        "dark"
+      ],
+      "status": "24",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/908.png"
+    },
+    {
+      "rank": 71,
+      "originalName": "Alakazam",
+      "name": "alakazam",
+      "types": [
+        "psychic"
+      ],
+      "status": "34",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/65.png"
+    },
+    {
+      "rank": 72,
+      "originalName": "Empoleon",
+      "name": "empoleon",
+      "types": [
+        "water",
+        "steel"
+      ],
+      "status": "36",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/395.png"
+    },
+    {
+      "rank": 73,
+      "originalName": "Scovillain",
+      "name": "scovillain",
+      "types": [
+        "grass",
+        "fire"
+      ],
+      "status": "35",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/952.png"
+    },
+    {
+      "rank": 74,
+      "originalName": "Weavile",
+      "name": "weavile",
+      "types": [
+        "dark",
+        "ice"
+      ],
+      "status": "10",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/461.png"
+    },
+    {
+      "rank": 75,
+      "originalName": "Chandelure",
+      "name": "chandelure",
+      "types": [
+        "ghost",
+        "fire"
+      ],
+      "status": "16",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/609.png"
+    },
+    {
+      "rank": 76,
+      "originalName": "Aegislash (Shield Forme)",
+      "name": "aegislash-shield",
+      "types": [
+        "steel",
+        "ghost"
+      ],
+      "status": "6",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/681.png"
+    },
+    {
+      "rank": 77,
+      "originalName": "Pincurchin",
+      "name": "pincurchin",
+      "types": [
+        "electric"
+      ],
+      "status": "New",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/871.png"
+    },
+    {
+      "rank": 78,
+      "originalName": "Espathra",
+      "name": "espathra",
+      "types": [
+        "psychic"
+      ],
+      "status": "29",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/956.png"
+    },
+    {
+      "rank": 79,
+      "originalName": "Scizor",
+      "name": "scizor",
+      "types": [
+        "bug",
+        "steel"
+      ],
+      "status": "40",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/212.png"
+    },
+    {
+      "rank": 80,
+      "originalName": "Toxtricity (Amped Form)",
+      "name": "toxtricity-amped",
+      "types": [
+        "electric",
+        "poison"
+      ],
+      "status": "New",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/849.png"
+    },
+    {
+      "rank": 81,
+      "originalName": "Malamar",
+      "name": "malamar",
+      "types": [
+        "dark",
+        "psychic"
+      ],
+      "status": "5",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/687.png"
+    },
+    {
+      "rank": 82,
+      "originalName": "Toxapex",
+      "name": "toxapex",
+      "types": [
+        "poison",
+        "water"
+      ],
+      "status": "29",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/748.png"
+    },
+    {
+      "rank": 83,
+      "originalName": "Clefable",
+      "name": "clefable",
+      "types": [
+        "fairy"
+      ],
+      "status": "11",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/36.png"
+    },
+    {
+      "rank": 84,
+      "originalName": "Cinderace",
+      "name": "cinderace",
+      "types": [
+        "fire"
+      ],
+      "status": "New",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/815.png"
+    },
+    {
+      "rank": 85,
+      "originalName": "Mimikyu",
+      "name": "mimikyu-disguised",
+      "types": [
+        "ghost",
+        "fairy"
+      ],
+      "status": "27",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/778.png"
+    },
+    {
+      "rank": 86,
+      "originalName": "Meganium",
+      "name": "meganium",
+      "types": [
+        "grass"
+      ],
+      "status": "9",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/154.png"
+    },
+    {
+      "rank": 87,
+      "originalName": "Mamoswine",
+      "name": "mamoswine",
+      "types": [
+        "ice",
+        "ground"
+      ],
+      "status": "20",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/473.png"
+    },
+    {
+      "rank": 88,
+      "originalName": "Goodra",
+      "name": "goodra-hisui",
+      "types": [
+        "steel",
+        "dragon"
+      ],
+      "status": "23",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10242.png"
+    },
+    {
+      "rank": 89,
+      "originalName": "Greninja",
+      "name": "greninja",
+      "types": [
+        "water",
+        "dark"
+      ],
+      "status": "26",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/658.png"
+    },
+    {
+      "rank": 90,
+      "originalName": "Samurott",
+      "name": "samurott",
+      "types": [
+        "water",
+        "dark"
+      ],
+      "status": "19",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/503.png"
+    },
+    {
+      "rank": 91,
+      "originalName": "Kangaskhan",
+      "name": "kangaskhan",
+      "types": [
+        "normal"
+      ],
+      "status": "46",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/115.png"
+    },
+    {
+      "rank": 92,
+      "originalName": "Grapploct",
+      "name": "grapploct",
+      "types": [
+        "fighting"
+      ],
+      "status": "New",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/853.png"
+    },
+    {
+      "rank": 93,
+      "originalName": "Oranguru",
+      "name": "oranguru",
+      "types": [
+        "normal",
+        "psychic"
+      ],
+      "status": "31",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/765.png"
+    },
+    {
+      "rank": 94,
+      "originalName": "Gyarados",
+      "name": "gyarados",
+      "types": [
+        "water",
+        "flying"
+      ],
+      "status": "26",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/130.png"
+    },
+    {
+      "rank": 95,
+      "originalName": "Overqwil",
+      "name": "overqwil",
+      "types": [
+        "dark",
+        "poison"
+      ],
+      "status": "7",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/904.png"
+    },
+    {
+      "rank": 96,
+      "originalName": "Basculegion (Female)",
+      "name": "basculegion-female",
+      "types": [
+        "water",
+        "ghost"
+      ],
+      "status": "6",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10248.png"
+    },
+    {
+      "rank": 97,
+      "originalName": "Scrafty",
+      "name": "scrafty",
+      "types": [
+        "dark",
+        "fighting"
+      ],
+      "status": "23",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/560.png"
+    },
+    {
+      "rank": 98,
+      "originalName": "Heat Rotom",
+      "name": "rotom-heat",
+      "types": [
+        "electric",
+        "fire"
+      ],
+      "status": "7",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10008.png"
+    },
+    {
+      "rank": 99,
+      "originalName": "Lycanroc (Dusk Form)",
+      "name": "lycanroc-dusk",
+      "types": [
+        "rock"
+      ],
+      "status": "43",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10152.png"
+    },
+    {
+      "rank": 100,
+      "originalName": "Snorlax",
+      "name": "snorlax",
+      "types": [
+        "normal"
+      ],
+      "status": "20",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/143.png"
+    }
+  ]
+}
