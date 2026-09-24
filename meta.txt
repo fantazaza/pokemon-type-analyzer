@@ -1,0 +1,209 @@
+ นี่คือข้อมูลสรุปครบ 100 อันดับ (Top 100) ในโหมด Single Battle เรียบร้อยแล้วครับ:
+
+              อันดับ            │ โปเกมอน (Pokémon)          │ ประเภท (Types)             │      สถานะ / อันดับเดิม
+  ────────────────────────────┼────────────────────────────┼────────────────────────────┼────────────────────────────
+               #1             │ Salamence                  │ Dragon / Flying            │            New
+               #2             │ Garchomp                   │ Dragon / Ground            │             1
+               #3             │ Primarina                  │ Water / Fairy              │             1
+               #4             │ Hippowdon                  │ Ground                     │             2
+               #5             │ Golisopod                  │ Bug / Water                │            New
+               #6             │ Baxcalibur                 │ Dragon / Ice               │            New
+               #7             │ Lucario                    │ Fighting / Steel           │             22
+               #8             │ Archaludon                 │ Steel / Dragon             │             4
+               #9             │ Gholdengo                  │ Steel / Ghost              │             15
+              #10             │ Rillaboom                  │ Grass                      │            New
+              #11             │ Mimikyu                    │ Ghost / Fairy              │             6
+              #12             │ Meowscarada                │ Grass / Dark               │             9
+              #13             │ Charizard                  │ Fire / Flying              │             2
+              #14             │ Gyarados                   │ Water / Flying             │             7
+              #15             │ Aegislash (Shield Forme)   │ Steel / Ghost              │             8
+              #16             │ Cinderace                  │ Fire                       │            New
+              #17             │ Sneasler                   │ Fighting / Poison          │             31
+              #18             │ Glimmora                   │ Rock / Poison              │             =
+              #19             │ Basculegion (Male)         │ Water / Ghost              │             7
+              #20             │ Corviknight                │ Flying / Steel             │             7
+              #21             │ Indeedee (Male)            │ Psychic / Normal           │            New
+              #22             │ Metagross                  │ Steel / Psychic            │             12
+              #23             │ Greninja                   │ Water / Dark               │             4
+              #24             │ Alolan Ninetales           │ Ice / Fairy                │             9
+              #25             │ Blastoise                  │ Water                      │             18
+              #26             │ Pawmot                     │ Electric / Fighting        │            New
+              #27             │ Wash Rotom                 │ Electric / Water           │             3
+              #28             │ Volcarona                  │ Bug / Fire                 │             8
+              #29             │ Dragonite                  │ Dragon / Flying            │             20
+              #30             │ Empoleon                   │ Water / Steel              │             43
+              #31             │ Skeledirge                 │ Fire / Ghost               │             3
+              #32             │ Hydreigon                  │ Dark / Dragon              │             16
+              #33             │ Kingambit                  │ Dark / Steel               │             12
+              #34             │ Heat Rotom                 │ Electric / Fire            │             28
+              #35             │ Gengar                     │ Ghost / Poison             │             18
+              #36             │ Sylveon                    │ Fairy                      │             8
+              #37             │ Swampert                   │ Water / Ground             │             2
+              #38             │ Blaziken                   │ Fire / Fighting            │             16
+              #39             │ Delphox                    │ Fire / Psychic             │             31
+              #40             │ Raichu                     │ Electric                   │             25
+              #41             │ Umbreon                    │ Dark                       │             14
+              #42             │ Toxapex                    │ Poison / Water             │             5
+              #43             │ Banette                    │ Ghost                      │             35
+              #44             │ Clefable                   │ Fairy                      │             3
+              #45             │ Scizor                     │ Bug / Steel                │             31
+              #46             │ Armarouge                  │ Fire / Psychic             │             43
+              #47             │ Grimmsnarl                 │ Dark / Fairy               │             2
+              #48             │ Staraptor                  │ Normal / Flying            │             22
+              #49             │ Pelipper                   │ Water / Flying             │             2
+              #50             │ Absol                      │ Dark                       │            111
+              #51             │ Ditto                      │ Normal                     │             18
+              #52             │ Bellibolt                  │ Electric                   │             16
+              #53             │ Tyranitar                  │ Rock / Dark                │             7
+              #54             │ Mamoswine                  │ Ice / Ground               │             2
+              #55             │ Ceruledge                  │ Fire / Ghost               │             11
+              #56             │ Lopunny                    │ Normal                     │             24
+              #57             │ Samurott                   │ Water / Dark               │             32
+              #58             │ Milotic                    │ Water                      │             9
+              #59             │ Mawile                     │ Steel / Fairy              │             9
+              #60             │ Dragapult                  │ Dragon / Ghost             │             22
+              #61             │ Floette                    │ Fairy                      │             21
+              #62             │ Venusaur                   │ Grass / Poison             │             31
+              #63             │ Goodra                     │ Steel / Dragon (Hisuian)   │             11
+              #64             │ Vanilluxe                  │ Ice                        │             6
+              #65             │ Starmie                    │ Water / Psychic            │             30
+              #66             │ Espathra                   │ Psychic                    │             6
+              #67             │ Zoroark                    │ Normal / Ghost (Hisuian)   │             4
+              #68             │ Meganium                   │ Grass                      │             19
+              #69             │ Scovillain                 │ Grass / Fire               │             27
+              #70             │ Excadrill                  │ Ground / Steel             │             23
+              #71             │ Sirfetch’d                 │ Fighting                   │            New
+              #72             │ Snorlax                    │ Normal                     │             15
+              #73             │ Toxtricity (Amped Form)    │ Electric / Poison          │            New
+              #74             │ Skarmory                   │ Steel / Flying             │             3
+              #75             │ Victreebel                 │ Grass / Poison             │             20
+              #76             │ Sableye                    │ Dark / Ghost               │             15
+              #77             │ Galarian Slowking          │ Poison / Psychic           │             17
+              #78             │ Whimsicott                 │ Grass / Fairy              │             25
+              #79             │ Kleavor                    │ Bug / Rock                 │             14
+              #80             │ Annihilape                 │ Fighting / Ghost           │             14
+              #81             │ Arboliva                   │ Grass / Normal             │            New
+              #82             │ Froslass                   │ Ice / Ghost                │             2
+              #83             │ Toxtricity (Low Key Form)  │ Electric / Poison          │            New
+              #84             │ Hatterene                  │ Psychic / Fairy            │             =
+              #85             │ Gardevoir                  │ Psychic / Fairy            │             14
+              #86             │ Incineroar                 │ Fire / Dark                │             5
+              #87             │ Indeedee (Female)          │ Psychic / Normal           │            New
+              #88             │ Araquanid                  │ Water / Bug                │             24
+              #89             │ Inteleon                   │ Water                      │            New
+              #90             │ Gallade                    │ Psychic / Fighting         │             22
+              #91             │ Azumarill                  │ Water / Fairy              │             19
+              #92             │ Arcanine                   │ Fire / Rock (Hisuian)      │             5
+              #93             │ Vaporeon                   │ Water                      │             10
+              #94             │ Scolipede                  │ Bug / Poison               │             42
+              #95             │ Politoed                   │ Water                      │             59
+              #96             │ Galarian Slowbro           │ Poison / Psychic           │             10
+              #97             │ Kangaskhan                 │ Normal                     │             43
+              #98             │ Chandelure                 │ Ghost / Fire               │             17
+              #99             │ Dragalge                   │ Poison / Dragon            │             24
+            #100            │ Maushold (Family of Three) │ Normal                     │             41
+
+  นี่คือสรุปรายชื่อจัดอันดับ Top 100 โหมด Double Battle (อัปเดต Sep 24, 2026) เรียงลำดับจากข้อมูลที่คุณให้มาครับ:
+
+              อันดับ            │ โปเกมอน (Pokémon)          │ ประเภท (Types)             │      สถานะ / อันดับเดิม
+  ────────────────────────────┼────────────────────────────┼────────────────────────────┼────────────────────────────
+               #1             │ Rillaboom                  │ Grass                      │            New
+               #2             │ Sneasler                   │ Fighting / Poison          │             1
+               #3             │ Salamence                  │ Dragon / Flying            │            New
+               #4             │ Incineroar                 │ Fire / Dark                │             3
+               #5             │ Indeedee (Female)          │ Psychic / Normal           │            New
+               #6             │ Kingambit                  │ Dark / Steel               │             5
+               #7             │ Basculegion (Male)         │ Water / Ghost              │             3
+               #8             │ Golisopod                  │ Bug / Water                │            New
+               #9             │ Garchomp                   │ Dragon / Ground            │             7
+              #10             │ Gholdengo                  │ Steel / Ghost              │             13
+              #11             │ Pelipper                   │ Water / Flying             │             3
+              #12             │ Archaludon                 │ Steel / Dragon             │             1
+              #13             │ Milotic                    │ Water                      │             3
+              #14             │ Farigiraf                  │ Normal / Psychic           │             5
+              #15             │ Charizard                  │ Fire / Flying              │             7
+              #16             │ Gardevoir                  │ Psychic / Fairy            │             31
+              #17             │ Raichu                     │ Electric                   │             5
+              #18             │ Arcanine                   │ Fire / Rock (Hisuian)      │             16
+              #19             │ Sylveon                    │ Fairy                      │             8
+              #20             │ Tyranitar                  │ Rock / Dark                │             5
+              #21             │ Whimsicott                 │ Grass / Fairy              │             16
+              #22             │ Armarouge                  │ Fire / Psychic             │             59
+              #23             │ Staraptor                  │ Normal / Flying            │             13
+              #24             │ Torkoal                    │ Fire                       │             2
+              #25             │ Sinistcha                  │ Grass / Ghost              │             19
+              #26             │ Metagross                  │ Steel / Psychic            │             7
+              #27             │ Indeedee (Male)            │ Psychic / Normal           │            New
+              #28             │ Floette                    │ Fairy                      │             3
+              #29             │ Excadrill                  │ Ground / Steel             │             2
+              #30             │ Volcarona                  │ Bug / Fire                 │             40
+              #31             │ Politoed                   │ Water                      │             10
+              #32             │ Lucario                    │ Fighting / Steel           │             51
+              #33             │ Grimmsnarl                 │ Dark / Fairy               │             9
+              #34             │ Swampert                   │ Water / Ground             │             13
+              #35             │ Froslass                   │ Ice / Ghost                │             15
+              #36             │ Baxcalibur                 │ Dragon / Ice               │            New
+              #37             │ Gengar                     │ Ghost / Poison             │             1
+              #38             │ Alolan Ninetales           │ Ice / Fairy                │             8
+              #39             │ Dragonite                  │ Dragon / Flying            │             20
+              #40             │ Glimmora                   │ Rock / Poison              │             8
+              #41             │ Pawmot                     │ Electric / Fighting        │            New
+              #42             │ Aerodactyl                 │ Rock / Flying              │             24
+              #43             │ Venusaur                   │ Grass / Poison             │             26
+              #44             │ Primarina                  │ Water / Fairy              │             2
+              #45             │ Sableye                    │ Dark / Ghost               │             16
+              #46             │ Hatterene                  │ Psychic / Fairy            │             29
+              #47             │ Blastoise                  │ Water                      │             20
+              #48             │ Delphox                    │ Fire / Psychic             │             26
+              #49             │ Annihilape                 │ Fighting / Ghost           │             6
+              #50             │ Absol                      │ Dark                       │            126
+              #51             │ Corviknight                │ Flying / Steel             │             2
+              #52             │ Maushold (Family of Three) │ Normal                     │             24
+              #53             │ Talonflame                 │ Fire / Flying              │             18
+              #54             │ Kommo-o                    │ Dragon / Fighting          │             4
+              #55             │ Ceruledge                  │ Fire / Ghost               │             4
+              #56             │ Dragapult                  │ Dragon / Ghost             │             5
+              #57             │ Camerupt                   │ Fire / Ground              │             3
+              #58             │ Hydreigon                  │ Dark / Dragon              │             1
+              #59             │ Blaziken                   │ Fire / Fighting            │             11
+              #60             │ Mawile                     │ Steel / Fairy              │             23
+              #61             │ Typhlosion                 │ Fire / Ghost (Hisuian)     │             4
+              #62             │ Sirfetch’d                 │ Fighting                   │            New
+              #63             │ Gallade                    │ Psychic / Fighting         │             8
+              #64             │ Inteleon                   │ Water                      │            New
+              #65             │ Vivillon                   │ Bug / Flying               │             13
+              #66             │ Zoroark                    │ Normal / Ghost (Hisuian)   │             12
+              #67             │ Tsareena                   │ Grass                      │             27
+              #68             │ Wash Rotom                 │ Electric / Water           │             24
+              #69             │ Kleavor                    │ Bug / Rock                 │             =
+              #70             │ Meowscarada                │ Grass / Dark               │             24
+              #71             │ Alakazam                   │ Psychic                    │             34
+              #72             │ Empoleon                   │ Water / Steel              │             36
+              #73             │ Scovillain                 │ Grass / Fire               │             35
+              #74             │ Weavile                    │ Dark / Ice                 │             10
+              #75             │ Chandelure                 │ Ghost / Fire               │             16
+              #76             │ Aegislash (Shield Forme)   │ Steel / Ghost              │             6
+              #77             │ Pincurchin                 │ Electric                   │            New
+              #78             │ Espathra                   │ Psychic                    │             29
+              #79             │ Scizor                     │ Bug / Steel                │             40
+              #80             │ Toxtricity (Amped Form)    │ Electric / Poison          │            New
+              #81             │ Malamar                    │ Dark / Psychic             │             5
+              #82             │ Toxapex                    │ Poison / Water             │             29
+              #83             │ Clefable                   │ Fairy                      │             11
+              #84             │ Cinderace                  │ Fire                       │            New
+              #85             │ Mimikyu                    │ Ghost / Fairy              │             27
+              #86             │ Meganium                   │ Grass                      │             9
+              #87             │ Mamoswine                  │ Ice / Ground               │             20
+              #88             │ Goodra                     │ Steel / Dragon (Hisuian)   │             23
+              #89             │ Greninja                   │ Water / Dark               │             26
+              #90             │ Samurott                   │ Water / Dark               │             19
+              #91             │ Kangaskhan                 │ Normal                     │             46
+              #92             │ Grapploct                  │ Fighting                   │            New
+              #93             │ Oranguru                   │ Normal / Psychic           │             31
+              #94             │ Gyarados                   │ Water / Flying             │             26
+              #95             │ Overqwil                   │ Dark / Poison              │             7
+              #96             │ Basculegion (Female)       │ Water / Ghost              │             6
+              #97             │ Scrafty                    │ Dark / Fighting            │             23
+              #98             │ Heat Rotom                 │ Electric / Fire            │             7
+              #99             │ Lycanroc (Dusk Form)       │ Rock                       │             43
+              #100            │ Snorlax                    │ Normal                     │             20

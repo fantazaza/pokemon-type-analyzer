@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="th">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  
+
   <!-- Primary Meta Tags -->
   <title>Pokémon Type Analyzer | Type Matchup & Effectiveness Chart</title>
   <meta name="title" content="Pokémon Type Analyzer | Type Matchup & Effectiveness Chart">
-  <meta name="description" content="Interactive Pokémon Type Matchup Analyzer. Visualize weaknesses, resistances, and immunities for any single or dual type combination using dual radar charts. (เช็คธาตุโปเกมอน)">
-  <meta name="keywords" content="pokemon type calculator, pokemon type chart, type matchup, pokemon type effectiveness, radar chart, weaknesses, resistances, เช็คธาตุโปเกมอน, แพ้ทาง, ชนะทาง, pokemon go, scarlet violet">
+  <meta name="description"
+    content="Interactive Pokémon Type Matchup Analyzer. Visualize weaknesses, resistances, and immunities for any single or dual type combination using dual radar charts. (เช็คธาตุโปเกมอน)">
+  <meta name="keywords"
+    content="pokemon type calculator, pokemon type chart, type matchup, pokemon type effectiveness, radar chart, weaknesses, resistances, เช็คธาตุโปเกมอน, แพ้ทาง, ชนะทาง, pokemon go, scarlet violet">
   <meta name="author" content="Fantazaza">
 
   <!-- Canonical URL -->
@@ -18,20 +21,24 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://pokemon-type-analyzer.vercel.app/">
   <meta property="og:title" content="Pokémon Type Analyzer | Interactive Matchup Chart">
-  <meta property="og:description" content="Visualize Pokémon type effectiveness, weaknesses, and resistances for any dual type combination using interactive radar charts.">
+  <meta property="og:description"
+    content="Visualize Pokémon type effectiveness, weaknesses, and resistances for any dual type combination using interactive radar charts.">
   <meta property="og:image" content="https://pokemon-type-analyzer.vercel.app/og-image.png">
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="https://pokemon-type-analyzer.vercel.app/">
   <meta property="twitter:title" content="Pokémon Type Analyzer | Interactive Matchup Chart">
-  <meta property="twitter:description" content="Visualize Pokémon type effectiveness, weaknesses, and resistances for any dual type combination using interactive radar charts.">
+  <meta property="twitter:description"
+    content="Visualize Pokémon type effectiveness, weaknesses, and resistances for any dual type combination using interactive radar charts.">
   <meta property="twitter:image" content="https://pokemon-type-analyzer.vercel.app/og-image.png">
 
   <!-- Fonts & Styles -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+Thai:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+Thai:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="/src/style.css">
 
   <!-- Structured Data (JSON-LD) -->
@@ -51,6 +58,7 @@
   }
   </script>
 </head>
+
 <body>
   <div id="app">
 
@@ -198,7 +206,46 @@
             </div>
 
           </div><!-- /dual-tables -->
+          <!-- ── META MATCHUPS ── -->
+          <div class="dual-tables" id="meta-matchups" style="margin-top: 2rem;">
+            <div class="table-card" style="border-top: 4px solid #f43f5e;">
+              <div class="table-card-hdr defense-hdr" style="font-size: 1.1rem;">Top 3 Threats</div>
+              <div class="pokemon-grid" id="threat-grid"
+                style="padding: 1rem; display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem;"></div>
+            </div>
+            <div class="table-card" style="border-top: 4px solid #38bdf8;">
+              <div class="table-card-hdr attack-hdr" style="font-size: 1.1rem;">Top 3 Targets</div>
+              <div class="pokemon-grid" id="target-grid"
+                style="padding: 1rem; display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem;"></div>
+            </div>
+          </div>
+
         </div><!-- /content-area -->
+
+        <!-- ── META POKEMON LIST ── -->
+        <div class="meta-pokemon-section">
+          <div class="table-card-hdr meta-hdr"
+            style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
+            <div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap;">
+              <span>🏆 Top 100 Meta Pokémon</span>
+              <div class="meta-mode-toggle"
+                style="display: flex; gap: 4px; background: rgba(0,0,0,0.2); padding: 4px; border-radius: 8px;">
+                <button id="mode-single" class="mode-btn"
+                  style="background: transparent; border: none; color: #a1a1aa; padding: 4px 16px; border-radius: 6px; cursor: pointer; font-family: inherit; font-size: 0.85rem; font-weight: 600; transition: all 0.2s;">Single</button>
+                <button id="mode-double" class="mode-btn active"
+                  style="background: rgba(255,255,255,0.15); border: none; color: #fff; padding: 4px 16px; border-radius: 6px; cursor: pointer; font-family: inherit; font-size: 0.85rem; font-weight: 600; transition: all 0.2s; box-shadow: 0 1px 3px rgba(0,0,0,0.2);">Double</button>
+              </div>
+            </div>
+            <span class="meta-credit"
+              style="font-size: 0.75rem; font-weight: 500; color: #a1a1aa; background: rgba(0,0,0,0.2); padding: 4px 10px; border-radius: 99px;">
+              Rank by <a href="https://op.gg/pokemon-champions" target="_blank" rel="noopener noreferrer"
+                style="color: #60a5fa; text-decoration: none; transition: color 0.2s;">op.gg</a>
+            </span>
+          </div>
+          <div class="pokemon-grid" id="pokemon-grid">
+            <!-- Pokémon cards will be injected here via JS -->
+          </div>
+        </div>
 
       </div><!-- /container -->
     </main>
@@ -210,4 +257,5 @@
 
   <script type="module" src="/src/main.js"></script>
 </body>
+
 </html>

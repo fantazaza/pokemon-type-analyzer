@@ -10,7 +10,7 @@
 import {
   TYPES, TYPE_COLORS, TYPE_TEXT,
   buildDefenseChart, buildAttackChart,
-  fmtMult,
+  getEffectiveness, fmtMult,
 } from './typeData.js';
 import { RadarChart } from './radarChart.js';
 
@@ -181,6 +181,10 @@ function updateCharts() {
   }]);
 
   renderTable(defVals, atkVals);
+  
+  if (typeof updateMetaMatchups === 'function') {
+    updateMetaMatchups(defTypes, atkTypes);
+  }
 }
 
 // ── Type effectiveness tables ───────────────────────────────────
@@ -240,3 +244,205 @@ function renderSection(id, title, multCls, multLabel, types) {
 
 // ── Start ──────────────────────────────────────────────────────
 init();
+
+// ── Meta Pokemon Data ──────────────────────────────────────────
+let currentMetaMode = 'double';
+let metaData = { single: [], double: [] };
+
+async function loadMetaPokemonData() {
+  try {
+    const [singleRes, doubleRes] = await Promise.all([
+      fetch('/pokemon_data_single.json').catch(() => ({ json: () => [] })),
+      fetch('/pokemon_data_double.json').catch(() => ({ json: () => [] }))
+    ]);
+    
+    // Fallback to original pokemon_data.json if new files don't exist yet
+    if (!singleRes.ok && !doubleRes.ok) {
+        const oldRes = await fetch('/pokemon_data.json');
+        metaData.double = await oldRes.json();
+    } else {
+        metaData.single = await singleRes.json();
+        metaData.double = await doubleRes.json();
+    }
+    
+    renderMetaPokemon();
+  } catch (err) {
+    console.error("Failed to load meta pokemon:", err);
+  }
+}
+
+function renderMetaPokemon() {
+  const grid = document.getElementById('pokemon-grid');
+  if (!grid) return;
+  grid.innerHTML = '';
+  
+  const pokemonList = metaData[currentMetaMode] || [];
+  
+  const capitalize = (s) => s.charAt(0).toUpperCase() + s.slice(1);
+  
+  pokemonList.forEach((pkmn, index) => {
+    if (pkmn.types[0] === 'unknown') return; 
+    
+    const card = document.createElement('div');
+    card.className = 'pokemon-card';
+    
+    const typeChips = pkmn.types.map(t => {
+      const tCap = capitalize(t);
+      const bg = TYPE_COLORS[tCap] || '#ccc';
+      const fg = TYPE_TEXT[tCap] || '#fff';
+      return `<span class="type-chip" style="background:${bg};color:${fg}">${tCap}</span>`;
+    }).join('');
+    
+    card.innerHTML = `
+      <div class="pokemon-rank">#${index + 1}</div>
+      <div class="pokemon-img-container">
+        <img src="${pkmn.image}" alt="${pkmn.originalName}" loading="lazy" />
+      </div>
+      <div class="pokemon-name">${pkmn.originalName}</div>
+      <div class="pokemon-types">
+        ${typeChips}
+      </div>
+    `;
+    
+    card.addEventListener('click', () => {
+      const t1 = capitalize(pkmn.types[0]);
+      const t2 = pkmn.types[1] ? capitalize(pkmn.types[1]) : null;
+      
+      state.type1 = t1;
+      state.type2 = (t2 === t1) ? null : t2; 
+      
+      refresh();
+      
+      const area = document.getElementById('content-area');
+      if (area) {
+        const y = area.getBoundingClientRect().top + window.scrollY - 80;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+      }
+    });
+    
+    grid.appendChild(card);
+  });
+}
+
+function updateMetaMatchups(defTypes, atkTypes) {
+  const container = document.getElementById('meta-matchups');
+  if (!container) return;
+  
+  const pokemonList = metaData[currentMetaMode] || [];
+  if (pokemonList.length === 0) {
+    container.classList.add('hidden');
+    return;
+  }
+  container.classList.remove('hidden');
+
+  const capitalize = (s) => s.charAt(0).toUpperCase() + s.slice(1);
+
+  // Top Threats: Max damage a meta pokemon can deal TO the selected types
+  const threats = pokemonList.map(pkmn => {
+    let maxDmg = 0;
+    pkmn.types.forEach(t => {
+      if (t === 'unknown') return;
+      const dmg = getEffectiveness(capitalize(t), defTypes);
+      if (dmg > maxDmg) maxDmg = dmg;
+    });
+    return { pkmn, val: maxDmg };
+  }).filter(x => x.val >= 2).sort((a, b) => b.val - a.val).slice(0, 3);
+
+  // Top Targets: Max damage the selected types can deal TO a meta pokemon
+  const targets = pokemonList.map(pkmn => {
+    let maxDmg = 0;
+    const pkmnDefTypes = pkmn.types.filter(t => t !== 'unknown').map(capitalize);
+    if (pkmnDefTypes.length === 0) return { pkmn, val: 0 };
+    
+    atkTypes.forEach(at => {
+      const dmg = getEffectiveness(at, pkmnDefTypes);
+      if (dmg > maxDmg) maxDmg = dmg;
+    });
+    return { pkmn, val: maxDmg };
+  }).filter(x => x.val >= 2).sort((a, b) => b.val - a.val).slice(0, 3);
+
+  renderMatchupGrid('threat-grid', threats);
+  renderMatchupGrid('target-grid', targets);
+}
+
+function renderMatchupGrid(gridId, items) {
+  const grid = document.getElementById(gridId);
+  if (!grid) return;
+  grid.innerHTML = '';
+  
+  if (items.length === 0) {
+    grid.innerHTML = '<div style="color: #a1a1aa; font-size: 0.9rem; grid-column: 1/-1; text-align: center; padding: 1rem;">ไม่มีตัวที่ตรงเงื่อนไข</div>';
+    return;
+  }
+  
+  const capitalize = (s) => s.charAt(0).toUpperCase() + s.slice(1);
+  
+  items.forEach(item => {
+    const card = document.createElement('div');
+    card.className = 'pokemon-card';
+    card.style.padding = '0.5rem';
+    card.style.position = 'relative';
+    
+    const typeChips = item.pkmn.types.map(t => {
+      const tCap = capitalize(t);
+      const bg = TYPE_COLORS[tCap] || '#ccc';
+      const fg = TYPE_TEXT[tCap] || '#fff';
+      return `<span class="type-chip" style="background:${bg};color:${fg}; font-size: 0.65rem; padding: 2px 4px;">${tCap}</span>`;
+    }).join('');
+    
+    let multColor = '#a1a1aa';
+    if (item.val >= 4) multColor = '#f43f5e';
+    else if (item.val >= 2) multColor = '#fb923c';
+    
+    card.innerHTML = `
+      <div style="position: absolute; top: -6px; right: -6px; background: ${multColor}; color: #fff; font-size: 0.75rem; font-weight: 700; padding: 2px 8px; border-radius: 99px; box-shadow: 0 2px 6px rgba(0,0,0,0.3); z-index: 2; border: 2px solid #1f2937;">${item.val}x</div>
+      <div class="pokemon-img-container" style="height: 60px;">
+        <img src="${item.pkmn.image}" alt="${item.pkmn.originalName}" loading="lazy" style="max-height: 100%; object-fit: contain;" />
+      </div>
+      <div class="pokemon-name" style="font-size: 0.75rem; margin: 4px 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">${item.pkmn.originalName}</div>
+      <div class="pokemon-types" style="gap: 4px;">
+        ${typeChips}
+      </div>
+    `;
+    grid.appendChild(card);
+  });
+}
+
+function initMetaToggle() {
+    const btnSingle = document.getElementById('mode-single');
+    const btnDouble = document.getElementById('mode-double');
+    if (!btnSingle || !btnDouble) return;
+
+    const setActive = (btn) => {
+        btn.classList.add('active');
+        btn.style.background = 'rgba(255,255,255,0.15)';
+        btn.style.color = '#fff';
+        btn.style.boxShadow = '0 1px 3px rgba(0,0,0,0.2)';
+    };
+
+    const setInactive = (btn) => {
+        btn.classList.remove('active');
+        btn.style.background = 'transparent';
+        btn.style.color = '#a1a1aa';
+        btn.style.boxShadow = 'none';
+    };
+
+    btnSingle.addEventListener('click', () => {
+        currentMetaMode = 'single';
+        setActive(btnSingle);
+        setInactive(btnDouble);
+        renderMetaPokemon();
+        if (state.type1) refresh();
+    });
+
+    btnDouble.addEventListener('click', () => {
+        currentMetaMode = 'double';
+        setActive(btnDouble);
+        setInactive(btnSingle);
+        renderMetaPokemon();
+        if (state.type1) refresh();
+    });
+}
+
+initMetaToggle();
+loadMetaPokemonData();
