@@ -476,6 +476,9 @@ function renderMetaTable() {
     return;
   }
 
+  const defTypes = state.type1 ? [state.type1, ...(state.type2 ? [state.type2] : [])] : null;
+  const atkTypes = defTypes;
+
   filtered.forEach(pkmn => {
     const tr = document.createElement('tr');
     tr.className = 'table-row-item';
@@ -487,13 +490,55 @@ function renderMetaTable() {
       return `<span class="table-type-pill" style="background:${bg};color:${fg};">${tCap}</span>`;
     }).join('');
 
+    let matchupBadges = '';
+    if (defTypes) {
+      const pkmnDefTypes = pkmn.types.filter(t => t !== 'unknown').map(capitalize);
+
+      let maxDmgFrom = 0;
+      pkmn.types.forEach(t => {
+        if (t === 'unknown') return;
+        const dmg = getEffectiveness(capitalize(t), defTypes);
+        if (dmg > maxDmgFrom) maxDmgFrom = dmg;
+      });
+
+      let maxDmgTo = 0;
+      if (pkmnDefTypes.length > 0) {
+        atkTypes.forEach(at => {
+          const dmg = getEffectiveness(at, pkmnDefTypes);
+          if (dmg > maxDmgTo) maxDmgTo = dmg;
+        });
+      }
+
+      const tags = [];
+      if (maxDmgFrom >= 4) {
+        tags.push(`<span class="matchup-tag tag-threat mult-4x" title="Deals 4× damage to you">DEALS 4×</span>`);
+      } else if (maxDmgFrom >= 2) {
+        tags.push(`<span class="matchup-tag tag-threat" title="Deals 2× damage to you">DEALS 2×</span>`);
+      } else if (maxDmgFrom === 0) {
+        tags.push(`<span class="matchup-tag tag-immune" title="Deals 0× damage to you">DEALS 0×</span>`);
+      }
+
+      if (maxDmgTo >= 4) {
+        tags.push(`<span class="matchup-tag tag-target mult-4x" title="Takes 4× damage from you">TAKES 4×</span>`);
+      } else if (maxDmgTo >= 2) {
+        tags.push(`<span class="matchup-tag tag-target" title="Takes 2× damage from you">TAKES 2×</span>`);
+      }
+
+      if (tags.length > 0) {
+        matchupBadges = `<span class="matchup-tags-wrap">${tags.join('')}</span>`;
+      }
+    }
+
     tr.innerHTML = `
       <td class="td-rank">#${pkmn.rank || '-'}</td>
       <td class="td-pokemon">
         <div class="pokemon-meta-cell">
           <img src="${pkmn.image}" alt="${pkmn.originalName}" class="table-avatar" loading="lazy" />
           <div class="pkmn-name-types-group">
-            <span class="table-pkmn-name">${pkmn.originalName}</span>
+            <div class="pkmn-name-row">
+              <span class="table-pkmn-name">${pkmn.originalName}</span>
+              ${matchupBadges}
+            </div>
             <div class="table-types-mobile">${typeChips}</div>
           </div>
         </div>

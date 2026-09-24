@@ -1016,6 +1016,66 @@ body::before {
   display: flex;
   flex-direction: column;
   min-width: 0;
+  gap: 3px;
+}
+
+.pkmn-name-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.matchup-tags-wrap {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.matchup-tag {
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--font-mono);
+  font-size: 0.64rem;
+  font-weight: 700;
+  line-height: 1;
+  padding: 2px 6px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+
+.matchup-tag.tag-threat {
+  background: rgba(244, 63, 94, 0.16);
+  color: #fb7185;
+  border: 1px solid rgba(244, 63, 94, 0.35);
+}
+
+.matchup-tag.tag-threat.mult-4x {
+  background: rgba(239, 68, 68, 0.25);
+  color: #f87171;
+  border: 1px solid rgba(239, 68, 68, 0.6);
+  box-shadow: 0 0 6px rgba(239, 68, 68, 0.25);
+}
+
+.matchup-tag.tag-target {
+  background: rgba(56, 189, 248, 0.16);
+  color: #38bdf8;
+  border: 1px solid rgba(56, 189, 248, 0.35);
+}
+
+.matchup-tag.tag-target.mult-4x {
+  background: rgba(96, 165, 250, 0.25);
+  color: #60a5fa;
+  border: 1px solid rgba(96, 165, 250, 0.6);
+  box-shadow: 0 0 6px rgba(96, 165, 250, 0.25);
+}
+
+.matchup-tag.tag-immune {
+  background: rgba(168, 85, 247, 0.18);
+  color: #c084fc;
+  border: 1px solid rgba(168, 85, 247, 0.4);
 }
 
 .tactical-table {
@@ -1401,6 +1461,18 @@ body::before {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+  }
+  .pkmn-name-row {
+    gap: 4px;
+    align-items: center;
+  }
+  .matchup-tags-wrap {
+    gap: 3px;
+  }
+  .matchup-tag {
+    font-size: 0.58rem;
+    padding: 1px 4px;
+    letter-spacing: 0.02em;
   }
   .table-types-mobile {
     display: flex;
