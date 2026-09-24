@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="th">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 
   <!-- Primary Meta Tags -->
-  <title>Pokémon Type Analyzer | Type Matchup & Effectiveness Chart</title>
-  <meta name="title" content="Pokémon Type Analyzer | Type Matchup & Effectiveness Chart">
+  <title>Pokémon Battle Type Analyzer | Type Matchup &amp; Effectiveness</title>
+  <meta name="title" content="Pokémon Battle Type Analyzer | Type Matchup &amp; Effectiveness">
   <meta name="description"
-    content="Interactive Pokémon Type Matchup Analyzer. Visualize weaknesses, resistances, and immunities for any single or dual type combination using dual radar charts. (เช็คธาตุโปเกมอน)">
+    content="Tactical Pokémon Type Matchup Analyzer. Visualize weaknesses, resistances, and immunities for any single or dual type combination using dual radar charts.">
   <meta name="keywords"
-    content="pokemon type calculator, pokemon type chart, type matchup, pokemon type effectiveness, radar chart, weaknesses, resistances, เช็คธาตุโปเกมอน, แพ้ทาง, ชนะทาง, pokemon go, scarlet violet">
+    content="pokemon type calculator, pokemon type chart, type matchup, pokemon battle analyzer, radar chart, weaknesses, resistances, pokemon vgc, scarlet violet">
   <meta name="author" content="Fantazaza">
 
   <!-- Canonical URL -->
@@ -20,7 +20,7 @@
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://pokemon-type-analyzer.vercel.app/">
-  <meta property="og:title" content="Pokémon Type Analyzer | Interactive Matchup Chart">
+  <meta property="og:title" content="Pokémon Battle Type Analyzer | Interactive Matchup Chart">
   <meta property="og:description"
     content="Visualize Pokémon type effectiveness, weaknesses, and resistances for any dual type combination using interactive radar charts.">
   <meta property="og:image" content="https://pokemon-type-analyzer.vercel.app/og-image.png">
@@ -28,7 +28,7 @@
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="https://pokemon-type-analyzer.vercel.app/">
-  <meta property="twitter:title" content="Pokémon Type Analyzer | Interactive Matchup Chart">
+  <meta property="twitter:title" content="Pokémon Battle Type Analyzer | Interactive Matchup Chart">
   <meta property="twitter:description"
     content="Visualize Pokémon type effectiveness, weaknesses, and resistances for any dual type combination using interactive radar charts.">
   <meta property="twitter:image" content="https://pokemon-type-analyzer.vercel.app/og-image.png">
@@ -37,7 +37,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+Thai:wght@300;400;500;600;700;800;900&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="/src/style.css">
 
@@ -46,9 +46,9 @@
   {
     "@context": "https://schema.org",
     "@type": "WebApplication",
-    "name": "Pokémon Type Analyzer",
+    "name": "Pokémon Battle Type Analyzer",
     "url": "https://pokemon-type-analyzer.vercel.app/",
-    "description": "Interactive Pokémon Type Matchup Analyzer. Visualize type effectiveness, weaknesses, and resistances with dual radar charts.",
+    "description": "Tactical Pokémon Type Matchup Analyzer with Dual Radar Matrix and Meta Threat Evaluator.",
     "applicationCategory": "UtilitiesApplication",
     "operatingSystem": "All",
     "offers": {
@@ -60,192 +60,205 @@
 </head>
 
 <body>
-  <div id="app">
+  <div id="app" class="app-wrapper">
 
-    <!-- ── HEADER ──────────────────────────────────────── -->
+    <!-- ── TACTICAL HEADER ─────────────────────────────── -->
     <header class="app-header">
-      <div class="header-inner">
-        <div class="logo-group">
-          <div class="pokeball" aria-hidden="true">
-            <div class="pb-top"></div>
-            <div class="pb-bot"></div>
-            <div class="pb-band"></div>
-            <div class="pb-button"></div>
-          </div>
-          <div>
-            <h1 class="app-title">Pokémon Type Analyzer</h1>
-            <p class="app-subtitle">Type Matchup &amp; Radar Chart</p>
-          </div>
+      <div class="container header-container">
+        <div class="brand-block">
+          <div class="brand-badge">BATTLE ANALYSIS SYSTEM</div>
+          <h1 class="brand-title">POKÉMON TYPE ANALYZER</h1>
+          <p class="brand-sub">Dual-Radar Matchup Matrix &amp; Meta Threat Evaluator</p>
+        </div>
+        <div class="header-actions">
+          <button id="btn-reset-types" class="btn-tactical-outline" title="Reset type selections">
+            <span>RESET</span>
+          </button>
         </div>
       </div>
     </header>
 
-    <!-- ── TYPE SELECTOR ──────────────────────────────── -->
-    <section class="selector-section" aria-label="Type Selector">
+    <!-- ── TYPE SELECTOR (HERO COMPONENT) ──────────────── -->
+    <section class="hero-selector-section" aria-label="Type Selector Hub">
       <div class="container">
-        <div class="selector-grid">
-          <div class="selector-col">
-            <div class="col-label">
-              <span class="col-num">1</span>
-              <span>Primary Type</span>
+        <div class="selector-card">
+          <div class="selector-header">
+            <div class="selector-title-group">
+              <span class="selector-heading">TYPE CONFIGURATION</span>
             </div>
-            <div class="type-grid" id="type1-grid" role="group" aria-label="Primary type selection"></div>
+            <div class="selected-summary-preview" id="selected-display">
+              <span class="placeholder-tag">Select types to begin analysis</span>
+            </div>
           </div>
 
-          <div class="selector-plus" aria-hidden="true">+</div>
-
-          <div class="selector-col">
-            <div class="col-label">
-              <span class="col-num opt">2</span>
-              <span>Secondary Type <em>(optional)</em></span>
+          <div class="selector-columns">
+            <!-- Primary Type Column -->
+            <div class="type-column">
+              <div class="column-meta">
+                <span class="column-badge primary-badge">SLOT 01</span>
+                <span class="column-name">PRIMARY TYPE</span>
+              </div>
+              <div class="type-grid" id="type1-grid" role="group" aria-label="Primary type selection"></div>
             </div>
-            <div class="type-grid" id="type2-grid" role="group" aria-label="Secondary type selection"></div>
+
+            <!-- Column Divider -->
+            <div class="selector-divider" aria-hidden="true">
+              <div class="divider-line"></div>
+              <div class="divider-plus">+</div>
+              <div class="divider-line"></div>
+            </div>
+
+            <!-- Secondary Type Column -->
+            <div class="type-column">
+              <div class="column-meta">
+                <span class="column-badge secondary-badge">SLOT 02</span>
+                <span class="column-name">SECONDARY TYPE (OPTIONAL)</span>
+              </div>
+              <div class="type-grid" id="type2-grid" role="group" aria-label="Secondary type selection"></div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ── MAIN ───────────────────────────────────────── -->
-    <main class="main-section">
+    <!-- ── MAIN BATTLE DASHBOARD ───────────────────────── -->
+    <main class="main-dashboard">
       <div class="container">
 
-        <!-- Empty state -->
-        <div id="empty-state" class="empty-state" aria-live="polite">
-          <div class="empty-icon" aria-hidden="true">
-            <div class="empty-pb">
-              <div class="epb-top"></div>
-              <div class="epb-bot"></div>
-              <div class="epb-band"></div>
-              <div class="epb-btn"></div>
-            </div>
-          </div>
-          <h2>Select a Type to Begin</h2>
-          <p>Choose one or two Pokémon types to analyze their matchups</p>
+        <!-- Empty state placeholder -->
+        <div id="empty-state" class="empty-state-panel" aria-live="polite">
+          <h2>READY FOR BATTLE ANALYSIS</h2>
+          <p>Select a Primary Type above or click any Pokémon from the meta table below to calculate matchups.</p>
         </div>
 
-        <!-- Content area -->
+        <!-- Active Analysis Workspace -->
         <div id="content-area" class="content-area hidden" aria-live="polite">
-          <div class="content-header">
-            <div class="selected-display" id="selected-display"></div>
-          </div>
 
-          <!-- ── DUAL RADAR CHARTS ── -->
-          <div class="dual-charts">
+          <!-- ── 1. DUAL RADAR CHARTS (CENTERPIECE) ── -->
+          <section class="radar-centerpiece-section">
+            <div class="radar-deck">
 
-            <!-- Defense chart -->
-            <div class="chart-card chart-defense">
-              <div class="chart-card-header">
-                <div class="chart-label defense-label">
-                  <div class="legend-dot defense-dot"></div>
-                  <span>แพ้ทาง</span>
-                  <span class="chart-label-sub">Defense · Damage Taken</span>
+              <!-- Defense Radar -->
+              <div class="radar-box radar-defense-box">
+                <div class="radar-box-hdr">
+                  <div class="radar-badge def-badge">
+                    <span>DEFENSE</span>
+                  </div>
+                  <span class="radar-sub">Damage Taken</span>
+                </div>
+                <div class="canvas-wrap" id="canvas-wrap-defense">
+                  <canvas id="radar-defense" aria-label="Defense type effectiveness radar chart"></canvas>
+                </div>
+                <div class="tactical-scale-bar">
+                  <span class="scale-item"><b style="color:#a78bfa">0×</b> Immune</span>
+                  <span class="scale-item"><b style="color:#34d399">¼×</b> Super Resist</span>
+                  <span class="scale-item"><b style="color:#6ee7b7">½×</b> Resist</span>
+                  <span class="scale-item"><b style="color:#94a3b8">1×</b> Neutral</span>
+                  <span class="scale-item"><b style="color:#fbbf24">2×</b> Weak</span>
+                  <span class="scale-item"><b style="color:#f87171">4×</b> Super Weak</span>
                 </div>
               </div>
-              <div class="canvas-wrap" id="canvas-wrap-defense">
-                <canvas id="radar-defense" aria-label="Defense type effectiveness radar chart"></canvas>
-              </div>
-              <div class="scale-legend">
-                <div class="sl-item"><span class="sl-dot" style="background:#a78bfa"></span>0× Immune</div>
-                <div class="sl-item"><span class="sl-dot" style="background:#34d399"></span>¼×</div>
-                <div class="sl-item"><span class="sl-dot" style="background:#6ee7b7"></span>½×</div>
-                <div class="sl-item"><span class="sl-dot" style="background:#e5e7eb"></span>1×</div>
-                <div class="sl-item"><span class="sl-dot" style="background:#fbbf24"></span>2×</div>
-                <div class="sl-item"><span class="sl-dot" style="background:#f87171"></span>4×</div>
-              </div>
-            </div>
 
-            <!-- Attack chart -->
-            <div class="chart-card chart-attack">
-              <div class="chart-card-header">
-                <div class="chart-label attack-label">
-                  <div class="legend-dot attack-dot"></div>
-                  <span>ชนะทาง</span>
-                  <span class="chart-label-sub">Attack · Damage Dealt</span>
+              <!-- Attack Radar -->
+              <div class="radar-box radar-attack-box">
+                <div class="radar-box-hdr">
+                  <div class="radar-badge atk-badge">
+                    <span>ATTACK</span>
+                  </div>
+                  <span class="radar-sub">Damage Dealt</span>
+                </div>
+                <div class="canvas-wrap" id="canvas-wrap-attack">
+                  <canvas id="radar-attack" aria-label="Attack type effectiveness radar chart"></canvas>
+                </div>
+                <div class="tactical-scale-bar">
+                  <span class="scale-item"><b style="color:#a78bfa">0×</b> No Eff.</span>
+                  <span class="scale-item"><b style="color:#34d399">¼×</b> Min Eff.</span>
+                  <span class="scale-item"><b style="color:#6ee7b7">½×</b> Not Very</span>
+                  <span class="scale-item"><b style="color:#94a3b8">1×</b> Normal</span>
+                  <span class="scale-item"><b style="color:#38bdf8">2×</b> Super Eff.</span>
+                  <span class="scale-item"><b style="color:#60a5fa">4×</b> Ultra Eff.</span>
                 </div>
               </div>
-              <div class="canvas-wrap" id="canvas-wrap-attack">
-                <canvas id="radar-attack" aria-label="Attack type effectiveness radar chart"></canvas>
+
+            </div>
+          </section>
+
+          <!-- ── 2. UNIFIED EFFECTIVENESS SUMMARY STRIP ── -->
+          <section class="effectiveness-summary-strip" id="effectiveness-strip">
+            <!-- Injected dynamically via JS: Weakness, Resistance, Immunity in 1 clean unified strip -->
+          </section>
+
+          <!-- ── 3. TOP 3 THREATS & TOP 3 TARGETS (3 BIG CLEAN CARDS) ── -->
+          <section class="meta-matchups-section" id="meta-matchups">
+            <div class="matchups-grid">
+              
+              <!-- Column 1: Top 3 Threats -->
+              <div class="matchup-col threats-col">
+                <div class="matchup-col-header">
+                  <div class="matchup-header-title">
+                    <span class="title-text">TOP 3 THREATS</span>
+                    <span class="subtitle-text">High-damage threats in meta</span>
+                  </div>
+                </div>
+                <div class="big-cards-grid" id="threat-grid"></div>
               </div>
-              <div class="scale-legend">
-                <div class="sl-item"><span class="sl-dot" style="background:#a78bfa"></span>0× No Eff.</div>
-                <div class="sl-item"><span class="sl-dot" style="background:#34d399"></span>¼×</div>
-                <div class="sl-item"><span class="sl-dot" style="background:#6ee7b7"></span>½×</div>
-                <div class="sl-item"><span class="sl-dot" style="background:#e5e7eb"></span>1×</div>
-                <div class="sl-item"><span class="sl-dot" style="background:#fbbf24"></span>2×</div>
-                <div class="sl-item"><span class="sl-dot" style="background:#f87171"></span>4×</div>
+
+              <!-- Column 2: Top 3 Targets -->
+              <div class="matchup-col targets-col">
+                <div class="matchup-col-header">
+                  <div class="matchup-header-title">
+                    <span class="title-text">TOP 3 TARGETS</span>
+                    <span class="subtitle-text">Vulnerable targets in meta</span>
+                  </div>
+                </div>
+                <div class="big-cards-grid" id="target-grid"></div>
               </div>
-            </div>
 
-          </div><!-- /dual-charts -->
-
-          <!-- ── TYPE TABLE ── -->
-          <div class="dual-tables">
-
-            <div class="table-card">
-              <div class="table-card-hdr defense-hdr">🛡 แพ้ทาง — Defense</div>
-              <div class="tab-content" id="tab-defense-content">
-                <div class="eff-section" id="def-4x"></div>
-                <div class="eff-section" id="def-2x"></div>
-                <div class="eff-section" id="def-1x"></div>
-                <div class="eff-section" id="def-05x"></div>
-                <div class="eff-section" id="def-025x"></div>
-                <div class="eff-section" id="def-0x"></div>
-              </div>
             </div>
-
-            <div class="table-card">
-              <div class="table-card-hdr attack-hdr">⚔ ชนะทาง — Attack</div>
-              <div class="tab-content" id="tab-attack-content">
-                <div class="eff-section" id="atk-4x"></div>
-                <div class="eff-section" id="atk-2x"></div>
-                <div class="eff-section" id="atk-1x"></div>
-                <div class="eff-section" id="atk-05x"></div>
-                <div class="eff-section" id="atk-025x"></div>
-                <div class="eff-section" id="atk-0x"></div>
-              </div>
-            </div>
-
-          </div><!-- /dual-tables -->
-          <!-- ── META MATCHUPS ── -->
-          <div class="dual-tables" id="meta-matchups" style="margin-top: 2rem;">
-            <div class="table-card" style="border-top: 4px solid #f43f5e;">
-              <div class="table-card-hdr defense-hdr" style="font-size: 1.1rem;">Top 3 Threats</div>
-              <div class="pokemon-grid" id="threat-grid"
-                style="padding: 1rem; display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem;"></div>
-            </div>
-            <div class="table-card" style="border-top: 4px solid #38bdf8;">
-              <div class="table-card-hdr attack-hdr" style="font-size: 1.1rem;">Top 3 Targets</div>
-              <div class="pokemon-grid" id="target-grid"
-                style="padding: 1rem; display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem;"></div>
-            </div>
-          </div>
+          </section>
 
         </div><!-- /content-area -->
 
-        <!-- ── META POKEMON LIST ── -->
-        <div class="meta-pokemon-section">
-          <div class="table-card-hdr meta-hdr"
-            style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
-            <div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap;">
-              <span>🏆 Top 100 Meta Pokémon</span>
-              <div class="meta-mode-toggle"
-                style="display: flex; gap: 4px; background: rgba(0,0,0,0.2); padding: 4px; border-radius: 8px;">
-                <button id="mode-single" class="mode-btn"
-                  style="background: transparent; border: none; color: #a1a1aa; padding: 4px 16px; border-radius: 6px; cursor: pointer; font-family: inherit; font-size: 0.85rem; font-weight: 600; transition: all 0.2s;">Single</button>
-                <button id="mode-double" class="mode-btn active"
-                  style="background: rgba(255,255,255,0.15); border: none; color: #fff; padding: 4px 16px; border-radius: 6px; cursor: pointer; font-family: inherit; font-size: 0.85rem; font-weight: 600; transition: all 0.2s; box-shadow: 0 1px 3px rgba(0,0,0,0.2);">Double</button>
+        <!-- ── 4. TOP 100 META POKÉMON (CLEAN TACTICAL TABLE) ── -->
+        <section class="meta-table-section">
+          <div class="table-toolbar">
+            <div class="toolbar-left">
+              <div class="toolbar-title">
+                <span>TOP 100 META POKÉMON</span>
+              </div>
+              <div class="mode-switch-group">
+                <button id="mode-single" class="mode-tab-btn active">Single</button>
+                <button id="mode-double" class="mode-tab-btn">Double</button>
               </div>
             </div>
-            <span class="meta-credit"
-              style="font-size: 0.75rem; font-weight: 500; color: #a1a1aa; background: rgba(0,0,0,0.2); padding: 4px 10px; border-radius: 99px;">
-              Rank by <a href="https://op.gg/pokemon-champions" target="_blank" rel="noopener noreferrer"
-                style="color: #60a5fa; text-decoration: none; transition: color 0.2s;">op.gg</a>
-            </span>
+
+            <div class="toolbar-right">
+              <div class="search-box">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                <input type="text" id="pokemon-search" placeholder="Search Pokémon or type..." autocomplete="off">
+              </div>
+              <span class="source-credit">
+                Rank by <a href="https://op.gg/pokemon-champions" target="_blank" rel="noopener noreferrer">op.gg</a>
+              </span>
+            </div>
           </div>
-          <div class="pokemon-grid" id="pokemon-grid">
-            <!-- Pokémon cards will be injected here via JS -->
+
+          <!-- Clean Table Container -->
+          <div class="table-responsive-wrapper">
+            <table class="tactical-table" id="meta-pokemon-table">
+              <thead>
+                <tr>
+                  <th class="th-rank">#</th>
+                  <th class="th-pokemon">POKÉMON</th>
+                  <th class="th-types">TYPES</th>
+                </tr>
+              </thead>
+              <tbody id="pokemon-table-body">
+                <!-- Dynamically populated rows -->
+              </tbody>
+            </table>
           </div>
-        </div>
+        </section>
 
       </div><!-- /container -->
     </main>

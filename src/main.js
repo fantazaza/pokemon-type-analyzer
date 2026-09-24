@@ -1,10 +1,14 @@
 /**
  * main.js
- * Pokémon Type Matchup Analyzer — App Controller
+ * Pokémon Battle Type Analyzer — Controller
  *
- * Two separate RadarChart instances:
- *  - radarDefense: แพ้ทาง (Defense, Damage Taken) — red polygon
- *  - radarAttack:  ชนะทาง (Attack, Damage Dealt)  — blue polygon
+ * Tactical Battle Analyzer with:
+ * - Hero Type Selector
+ * - Centered Dual Radars (Defense & Attack)
+ * - Single Unified Effectiveness Summary Strip (Weakness / Resistance / Immunity / Offense)
+ * - Top 3 Threats & Top 3 Targets as 3 prominent clean cards
+ * - Top 100 Meta Pokémon as a clean, tactical data table with real-time matchup tags and search filter
+ * - 100% English interface with minimal, essential-only icon usage
  */
 
 import {
@@ -23,12 +27,21 @@ const state = {
 let radarDefense;
 let radarAttack;
 
+// ── Meta Pokemon Data ──────────────────────────────────────────
+let currentMetaMode = 'single';
+let metaData = { single: [], double: [] };
+let searchQuery = '';
+
 // ── Boot ───────────────────────────────────────────────────────
 function init() {
   radarDefense = new RadarChart('radar-defense', 'tooltip');
   radarAttack  = new RadarChart('radar-attack',  'tooltip');
 
   buildTypeButtons();
+  initResetButton();
+  initSearch();
+  initMetaToggle();
+  loadMetaPokemonData();
 
   requestAnimationFrame(() => {
     radarDefense._resize();
@@ -41,6 +54,10 @@ function buildTypeButtons() {
   const g1 = document.getElementById('type1-grid');
   const g2 = document.getElementById('type2-grid');
 
+  if (!g1 || !g2) return;
+  g1.innerHTML = '';
+  g2.innerHTML = '';
+
   TYPES.forEach(type => {
     const b1 = makeTypeBtn(type);
     b1.addEventListener('click', () => onType1Click(type));
@@ -51,7 +68,7 @@ function buildTypeButtons() {
   const none = document.createElement('button');
   none.className = 'type-btn none-btn selected';
   none.id = 'type2-none';
-  none.textContent = 'None';
+  none.innerHTML = '<span class="type-btn-label">None</span>';
   none.setAttribute('aria-pressed', 'true');
   none.addEventListener('click', () => { state.type2 = null; refresh(); });
   g2.appendChild(none);
@@ -65,18 +82,21 @@ function buildTypeButtons() {
 
 function makeTypeBtn(type) {
   const btn = document.createElement('button');
-  btn.className   = 'type-btn';
-  btn.textContent = type;
+  btn.className = 'type-btn';
   btn.dataset.type = type;
+  btn.style.setProperty('--btn-type-color', TYPE_COLORS[type]);
   btn.style.backgroundColor = TYPE_COLORS[type];
-  btn.style.color           = TYPE_TEXT[type] || '#fff';
-  btn.style.borderColor     = TYPE_COLORS[type];
+  btn.style.color = TYPE_TEXT[type] || '#fff';
   btn.setAttribute('aria-pressed', 'false');
+
+  btn.innerHTML = `<span class="type-btn-label">${type}</span>`;
   return btn;
 }
 
 function onType1Click(type) {
-  if (state.type1 === type) return;
+  if (state.type1 === type) {
+    return;
+  }
   state.type1 = type;
   if (state.type2 === type) state.type2 = null;
   refresh();
@@ -87,12 +107,29 @@ function onType2Click(type) {
   refresh();
 }
 
+function initResetButton() {
+  const btn = document.getElementById('btn-reset-types');
+  if (btn) {
+    btn.addEventListener('click', () => {
+      state.type1 = null;
+      state.type2 = null;
+      refresh();
+    });
+  }
+}
+
 // ── Refresh ────────────────────────────────────────────────────
 function refresh() {
   syncButtonUI();
   updateSelectedDisplay();
   toggleContentArea();
-  if (state.type1) updateCharts();
+
+  if (state.type1) {
+    updateCharts();
+  }
+
+  // Update real-time matchup column in Meta table
+  renderMetaTable();
 }
 
 // ── Sync button visual state ────────────────────────────────────
@@ -123,15 +160,20 @@ function syncButtonUI() {
 // ── Header display ──────────────────────────────────────────────
 function updateSelectedDisplay() {
   const display = document.getElementById('selected-display');
-  if (!state.type1) { display.innerHTML = ''; return; }
+  if (!display) return;
+
+  if (!state.type1) {
+    display.innerHTML = '<span class="placeholder-tag">Select types to begin analysis</span>';
+    return;
+  }
 
   const types = state.type2 ? [state.type1, state.type2] : [state.type1];
   display.innerHTML = types.map((t, i) => {
     const bg = TYPE_COLORS[t];
     const fg = TYPE_TEXT[t] || '#fff';
-    return (i > 0 ? '<span class="sel-plus">+</span>' : '') +
-      `<span class="sel-badge" style="background:${bg};color:${fg}">
-         <span class="sel-dot"></span>${t}
+    return (i > 0 ? '<span class="preview-plus">+</span>' : '') +
+      `<span class="sel-preview-badge" style="background:${bg};color:${fg}">
+         ${t}
        </span>`;
   }).join('');
 }
@@ -154,7 +196,7 @@ function toggleContentArea() {
   }
 }
 
-// ── Chart updates ───────────────────────────────────────────────
+// ── Chart & Summary updates ─────────────────────────────────────
 function updateCharts() {
   const defTypes = [state.type1, ...(state.type2 ? [state.type2] : [])];
   const atkTypes = defTypes;
@@ -162,55 +204,126 @@ function updateCharts() {
   const defVals = buildDefenseChart(defTypes);
   const atkVals = buildAttackChart(atkTypes);
 
-  // ── Defense radar (แพ้ทาง) — label color by defense value ──
+  // ── Defense radar ──
   radarDefense.setData(TYPES, [{
     label:     'Defense',
     rawValues: defVals,
     color:     '#f43f5e',
-    fillColor: 'rgba(244,63,94,0.16)',
+    fillColor: 'rgba(244,63,94,0.18)',
     isDefense: true,
   }]);
 
-  // ── Attack radar (ชนะทาง) — label color by attack value ──
+  // ── Attack radar ──
   radarAttack.setData(TYPES, [{
     label:     'Attack',
     rawValues: atkVals,
     color:     '#38bdf8',
-    fillColor: 'rgba(56,189,248,0.14)',
+    fillColor: 'rgba(56,189,248,0.18)',
     isDefense: false,
   }]);
 
-  renderTable(defVals, atkVals);
-  
-  if (typeof updateMetaMatchups === 'function') {
-    updateMetaMatchups(defTypes, atkTypes);
-  }
+  // Render the unified summary strip (Weakness / Resistance / Immunity / Offense)
+  renderUnifiedSummaryStrip(defVals, atkVals);
+
+  // Render Top 3 Threats & Targets
+  updateMetaMatchups(defTypes, atkTypes);
 }
 
-// ── Type effectiveness tables ───────────────────────────────────
-const DEF_GROUPS = [
-  { id: 'def-4x',   val: 4,    title: '×4 Super Weakness', cls: 'm4x',   mLabel: '×4' },
-  { id: 'def-2x',   val: 2,    title: '×2 Weakness',       cls: 'm2x',   mLabel: '×2' },
-  { id: 'def-1x',   val: 1,    title: 'Neutral',            cls: 'm1x',   mLabel: '×1' },
-  { id: 'def-05x',  val: 0.5,  title: '½× Resistance',     cls: 'm05x',  mLabel: '½×' },
-  { id: 'def-025x', val: 0.25, title: '¼× Resistance',     cls: 'm025x', mLabel: '¼×' },
-  { id: 'def-0x',   val: 0,    title: 'Immunity',           cls: 'm0x',   mLabel: '0×' },
-];
+// ── Unified Effectiveness Summary Strip ─────────────────────────
+function renderUnifiedSummaryStrip(defVals, atkVals) {
+  const container = document.getElementById('effectiveness-strip');
+  if (!container) return;
 
-const ATK_GROUPS = [
-  { id: 'atk-4x',   val: 4,    title: '×4 Super Effective', cls: 'm4x',   mLabel: '×4' },
-  { id: 'atk-2x',   val: 2,    title: '×2 Super Effective', cls: 'm2x',   mLabel: '×2' },
-  { id: 'atk-1x',   val: 1,    title: 'Normal Damage',      cls: 'm1x',   mLabel: '×1' },
-  { id: 'atk-05x',  val: 0.5,  title: '½× Not Very Eff.',   cls: 'm05x',  mLabel: '½×' },
-  { id: 'atk-025x', val: 0.25, title: '¼× Barely Eff.',     cls: 'm025x', mLabel: '¼×' },
-  { id: 'atk-0x',   val: 0,    title: 'No Effect',          cls: 'm0x',   mLabel: '0×' },
-];
-
-function renderTable(defVals, atkVals) {
   const defMap = groupByValue(defVals);
   const atkMap = groupByValue(atkVals);
-  DEF_GROUPS.forEach(g => renderSection(g.id, g.title, g.cls, g.mLabel, defMap[g.val] || []));
-  ATK_GROUPS.forEach(g => renderSection(g.id, g.title, g.cls, g.mLabel, atkMap[g.val] || []));
+
+  const weak4x = defMap[4] || [];
+  const weak2x = defMap[2] || [];
+  const totalWeak = weak4x.length + weak2x.length;
+
+  const res025x = defMap[0.25] || [];
+  const res05x  = defMap[0.5] || [];
+  const totalRes = res025x.length + res05x.length;
+
+  const immune0x = defMap[0] || [];
+  const totalImmune = immune0x.length;
+
+  const atk4x = atkMap[4] || [];
+  const atk2x = atkMap[2] || [];
+  const totalAtk = atk4x.length + atk2x.length;
+
+  const renderBadge = (type) => {
+    const bg = TYPE_COLORS[type] || '#64748b';
+    const fg = TYPE_TEXT[type] || '#fff';
+    return `<span class="summary-type-pill" style="background:${bg};color:${fg};">${type}</span>`;
+  };
+
+  const renderGroup = (multLabel, multClass, types) => {
+    if (!types.length) return '';
+    return `
+      <div class="summary-mult-row">
+        <span class="summary-mult-tag ${multClass}">${multLabel}</span>
+        <div class="summary-pills-wrap">
+          ${types.map(renderBadge).join('')}
+        </div>
+      </div>
+    `;
+  };
+
+  container.innerHTML = `
+    <div class="summary-unified-bar">
+      <!-- WEAKNESS -->
+      <div class="summary-section sec-weakness">
+        <div class="summary-sec-header">
+          <span class="summary-sec-title">Weakness</span>
+          <span class="summary-sec-count count-weak">${totalWeak}</span>
+        </div>
+        <div class="summary-sec-body">
+          ${totalWeak === 0 ? '<span class="summary-empty">No weaknesses</span>' : ''}
+          ${renderGroup('4×', 'mult-4x', weak4x)}
+          ${renderGroup('2×', 'mult-2x', weak2x)}
+        </div>
+      </div>
+
+      <!-- RESISTANCE -->
+      <div class="summary-section sec-resistance">
+        <div class="summary-sec-header">
+          <span class="summary-sec-title">Resistance</span>
+          <span class="summary-sec-count count-resist">${totalRes}</span>
+        </div>
+        <div class="summary-sec-body">
+          ${totalRes === 0 ? '<span class="summary-empty">No resistances</span>' : ''}
+          ${renderGroup('¼×', 'mult-025x', res025x)}
+          ${renderGroup('½×', 'mult-05x', res05x)}
+        </div>
+      </div>
+
+      <!-- IMMUNITY -->
+      <div class="summary-section sec-immunity">
+        <div class="summary-sec-header">
+          <span class="summary-sec-title">Immunity</span>
+          <span class="summary-sec-count count-immune">${totalImmune}</span>
+        </div>
+        <div class="summary-sec-body">
+          ${totalImmune === 0 ? '<span class="summary-empty">No immunities</span>' : ''}
+          ${renderGroup('0×', 'mult-0x', immune0x)}
+        </div>
+      </div>
+
+      <!-- SUPER EFFECTIVE -->
+      <div class="summary-section sec-offense">
+        <div class="summary-sec-header">
+          <span class="summary-sec-title">Super Effective</span>
+          <span class="summary-sec-count count-offense">${totalAtk}</span>
+        </div>
+        <div class="summary-sec-body">
+          ${totalAtk === 0 ? '<span class="summary-empty">No targets</span>' : ''}
+          ${renderGroup('4×', 'mult-atk-4x', atk4x)}
+          ${renderGroup('2×', 'mult-atk-2x', atk2x)}
+        </div>
+      </div>
+    </div>
+  `;
 }
 
 function groupByValue(vals) {
@@ -222,112 +335,11 @@ function groupByValue(vals) {
   return map;
 }
 
-function renderSection(id, title, multCls, multLabel, types) {
-  const el = document.getElementById(id);
-  if (!el) return;
-  if (!types.length) { el.innerHTML = ''; return; }
-
-  const chips = types.map(t => {
-    const bg = TYPE_COLORS[t];
-    const fg = TYPE_TEXT[t] || '#fff';
-    return `<span class="type-chip" style="background:${bg};color:${fg}">${t}</span>`;
-  }).join('');
-
-  el.innerHTML = `
-    <div class="eff-hdr">
-      <span class="eff-title">${title}</span>
-      <span class="eff-mult ${multCls}">${multLabel}</span>
-    </div>
-    <div class="eff-chips">${chips}</div>
-  `;
-}
-
-// ── Start ──────────────────────────────────────────────────────
-init();
-
-// ── Meta Pokemon Data ──────────────────────────────────────────
-let currentMetaMode = 'double';
-let metaData = { single: [], double: [] };
-
-async function loadMetaPokemonData() {
-  try {
-    const [singleRes, doubleRes] = await Promise.all([
-      fetch('/pokemon_data_single.json').catch(() => ({ json: () => [] })),
-      fetch('/pokemon_data_double.json').catch(() => ({ json: () => [] }))
-    ]);
-    
-    // Fallback to original pokemon_data.json if new files don't exist yet
-    if (!singleRes.ok && !doubleRes.ok) {
-        const oldRes = await fetch('/pokemon_data.json');
-        metaData.double = await oldRes.json();
-    } else {
-        metaData.single = await singleRes.json();
-        metaData.double = await doubleRes.json();
-    }
-    
-    renderMetaPokemon();
-  } catch (err) {
-    console.error("Failed to load meta pokemon:", err);
-  }
-}
-
-function renderMetaPokemon() {
-  const grid = document.getElementById('pokemon-grid');
-  if (!grid) return;
-  grid.innerHTML = '';
-  
-  const pokemonList = metaData[currentMetaMode] || [];
-  
-  const capitalize = (s) => s.charAt(0).toUpperCase() + s.slice(1);
-  
-  pokemonList.forEach((pkmn, index) => {
-    if (pkmn.types[0] === 'unknown') return; 
-    
-    const card = document.createElement('div');
-    card.className = 'pokemon-card';
-    
-    const typeChips = pkmn.types.map(t => {
-      const tCap = capitalize(t);
-      const bg = TYPE_COLORS[tCap] || '#ccc';
-      const fg = TYPE_TEXT[tCap] || '#fff';
-      return `<span class="type-chip" style="background:${bg};color:${fg}">${tCap}</span>`;
-    }).join('');
-    
-    card.innerHTML = `
-      <div class="pokemon-rank">#${index + 1}</div>
-      <div class="pokemon-img-container">
-        <img src="${pkmn.image}" alt="${pkmn.originalName}" loading="lazy" />
-      </div>
-      <div class="pokemon-name">${pkmn.originalName}</div>
-      <div class="pokemon-types">
-        ${typeChips}
-      </div>
-    `;
-    
-    card.addEventListener('click', () => {
-      const t1 = capitalize(pkmn.types[0]);
-      const t2 = pkmn.types[1] ? capitalize(pkmn.types[1]) : null;
-      
-      state.type1 = t1;
-      state.type2 = (t2 === t1) ? null : t2; 
-      
-      refresh();
-      
-      const area = document.getElementById('content-area');
-      if (area) {
-        const y = area.getBoundingClientRect().top + window.scrollY - 80;
-        window.scrollTo({ top: y, behavior: 'smooth' });
-      }
-    });
-    
-    grid.appendChild(card);
-  });
-}
-
+// ── Top 3 Threats & Top 3 Targets (Clean Big Cards) ─────────────
 function updateMetaMatchups(defTypes, atkTypes) {
   const container = document.getElementById('meta-matchups');
   if (!container) return;
-  
+
   const pokemonList = metaData[currentMetaMode] || [];
   if (pokemonList.length === 0) {
     container.classList.add('hidden');
@@ -353,7 +365,7 @@ function updateMetaMatchups(defTypes, atkTypes) {
     let maxDmg = 0;
     const pkmnDefTypes = pkmn.types.filter(t => t !== 'unknown').map(capitalize);
     if (pkmnDefTypes.length === 0) return { pkmn, val: 0 };
-    
+
     atkTypes.forEach(at => {
       const dmg = getEffectiveness(at, pkmnDefTypes);
       if (dmg > maxDmg) maxDmg = dmg;
@@ -361,88 +373,196 @@ function updateMetaMatchups(defTypes, atkTypes) {
     return { pkmn, val: maxDmg };
   }).filter(x => x.val >= 2).sort((a, b) => b.val - a.val).slice(0, 3);
 
-  renderMatchupGrid('threat-grid', threats);
-  renderMatchupGrid('target-grid', targets);
+  renderBigCards('threat-grid', threats, 'threat');
+  renderBigCards('target-grid', targets, 'target');
 }
 
-function renderMatchupGrid(gridId, items) {
+function renderBigCards(gridId, items, mode) {
   const grid = document.getElementById(gridId);
   if (!grid) return;
   grid.innerHTML = '';
-  
+
   if (items.length === 0) {
-    grid.innerHTML = '<div style="color: #a1a1aa; font-size: 0.9rem; grid-column: 1/-1; text-align: center; padding: 1rem;">ไม่มีตัวที่ตรงเงื่อนไข</div>';
+    grid.innerHTML = '<div class="empty-matchup-msg">No Pokémon match criteria in current meta</div>';
     return;
   }
-  
+
   const capitalize = (s) => s.charAt(0).toUpperCase() + s.slice(1);
-  
-  items.forEach(item => {
+
+  items.forEach((item, idx) => {
     const card = document.createElement('div');
-    card.className = 'pokemon-card';
-    card.style.padding = '0.5rem';
-    card.style.position = 'relative';
-    
+    card.className = `big-matchup-card ${mode}-card`;
+
     const typeChips = item.pkmn.types.map(t => {
       const tCap = capitalize(t);
-      const bg = TYPE_COLORS[tCap] || '#ccc';
+      const bg = TYPE_COLORS[tCap] || '#666';
       const fg = TYPE_TEXT[tCap] || '#fff';
-      return `<span class="type-chip" style="background:${bg};color:${fg}; font-size: 0.65rem; padding: 2px 4px;">${tCap}</span>`;
+      return `<span class="card-type-chip" style="background:${bg};color:${fg};">${tCap}</span>`;
     }).join('');
-    
-    let multColor = '#a1a1aa';
-    if (item.val >= 4) multColor = '#f43f5e';
-    else if (item.val >= 2) multColor = '#fb923c';
-    
+
+    const multClass = item.val >= 4 ? 'mult-4x' : 'mult-2x';
+    const tagLabel = mode === 'threat' ? `DEALS ${item.val}×` : `TAKES ${item.val}×`;
+
     card.innerHTML = `
-      <div style="position: absolute; top: -6px; right: -6px; background: ${multColor}; color: #fff; font-size: 0.75rem; font-weight: 700; padding: 2px 8px; border-radius: 99px; box-shadow: 0 2px 6px rgba(0,0,0,0.3); z-index: 2; border: 2px solid #1f2937;">${item.val}x</div>
-      <div class="pokemon-img-container" style="height: 60px;">
-        <img src="${item.pkmn.image}" alt="${item.pkmn.originalName}" loading="lazy" style="max-height: 100%; object-fit: contain;" />
+      <div class="card-top-bar">
+        <span class="card-rank">#${item.pkmn.rank || idx + 1}</span>
+        <span class="card-mult-badge ${multClass}">${tagLabel}</span>
       </div>
-      <div class="pokemon-name" style="font-size: 0.75rem; margin: 4px 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">${item.pkmn.originalName}</div>
-      <div class="pokemon-types" style="gap: 4px;">
-        ${typeChips}
+      <div class="card-artwork">
+        <img src="${item.pkmn.image}" alt="${item.pkmn.originalName}" loading="lazy" />
+      </div>
+      <div class="card-info">
+        <div class="card-name" title="${item.pkmn.originalName}">${item.pkmn.originalName}</div>
+        <div class="card-types">${typeChips}</div>
       </div>
     `;
+
+    card.addEventListener('click', () => {
+      selectPokemonTypes(item.pkmn);
+    });
+
     grid.appendChild(card);
   });
 }
 
-function initMetaToggle() {
-    const btnSingle = document.getElementById('mode-single');
-    const btnDouble = document.getElementById('mode-double');
-    if (!btnSingle || !btnDouble) return;
+// ── Top 100 Meta Pokémon Table ──────────────────────────────────
+async function loadMetaPokemonData() {
+  try {
+    const [singleRes, doubleRes] = await Promise.all([
+      fetch('/pokemon_data_single.json').catch(() => ({ ok: false })),
+      fetch('/pokemon_data_double.json').catch(() => ({ ok: false }))
+    ]);
 
-    const setActive = (btn) => {
-        btn.classList.add('active');
-        btn.style.background = 'rgba(255,255,255,0.15)';
-        btn.style.color = '#fff';
-        btn.style.boxShadow = '0 1px 3px rgba(0,0,0,0.2)';
-    };
+    if (!singleRes.ok && !doubleRes.ok) {
+      const oldRes = await fetch('/pokemon_data.json');
+      metaData.double = await oldRes.json();
+    } else {
+      metaData.single = singleRes.ok ? await singleRes.json() : [];
+      metaData.double = doubleRes.ok ? await doubleRes.json() : [];
+    }
 
-    const setInactive = (btn) => {
-        btn.classList.remove('active');
-        btn.style.background = 'transparent';
-        btn.style.color = '#a1a1aa';
-        btn.style.boxShadow = 'none';
-    };
-
-    btnSingle.addEventListener('click', () => {
-        currentMetaMode = 'single';
-        setActive(btnSingle);
-        setInactive(btnDouble);
-        renderMetaPokemon();
-        if (state.type1) refresh();
+    // Attach rank property if not present
+    ['single', 'double'].forEach(m => {
+      if (Array.isArray(metaData[m])) {
+        metaData[m].forEach((p, i) => { p.rank = i + 1; });
+      }
     });
 
-    btnDouble.addEventListener('click', () => {
-        currentMetaMode = 'double';
-        setActive(btnDouble);
-        setInactive(btnSingle);
-        renderMetaPokemon();
-        if (state.type1) refresh();
-    });
+    renderMetaTable();
+  } catch (err) {
+    console.error("Failed to load meta pokemon:", err);
+  }
 }
 
-initMetaToggle();
-loadMetaPokemonData();
+function renderMetaTable() {
+  const tbody = document.getElementById('pokemon-table-body');
+  if (!tbody) return;
+  tbody.innerHTML = '';
+
+  const pokemonList = metaData[currentMetaMode] || [];
+  const capitalize = (s) => s.charAt(0).toUpperCase() + s.slice(1);
+
+  const q = searchQuery.trim().toLowerCase();
+  const filtered = pokemonList.filter(p => {
+    if (p.types[0] === 'unknown') return false;
+    if (!q) return true;
+    const nameMatch = p.originalName.toLowerCase().includes(q);
+    const typeMatch = p.types.some(t => t.toLowerCase().includes(q));
+    return nameMatch || typeMatch;
+  });
+
+  if (filtered.length === 0) {
+    tbody.innerHTML = `<tr><td colspan="3" class="table-empty-row">No Pokémon found matching "${searchQuery}"</td></tr>`;
+    return;
+  }
+
+  filtered.forEach(pkmn => {
+    const tr = document.createElement('tr');
+    tr.className = 'table-row-item';
+
+    const typeChips = pkmn.types.map(t => {
+      const tCap = capitalize(t);
+      const bg = TYPE_COLORS[tCap] || '#666';
+      const fg = TYPE_TEXT[tCap] || '#fff';
+      return `<span class="table-type-pill" style="background:${bg};color:${fg};">${tCap}</span>`;
+    }).join('');
+
+    tr.innerHTML = `
+      <td class="td-rank">#${pkmn.rank || '-'}</td>
+      <td class="td-pokemon">
+        <div class="pokemon-meta-cell">
+          <img src="${pkmn.image}" alt="${pkmn.originalName}" class="table-avatar" loading="lazy" />
+          <div class="pkmn-name-types-group">
+            <span class="table-pkmn-name">${pkmn.originalName}</span>
+            <div class="table-types-mobile">${typeChips}</div>
+          </div>
+        </div>
+      </td>
+      <td class="td-types">
+        <div class="table-types-wrap">${typeChips}</div>
+      </td>
+    `;
+
+    tr.addEventListener('click', () => {
+      selectPokemonTypes(pkmn);
+    });
+
+    tbody.appendChild(tr);
+  });
+}
+
+function selectPokemonTypes(pkmn) {
+  const capitalize = (s) => s.charAt(0).toUpperCase() + s.slice(1);
+  const t1 = capitalize(pkmn.types[0]);
+  const t2 = pkmn.types[1] ? capitalize(pkmn.types[1]) : null;
+
+  state.type1 = t1;
+  state.type2 = (t2 === t1) ? null : t2;
+
+  refresh();
+
+  const area = document.getElementById('content-area');
+  if (area) {
+    const y = area.getBoundingClientRect().top + window.scrollY - 30;
+    window.scrollTo({ top: y, behavior: 'smooth' });
+  }
+}
+
+function initSearch() {
+  const input = document.getElementById('pokemon-search');
+  if (!input) return;
+
+  input.addEventListener('input', (e) => {
+    searchQuery = e.target.value;
+    renderMetaTable();
+  });
+}
+
+function initMetaToggle() {
+  const btnSingle = document.getElementById('mode-single');
+  const btnDouble = document.getElementById('mode-double');
+  if (!btnSingle || !btnDouble) return;
+
+  btnSingle.addEventListener('click', () => {
+    currentMetaMode = 'single';
+    btnSingle.classList.add('active');
+    btnDouble.classList.remove('active');
+    renderMetaTable();
+    if (state.type1) updateCharts();
+  });
+
+  btnDouble.addEventListener('click', () => {
+    currentMetaMode = 'double';
+    btnDouble.classList.add('active');
+    btnSingle.classList.remove('active');
+    renderMetaTable();
+    if (state.type1) updateCharts();
+  });
+}
+
+// ── Run on DOM Ready ───────────────────────────────────────────
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', init);
+} else {
+  init();
+}

@@ -81,11 +81,13 @@ export class RadarChart {
 
   _resize() {
     const wrap = this.canvas.parentElement;
+    if (!wrap) return;
     const w = wrap.clientWidth;
     if (!w) return;
     const isMobile = window.innerWidth <= 720;
-    const maxSize = isMobile ? 260 : 320;
-    const size = Math.min(w, maxSize, Math.round(window.innerHeight * 0.45));
+    const safeW = Math.max(w - 12, 180);
+    const maxSize = isMobile ? Math.min(safeW, 360) : 480;
+    const size = Math.min(safeW, maxSize, Math.round(window.innerHeight * 0.60));
     if (this._size === size) return;
     this._size = size;
 
@@ -101,31 +103,34 @@ export class RadarChart {
 
   // ── Geometry helpers ───────────────────────────────────────
 
-  get _s()   { return this._size || 400; }
+  get _s()   { return this._size || 440; }
   get _cx()  { return this._s / 2; }
   get _cy()  { return this._s / 2; }
 
   get _pad() {
     const s = this._s;
-    if (s < 340) return 60;
-    if (s < 420) return 74;
-    return 90;
+    if (s < 300) return 40;
+    if (s < 360) return 46;
+    if (s < 420) return 56;
+    return 66;
   }
 
   get _maxR() { return this._cx - this._pad; }
 
   get _labelFs() {
     const s = this._s;
-    if (s < 340) return 7.5;
-    if (s < 420) return 9;
-    return 10.5;
+    if (s < 300) return 7.5;
+    if (s < 360) return 8.5;
+    if (s < 420) return 10;
+    return 12;
   }
 
   get _scaleFs() {
     const s = this._s;
-    if (s < 340) return 6.5;
-    if (s < 420) return 7.5;
-    return 9;
+    if (s < 300) return 6.5;
+    if (s < 360) return 7.5;
+    if (s < 420) return 8.5;
+    return 10;
   }
 
   /** Angle for axis i (top = 0, clockwise) */
