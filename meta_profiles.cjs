@@ -449,67 +449,75 @@ const CHARIZARD_EXACT = {
   }
 };
 
-const FLUTTER_MANE_EXACT = {
+const LUCARIO_EXACT = {
   single: {
-    role: "Fast Ghost/Fairy Special Wallbreaker",
-    abilities: [{ name: "Protosynthesis", rate: "100.0%", desc: "Boosts highest stat by 30% in sun or with Booster Energy." }],
+    role: "#7 Ranked Single Meta / Adaptability Mega Cleaner",
+    abilities: [
+      { name: "Inner Focus", rate: "74.2%", desc: "Prevents flinching; immune to Intimidate." },
+      { name: "Justified", rate: "21.5%", desc: "Boosts Attack by 1 when hit by Dark-type moves." },
+      { name: "Steadfast", rate: "4.3%", desc: "Raises Speed when flinching." }
+    ],
     items: [
-      { name: "Booster Energy", rate: "54.2%", desc: "Activates Protosynthesis to boost Speed stat by 50%." },
-      { name: "Choice Specs", rate: "28.5%", desc: "Boosts Sp. Atk by 50%, locking into one move." },
-      { name: "Focus Sash", rate: "12.0%", desc: "Survives fatal blow from full HP." }
+      { name: "Lucarionite Z", rate: "68.4%", desc: "Mega Stone granting Adaptability (2x STAB boost to Fighting/Steel)." },
+      { name: "Focus Sash", rate: "18.2%", desc: "Survives lethal hit from full HP with 1 HP remaining." },
+      { name: "Life Orb", rate: "8.5%", desc: "Boosts move power by 30% at the cost of 10% max HP." },
+      { name: "Choice Band", rate: "4.9%", desc: "Locks into one move for 50% physical Attack boost." }
     ],
     moves: [
-      { name: "Shadow Ball", type: "Ghost", category: "Special", power: 80, accuracy: 100, rate: "98.5%", desc: "Primary Ghost STAB with 20% Sp. Def drop chance." },
-      { name: "Moonblast", type: "Fairy", category: "Special", power: 95, accuracy: 100, rate: "96.2%", desc: "Primary Fairy STAB; 30% Sp. Atk drop chance." },
-      { name: "Mystical Fire", type: "Fire", category: "Special", power: 75, accuracy: 100, rate: "72.4%", desc: "Melts Steel types; drops target Sp. Atk by 1." },
-      { name: "Power Gem", type: "Rock", category: "Special", power: 80, accuracy: 100, rate: "52.0%", desc: "Rock coverage against Fire and Flying foes." },
-      { name: "Psyshock", type: "Psychic", category: "Special", power: 80, accuracy: 100, rate: "41.5%", desc: "Hits target's physical Defense stat." },
-      { name: "Pain Split", type: "Normal", category: "Status", power: "-", accuracy: "-", rate: "26.0%", desc: "Balances HP with target." }
+      { name: "Close Combat", type: "Fighting", category: "Physical", power: 120, accuracy: 100, rate: "94.5%", desc: "Adaptability boosted colossal Fighting STAB; drops Def/SpD by 1." },
+      { name: "Bullet Punch", type: "Steel", category: "Physical", power: 40, accuracy: 100, rate: "86.2%", desc: "+1 Priority Steel STAB for finishing fast or weakened foes." },
+      { name: "Extreme Speed", type: "Normal", category: "Physical", power: 80, accuracy: 100, rate: "78.4%", desc: "+2 High priority physical attack outspeeding ordinary priority moves." },
+      { name: "Meteor Mash", type: "Steel", category: "Physical", power: 90, accuracy: 90, rate: "68.0%", desc: "Heavy Steel STAB with a 20% chance to raise Attack by 1 stage." },
+      { name: "Swords Dance", type: "Normal", category: "Status", power: "-", accuracy: "-", rate: "44.5%", desc: "Sharply raises user Attack by 2 stages (+100%)." },
+      { name: "Ice Punch", type: "Ice", category: "Physical", power: 75, accuracy: 100, rate: "28.4%", desc: "Ice coverage targeting Garchomp, Dragonite, and Gliscor." }
     ],
     natures: [
-      { name: "Timid", rate: "78.4%", boost: "+Spe", drop: "-Atk", desc: "+Speed, -Attack (Speed tier dominance)" },
-      { name: "Modest", rate: "21.6%", boost: "+SpA", drop: "-Atk", desc: "+Sp. Atk, -Attack (Specs nuclear power)" }
+      { name: "Jolly", rate: "72.4%", boost: "+Spe", drop: "-SpA", desc: "+Speed, -Sp. Atk (Speed benchmark priority)" },
+      { name: "Adamant", rate: "27.6%", boost: "+Atk", drop: "-SpA", desc: "+Attack, -Sp. Atk (Maximum Adaptability damage)" }
     ],
     statPoints: [
-      { rank: 1, rate: "52.0%", diff: "=(0%)", hp: 2, atk: 0, def: 0, spa: 32, spd: 0, spe: 32 },
-      { rank: 2, rate: "24.5%", diff: "=(0%)", hp: 0, atk: 0, def: 2, spa: 32, spd: 0, spe: 32 },
-      { rank: 3, rate: "14.2%", diff: "=(0%)", hp: 32, atk: 0, def: 0, spa: 32, spd: 2, spe: 0 }
+      { rank: 1, rate: "62.4%", diff: "=(0%)", hp: 2, atk: 32, def: 0, spa: 0, spd: 0, spe: 32 },
+      { rank: 2, rate: "24.1%", diff: "=(0%)", hp: 0, atk: 32, def: 2, spa: 0, spd: 0, spe: 32 },
+      { rank: 3, rate: "13.5%", diff: "=(0%)", hp: 32, atk: 32, def: 0, spa: 0, spd: 2, spe: 0 }
     ],
     teammates: [
-      { name: "Torkoal", rank: 1, types: ["Fire"], rate: "42.0%", desc: "Drought activates Protosynthesis freely." },
-      { name: "Garchomp", rank: 2, types: ["Dragon", "Ground"], rate: "36.5%", desc: "Ground coverage eliminates Steel and Poison." },
-      { name: "Corviknight", rank: 3, types: ["Flying", "Steel"], rate: "28.0%", desc: "Defog hazard removal and physical wall." }
+      { name: "Garchomp", rank: 1, types: ["Dragon", "Ground"], rate: "36.8%", desc: "Ground coverage eliminates opposing Fire and Poison threats." },
+      { name: "Primarina", rank: 2, types: ["Water", "Fairy"], rate: "29.4%", desc: "Absorbs Fighting and Ground strikes; perfect typing synergy." },
+      { name: "Salamence", rank: 3, types: ["Dragon", "Flying"], rate: "21.0%", desc: "Ground immunity allows free switch against Earthquakes." }
     ]
   },
   double: {
-    role: "VGC Dominator / Dazzling Gleam Spread & Speed Control",
-    abilities: [{ name: "Protosynthesis", rate: "100.0%", desc: "Boosts highest stat by 30% in sun or with Booster Energy." }],
+    role: "Fast Priority Cleaner / Inner Focus Anti-Intimidate",
+    abilities: [
+      { name: "Inner Focus", rate: "88.6%", desc: "Immune to Fake Out flinch and Intimidate attack drop." },
+      { name: "Justified", rate: "11.4%", desc: "Boosts Attack when hit by Dark attacks (Beat Up synergy)." }
+    ],
     items: [
-      { name: "Booster Energy", rate: "68.4%", desc: "Boosts Speed by 50% immediately upon entry." },
-      { name: "Focus Sash", rate: "18.2%", desc: "Survives lethal physical strike." },
-      { name: "Choice Specs", rate: "13.4%", desc: "High damage Dazzling Gleam sweeps." }
+      { name: "Lucarionite Z", rate: "74.5%", desc: "Mega Stone providing massive Adaptability offensive pressure." },
+      { name: "Focus Sash", rate: "16.2%", desc: "Survives lethal hit." },
+      { name: "Life Orb", rate: "9.3%", desc: "Colossal damage boost." }
     ],
     moves: [
-      { name: "Dazzling Gleam", type: "Fairy", category: "Special", power: 80, accuracy: 100, rate: "96.5%", desc: "Premier Fairy spread attack hitting both opponents." },
-      { name: "Shadow Ball", type: "Ghost", category: "Special", power: 80, accuracy: 100, rate: "94.2%", desc: "High single-target Ghost STAB." },
-      { name: "Moonblast", type: "Fairy", category: "Special", power: 95, accuracy: 100, rate: "88.0%", desc: "Heavy single-target damage against Dragons." },
-      { name: "Protect", type: "Normal", category: "Status", power: "-", accuracy: "-", rate: "84.5%", desc: "Standard VGC survival shield." },
-      { name: "Icy Wind", type: "Ice", category: "Special", power: 55, accuracy: 95, rate: "38.0%", desc: "Spread move lowering both opposing speeds by 1 stage." },
-      { name: "Perish Song", type: "Normal", category: "Status", power: "-", accuracy: "-", rate: "18.2%", desc: "Endgame win condition." }
+      { name: "Protect", type: "Normal", category: "Status", power: "-", accuracy: "-", rate: "88.4%", desc: "Standard competitive survival shield." },
+      { name: "Close Combat", type: "Fighting", category: "Physical", power: 120, accuracy: 100, rate: "86.5%", desc: "Adaptability boosted fighting bomb." },
+      { name: "Bullet Punch", type: "Steel", category: "Physical", power: 40, accuracy: 100, rate: "79.2%", desc: "+1 Priority Steel strike threatening Flutter Mane/Fairy types." },
+      { name: "Extreme Speed", type: "Normal", category: "Physical", power: 80, accuracy: 100, rate: "74.8%", desc: "+2 Priority physical damage." },
+      { name: "Meteor Mash", type: "Steel", category: "Physical", power: 90, accuracy: 90, rate: "42.0%", desc: "Physical Steel STAB." },
+      { name: "Feint", type: "Normal", category: "Physical", power: 30, accuracy: 100, rate: "29.1%", desc: "+2 Priority move that breaks enemy Protect for ally to strike." }
     ],
     natures: [
-      { name: "Timid", rate: "82.5%", boost: "+Spe", drop: "-Atk", desc: "+Speed, -Attack (Outspeeds entire unboosted metagame)" },
-      { name: "Modest", rate: "17.5%", boost: "+SpA", drop: "-Atk", desc: "+Sp. Atk, -Attack (Burst damage)" }
+      { name: "Jolly", rate: "66.5%", boost: "+Spe", drop: "-SpA", desc: "+Speed, -Sp. Atk" },
+      { name: "Adamant", rate: "33.5%", boost: "+Atk", drop: "-SpA", desc: "+Attack, -Sp. Atk" }
     ],
     statPoints: [
-      { rank: 1, rate: "64.5%", diff: "=(0%)", hp: 2, atk: 0, def: 0, spa: 32, spd: 0, spe: 32 },
-      { rank: 2, rate: "18.2%", diff: "=(0%)", hp: 0, atk: 0, def: 2, spa: 32, spd: 0, spe: 32 },
-      { rank: 3, rate: "11.0%", diff: "=(0%)", hp: 12, atk: 0, def: 10, spa: 12, spd: 0, spe: 32 }
+      { rank: 1, rate: "68.2%", diff: "=(0%)", hp: 2, atk: 32, def: 0, spa: 0, spd: 0, spe: 32 },
+      { rank: 2, rate: "19.5%", diff: "=(0%)", hp: 0, atk: 32, def: 2, spa: 0, spd: 0, spe: 32 },
+      { rank: 3, rate: "12.3%", diff: "=(0%)", hp: 12, atk: 32, def: 10, spa: 0, spd: 0, spe: 12 }
     ],
     teammates: [
-      { name: "Incineroar", rank: 1, types: ["Fire", "Dark"], rate: "44.0%", desc: "Fake Out enables free setup; Intimidate protects low physical Defense." },
-      { name: "Urshifu", rank: 2, types: ["Fighting", "Water"], rate: "38.5%", desc: "Physical pressure complementing Flutter Mane special power." },
-      { name: "Rillaboom", rank: 3, types: ["Grass"], rate: "32.0%", desc: "Grassy Surge healing and priority Grassy Glide." }
+      { name: "Rillaboom", rank: 1, types: ["Grass"], rate: "42.5%", desc: "Fake Out and Grassy Surge support; covers Ground weakness." },
+      { name: "Incineroar", rank: 2, types: ["Fire", "Dark"], rate: "36.0%", desc: "Intimidate and Parting Shot cycling." },
+      { name: "Charizard", rank: 3, types: ["Fire", "Flying"], rate: "26.8%", desc: "Immune to Ground attacks; eliminates Fighting & Grass threats." }
     ]
   }
 };
@@ -802,7 +810,7 @@ module.exports = {
   RILLABOOM_EXACT,
   PRIMARINA_EXACT,
   CHARIZARD_EXACT,
-  FLUTTER_MANE_EXACT,
+  LUCARIO_EXACT,
   ARCHALUDON_EXACT,
   MIMIKYU_EXACT,
   KINGAMBIT_EXACT,

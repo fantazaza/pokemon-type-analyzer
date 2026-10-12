@@ -382,19 +382,19 @@ function generateStatPoints(baseStats, isPhysical, mode) {
 function generateTeammates(key, mode) {
   if (mode === 'double') {
     return [
-      { name: "Incineroar", rank: 1, types: ["Fire", "Dark"], rate: "36.5%", desc: "Fake Out and Intimidate positioning control." },
-      { name: "Flutter Mane", rank: 2, types: ["Ghost", "Fairy"], rate: "31.2%", desc: "Fast special burst damage and spread Dazzling Gleam." },
-      { name: "Rillaboom", rank: 3, types: ["Grass"], rate: "25.0%", desc: "Grassy Terrain recovery and priority Grassy Glide." },
-      { name: "Ogerpon", rank: 4, types: ["Grass", "Fire"], rate: "21.4%", desc: "Follow Me redirection and heavy Ivy Cudgel pressure." },
-      { name: "Urshifu", rank: 5, types: ["Fighting", "Water"], rate: "18.0%", desc: "Unseen Fist bypasses Protect to punish defensive play." }
+      { name: "Rillaboom", rank: 1, types: ["Grass"], rate: "48.5%", desc: "Grassy Surge healing and priority Grassy Glide." },
+      { name: "Incineroar", rank: 2, types: ["Fire", "Dark"], rate: "42.0%", desc: "Fake Out and Intimidate positioning control." },
+      { name: "Garchomp", rank: 3, types: ["Dragon", "Ground"], rate: "38.2%", desc: "High-speed offensive pressure and Ground STAB." },
+      { name: "Sneasler", rank: 4, types: ["Fighting", "Poison"], rate: "31.5%", desc: "Unburden burst speed and Dire Claw status pressure." },
+      { name: "Charizard", rank: 5, types: ["Fire", "Flying"], rate: "26.4%", desc: "Mega Charizard Y Drought sun and spread Heat Wave." }
     ];
   } else {
     return [
-      { name: "Corviknight", rank: 1, types: ["Flying", "Steel"], rate: "34.0%", desc: "Defog hazard removal and physical wall." },
-      { name: "Ting-Lu", rank: 2, types: ["Dark", "Ground"], rate: "28.5%", desc: "Stealth Rock hazard setter and special sponge." },
-      { name: "Gholdengo", rank: 3, types: ["Steel", "Ghost"], rate: "24.2%", desc: "Good as Gold blocks all opposing status moves." },
-      { name: "Great Tusk", rank: 4, types: ["Ground", "Fighting"], rate: "20.1%", desc: "Rapid Spin utility and colossal physical STABs." },
-      { name: "Kingambit", rank: 5, types: ["Dark", "Steel"], rate: "17.8%", desc: "Supreme Overlord late-game revenge sweeper." }
+      { name: "Garchomp", rank: 1, types: ["Dragon", "Ground"], rate: "46.2%", desc: "Hazard lead with Stealth Rock and Ground STAB." },
+      { name: "Primarina", rank: 2, types: ["Water", "Fairy"], rate: "38.0%", desc: "Defensive pivot absorbing Dragon and Fighting strikes." },
+      { name: "Corviknight", rank: 3, types: ["Flying", "Steel"], rate: "32.5%", desc: "Defog hazard removal and physical wall." },
+      { name: "Lucario", rank: 4, types: ["Fighting", "Steel"], rate: "26.8%", desc: "Mega Lucario Adaptability priority revenge killer." },
+      { name: "Archaludon", rank: 5, types: ["Steel", "Dragon"], rate: "22.4%", desc: "Stamina physical sponge and Electro Shot threat." }
     ];
   }
 }
@@ -412,7 +412,7 @@ for (const [key, val] of Object.entries(currentDb)) {
     'rillaboom': metaProfiles.RILLABOOM_EXACT,
     'primarina': metaProfiles.PRIMARINA_EXACT,
     'charizard': metaProfiles.CHARIZARD_EXACT,
-    'flutter-mane': metaProfiles.FLUTTER_MANE_EXACT,
+    'lucario': metaProfiles.LUCARIO_EXACT,
     'archaludon': metaProfiles.ARCHALUDON_EXACT,
     'mimikyu': metaProfiles.MIMIKYU_EXACT,
     'kingambit': metaProfiles.KINGAMBIT_EXACT,
@@ -425,8 +425,18 @@ for (const [key, val] of Object.entries(currentDb)) {
       dexNumber: val.dexNumber || 1,
       generation: val.generation || "Competitive Meta",
       baseStats: val.baseStats,
-      single: EXACT_MAP[key].single,
-      double: EXACT_MAP[key].double
+      single: {
+        ...EXACT_MAP[key].single,
+        items: EXACT_MAP[key].single.items.slice(0, 3),
+        statPoints: EXACT_MAP[key].single.statPoints.slice(0, 3),
+        teammates: EXACT_MAP[key].single.teammates.slice(0, 3)
+      },
+      double: {
+        ...EXACT_MAP[key].double,
+        items: EXACT_MAP[key].double.items.slice(0, 3),
+        statPoints: EXACT_MAP[key].double.statPoints.slice(0, 3),
+        teammates: EXACT_MAP[key].double.teammates.slice(0, 3)
+      }
     };
     continue;
   }
@@ -455,12 +465,12 @@ for (const [key, val] of Object.entries(currentDb)) {
     doubleMoves.unshift({ name: "Protect", type: "Normal", category: "Status", power: "-", accuracy: "-", rate: "84.0%", desc: "VGC staple; completely evades incoming damage and effects for 1 turn." });
   }
 
-  // Double items (prioritize Mega Stone if present, otherwise VGC items)
+  // Double items (prioritize Mega Stone if present, otherwise VGC items) - top 3
   let doubleItems = [];
   const megaItem = (val.items || val.single?.items || []).find(it => it.name.includes('ite'));
   if (megaItem) doubleItems.push(megaItem);
   DOUBLE_ITEMS.forEach(it => {
-    if (doubleItems.length < 5 && !doubleItems.some(x => x.name === it.name)) {
+    if (doubleItems.length < 3 && !doubleItems.some(x => x.name === it.name)) {
       doubleItems.push(it);
     }
   });
@@ -505,11 +515,11 @@ for (const [key, val] of Object.entries(currentDb)) {
     );
   }
 
-  // Single items
+  // Single items - top 3
   let singleItems = [];
   if (megaItem) singleItems.push(megaItem);
   SINGLE_ITEMS.forEach(it => {
-    if (singleItems.length < 5 && !singleItems.some(x => x.name === it.name)) {
+    if (singleItems.length < 3 && !singleItems.some(x => x.name === it.name)) {
       singleItems.push(it);
     }
   });

@@ -157,11 +157,11 @@ export function getPokemonBuild(pkmn, mode = 'single') {
       baseStats: entry.baseStats,
       role: modeData.role || entry.role || "Competitive Battler",
       moves: modeData.moves || entry.moves || [],
-      items: modeData.items || entry.items || [],
+      items: (modeData.items || entry.items || []).slice(0, 3),
       abilities: modeData.abilities || entry.abilities || [],
       natures: modeData.natures || entry.natures || [],
-      statPoints: modeData.statPoints || [],
-      teammates: modeData.teammates || [],
+      statPoints: (modeData.statPoints || []).slice(0, 3),
+      teammates: (modeData.teammates || []).slice(0, 3),
       evSpreads: modeData.evSpreads || [],
       mode: battleMode,
       pokemon: pkmn,
@@ -202,8 +202,8 @@ export function getPokemonBuild(pkmn, mode = 'single') {
     }
   });
 
-  // Items
-  const items = POPULAR_ITEMS.slice(0, 6);
+  // Items - Top 3
+  const items = POPULAR_ITEMS.slice(0, 3);
 
   // Abilities
   const abilities = [

@@ -1013,10 +1013,11 @@ function renderModalData(pkmn, mode) {
     }).join('');
   }
 
-  // 4. Held Items
+  // 4. Held Items (Top 3)
   const itemsContainer = document.getElementById('modal-items-list');
   if (itemsContainer) {
-    itemsContainer.innerHTML = (build.items || []).map((it, idx) => {
+    const topItems = (build.items || []).slice(0, 3);
+    itemsContainer.innerHTML = topItems.map((it, idx) => {
       const rateNum = parseFloat(it.rate) || 0;
       return `
         <div class="modal-item-row">
@@ -1090,10 +1091,10 @@ function renderModalData(pkmn, mode) {
     }).join('');
   }
 
-  // 7. Stat Points (OP.GG format with 6 stats)
+  // 7. Stat Points (OP.GG format with 6 stats) - Top 3
   const statPointsContainer = document.getElementById('modal-stat-points-list');
   if (statPointsContainer) {
-    const list = build.statPoints || [];
+    const list = (build.statPoints || []).slice(0, 3);
     if (list.length === 0) {
       statPointsContainer.innerHTML = `<div class="empty-stat-points">No stat point distribution data available</div>`;
     } else {
@@ -1141,10 +1142,10 @@ function renderModalData(pkmn, mode) {
     }
   }
 
-  // 8. Teammates (OP.GG format with partner Pokémon)
+  // 8. Teammates (OP.GG format with partner Pokémon) - Top 3
   const teammatesContainer = document.getElementById('modal-teammates-list');
   if (teammatesContainer) {
-    const list = build.teammates || [];
+    const list = (build.teammates || []).slice(0, 3);
     if (list.length === 0) {
       teammatesContainer.innerHTML = `<div class="empty-stat-points">No partner synergy data available</div>`;
     } else {
