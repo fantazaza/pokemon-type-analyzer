@@ -211,7 +211,7 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
   3. **Body Press** (Fighting | Physical | Power: 80 | Acc: 100%) — *Calculates damage using boosted Defense from Stamina.*
   4. **Electro Shot** (Electric | Special | Power: 130 | Acc: 100%) — *Charges turn 1, boosts Sp. Atk by 1, attacks turn 2.*
 * **Key Alternate Moves:** Stealth Rock
-* **Top 3 Items:** **Leftovers** (48.5%), **Rocky Helmet** (32.0%), **Covert Cloak** (19.5%)
+* **Top 3 Items:** **Leftovers** (48.5%), **Rocky Helmet** (32.0%), **Air Balloon** (19.5%)
 * **Top Natures:** **Modest** (+SpA/-Atk), **Bold** (+Def/-Atk)
 
 #### 👥 Double Battle Meta Loadout (Pikalytics / VGC Synergy)
@@ -222,7 +222,7 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
   3. **Draco Meteor** (Dragon | Special | Power: 130 | Acc: 90%) — *Dragon burst damage.*
   4. **Body Press** (Fighting | Physical | Power: 80 | Acc: 100%) — *Deals massive damage scaling with Stamina Defense buffs.*
 * **Key Alternate Moves:** Protect, Snarl
-* **Top 3 Items:** **Covert Cloak** (46.4%), **Power Herb** (32.2%), **Leftovers** (21.4%)
+* **Top 3 Items:** **Leftovers** (46.4%), **Air Balloon** (32.2%), **Rocky Helmet** (21.4%)
 * **Top Natures:** **Modest** (+SpA/-Atk), **Bold** (+Def/-Atk)
 
 ---
@@ -278,7 +278,7 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
   3. **Iron Head** (Steel | Physical | Power: 80 | Acc: 100%) — *Steel STAB hitting Flutter Mane and opposing Fairies.*
   4. **Protect** (Normal | Status | Power: - | Acc: -%) — *Standard VGC survival shield.*
 * **Key Alternate Moves:** Low Kick
-* **Top 3 Items:** **Black Glasses** (48.0%), **Safety Goggles** (28.0%), **Clear Amulet** (24.0%)
+* **Top 3 Items:** **Black Glasses** (48.0%), **Leftovers** (28.0%), **Lum Berry** (24.0%)
 * **Top Natures:** **Adamant** (+Atk/-SpA)
 
 ---
@@ -295,7 +295,7 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
   3. **Nasty Plot** (Dark | Status | Power: - | Acc: -%) — *+2 Sp. Atk boost.*
   4. **Recover** (Normal | Status | Power: - | Acc: -%) — *Restores 50% max HP.*
 * **Key Alternate Moves:** Focus Blast
-* **Top 3 Items:** **Choice Scarf** (46.2%), **Leftovers** (28.4%), **Covert Cloak** (18.0%)
+* **Top 3 Items:** **Choice Scarf** (46.2%), **Leftovers** (28.4%), **Life Orb** (18.0%)
 * **Top Natures:** **Timid** (+Spe/-Atk), **Modest** (+SpA/-Atk)
 
 #### 👥 Double Battle Meta Loadout (Pikalytics / VGC Synergy)
@@ -306,7 +306,7 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
   3. **Protect** (Normal | Status | Power: - | Acc: -%) — *Standard VGC defense.*
   4. **Nasty Plot** (Dark | Status | Power: - | Acc: -%) — *Setup turn enabled by partner redirection.*
 * **Key Alternate Moves:** Dazzling Gleam
-* **Top 3 Items:** **Life Orb** (42.0%), **Choice Scarf** (32.0%), **Covert Cloak** (18.0%)
+* **Top 3 Items:** **Life Orb** (42.0%), **Choice Scarf** (32.0%), **Air Balloon** (18.0%)
 * **Top Natures:** **Modest** (+SpA/-Atk), **Timid** (+Spe/-Atk)
 
 ---
@@ -411,7 +411,7 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
 | **Single Battle** | #4 | Earthquake, Earth Power, High Horsepower, Stealth Rock | Choice Scarf, Life Orb, Focus Sash | Jolly |
-| **Double Battle** | #98 | Protect, Earthquake, Earth Power, High Horsepower | Sitrus Berry, Clear Amulet, Focus Sash | Adamant |
+| **Double Battle** | #98 | Protect, Earthquake, Earth Power, High Horsepower | Sitrus Berry, Smooth Rock, Focus Sash | Adamant |
 
 * **Single Battle 10-Move Pool:**
    1. **Earthquake (Ground | Physical | 100 BP)**
@@ -443,8 +443,8 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 ### 4. Archaludon (Dex #1018)
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
-| **Single Battle** | #5 | Flash Cannon, Draco Meteor, Body Press, Electro Shot | Leftovers, Rocky Helmet, Covert Cloak | Modest |
-| **Double Battle** | #6 | Electro Shot, Flash Cannon, Draco Meteor, Body Press | Covert Cloak, Power Herb, Leftovers | Modest |
+| **Single Battle** | #5 | Flash Cannon, Draco Meteor, Body Press, Electro Shot | Leftovers, Rocky Helmet, Air Balloon | Modest |
+| **Double Battle** | #6 | Electro Shot, Flash Cannon, Draco Meteor, Body Press | Leftovers, Air Balloon, Rocky Helmet | Modest |
 
 * **Single Battle 10-Move Pool:**
    1. **Flash Cannon (Steel | Special | 80 BP)**
@@ -517,8 +517,8 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 ### 7. Golisopod (Dex #768)
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
-| **Single Battle** | #8 | First Impression, Liquidation, Aqua Jet, Leech Life | Air Balloon, Clear Amulet, Choice Scarf | Jolly |
-| **Double Battle** | #16 | Protect, First Impression, Liquidation, Aqua Jet | Clear Amulet, Sitrus Berry, Life Orb | Adamant |
+| **Single Battle** | #8 | First Impression, Liquidation, Aqua Jet, Leech Life | Air Balloon, Golisopite, Choice Scarf | Jolly |
+| **Double Battle** | #16 | Protect, First Impression, Liquidation, Aqua Jet | Golisopite, Sitrus Berry, Life Orb | Adamant |
 
 * **Single Battle 10-Move Pool:**
    1. **First Impression (Bug | Physical | 90 BP)**
@@ -550,8 +550,8 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 ### 8. Gholdengo (Dex #1000)
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
-| **Single Battle** | #9 | Make It Rain, Shadow Ball, Nasty Plot, Recover | Choice Scarf, Leftovers, Covert Cloak | Timid |
-| **Double Battle** | #11 | Make It Rain, Shadow Ball, Protect, Nasty Plot | Life Orb, Choice Scarf, Covert Cloak | Modest |
+| **Single Battle** | #9 | Make It Rain, Shadow Ball, Nasty Plot, Recover | Choice Scarf, Leftovers, Life Orb | Timid |
+| **Double Battle** | #11 | Make It Rain, Shadow Ball, Protect, Nasty Plot | Life Orb, Choice Scarf, Air Balloon | Modest |
 
 * **Single Battle 10-Move Pool:**
    1. **Make It Rain (Steel | Special | 120 BP)**
@@ -574,7 +574,7 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
 | **Single Battle** | - | Psychic, Psyshock, Shadow Ball, Calm Mind | Choice Scarf, Life Orb, Focus Sash | Timid |
-| **Double Battle** | #9 | Protect, Psychic, Psyshock, Shadow Ball | Sitrus Berry, Clear Amulet, Focus Sash | Modest |
+| **Double Battle** | #9 | Protect, Psychic, Psyshock, Shadow Ball | Sitrus Berry, Terrain Extender, Focus Sash | Modest |
 
 * **Single Battle 10-Move Pool:**
    1. **Psychic (Psychic | Special | 90 BP)**
@@ -606,8 +606,8 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 ### 10. Salamence (Dex #373)
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
-| **Single Battle** | #10 | Dragon Dance, Dual Wingbeat, Earthquake, Roost | Salamencite Z, Choice Scarf, Life Orb | Jolly |
-| **Double Battle** | #14 | Protect, Tailwind, Draco Meteor, Hurricane | Salamencite Z, Choice Scarf, Covert Cloak | Adamant |
+| **Single Battle** | #10 | Dragon Dance, Dual Wingbeat, Earthquake, Roost | Salamencite, Choice Scarf, Life Orb | Jolly |
+| **Double Battle** | #14 | Protect, Tailwind, Draco Meteor, Hurricane | Salamencite, Choice Scarf, White Herb | Adamant |
 
 * **Single Battle 10-Move Pool:**
    1. **Dragon Dance (Dragon | Status)**
@@ -673,7 +673,7 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
 | **Single Battle** | #12 | Hydro Pump, Scald, Waterfall, Muddy Water | Choice Scarf, Life Orb, Focus Sash | Jolly |
-| **Double Battle** | #12 | Protect, Hydro Pump, Scald, Waterfall | Sitrus Berry, Clear Amulet, Focus Sash | Adamant |
+| **Double Battle** | #12 | Protect, Hydro Pump, Scald, Waterfall | Sitrus Berry, White Herb, Focus Sash | Adamant |
 
 * **Single Battle 10-Move Pool:**
    1. **Hydro Pump (Water | Special | 110 BP)**
@@ -705,8 +705,8 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 ### 13. Baxcalibur (Dex #998)
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
-| **Single Battle** | #13 | Glaive Rush, Icicle Crash, Earthquake, Ice Shard | Loaded Dice, Choice Scarf, Air Balloon | Jolly |
-| **Double Battle** | #61 | Protect, Glaive Rush, Icicle Crash, Ice Shard | Loaded Dice, Clear Amulet, Life Orb | Adamant |
+| **Single Battle** | #13 | Glaive Rush, Icicle Crash, Earthquake, Ice Shard | Baxcalibrite, Choice Scarf, Air Balloon | Jolly |
+| **Double Battle** | #61 | Protect, Glaive Rush, Icicle Crash, Ice Shard | Baxcalibrite, White Herb, Life Orb | Adamant |
 
 * **Single Battle 10-Move Pool:**
    1. **Glaive Rush (Dragon | Physical | 120 BP)**
@@ -739,7 +739,7 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
 | **Single Battle** | - | Body Slam, Double-Edge, Hyper Voice, Extreme Speed | Choice Scarf, Life Orb, Focus Sash | Timid |
-| **Double Battle** | #13 | Protect, Body Slam, Double-Edge, Hyper Voice | Sitrus Berry, Clear Amulet, Focus Sash | Modest |
+| **Double Battle** | #13 | Protect, Body Slam, Double-Edge, Hyper Voice | Sitrus Berry, Life Orb, Focus Sash | Modest |
 
 * **Single Battle 10-Move Pool:**
    1. **Body Slam (Normal | Physical | 85 BP)**
@@ -771,8 +771,8 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 ### 15. Dragonite (Dex #149)
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
-| **Single Battle** | #14 | Extreme Speed, Dragon Dance, Earthquake, Outrage | Air Balloon, Loaded Dice, Choice Scarf | Jolly |
-| **Double Battle** | #30 | Protect, Extreme Speed, Dragon Dance, Ice Spinner | Choice Scarf, Clear Amulet, Lum Berry | Adamant |
+| **Single Battle** | #14 | Extreme Speed, Dragon Dance, Earthquake, Outrage | Air Balloon, Dragoninite, Choice Scarf | Jolly |
+| **Double Battle** | #30 | Protect, Extreme Speed, Dragon Dance, Ice Spinner | Choice Scarf, Dragoninite, Lum Berry | Adamant |
 
 * **Single Battle 10-Move Pool:**
    1. **Extreme Speed (Normal | Physical | 80 BP)**
@@ -804,8 +804,8 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 ### 16. Metagross (Dex #376)
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
-| **Single Battle** | #15 | Meteor Mash, Bullet Punch, Earthquake, Zen Headbutt | Metagrossite Z, Choice Scarf, Clear Amulet | Jolly |
-| **Double Battle** | #21 | Protect, Bullet Punch, Heavy Slam, Psychic Fangs | Metagrossite Z, Clear Amulet, Clear Amulet | Adamant |
+| **Single Battle** | #15 | Meteor Mash, Bullet Punch, Earthquake, Zen Headbutt | Metagrossite, Choice Scarf, Leftovers | Jolly |
+| **Double Battle** | #21 | Protect, Bullet Punch, Heavy Slam, Psychic Fangs | Metagrossite, White Herb, Lum Berry | Adamant |
 
 * **Single Battle 10-Move Pool:**
    1. **Meteor Mash (Steel | Physical | 90 BP)**
@@ -837,8 +837,8 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 ### 17. Glimmora (Dex #969)
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
-| **Single Battle** | #16 | Mortal Spin, Stealth Rock, Sludge Wave, Earth Power | Focus Sash, Red Card, Clear Amulet | Timid |
-| **Double Battle** | #37 | Protect, Mortal Spin, Sludge Bomb, Earth Power | Focus Sash, Covert Cloak, Power Herb | Modest |
+| **Single Battle** | #16 | Mortal Spin, Stealth Rock, Sludge Wave, Earth Power | Focus Sash, Red Card, Glimmoranite | Timid |
+| **Double Battle** | #37 | Protect, Mortal Spin, Sludge Bomb, Earth Power | Focus Sash, Glimmoranite, Life Orb | Modest |
 
 * **Single Battle 10-Move Pool:**
    1. **Mortal Spin (Poison | Physical | 30 BP)**
@@ -871,7 +871,7 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
 | **Single Battle** | #17 | Psychic, Psyshock, Shadow Ball, Calm Mind | Choice Scarf, Life Orb, Focus Sash | Timid |
-| **Double Battle** | #17 | Protect, Psychic, Psyshock, Shadow Ball | Sitrus Berry, Clear Amulet, Focus Sash | Modest |
+| **Double Battle** | #17 | Protect, Psychic, Psyshock, Shadow Ball | Sitrus Berry, Terrain Extender, Focus Sash | Modest |
 
 * **Single Battle 10-Move Pool:**
    1. **Psychic (Psychic | Special | 90 BP)**
@@ -903,7 +903,7 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 ### 19. Meowscarada (Dex #908)
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
-| **Single Battle** | #18 | Flower Trick, Knock Off, U-turn, Play Rough | Choice Scarf, Choice Scarf, Focus Sash | Jolly |
+| **Single Battle** | #18 | Flower Trick, Knock Off, U-turn, Play Rough | Choice Scarf, Life Orb, Focus Sash | Jolly |
 | **Double Battle** | #76 | Protect, Flower Trick, Knock Off, U-turn | Focus Sash, Choice Scarf, Life Orb | Adamant |
 
 * **Single Battle 10-Move Pool:**
@@ -998,8 +998,8 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 ### 22. Gengar (Dex #94)
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
-| **Single Battle** | #21 | Shadow Ball, Sludge Wave, Focus Blast, Nasty Plot | Gengarite Z, Focus Sash, Life Orb | Timid |
-| **Double Battle** | #39 | Protect, Shadow Ball, Sludge Bomb, Icy Wind | Gengarite Z, Focus Sash, Covert Cloak | Modest |
+| **Single Battle** | #21 | Shadow Ball, Sludge Wave, Focus Blast, Nasty Plot | Gengarite, Focus Sash, Life Orb | Timid |
+| **Double Battle** | #39 | Protect, Shadow Ball, Sludge Bomb, Icy Wind | Gengarite, Focus Sash, Life Orb | Modest |
 
 * **Single Battle 10-Move Pool:**
    1. **Shadow Ball (Ghost | Special | 80 BP)**
@@ -1031,8 +1031,8 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 ### 23. Gyarados (Dex #130)
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
-| **Single Battle** | #22 | Dragon Dance, Waterfall, Bounce, Earthquake | Gyaradosite Z, Leftovers, Lum Berry | Jolly |
-| **Double Battle** | - | Protect, Waterfall, Thunder Wave, Taunt | Gyaradosite Z, Sitrus Berry, Clear Amulet | Adamant |
+| **Single Battle** | #22 | Dragon Dance, Waterfall, Bounce, Earthquake | Gyaradosite, Leftovers, Lum Berry | Jolly |
+| **Double Battle** | - | Protect, Waterfall, Thunder Wave, Taunt | Gyaradosite, Sitrus Berry, White Herb | Adamant |
 
 * **Single Battle 10-Move Pool:**
    1. **Dragon Dance (Dragon | Status)**
@@ -1065,7 +1065,7 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
 | **Single Battle** | #23 | Thunderbolt, Volt Switch, Thunder, Thunder Wave | Choice Scarf, Life Orb, Focus Sash | Jolly |
-| **Double Battle** | #8 | Protect, Thunderbolt, Volt Switch, Thunder | Sitrus Berry, Clear Amulet, Focus Sash | Adamant |
+| **Double Battle** | #8 | Protect, Thunderbolt, Volt Switch, Thunder | Sitrus Berry, White Herb, Focus Sash | Adamant |
 
 * **Single Battle 10-Move Pool:**
    1. **Thunderbolt (Electric | Special | 90 BP)**
@@ -1164,7 +1164,7 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
 | **Single Battle** | #26 | Knock Off, Sucker Punch, Dark Pulse, Taunt | Choice Scarf, Life Orb, Focus Sash | Jolly |
-| **Double Battle** | - | Protect, Knock Off, Sucker Punch, Dark Pulse | Sitrus Berry, Clear Amulet, Focus Sash | Adamant |
+| **Double Battle** | - | Protect, Knock Off, Sucker Punch, Dark Pulse | Sitrus Berry, White Herb, Focus Sash | Adamant |
 
 * **Single Battle 10-Move Pool:**
    1. **Knock Off (Dark | Physical | 65 BP)**
@@ -1218,8 +1218,8 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 ### 29. Blastoise (Dex #9)
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
-| **Single Battle** | #28 | Shell Smash, Hydro Pump, Ice Beam, Focus Blast | Blastoisinite Z, White Herb, Leftovers | Timid |
-| **Double Battle** | #44 | Fake Out, Follow Me, Protect, Water Spout | Blastoisinite Z, Sitrus Berry, Rocky Helmet | Modest |
+| **Single Battle** | #28 | Shell Smash, Hydro Pump, Ice Beam, Focus Blast | Blastoisinite, White Herb, Leftovers | Timid |
+| **Double Battle** | #44 | Fake Out, Follow Me, Protect, Water Spout | Blastoisinite, Sitrus Berry, Rocky Helmet | Modest |
 
 * **Single Battle 10-Move Pool:**
    1. **Shell Smash (Normal | Status)**
@@ -1252,7 +1252,7 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
 | **Single Battle** | - | Hydro Pump, Scald, Waterfall, Muddy Water | Choice Scarf, Life Orb, Focus Sash | Timid |
-| **Double Battle** | #28 | Protect, Hydro Pump, Scald, Waterfall | Sitrus Berry, Clear Amulet, Focus Sash | Modest |
+| **Double Battle** | #28 | Protect, Hydro Pump, Scald, Waterfall | Sitrus Berry, Damp Rock, Focus Sash | Modest |
 
 * **Single Battle 10-Move Pool:**
    1. **Hydro Pump (Water | Special | 110 BP)**
@@ -1284,8 +1284,8 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 ### 31. Toxapex (Dex #747)
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
-| **Single Battle** | #29 | Recover, Toxic, Baneful Bunker, Scald | Black Sludge, Leftovers, Rocky Helmet | Jolly |
-| **Double Battle** | #62 | Baneful Bunker, Recover, Wide Guard, Sludge Bomb | Black Sludge, Sitrus Berry, Rocky Helmet | Adamant |
+| **Single Battle** | #29 | Recover, Toxic, Baneful Bunker, Scald | Leftovers, Rocky Helmet, Sitrus Berry | Jolly |
+| **Double Battle** | #62 | Baneful Bunker, Recover, Wide Guard, Sludge Bomb | Leftovers, Sitrus Berry, Rocky Helmet | Adamant |
 
 * **Single Battle 10-Move Pool:**
    1. **Recover (Normal | Status)**
@@ -1318,7 +1318,7 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
 | **Single Battle** | #30 | Thunderbolt, Volt Switch, Thunder, Thunder Wave | Choice Scarf, Life Orb, Focus Sash | Timid |
-| **Double Battle** | #86 | Protect, Thunderbolt, Volt Switch, Thunder | Sitrus Berry, Clear Amulet, Focus Sash | Modest |
+| **Double Battle** | #86 | Protect, Thunderbolt, Volt Switch, Thunder | Sitrus Berry, Life Orb, Focus Sash | Modest |
 
 * **Single Battle 10-Move Pool:**
    1. **Thunderbolt (Electric | Special | 90 BP)**
@@ -1351,7 +1351,7 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
 | **Single Battle** | #31 | Thunderbolt, Volt Switch, Thunder, Thunder Wave | Choice Scarf, Life Orb, Focus Sash | Jolly |
-| **Double Battle** | #68 | Protect, Thunderbolt, Volt Switch, Thunder | Sitrus Berry, Clear Amulet, Focus Sash | Adamant |
+| **Double Battle** | #68 | Protect, Thunderbolt, Volt Switch, Thunder | Sitrus Berry, White Herb, Focus Sash | Adamant |
 
 * **Single Battle 10-Move Pool:**
    1. **Thunderbolt (Electric | Special | 90 BP)**
@@ -1383,8 +1383,8 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 ### 34. Aegislash shield (Dex #681)
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
-| **Single Battle** | #32 | King's Shield, Shadow Ball, Flash Cannon, Shadow Sneak | Weakness Policy, Leftovers, Air Balloon | Jolly |
-| **Double Battle** | - | King's Shield, Shadow Ball, Flash Cannon, Shadow Sneak | Weakness Policy, Leftovers, Spell Tag | Adamant |
+| **Single Battle** | #32 | King's Shield, Shadow Ball, Flash Cannon, Shadow Sneak | Leftovers, Air Balloon, Spell Tag | Jolly |
+| **Double Battle** | - | King's Shield, Shadow Ball, Flash Cannon, Shadow Sneak | Leftovers, Air Balloon, Spell Tag | Adamant |
 
 * **Single Battle 10-Move Pool:**
    1. **King's Shield (Steel | Status)**
@@ -1417,7 +1417,7 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
 | **Single Battle** | - | Giga Drain, Wood Hammer, Energy Ball, Leaf Storm | Choice Scarf, Life Orb, Focus Sash | Timid |
-| **Double Battle** | #32 | Protect, Giga Drain, Wood Hammer, Energy Ball | Sitrus Berry, Clear Amulet, Focus Sash | Modest |
+| **Double Battle** | #32 | Protect, Giga Drain, Wood Hammer, Energy Ball | Sitrus Berry, Life Orb, Focus Sash | Modest |
 
 * **Single Battle 10-Move Pool:**
    1. **Giga Drain (Grass | Special | 75 BP)**
@@ -1450,7 +1450,7 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
 | **Single Battle** | #33 | Ice Beam, Blizzard, Icicle Crash, Ice Shard | Choice Scarf, Life Orb, Focus Sash | Timid |
-| **Double Battle** | #46 | Protect, Ice Beam, Blizzard, Icicle Crash | Sitrus Berry, Clear Amulet, Focus Sash | Modest |
+| **Double Battle** | #46 | Protect, Ice Beam, Blizzard, Icicle Crash | Sitrus Berry, Icy Rock, Focus Sash | Modest |
 
 * **Single Battle 10-Move Pool:**
    1. **Ice Beam (Ice | Special | 90 BP)**
@@ -1482,8 +1482,8 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 ### 37. Kommo o (Dex #784)
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
-| **Single Battle** | - | Clangorous Soul, Clanging Scales, Body Press, Close Combat | Throat Spray, Leftovers, Life Orb | Jolly |
-| **Double Battle** | #34 | Protect, Clanging Scales, Body Press, Close Combat | Throat Spray, Clear Amulet, Sitrus Berry | Adamant |
+| **Single Battle** | - | Clangorous Soul, Clanging Scales, Body Press, Close Combat | Choice Scarf, Leftovers, Life Orb | Jolly |
+| **Double Battle** | #34 | Protect, Clanging Scales, Body Press, Close Combat | White Herb, Lum Berry, Sitrus Berry | Adamant |
 
 * **Single Battle 10-Move Pool:**
    1. **Clangorous Soul (Dragon | Status)**
@@ -1516,7 +1516,7 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
 | **Single Battle** | #34 | Thunderbolt, Volt Switch, Thunder, Thunder Wave | Choice Scarf, Life Orb, Focus Sash | Timid |
-| **Double Battle** | #79 | Protect, Thunderbolt, Volt Switch, Thunder | Sitrus Berry, Clear Amulet, Focus Sash | Modest |
+| **Double Battle** | #79 | Protect, Thunderbolt, Volt Switch, Thunder | Sitrus Berry, Life Orb, Focus Sash | Modest |
 
 * **Single Battle 10-Move Pool:**
    1. **Thunderbolt (Electric | Special | 90 BP)**
@@ -1548,8 +1548,8 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 ### 39. Scizor (Dex #212)
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
-| **Single Battle** | #35 | Bullet Punch, U-turn, Close Combat, Swords Dance | Scizorite Z, Choice Scarf, Life Orb | Jolly |
-| **Double Battle** | #93 | Protect, Bullet Punch, Close Combat, Bug Bite | Scizorite Z, Life Orb, Clear Amulet | Adamant |
+| **Single Battle** | #35 | Bullet Punch, U-turn, Close Combat, Swords Dance | Scizorite, Choice Scarf, Life Orb | Jolly |
+| **Double Battle** | #93 | Protect, Bullet Punch, Close Combat, Bug Bite | Scizorite, Life Orb, White Herb | Adamant |
 
 * **Single Battle 10-Move Pool:**
    1. **Bullet Punch (Steel | Physical | 40 BP)**
@@ -1581,8 +1581,8 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 ### 40. Swampert (Dex #260)
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
-| **Single Battle** | #36 | Earthquake, Flip Turn, Stealth Rock, Scald | Swampertite Z, Leftovers, Rocky Helmet | Jolly |
-| **Double Battle** | #31 | Protect, Muddy Water, High Horsepower, Wide Guard | Swampertite Z, Clear Amulet, Sitrus Berry | Adamant |
+| **Single Battle** | #36 | Earthquake, Flip Turn, Stealth Rock, Scald | Swampertite, Leftovers, Rocky Helmet | Jolly |
+| **Double Battle** | #31 | Protect, Muddy Water, High Horsepower, Wide Guard | Swampertite, White Herb, Sitrus Berry | Adamant |
 
 * **Single Battle 10-Move Pool:**
    1. **Earthquake (Ground | Physical | 100 BP)**
@@ -1648,7 +1648,7 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
 | **Single Battle** | #37 | Quiver Dance, Fiery Dance, Bug Buzz, Roost | Air Balloon, Leftovers, Life Orb | Timid |
-| **Double Battle** | #18 | Protect, Quiver Dance, Heat Wave, Bug Buzz | Sitrus Berry, Covert Cloak, Focus Sash | Modest |
+| **Double Battle** | #18 | Protect, Quiver Dance, Heat Wave, Bug Buzz | Sitrus Berry, Life Orb, Focus Sash | Modest |
 
 * **Single Battle 10-Move Pool:**
    1. **Quiver Dance (Bug | Status)**
@@ -1681,7 +1681,7 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
 | **Single Battle** | - | Hydro Pump, Scald, Waterfall, Muddy Water | Choice Scarf, Life Orb, Focus Sash | Timid |
-| **Double Battle** | #38 | Protect, Hydro Pump, Scald, Waterfall | Sitrus Berry, Clear Amulet, Focus Sash | Modest |
+| **Double Battle** | #38 | Protect, Hydro Pump, Scald, Waterfall | Sitrus Berry, Life Orb, Focus Sash | Modest |
 
 * **Single Battle 10-Move Pool:**
    1. **Hydro Pump (Water | Special | 110 BP)**
@@ -1713,8 +1713,8 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 ### 44. Hydreigon (Dex #635)
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
-| **Single Battle** | #38 | Draco Meteor, Dark Pulse, Flamethrower, Earth Power | Choice Scarf, Choice Scarf, Life Orb | Timid |
-| **Double Battle** | #56 | Protect, Draco Meteor, Dark Pulse, Heat Wave | Life Orb, Choice Scarf, Covert Cloak | Modest |
+| **Single Battle** | #38 | Draco Meteor, Dark Pulse, Flamethrower, Earth Power | Choice Scarf, Leftovers, Life Orb | Timid |
+| **Double Battle** | #56 | Protect, Draco Meteor, Dark Pulse, Heat Wave | Life Orb, Choice Scarf, Focus Sash | Modest |
 
 * **Single Battle 10-Move Pool:**
    1. **Draco Meteor (Dragon | Special | 130 BP)**
@@ -1747,7 +1747,7 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
 | **Single Battle** | #39 | Hydro Pump, Scald, Waterfall, Muddy Water | Choice Scarf, Life Orb, Focus Sash | Timid |
-| **Double Battle** | - | Protect, Hydro Pump, Scald, Waterfall | Sitrus Berry, Clear Amulet, Focus Sash | Modest |
+| **Double Battle** | - | Protect, Hydro Pump, Scald, Waterfall | Sitrus Berry, Life Orb, Focus Sash | Modest |
 
 * **Single Battle 10-Move Pool:**
    1. **Hydro Pump (Water | Special | 110 BP)**
@@ -1780,7 +1780,7 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
 | **Single Battle** | #40 | Sucker Punch, Kowtow Cleave, Iron Head, Swords Dance | Leftovers, Black Glasses, Lum Berry | Adamant |
-| **Double Battle** | #7 | Sucker Punch, Kowtow Cleave, Iron Head, Protect | Black Glasses, Safety Goggles, Clear Amulet | Adamant |
+| **Double Battle** | #7 | Sucker Punch, Kowtow Cleave, Iron Head, Protect | Black Glasses, Leftovers, Lum Berry | Adamant |
 
 * **Single Battle 10-Move Pool:**
    1. **Sucker Punch (Dark | Physical | 70 BP)**
@@ -1802,8 +1802,8 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 ### 47. Blaziken (Dex #257)
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
-| **Single Battle** | #41 | Flare Blitz, Close Combat, Swords Dance, Protect | Blazikenite Z, Life Orb, Focus Sash | Jolly |
-| **Double Battle** | #55 | Protect, Flare Blitz, Close Combat, Feint | Blazikenite Z, Life Orb, Focus Sash | Adamant |
+| **Single Battle** | #41 | Flare Blitz, Close Combat, Swords Dance, Protect | Blazikenite, Life Orb, Focus Sash | Jolly |
+| **Double Battle** | #55 | Protect, Flare Blitz, Close Combat, Feint | Blazikenite, Life Orb, Focus Sash | Adamant |
 
 * **Single Battle 10-Move Pool:**
    1. **Flare Blitz (Fire | Physical | 120 BP)**
@@ -1835,8 +1835,8 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 ### 48. Tyranitar (Dex #248)
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
-| **Single Battle** | #42 | Stone Edge, Knock Off, Earthquake, Stealth Rock | Tyranitarite Z, Choice Scarf, Leftovers | Jolly |
-| **Double Battle** | #25 | Protect, Rock Slide, Knock Off, Low Kick | Tyranitarite Z, Clear Amulet, Clear Amulet | Adamant |
+| **Single Battle** | #42 | Stone Edge, Knock Off, Earthquake, Stealth Rock | Tyranitarite, Choice Scarf, Leftovers | Jolly |
+| **Double Battle** | #25 | Protect, Rock Slide, Knock Off, Low Kick | Tyranitarite, Smooth Rock, White Herb | Adamant |
 
 * **Single Battle 10-Move Pool:**
    1. **Stone Edge (Rock | Physical | 100 BP)**
@@ -1869,7 +1869,7 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
 | **Single Battle** | #43 | Hydro Pump, Scald, Waterfall, Muddy Water | Choice Scarf, Life Orb, Focus Sash | Timid |
-| **Double Battle** | #97 | Protect, Hydro Pump, Scald, Waterfall | Sitrus Berry, Clear Amulet, Focus Sash | Modest |
+| **Double Battle** | #97 | Protect, Hydro Pump, Scald, Waterfall | Sitrus Berry, Life Orb, Focus Sash | Modest |
 
 * **Single Battle 10-Move Pool:**
    1. **Hydro Pump (Water | Special | 110 BP)**
@@ -1901,8 +1901,8 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 ### 50. Skeledirge (Dex #911)
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
-| **Single Battle** | #44 | Torch Song, Shadow Ball, Slack Off, Will-O-Wisp | Air Balloon, Leftovers, Throat Spray | Timid |
-| **Double Battle** | - | Protect, Torch Song, Shadow Ball, Slack Off | Throat Spray, Sitrus Berry, Covert Cloak | Modest |
+| **Single Battle** | #44 | Torch Song, Shadow Ball, Slack Off, Will-O-Wisp | Air Balloon, Leftovers, Rocky Helmet | Timid |
+| **Double Battle** | - | Protect, Torch Song, Shadow Ball, Slack Off | Life Orb, Sitrus Berry, Choice Scarf | Modest |
 
 * **Single Battle 10-Move Pool:**
    1. **Torch Song (Fire | Special | 80 BP)**
@@ -1934,8 +1934,8 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 ### 51. Aerodactyl (Dex #142)
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
-| **Single Battle** | - | Stone Edge, Dual Wingbeat, Earthquake, Stealth Rock | Aerodactylite Z, Focus Sash, Life Orb | Jolly |
-| **Double Battle** | #45 | Protect, Tailwind, Rock Slide, Dual Wingbeat | Aerodactylite Z, Focus Sash, Covert Cloak | Adamant |
+| **Single Battle** | - | Stone Edge, Dual Wingbeat, Earthquake, Stealth Rock | Aerodactylite, Focus Sash, Life Orb | Jolly |
+| **Double Battle** | #45 | Protect, Tailwind, Rock Slide, Dual Wingbeat | Aerodactylite, Focus Sash, White Herb | Adamant |
 
 * **Single Battle 10-Move Pool:**
    1. **Stone Edge (Rock | Physical | 100 BP)**
@@ -1968,7 +1968,7 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
 | **Single Battle** | #45 | Flare Blitz, Flamethrower, Heat Wave, Fire Blast | Choice Scarf, Life Orb, Focus Sash | Timid |
-| **Double Battle** | #40 | Protect, Flare Blitz, Flamethrower, Heat Wave | Sitrus Berry, Clear Amulet, Focus Sash | Modest |
+| **Double Battle** | #40 | Protect, Flare Blitz, Flamethrower, Heat Wave | Sitrus Berry, Delphoxite, Focus Sash | Modest |
 
 * **Single Battle 10-Move Pool:**
    1. **Flare Blitz (Fire | Physical | 120 BP)**
@@ -2001,7 +2001,7 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
 | **Single Battle** | #46 | Ice Beam, Blizzard, Icicle Crash, Ice Shard | Choice Scarf, Life Orb, Focus Sash | Timid |
-| **Double Battle** | - | Protect, Ice Beam, Blizzard, Icicle Crash | Sitrus Berry, Clear Amulet, Focus Sash | Modest |
+| **Double Battle** | - | Protect, Ice Beam, Blizzard, Icicle Crash | Sitrus Berry, Icy Rock, Focus Sash | Modest |
 
 * **Single Battle 10-Move Pool:**
    1. **Ice Beam (Ice | Special | 90 BP)**
@@ -2034,7 +2034,7 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
 | **Single Battle** | #47 | Moonblast, Soft-Boiled, Stealth Rock, Calm Mind | Leftovers, Air Balloon, Life Orb | Timid |
-| **Double Battle** | #87 | Protect, Follow Me, Moonblast, Helping Hand | Sitrus Berry, Rocky Helmet, Covert Cloak | Modest |
+| **Double Battle** | #87 | Protect, Follow Me, Moonblast, Helping Hand | Sitrus Berry, Rocky Helmet, Clefablite | Modest |
 
 * **Single Battle 10-Move Pool:**
    1. **Moonblast (Fairy | Special | 95 BP)**
@@ -2067,7 +2067,7 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
 | **Single Battle** | #48 | Dazzling Gleam, Psychic, Mystical Fire, Calm Mind | Leftovers, Life Orb, Focus Sash | Timid |
-| **Double Battle** | #59 | Protect, Dazzling Gleam, Psychic, Trick Room | Life Orb, Focus Sash, Covert Cloak | Modest |
+| **Double Battle** | #59 | Protect, Dazzling Gleam, Psychic, Trick Room | Life Orb, Focus Sash, Choice Scarf | Modest |
 
 * **Single Battle 10-Move Pool:**
    1. **Dazzling Gleam (Fairy | Special | 80 BP)**
@@ -2099,8 +2099,8 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 ### 56. Mawile (Dex #303)
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
-| **Single Battle** | #49 | Play Rough, Sucker Punch, Iron Head, Swords Dance | Mawilite Z, Life Orb, Focus Sash | Jolly |
-| **Double Battle** | #58 | Protect, Play Rough, Iron Head, Sucker Punch | Mawilite Z, Life Orb, Focus Sash | Adamant |
+| **Single Battle** | #49 | Play Rough, Sucker Punch, Iron Head, Swords Dance | Mawilite, Life Orb, Focus Sash | Jolly |
+| **Double Battle** | #58 | Protect, Play Rough, Iron Head, Sucker Punch | Mawilite, Life Orb, Focus Sash | Adamant |
 
 * **Single Battle 10-Move Pool:**
    1. **Play Rough (Fairy | Physical | 90 BP)**
@@ -2133,7 +2133,7 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
 | **Single Battle** | #50 | Body Slam, Double-Edge, Hyper Voice, Extreme Speed | Choice Scarf, Life Orb, Focus Sash | Jolly |
-| **Double Battle** | #20 | Protect, Body Slam, Double-Edge, Hyper Voice | Sitrus Berry, Clear Amulet, Focus Sash | Adamant |
+| **Double Battle** | #20 | Protect, Body Slam, Double-Edge, Hyper Voice | Sitrus Berry, Staraptite, Focus Sash | Adamant |
 
 * **Single Battle 10-Move Pool:**
    1. **Body Slam (Normal | Physical | 85 BP)**
@@ -2165,8 +2165,8 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 ### 58. Camerupt (Dex #323)
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
-| **Single Battle** | - | Flare Blitz, Flamethrower, Heat Wave, Fire Blast | Cameruptite Z, Life Orb, Focus Sash | Timid |
-| **Double Battle** | #51 | Protect, Flare Blitz, Flamethrower, Heat Wave | Cameruptite Z, Sitrus Berry, Clear Amulet | Modest |
+| **Single Battle** | - | Flare Blitz, Flamethrower, Heat Wave, Fire Blast | Cameruptite, Life Orb, Focus Sash | Timid |
+| **Double Battle** | #51 | Protect, Flare Blitz, Flamethrower, Heat Wave | Cameruptite, Sitrus Berry, Life Orb | Modest |
 
 * **Single Battle 10-Move Pool:**
    1. **Flare Blitz (Fire | Physical | 120 BP)**
@@ -2199,7 +2199,7 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
 | **Single Battle** | #51 | Moonblast, Dazzling Gleam, Play Rough, Calm Mind | Choice Scarf, Life Orb, Focus Sash | Timid |
-| **Double Battle** | #19 | Protect, Moonblast, Dazzling Gleam, Play Rough | Sitrus Berry, Clear Amulet, Focus Sash | Modest |
+| **Double Battle** | #19 | Protect, Moonblast, Dazzling Gleam, Play Rough | Sitrus Berry, Life Orb, Focus Sash | Modest |
 
 * **Single Battle 10-Move Pool:**
    1. **Moonblast (Fairy | Special | 95 BP)**
@@ -2232,7 +2232,7 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
 | **Single Battle** | #52 | Hurricane, Hydro Pump, Roost, U-turn | Damp Rock, Air Balloon, Leftovers | Timid |
-| **Double Battle** | #10 | Protect, Tailwind, Weather Ball, Hurricane | Focus Sash, Covert Cloak, Sitrus Berry | Modest |
+| **Double Battle** | #10 | Protect, Tailwind, Weather Ball, Hurricane | Focus Sash, Damp Rock, Sitrus Berry | Modest |
 
 * **Single Battle 10-Move Pool:**
    1. **Hurricane (Flying | Special | 110 BP)**
@@ -2265,7 +2265,7 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
 | **Single Battle** | #53 | Body Slam, Double-Edge, Hyper Voice, Extreme Speed | Choice Scarf, Life Orb, Focus Sash | Jolly |
-| **Double Battle** | - | Protect, Body Slam, Double-Edge, Hyper Voice | Sitrus Berry, Clear Amulet, Focus Sash | Adamant |
+| **Double Battle** | - | Protect, Body Slam, Double-Edge, Hyper Voice | Sitrus Berry, White Herb, Focus Sash | Adamant |
 
 * **Single Battle 10-Move Pool:**
    1. **Body Slam (Normal | Physical | 85 BP)**
@@ -2298,7 +2298,7 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
 | **Single Battle** | - | Brave Bird, Flare Blitz, Roost, U-turn | Air Balloon, Choice Scarf, Life Orb | Jolly |
-| **Double Battle** | #54 | Protect, Tailwind, Brave Bird, Will-O-Wisp | Covert Cloak, Focus Sash, Safety Goggles | Adamant |
+| **Double Battle** | #54 | Protect, Tailwind, Brave Bird, Will-O-Wisp | White Herb, Focus Sash, Lum Berry | Adamant |
 
 * **Single Battle 10-Move Pool:**
    1. **Brave Bird (Flying | Physical | 120 BP)**
@@ -2330,8 +2330,8 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 ### 63. Banette (Dex #354)
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
-| **Single Battle** | #54 | Shadow Ball, Shadow Sneak, Poltergeist, Destiny Bond | Banettite Z, Life Orb, Focus Sash | Jolly |
-| **Double Battle** | - | Protect, Shadow Ball, Shadow Sneak, Poltergeist | Banettite Z, Sitrus Berry, Clear Amulet | Adamant |
+| **Single Battle** | #54 | Shadow Ball, Shadow Sneak, Poltergeist, Destiny Bond | Banettite, Life Orb, Focus Sash | Jolly |
+| **Double Battle** | - | Protect, Shadow Ball, Shadow Sneak, Poltergeist | Banettite, Sitrus Berry, White Herb | Adamant |
 
 * **Single Battle 10-Move Pool:**
    1. **Shadow Ball (Ghost | Special | 80 BP)**
@@ -2364,7 +2364,7 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
 | **Single Battle** | #55 | Iron Head, Flash Cannon, Heavy Slam, Bullet Punch | Choice Scarf, Life Orb, Focus Sash | Timid |
-| **Double Battle** | #92 | Protect, Iron Head, Flash Cannon, Heavy Slam | Sitrus Berry, Clear Amulet, Focus Sash | Modest |
+| **Double Battle** | #92 | Protect, Iron Head, Flash Cannon, Heavy Slam | Sitrus Berry, Life Orb, Focus Sash | Modest |
 
 * **Single Battle 10-Move Pool:**
    1. **Iron Head (Steel | Physical | 80 BP)**
@@ -2396,8 +2396,8 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 ### 65. Milotic (Dex #350)
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
-| **Single Battle** | #56 | Scald, Recover, Ice Beam, Haze | Flame Orb, Leftovers, Air Balloon | Timid |
-| **Double Battle** | #23 | Protect, Muddy Water, Icy Wind, Recover | Leftovers, Sitrus Berry, Adrenaline Orb | Modest |
+| **Single Battle** | #56 | Scald, Recover, Ice Beam, Haze | Leftovers, Sitrus Berry, Air Balloon | Timid |
+| **Double Battle** | #23 | Protect, Muddy Water, Icy Wind, Recover | Leftovers, Sitrus Berry, Rocky Helmet | Modest |
 
 * **Single Battle 10-Move Pool:**
    1. **Scald (Water | Special | 80 BP)**
@@ -2430,7 +2430,7 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
 | **Single Battle** | #57 | Psychic, Psyshock, Shadow Ball, Calm Mind | Choice Scarf, Life Orb, Focus Sash | Timid |
-| **Double Battle** | #52 | Protect, Psychic, Psyshock, Shadow Ball | Sitrus Berry, Clear Amulet, Focus Sash | Modest |
+| **Double Battle** | #52 | Protect, Psychic, Psyshock, Shadow Ball | Sitrus Berry, Life Orb, Focus Sash | Modest |
 
 * **Single Battle 10-Move Pool:**
    1. **Psychic (Psychic | Special | 90 BP)**
@@ -2463,7 +2463,7 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
 | **Single Battle** | - | Body Slam, Double-Edge, Hyper Voice, Extreme Speed | Choice Scarf, Life Orb, Focus Sash | Jolly |
-| **Double Battle** | #57 | Protect, Body Slam, Double-Edge, Hyper Voice | Sitrus Berry, Clear Amulet, Focus Sash | Adamant |
+| **Double Battle** | #57 | Protect, Body Slam, Double-Edge, Hyper Voice | Sitrus Berry, White Herb, Focus Sash | Adamant |
 
 * **Single Battle 10-Move Pool:**
    1. **Body Slam (Normal | Physical | 85 BP)**
@@ -2496,7 +2496,7 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
 | **Single Battle** | #58 | Earthquake, Icicle Crash, Ice Shard, Knock Off | Focus Sash, Life Orb, Choice Scarf | Jolly |
-| **Double Battle** | #95 | Protect, High Horsepower, Icicle Crash, Ice Shard | Life Orb, Focus Sash, Clear Amulet | Adamant |
+| **Double Battle** | #95 | Protect, High Horsepower, Icicle Crash, Ice Shard | Life Orb, Focus Sash, White Herb | Adamant |
 
 * **Single Battle 10-Move Pool:**
    1. **Earthquake (Ground | Physical | 100 BP)**
@@ -2528,8 +2528,8 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 ### 69. Venusaur (Dex #3)
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
-| **Single Battle** | #59 | Giga Drain, Sludge Bomb, Sleep Powder, Synthesis | Venusaurite Z, Life Orb, Black Sludge | Timid |
-| **Double Battle** | #29 | Protect, Sludge Bomb, Energy Ball, Sleep Powder | Venusaurite Z, Focus Sash, Life Orb | Modest |
+| **Single Battle** | #59 | Giga Drain, Sludge Bomb, Sleep Powder, Synthesis | Venusaurite, Life Orb, Leftovers | Timid |
+| **Double Battle** | #29 | Protect, Sludge Bomb, Energy Ball, Sleep Powder | Venusaurite, Focus Sash, Life Orb | Modest |
 
 * **Single Battle 10-Move Pool:**
    1. **Giga Drain (Grass | Special | 75 BP)**
@@ -2561,8 +2561,8 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 ### 70. Lopunny (Dex #428)
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
-| **Single Battle** | #60 | Body Slam, Double-Edge, Hyper Voice, Extreme Speed | Lopunnite Z, Life Orb, Focus Sash | Jolly |
-| **Double Battle** | #96 | Protect, Body Slam, Double-Edge, Hyper Voice | Lopunnite Z, Sitrus Berry, Clear Amulet | Adamant |
+| **Single Battle** | #60 | Body Slam, Double-Edge, Hyper Voice, Extreme Speed | Lopunnite, Life Orb, Focus Sash | Jolly |
+| **Double Battle** | #96 | Protect, Body Slam, Double-Edge, Hyper Voice | Lopunnite, Sitrus Berry, White Herb | Adamant |
 
 * **Single Battle 10-Move Pool:**
    1. **Body Slam (Normal | Physical | 85 BP)**
@@ -2595,7 +2595,7 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
 | **Single Battle** | - | Flare Blitz, Flamethrower, Heat Wave, Fire Blast | Choice Scarf, Life Orb, Focus Sash | Timid |
-| **Double Battle** | #60 | Protect, Flare Blitz, Flamethrower, Heat Wave | Sitrus Berry, Clear Amulet, Focus Sash | Modest |
+| **Double Battle** | #60 | Protect, Flare Blitz, Flamethrower, Heat Wave | Sitrus Berry, Life Orb, Focus Sash | Modest |
 
 * **Single Battle 10-Move Pool:**
    1. **Flare Blitz (Fire | Physical | 120 BP)**
@@ -2628,7 +2628,7 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
 | **Single Battle** | #61 | Thunderbolt, Volt Switch, Thunder, Thunder Wave | Choice Scarf, Life Orb, Focus Sash | Timid |
-| **Double Battle** | - | Protect, Thunderbolt, Volt Switch, Thunder | Sitrus Berry, Clear Amulet, Focus Sash | Modest |
+| **Double Battle** | - | Protect, Thunderbolt, Volt Switch, Thunder | Sitrus Berry, Life Orb, Focus Sash | Modest |
 
 * **Single Battle 10-Move Pool:**
    1. **Thunderbolt (Electric | Special | 90 BP)**
@@ -2661,7 +2661,7 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
 | **Single Battle** | #62 | Reflect, Light Screen, Thunder Wave, Spirit Break | Light Clay, Leftovers, Babiri Berry | Jolly |
-| **Double Battle** | #27 | Fake Out, Reflect, Light Screen, Thunder Wave | Light Clay, Covert Cloak, Sitrus Berry | Adamant |
+| **Double Battle** | #27 | Fake Out, Reflect, Light Screen, Thunder Wave | Light Clay, Sitrus Berry, White Herb | Adamant |
 
 * **Single Battle 10-Move Pool:**
    1. **Reflect (Normal | Physical | 80 BP)**
@@ -2694,7 +2694,7 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
 | **Single Battle** | #63 | Giga Drain, Wood Hammer, Energy Ball, Leaf Storm | Choice Scarf, Life Orb, Focus Sash | Timid |
-| **Double Battle** | #80 | Protect, Giga Drain, Wood Hammer, Energy Ball | Sitrus Berry, Clear Amulet, Focus Sash | Modest |
+| **Double Battle** | #80 | Protect, Giga Drain, Wood Hammer, Energy Ball | Sitrus Berry, Meganiumite, Focus Sash | Modest |
 
 * **Single Battle 10-Move Pool:**
    1. **Giga Drain (Grass | Special | 75 BP)**
@@ -2727,7 +2727,7 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
 | **Single Battle** | - | U-turn, Bug Buzz, Leech Life, First Impression | Choice Scarf, Life Orb, Focus Sash | Timid |
-| **Double Battle** | #63 | Protect, U-turn, Bug Buzz, Leech Life | Sitrus Berry, Clear Amulet, Focus Sash | Modest |
+| **Double Battle** | #63 | Protect, U-turn, Bug Buzz, Leech Life | Sitrus Berry, Life Orb, Focus Sash | Modest |
 
 * **Single Battle 10-Move Pool:**
    1. **U-turn (Bug | Physical | 70 BP)**
@@ -2760,7 +2760,7 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
 | **Single Battle** | #64 | Bitter Blade, Poltergeist, Shadow Sneak, Swords Dance | Focus Sash, Life Orb, Leftovers | Jolly |
-| **Double Battle** | #69 | Protect, Bitter Blade, Shadow Sneak, Close Combat | Focus Sash, Life Orb, Clear Amulet | Adamant |
+| **Double Battle** | #69 | Protect, Bitter Blade, Shadow Sneak, Close Combat | Focus Sash, Life Orb, White Herb | Adamant |
 
 * **Single Battle 10-Move Pool:**
    1. **Bitter Blade (Fire | Physical | 90 BP)**
@@ -2826,7 +2826,7 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
 | **Single Battle** | - | Flare Blitz, Flamethrower, Heat Wave, Fire Blast | Choice Scarf, Life Orb, Focus Sash | Timid |
-| **Double Battle** | #65 | Protect, Flare Blitz, Flamethrower, Heat Wave | Sitrus Berry, Clear Amulet, Focus Sash | Modest |
+| **Double Battle** | #65 | Protect, Flare Blitz, Flamethrower, Heat Wave | Sitrus Berry, Pyroarite, Focus Sash | Modest |
 
 * **Single Battle 10-Move Pool:**
    1. **Flare Blitz (Fire | Physical | 120 BP)**
@@ -2859,7 +2859,7 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
 | **Single Battle** | - | Body Slam, Double-Edge, Hyper Voice, Extreme Speed | Choice Scarf, Life Orb, Focus Sash | Timid |
-| **Double Battle** | #66 | Protect, Body Slam, Double-Edge, Hyper Voice | Sitrus Berry, Clear Amulet, Focus Sash | Modest |
+| **Double Battle** | #66 | Protect, Body Slam, Double-Edge, Hyper Voice | Sitrus Berry, Life Orb, Focus Sash | Modest |
 
 * **Single Battle 10-Move Pool:**
    1. **Body Slam (Normal | Physical | 85 BP)**
@@ -2892,7 +2892,7 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
 | **Single Battle** | #66 | Iron Head, Flash Cannon, Heavy Slam, Bullet Punch | Choice Scarf, Life Orb, Focus Sash | Jolly |
-| **Double Battle** | - | Protect, Iron Head, Flash Cannon, Heavy Slam | Sitrus Berry, Clear Amulet, Focus Sash | Adamant |
+| **Double Battle** | - | Protect, Iron Head, Flash Cannon, Heavy Slam | Sitrus Berry, Skarmorite, Focus Sash | Adamant |
 
 * **Single Battle 10-Move Pool:**
    1. **Iron Head (Steel | Physical | 80 BP)**
@@ -2924,7 +2924,7 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 ### 81. Dragapult (Dex #887)
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
-| **Single Battle** | #67 | Dragon Darts, Phantom Force, U-turn, Dragon Dance | Choice Scarf, Choice Scarf, Life Orb | Jolly |
+| **Single Battle** | #67 | Dragon Darts, Phantom Force, U-turn, Dragon Dance | Choice Scarf, Life Orb, Focus Sash | Jolly |
 | **Double Battle** | #50 | Protect, Dragon Darts, Phantom Force, U-turn | Choice Scarf, Life Orb, Focus Sash | Adamant |
 
 * **Single Battle 10-Move Pool:**
@@ -2958,7 +2958,7 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
 | **Single Battle** | - | Psychic, Psyshock, Shadow Ball, Calm Mind | Choice Scarf, Life Orb, Focus Sash | Timid |
-| **Double Battle** | #67 | Protect, Psychic, Psyshock, Shadow Ball | Sitrus Berry, Clear Amulet, Focus Sash | Modest |
+| **Double Battle** | #67 | Protect, Psychic, Psyshock, Shadow Ball | Sitrus Berry, Life Orb, Focus Sash | Modest |
 
 * **Single Battle 10-Move Pool:**
    1. **Psychic (Psychic | Special | 90 BP)**
@@ -2990,8 +2990,8 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 ### 83. Kangaskhan (Dex #115)
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
-| **Single Battle** | #68 | Fake Out, Return, Sucker Punch, Power-Up Punch | Kangaskhanite Z, Silk Scarf, Leftovers | Jolly |
-| **Double Battle** | #71 | Fake Out, Protect, Sucker Punch, Double-Edge | Kangaskhanite Z, Covert Cloak, Sitrus Berry | Adamant |
+| **Single Battle** | #68 | Fake Out, Return, Sucker Punch, Power-Up Punch | Kangaskhanite, Silk Scarf, Leftovers | Jolly |
+| **Double Battle** | #71 | Fake Out, Protect, Sucker Punch, Double-Edge | Kangaskhanite, White Herb, Sitrus Berry | Adamant |
 
 * **Single Battle 10-Move Pool:**
    1. **Fake Out (Normal | Physical | 40 BP)**
@@ -3024,7 +3024,7 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
 | **Single Battle** | #69 | Body Slam, Curse, Rest, Sleep Talk | Leftovers, Chesto Berry, Air Balloon | Jolly |
-| **Double Battle** | #94 | Protect, Belly Drum, Double-Edge, High Horsepower | Sitrus Berry, Figy Berry, Clear Amulet | Adamant |
+| **Double Battle** | #94 | Protect, Belly Drum, Double-Edge, High Horsepower | Sitrus Berry, Leftovers, Chesto Berry | Adamant |
 
 * **Single Battle 10-Move Pool:**
    1. **Body Slam (Normal | Physical | 85 BP)**
@@ -3057,7 +3057,7 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
 | **Single Battle** | #70 | Hydro Pump, Scald, Waterfall, Muddy Water | Choice Scarf, Life Orb, Focus Sash | Timid |
-| **Double Battle** | - | Protect, Hydro Pump, Scald, Waterfall | Sitrus Berry, Clear Amulet, Focus Sash | Modest |
+| **Double Battle** | - | Protect, Hydro Pump, Scald, Waterfall | Sitrus Berry, Life Orb, Focus Sash | Modest |
 
 * **Single Battle 10-Move Pool:**
    1. **Hydro Pump (Water | Special | 110 BP)**
@@ -3090,7 +3090,7 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
 | **Single Battle** | #71 | Giga Drain, Wood Hammer, Energy Ball, Leaf Storm | Choice Scarf, Life Orb, Focus Sash | Jolly |
-| **Double Battle** | #89 | Protect, Giga Drain, Wood Hammer, Energy Ball | Sitrus Berry, Clear Amulet, Focus Sash | Adamant |
+| **Double Battle** | #89 | Protect, Giga Drain, Wood Hammer, Energy Ball | Sitrus Berry, Scovillainite, Focus Sash | Adamant |
 
 * **Single Battle 10-Move Pool:**
    1. **Giga Drain (Grass | Special | 75 BP)**
@@ -3122,8 +3122,8 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 ### 87. Gardevoir (Dex #282)
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
-| **Single Battle** | #72 | Moonblast, Psyshock, Shadow Ball, Mystical Fire | Gardevoirite Z, Choice Scarf, Choice Scarf | Timid |
-| **Double Battle** | #22 | Protect, Dazzling Gleam, Moonblast, Psychic | Gardevoirite Z, Choice Scarf, Focus Sash | Modest |
+| **Single Battle** | #72 | Moonblast, Psyshock, Shadow Ball, Mystical Fire | Gardevoirite, Choice Scarf, Life Orb | Timid |
+| **Double Battle** | #22 | Protect, Dazzling Gleam, Moonblast, Psychic | Gardevoirite, Choice Scarf, Focus Sash | Modest |
 
 * **Single Battle 10-Move Pool:**
    1. **Moonblast (Fairy | Special | 95 BP)**
@@ -3155,8 +3155,8 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 ### 88. Gliscor (Dex #472)
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
-| **Single Battle** | - | Earthquake, Toxic, Protect, Roost | Toxic Orb, Leftovers, Air Balloon | Jolly |
-| **Double Battle** | #72 | Protect, Tailwind, High Horsepower, Knock Off | Toxic Orb, Sitrus Berry, Clear Amulet | Adamant |
+| **Single Battle** | - | Earthquake, Toxic, Protect, Roost | Leftovers, Sitrus Berry, Air Balloon | Jolly |
+| **Double Battle** | #72 | Protect, Tailwind, High Horsepower, Knock Off | Leftovers, Sitrus Berry, Yache Berry | Adamant |
 
 * **Single Battle 10-Move Pool:**
    1. **Earthquake (Ground | Physical | 100 BP)**
@@ -3188,7 +3188,7 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 ### 89. Armarouge (Dex #935)
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
-| **Single Battle** | #73 | Armor Cannon, Expanding Force, Calm Mind, Aura Sphere | Weakness Policy, Life Orb, Choice Scarf | Timid |
+| **Single Battle** | #73 | Armor Cannon, Expanding Force, Calm Mind, Aura Sphere | Life Orb, Focus Sash, Choice Scarf | Timid |
 | **Double Battle** | #26 | Protect, Armor Cannon, Expanding Force, Wide Guard | Twisted Spoon, Life Orb, Focus Sash | Modest |
 
 * **Single Battle 10-Move Pool:**
@@ -3222,7 +3222,7 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
 | **Single Battle** | - | Giga Drain, Wood Hammer, Energy Ball, Leaf Storm | Choice Scarf, Life Orb, Focus Sash | Jolly |
-| **Double Battle** | #73 | Protect, Giga Drain, Wood Hammer, Energy Ball | Sitrus Berry, Clear Amulet, Focus Sash | Adamant |
+| **Double Battle** | #73 | Protect, Giga Drain, Wood Hammer, Energy Ball | Sitrus Berry, White Herb, Focus Sash | Adamant |
 
 * **Single Battle 10-Move Pool:**
    1. **Giga Drain (Grass | Special | 75 BP)**
@@ -3255,7 +3255,7 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
 | **Single Battle** | #74 | Sludge Bomb, Sludge Wave, Gunk Shot, Poison Jab | Choice Scarf, Life Orb, Focus Sash | Timid |
-| **Double Battle** | - | Protect, Sludge Bomb, Sludge Wave, Gunk Shot | Sitrus Berry, Clear Amulet, Focus Sash | Modest |
+| **Double Battle** | - | Protect, Sludge Bomb, Sludge Wave, Gunk Shot | Sitrus Berry, Life Orb, Focus Sash | Modest |
 
 * **Single Battle 10-Move Pool:**
    1. **Sludge Bomb (Poison | Special | 90 BP)**
@@ -3288,7 +3288,7 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
 | **Single Battle** | #75 | Bitter Malice, Hyper Voice, Shadow Ball, Nasty Plot | Focus Sash, Life Orb, Choice Scarf | Timid |
-| **Double Battle** | #75 | Protect, Bitter Malice, Hyper Voice, Shadow Ball | Focus Sash, Life Orb, Covert Cloak | Modest |
+| **Double Battle** | #75 | Protect, Bitter Malice, Hyper Voice, Shadow Ball | Focus Sash, Life Orb, Choice Scarf | Modest |
 
 * **Single Battle 10-Move Pool:**
    1. **Bitter Malice (Ghost | Special | 75 BP)**
@@ -3321,7 +3321,7 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
 | **Single Battle** | #76 | Earthquake, Iron Head, Rock Slide, Swords Dance | Focus Sash, Life Orb, Leftovers | Jolly |
-| **Double Battle** | #33 | Protect, Rock Slide, High Horsepower, Iron Head | Life Orb, Focus Sash, Clear Amulet | Adamant |
+| **Double Battle** | #33 | Protect, Rock Slide, High Horsepower, Iron Head | Life Orb, Focus Sash, Excadrite | Adamant |
 
 * **Single Battle 10-Move Pool:**
    1. **Earthquake (Ground | Physical | 100 BP)**
@@ -3354,7 +3354,7 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
 | **Single Battle** | - | Close Combat, Drain Punch, Mach Punch, Aura Sphere | Choice Scarf, Life Orb, Focus Sash | Jolly |
-| **Double Battle** | #77 | Protect, Close Combat, Drain Punch, Mach Punch | Sitrus Berry, Clear Amulet, Focus Sash | Adamant |
+| **Double Battle** | #77 | Protect, Close Combat, Drain Punch, Mach Punch | Sitrus Berry, White Herb, Focus Sash | Adamant |
 
 * **Single Battle 10-Move Pool:**
    1. **Close Combat (Fighting | Physical | 120 BP)**
@@ -3387,7 +3387,7 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
 | **Single Battle** | #77 | Giga Drain, Wood Hammer, Energy Ball, Leaf Storm | Choice Scarf, Life Orb, Focus Sash | Jolly |
-| **Double Battle** | - | Protect, Giga Drain, Wood Hammer, Energy Ball | Sitrus Berry, Clear Amulet, Focus Sash | Adamant |
+| **Double Battle** | - | Protect, Giga Drain, Wood Hammer, Energy Ball | Sitrus Berry, Victreebelite, Focus Sash | Adamant |
 
 * **Single Battle 10-Move Pool:**
    1. **Giga Drain (Grass | Special | 75 BP)**
@@ -3420,7 +3420,7 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
 | **Single Battle** | #78 | U-turn, Bug Buzz, Leech Life, First Impression | Choice Scarf, Life Orb, Focus Sash | Jolly |
-| **Double Battle** | #64 | Protect, U-turn, Bug Buzz, Leech Life | Sitrus Berry, Clear Amulet, Focus Sash | Adamant |
+| **Double Battle** | #64 | Protect, U-turn, Bug Buzz, Leech Life | Sitrus Berry, White Herb, Focus Sash | Adamant |
 
 * **Single Battle 10-Move Pool:**
    1. **U-turn (Bug | Physical | 70 BP)**
@@ -3453,7 +3453,7 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
 | **Single Battle** | - | Flare Blitz, Flamethrower, Heat Wave, Fire Blast | Choice Scarf, Life Orb, Focus Sash | Timid |
-| **Double Battle** | #78 | Protect, Flare Blitz, Flamethrower, Heat Wave | Sitrus Berry, Clear Amulet, Focus Sash | Modest |
+| **Double Battle** | #78 | Protect, Flare Blitz, Flamethrower, Heat Wave | Sitrus Berry, Heat Rock, Focus Sash | Modest |
 
 * **Single Battle 10-Move Pool:**
    1. **Flare Blitz (Fire | Physical | 120 BP)**
@@ -3485,8 +3485,8 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 ### 98. Gallade (Dex #475)
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
-| **Single Battle** | #79 | Psychic, Psyshock, Shadow Ball, Calm Mind | Galladite Z, Life Orb, Focus Sash | Jolly |
-| **Double Battle** | #70 | Protect, Psychic, Psyshock, Shadow Ball | Galladite Z, Sitrus Berry, Clear Amulet | Adamant |
+| **Single Battle** | #79 | Psychic, Psyshock, Shadow Ball, Calm Mind | Galladite, Life Orb, Focus Sash | Jolly |
+| **Double Battle** | #70 | Protect, Psychic, Psyshock, Shadow Ball | Galladite, Sitrus Berry, White Herb | Adamant |
 
 * **Single Battle 10-Move Pool:**
    1. **Psychic (Psychic | Special | 90 BP)**
@@ -3518,7 +3518,7 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 ### 99. Annihilape (Dex #979)
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
-| **Single Battle** | #80 | Rage Fist, Drain Punch, Bulk Up, Taunt | Leftovers, Choice Scarf, Punching Glove | Jolly |
+| **Single Battle** | #80 | Rage Fist, Drain Punch, Bulk Up, Taunt | Leftovers, Choice Scarf, Sitrus Berry | Jolly |
 | **Double Battle** | #41 | Protect, Rage Fist, Drain Punch, Bulk Up | Leftovers, Choice Scarf, Sitrus Berry | Adamant |
 
 * **Single Battle 10-Move Pool:**
@@ -3551,8 +3551,8 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 ### 100. Araquanid (Dex #752)
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
-| **Single Battle** | #81 | Liquidation, Leech Life, Sticky Web, Mirror Coat | Waterium Z, Leftovers, Choice Scarf | Jolly |
-| **Double Battle** | - | Protect, Liquidation, Wide Guard, Leech Life | Mystic Water, Sitrus Berry, Clear Amulet | Adamant |
+| **Single Battle** | #81 | Liquidation, Leech Life, Sticky Web, Mirror Coat | Mystic Water, Leftovers, Choice Scarf | Jolly |
+| **Double Battle** | - | Protect, Liquidation, Wide Guard, Leech Life | Mystic Water, Sitrus Berry, Choice Scarf | Adamant |
 
 * **Single Battle 10-Move Pool:**
    1. **Liquidation (Water | Physical | 85 BP)**
@@ -3585,7 +3585,7 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
 | **Single Battle** | #82 | Moonblast, Leech Seed, Substitute, Encore | Leftovers, Air Balloon, Focus Sash | Timid |
-| **Double Battle** | #15 | Protect, Tailwind, Moonblast, Encore | Focus Sash, Covert Cloak, Mental Herb | Modest |
+| **Double Battle** | #15 | Protect, Tailwind, Moonblast, Encore | Focus Sash, Life Orb, Mental Herb | Modest |
 
 * **Single Battle 10-Move Pool:**
    1. **Moonblast (Fairy | Special | 95 BP)**
@@ -3617,8 +3617,8 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 ### 102. Chandelure (Dex #609)
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
-| **Single Battle** | - | Shadow Ball, Flamethrower, Overheat, Energy Ball | Choice Scarf, Choice Scarf, Focus Sash | Timid |
-| **Double Battle** | #82 | Protect, Heat Wave, Shadow Ball, Trick Room | Focus Sash, Choice Scarf, Covert Cloak | Modest |
+| **Single Battle** | - | Shadow Ball, Flamethrower, Overheat, Energy Ball | Choice Scarf, Chandelurite, Focus Sash | Timid |
+| **Double Battle** | #82 | Protect, Heat Wave, Shadow Ball, Trick Room | Focus Sash, Choice Scarf, Chandelurite | Modest |
 
 * **Single Battle 10-Move Pool:**
    1. **Shadow Ball (Ghost | Special | 80 BP)**
@@ -3651,7 +3651,7 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
 | **Single Battle** | #83 | Ice Beam, Blizzard, Icicle Crash, Ice Shard | Choice Scarf, Life Orb, Focus Sash | Jolly |
-| **Double Battle** | #42 | Protect, Ice Beam, Blizzard, Icicle Crash | Sitrus Berry, Clear Amulet, Focus Sash | Adamant |
+| **Double Battle** | #42 | Protect, Ice Beam, Blizzard, Icicle Crash | Sitrus Berry, Froslassite, Focus Sash | Adamant |
 
 * **Single Battle 10-Move Pool:**
    1. **Ice Beam (Ice | Special | 90 BP)**
@@ -3683,8 +3683,8 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 ### 104. Sableye (Dex #302)
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
-| **Single Battle** | #84 | Knock Off, Sucker Punch, Dark Pulse, Taunt | Sablenite Z, Life Orb, Focus Sash | Jolly |
-| **Double Battle** | #47 | Protect, Knock Off, Sucker Punch, Dark Pulse | Sablenite Z, Sitrus Berry, Clear Amulet | Adamant |
+| **Single Battle** | #84 | Knock Off, Sucker Punch, Dark Pulse, Taunt | Sablenite, Life Orb, Focus Sash | Jolly |
+| **Double Battle** | #47 | Protect, Knock Off, Sucker Punch, Dark Pulse | Sablenite, Sitrus Berry, White Herb | Adamant |
 
 * **Single Battle 10-Move Pool:**
    1. **Knock Off (Dark | Physical | 65 BP)**
@@ -3716,8 +3716,8 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 ### 105. Arcanine hisui (Dex #59)
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
-| **Single Battle** | #85 | Flare Blitz, Head Smash, Extreme Speed, Close Combat | Choice Scarf, Choice Scarf, Air Balloon | Jolly |
-| **Double Battle** | #35 | Protect, Rock Slide, Flare Blitz, Extreme Speed | Choice Scarf, Clear Amulet, Clear Amulet | Adamant |
+| **Single Battle** | #85 | Flare Blitz, Head Smash, Extreme Speed, Close Combat | Choice Scarf, Life Orb, Air Balloon | Jolly |
+| **Double Battle** | #35 | Protect, Rock Slide, Flare Blitz, Extreme Speed | Choice Scarf, White Herb, Lum Berry | Adamant |
 
 * **Single Battle 10-Move Pool:**
    1. **Flare Blitz (Fire | Physical | 120 BP)**
@@ -3749,8 +3749,8 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 ### 106. Arboliva (Dex #930)
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
-| **Single Battle** | #86 | Energy Ball, Hyper Voice, Earth Power, Strength Sap | Leftovers, Sitrus Berry, Clear Amulet | Timid |
-| **Double Battle** | - | Protect, Hyper Voice, Energy Ball, Pollen Puff | Sitrus Berry, Throat Spray, Leftovers | Modest |
+| **Single Battle** | #86 | Energy Ball, Hyper Voice, Earth Power, Strength Sap | Leftovers, Sitrus Berry, Choice Scarf | Timid |
+| **Double Battle** | - | Protect, Hyper Voice, Energy Ball, Pollen Puff | Sitrus Berry, Life Orb, Leftovers | Modest |
 
 * **Single Battle 10-Move Pool:**
    1. **Energy Ball (Grass | Special | 90 BP)**
@@ -3783,7 +3783,7 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
 | **Single Battle** | #87 | U-turn, Bug Buzz, Leech Life, First Impression | Choice Scarf, Life Orb, Focus Sash | Jolly |
-| **Double Battle** | - | Protect, U-turn, Bug Buzz, Leech Life | Sitrus Berry, Clear Amulet, Focus Sash | Adamant |
+| **Double Battle** | - | Protect, U-turn, Bug Buzz, Leech Life | Sitrus Berry, Scolipite, Focus Sash | Adamant |
 
 * **Single Battle 10-Move Pool:**
    1. **U-turn (Bug | Physical | 70 BP)**
@@ -3815,8 +3815,8 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 ### 108. Altaria (Dex #334)
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
-| **Single Battle** | - | Dragon Dance, Earthquake, Roost, Return | Altarianite Z, Leftovers, Air Balloon | Jolly |
-| **Double Battle** | #88 | Protect, Hyper Voice, Tailwind, Dragon Pulse | Altarianite Z, Sitrus Berry, Life Orb | Adamant |
+| **Single Battle** | - | Dragon Dance, Earthquake, Roost, Return | Altarianite, Leftovers, Air Balloon | Jolly |
+| **Double Battle** | #88 | Protect, Hyper Voice, Tailwind, Dragon Pulse | Altarianite, Sitrus Berry, Life Orb | Adamant |
 
 * **Single Battle 10-Move Pool:**
    1. **Dragon Dance (Dragon | Status)**
@@ -3848,8 +3848,8 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 ### 109. Dragalge (Dex #691)
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
-| **Single Battle** | #88 | Draco Meteor, Sludge Wave, Focus Blast, Toxic Spikes | Choice Scarf, Life Orb, Clear Amulet | Timid |
-| **Double Battle** | - | Protect, Draco Meteor, Sludge Bomb, Acid Spray | Clear Amulet, Choice Scarf, Sitrus Berry | Modest |
+| **Single Battle** | #88 | Draco Meteor, Sludge Wave, Focus Blast, Toxic Spikes | Choice Scarf, Life Orb, Dragalgite | Timid |
+| **Double Battle** | - | Protect, Draco Meteor, Sludge Bomb, Acid Spray | Dragalgite, Choice Scarf, Sitrus Berry | Modest |
 
 * **Single Battle 10-Move Pool:**
    1. **Draco Meteor (Dragon | Special | 130 BP)**
@@ -3881,8 +3881,8 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 ### 110. Azumarill (Dex #184)
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
-| **Single Battle** | #89 | Play Rough, Liquidation, Aqua Jet, Belly Drum | Sitrus Berry, Choice Scarf, Clear Amulet | Timid |
-| **Double Battle** | - | Protect, Play Rough, Aqua Jet, Belly Drum | Sitrus Berry, Choice Scarf, Clear Amulet | Modest |
+| **Single Battle** | #89 | Play Rough, Liquidation, Aqua Jet, Belly Drum | Sitrus Berry, Choice Scarf, Life Orb | Timid |
+| **Double Battle** | - | Protect, Play Rough, Aqua Jet, Belly Drum | Sitrus Berry, Choice Scarf, Life Orb | Modest |
 
 * **Single Battle 10-Move Pool:**
    1. **Play Rough (Fairy | Physical | 90 BP)**
@@ -3915,7 +3915,7 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
 | **Single Battle** | #90 | Shadow Ball, Shadow Sneak, Poltergeist, Destiny Bond | White Herb, Life Orb, Focus Sash | Timid |
-| **Double Battle** | - | Protect, Shadow Ball, Shadow Sneak, Poltergeist | White Herb, Sitrus Berry, Clear Amulet | Modest |
+| **Double Battle** | - | Protect, Shadow Ball, Shadow Sneak, Poltergeist | White Herb, Sitrus Berry, Life Orb | Modest |
 
 * **Single Battle 10-Move Pool:**
    1. **Shadow Ball (Ghost | Special | 80 BP)**
@@ -3947,8 +3947,8 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 ### 112. Alakazam (Dex #65)
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
-| **Single Battle** | #91 | Psychic, Psyshock, Focus Blast, Shadow Ball | Alakazite Z, Focus Sash, Life Orb | Timid |
-| **Double Battle** | #85 | Protect, Psychic, Dazzling Gleam, Shadow Ball | Alakazite Z, Focus Sash, Choice Scarf | Modest |
+| **Single Battle** | #91 | Psychic, Psyshock, Focus Blast, Shadow Ball | Alakazite, Focus Sash, Life Orb | Timid |
+| **Double Battle** | #85 | Protect, Psychic, Dazzling Gleam, Shadow Ball | Alakazite, Focus Sash, Choice Scarf | Modest |
 
 * **Single Battle 10-Move Pool:**
    1. **Psychic (Psychic | Special | 90 BP)**
@@ -3981,7 +3981,7 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
 | **Single Battle** | - | Hydro Pump, Scald, Waterfall, Muddy Water | Choice Scarf, Life Orb, Focus Sash | Timid |
-| **Double Battle** | #91 | Protect, Hydro Pump, Scald, Waterfall | Sitrus Berry, Clear Amulet, Focus Sash | Modest |
+| **Double Battle** | #91 | Protect, Hydro Pump, Scald, Waterfall | Sitrus Berry, Life Orb, Focus Sash | Modest |
 
 * **Single Battle 10-Move Pool:**
    1. **Hydro Pump (Water | Special | 110 BP)**
@@ -4014,7 +4014,7 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
 | **Single Battle** | #92 | Gigaton Hammer, Play Rough, Knock Off, Stealth Rock | Leftovers, Air Balloon, Rocky Helmet | Jolly |
-| **Double Battle** | - | Protect, Fake Out, Gigaton Hammer, Play Rough | Covert Cloak, Sitrus Berry, Air Balloon | Adamant |
+| **Double Battle** | - | Protect, Fake Out, Gigaton Hammer, Play Rough | White Herb, Sitrus Berry, Air Balloon | Adamant |
 
 * **Single Battle 10-Move Pool:**
    1. **Gigaton Hammer (Steel | Physical | 160 BP)**
@@ -4047,7 +4047,7 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
 | **Single Battle** | #93 | Thunderbolt, Volt Switch, Thunder, Thunder Wave | Choice Scarf, Life Orb, Focus Sash | Timid |
-| **Double Battle** | - | Protect, Thunderbolt, Volt Switch, Thunder | Sitrus Berry, Clear Amulet, Focus Sash | Modest |
+| **Double Battle** | - | Protect, Thunderbolt, Volt Switch, Thunder | Sitrus Berry, Life Orb, Focus Sash | Modest |
 
 * **Single Battle 10-Move Pool:**
    1. **Thunderbolt (Electric | Special | 90 BP)**
@@ -4080,7 +4080,7 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
 | **Single Battle** | #94 | Moonblast, Dazzling Gleam, Play Rough, Calm Mind | Choice Scarf, Life Orb, Focus Sash | Timid |
-| **Double Battle** | - | Protect, Moonblast, Dazzling Gleam, Play Rough | Sitrus Berry, Clear Amulet, Focus Sash | Modest |
+| **Double Battle** | - | Protect, Moonblast, Dazzling Gleam, Play Rough | Sitrus Berry, Life Orb, Focus Sash | Modest |
 
 * **Single Battle 10-Move Pool:**
    1. **Moonblast (Fairy | Special | 95 BP)**
@@ -4146,7 +4146,7 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
 | **Single Battle** | #96 | Body Slam, Double-Edge, Hyper Voice, Extreme Speed | Choice Scarf, Life Orb, Focus Sash | Jolly |
-| **Double Battle** | - | Protect, Body Slam, Double-Edge, Hyper Voice | Sitrus Berry, Clear Amulet, Focus Sash | Adamant |
+| **Double Battle** | - | Protect, Body Slam, Double-Edge, Hyper Voice | Sitrus Berry, White Herb, Focus Sash | Adamant |
 
 * **Single Battle 10-Move Pool:**
    1. **Body Slam (Normal | Physical | 85 BP)**
@@ -4179,7 +4179,7 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
 | **Single Battle** | #97 | Iron Head, Flash Cannon, Heavy Slam, Bullet Punch | Choice Scarf, Life Orb, Focus Sash | Jolly |
-| **Double Battle** | - | Protect, Iron Head, Flash Cannon, Heavy Slam | Sitrus Berry, Clear Amulet, Focus Sash | Adamant |
+| **Double Battle** | - | Protect, Iron Head, Flash Cannon, Heavy Slam | Sitrus Berry, White Herb, Focus Sash | Adamant |
 
 * **Single Battle 10-Move Pool:**
    1. **Iron Head (Steel | Physical | 80 BP)**
@@ -4211,8 +4211,8 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 ### 120. Slowbro (Dex #80)
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
-| **Single Battle** | #98 | Hydro Pump, Scald, Waterfall, Muddy Water | Slowbronite Z, Life Orb, Focus Sash | Timid |
-| **Double Battle** | - | Protect, Hydro Pump, Scald, Waterfall | Slowbronite Z, Sitrus Berry, Clear Amulet | Modest |
+| **Single Battle** | #98 | Hydro Pump, Scald, Waterfall, Muddy Water | Slowbronite, Life Orb, Focus Sash | Timid |
+| **Double Battle** | - | Protect, Hydro Pump, Scald, Waterfall | Slowbronite, Sitrus Berry, Life Orb | Modest |
 
 * **Single Battle 10-Move Pool:**
    1. **Hydro Pump (Water | Special | 110 BP)**
@@ -4245,7 +4245,7 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
 | **Single Battle** | - | Triple Axel, Knock Off, Ice Shard, Swords Dance | Air Balloon, Choice Scarf, Life Orb | Jolly |
-| **Double Battle** | #99 | Fake Out, Protect, Ice Spinner, Knock Off | Focus Sash, Covert Cloak, Life Orb | Adamant |
+| **Double Battle** | #99 | Fake Out, Protect, Ice Spinner, Knock Off | Focus Sash, White Herb, Life Orb | Adamant |
 
 * **Single Battle 10-Move Pool:**
    1. **Triple Axel (Ice | Physical | 20 BP)**
@@ -4278,7 +4278,7 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
 | **Single Battle** | #99 | Knock Off, Sucker Punch, Dark Pulse, Taunt | Choice Scarf, Life Orb, Focus Sash | Jolly |
-| **Double Battle** | #84 | Protect, Knock Off, Sucker Punch, Dark Pulse | Sitrus Berry, Clear Amulet, Focus Sash | Adamant |
+| **Double Battle** | #84 | Protect, Knock Off, Sucker Punch, Dark Pulse | Sitrus Berry, White Herb, Focus Sash | Adamant |
 
 * **Single Battle 10-Move Pool:**
    1. **Knock Off (Dark | Physical | 65 BP)**
@@ -4311,7 +4311,7 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
 | **Single Battle** | - | Thunderbolt, Volt Switch, Thunder, Thunder Wave | Choice Scarf, Life Orb, Focus Sash | Jolly |
-| **Double Battle** | #100 | Protect, Thunderbolt, Volt Switch, Thunder | Sitrus Berry, Clear Amulet, Focus Sash | Adamant |
+| **Double Battle** | #100 | Protect, Thunderbolt, Volt Switch, Thunder | Sitrus Berry, Terrain Extender, Focus Sash | Adamant |
 
 * **Single Battle 10-Move Pool:**
    1. **Thunderbolt (Electric | Special | 90 BP)**
@@ -4343,8 +4343,8 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 ### 124. Sceptile (Dex #254)
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
-| **Single Battle** | #100 | Giga Drain, Wood Hammer, Energy Ball, Leaf Storm | Sceptilite Z, Life Orb, Focus Sash | Timid |
-| **Double Battle** | #74 | Protect, Giga Drain, Wood Hammer, Energy Ball | Sceptilite Z, Sitrus Berry, Clear Amulet | Modest |
+| **Single Battle** | #100 | Giga Drain, Wood Hammer, Energy Ball, Leaf Storm | Sceptilite, Life Orb, Focus Sash | Timid |
+| **Double Battle** | #74 | Protect, Giga Drain, Wood Hammer, Energy Ball | Sceptilite, Sitrus Berry, Life Orb | Modest |
 
 * **Single Battle 10-Move Pool:**
    1. **Giga Drain (Grass | Special | 75 BP)**
@@ -4399,8 +4399,8 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 ### 126. Flutter mane (Dex #987)
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
-| **Single Battle** | - | Moonblast, Shadow Ball, Mystical Fire, Power Gem | Choice Scarf, Booster Energy, Focus Sash | Timid |
-| **Double Battle** | - | Protect, Moonblast, Dazzling Gleam, Shadow Ball | Booster Energy, Choice Scarf, Focus Sash | Modest |
+| **Single Battle** | - | Moonblast, Shadow Ball, Mystical Fire, Power Gem | Choice Scarf, Life Orb, Focus Sash | Timid |
+| **Double Battle** | - | Protect, Moonblast, Dazzling Gleam, Shadow Ball | Choice Scarf, Life Orb, Focus Sash | Modest |
 
 * **Single Battle 10-Move Pool:**
    1. **Moonblast (Fairy | Special | 95 BP)**
@@ -4432,7 +4432,7 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 ### 127. Urshifu rapid strike (Dex #892)
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
-| **Single Battle** | - | Surging Strikes, Close Combat, Aqua Jet, U-turn | Choice Scarf, Choice Scarf, Focus Sash | Jolly |
+| **Single Battle** | - | Surging Strikes, Close Combat, Aqua Jet, U-turn | Choice Scarf, Life Orb, Focus Sash | Jolly |
 | **Double Battle** | - | Detect, Surging Strikes, Close Combat, Aqua Jet | Focus Sash, Choice Scarf, Mystic Water | Adamant |
 
 * **Single Battle 10-Move Pool:**
@@ -4466,7 +4466,7 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
 | **Single Battle** | - | Wave Crash, Curse, Rest, Sleep Talk | Leftovers, Chesto Berry, Air Balloon | Jolly |
-| **Double Battle** | - | Protect, Order Up, Wave Crash, Heavy Slam | Leftovers, Clear Amulet, Sitrus Berry | Adamant |
+| **Double Battle** | - | Protect, Order Up, Wave Crash, Heavy Slam | Leftovers, White Herb, Sitrus Berry | Adamant |
 
 * **Single Battle 10-Move Pool:**
    1. **Wave Crash (Water | Physical | 120 BP)**

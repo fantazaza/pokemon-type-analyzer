@@ -117,12 +117,10 @@ const UNIVERSAL_MOVES = [
 const POPULAR_ITEMS = [
   { name: "Focus Sash", rate: "28.5%", desc: "Survives any single fatal hit with 1 HP when at 100% full health." },
   { name: "Choice Scarf", rate: "24.2%", desc: "Boosts Speed by 50%, locking user into the first move selected (Only legal Choice item in Champions)." },
-  { name: "Sitrus Berry", rate: "22.4%", desc: "Restores 25% max HP when dropping below 50% HP." },
+  { name: "Life Orb", rate: "22.4%", desc: "Boosts move damage by 30% at the cost of 10% max HP per attack." },
   { name: "Leftovers", rate: "19.8%", desc: "Restores 1/16 of max HP at the end of each turn." },
-  { name: "Clear Amulet", rate: "18.2%", desc: "Protects the holder from having its stats lowered by opponents (counters Intimidate)." },
-  { name: "Covert Cloak", rate: "15.6%", desc: "Protects the holder from additional secondary effects of enemy attacks (blocks Fake Out flinch)." },
-  { name: "Rocky Helmet", rate: "14.2%", desc: "Damages contact attackers by 1/6 of their maximum HP." },
-  { name: "Life Orb", rate: "12.4%", desc: "Boosts move damage by 30% at the cost of 10% max HP per attack." }
+  { name: "Sitrus Berry", rate: "18.2%", desc: "Restores 25% max HP when dropping below 50% HP." },
+  { name: "Rocky Helmet", rate: "14.2%", desc: "Damages contact attackers by 1/6 of their maximum HP." }
 ];
 
 /**

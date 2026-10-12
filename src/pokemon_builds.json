@@ -29,17 +29,17 @@
         {
           "name": "Garchompite Z",
           "rate": "32.8%",
-          "desc": "Mega Stone allowing Garchomp to Mega Evolve with Sand Force."
+          "desc": "Special Mega Stone allowing Garchomp to Mega Evolve into Mega Garchomp Z."
         },
         {
           "name": "Choice Scarf",
           "rate": "18.8%",
-          "desc": "Boosts Speed by 50%, locking user into first selected move."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         },
         {
           "name": "Focus Sash",
           "rate": "16.7%",
-          "desc": "Survives lethal hit from full HP with 1 HP remaining."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -218,17 +218,17 @@
         {
           "name": "Garchompite Z",
           "rate": "51.8%",
-          "desc": "Mega Stone allowing Garchomp to Mega Evolve with Sand Force."
+          "desc": "Special Mega Stone allowing Garchomp to Mega Evolve into Mega Garchomp Z."
         },
         {
           "name": "Life Orb",
           "rate": "21.8%",
-          "desc": "Boosts the power of the holder's moves by 30% at the cost of 10% max HP."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Choice Scarf",
           "rate": "9.6%",
-          "desc": "Boosts the holder's Speed stat by 50%, locking user into one move."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         }
       ],
       "moves": [
@@ -420,17 +420,17 @@
         {
           "name": "Sitrus Berry",
           "rate": "47.0%",
-          "desc": "Restores 25% max HP when dropping below 50% health."
+          "desc": "Restores 25% of maximum HP when dropping below 50% HP."
         },
         {
           "name": "Leftovers",
           "rate": "17.2%",
-          "desc": "Restores 1/16 max HP at the end of every turn."
+          "desc": "Restores 1/16 of maximum HP at the end of each turn."
         },
         {
           "name": "Rocky Helmet",
           "rate": "13.4%",
-          "desc": "Deals 1/6 max HP recoil to opponents making contact."
+          "desc": "Damages physical contact attackers by 1/6 of their maximum HP."
         }
       ],
       "moves": [
@@ -609,17 +609,17 @@
         {
           "name": "Sitrus Berry",
           "rate": "67.2%",
-          "desc": "Restores 25% max HP when dropping below 50% health."
+          "desc": "Restores 25% of maximum HP when dropping below 50% HP."
         },
         {
           "name": "Chople Berry",
           "rate": "8.3%",
-          "desc": "Halves damage taken from super-effective Fighting attacks."
+          "desc": "Halves damage taken from a super-effective Fighting-type attack once."
         },
         {
           "name": "Passho Berry",
           "rate": "6.2%",
-          "desc": "Halves damage taken from super-effective Water attacks."
+          "desc": "Halves damage taken from a super-effective Water-type attack once."
         }
       ],
       "moves": [
@@ -811,12 +811,12 @@
         {
           "name": "Sitrus Berry",
           "rate": "42.2%",
-          "desc": "Restores 25% max HP when dropping below 50% health."
+          "desc": "Restores 25% of maximum HP when dropping below 50% HP."
         },
         {
           "name": "Leftovers",
           "rate": "33.4%",
-          "desc": "Restores 1/16 max HP at the end of each turn."
+          "desc": "Restores 1/16 of maximum HP at the end of each turn."
         },
         {
           "name": "Chesto Berry",
@@ -1000,17 +1000,17 @@
         {
           "name": "Leftovers",
           "rate": "28.0%",
-          "desc": "Restores 1/16 max HP every turn for sustained Calm Mind sweeps."
+          "desc": "Restores 1/16 of maximum HP at the end of each turn."
         },
         {
           "name": "Life Orb",
           "rate": "27.4%",
-          "desc": "Boosts both targets' spread damage by 30%."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Mystic Water",
           "rate": "15.7%",
-          "desc": "Boosts Liquid Voice Hyper Voice damage by 20% without recoil."
+          "desc": "Boosts the power of Water-type moves by 20%."
         }
       ],
       "moves": [
@@ -1202,17 +1202,17 @@
         {
           "name": "Leftovers",
           "rate": "48.5%",
-          "desc": "End of turn recovery to sustain Stamina boosts."
+          "desc": "Restores 1/16 of maximum HP at the end of each turn."
         },
         {
           "name": "Rocky Helmet",
           "rate": "32.0%",
-          "desc": "Punishes contact physical attackers."
+          "desc": "Damages physical contact attackers by 1/6 of their maximum HP."
         },
         {
-          "name": "Covert Cloak",
+          "name": "Air Balloon",
           "rate": "19.5%",
-          "desc": "Blocks secondary effects like Fake Out flinch."
+          "desc": "Grants immunity to Ground-type attacks and hazards until popped by an attack."
         }
       ],
       "moves": [
@@ -1319,19 +1319,19 @@
       ],
       "items": [
         {
-          "name": "Covert Cloak",
-          "rate": "46.4%",
-          "desc": "Prevents Fake Out flinches, ensuring immediate Electro Shot/Body Press."
-        },
-        {
-          "name": "Power Herb",
-          "rate": "32.2%",
-          "desc": "Allows instant 1-turn Electro Shot outside of rain."
-        },
-        {
           "name": "Leftovers",
+          "rate": "46.4%",
+          "desc": "Restores 1/16 of maximum HP at the end of each turn."
+        },
+        {
+          "name": "Air Balloon",
+          "rate": "32.2%",
+          "desc": "Grants immunity to Ground-type attacks and hazards until popped by an attack."
+        },
+        {
+          "name": "Rocky Helmet",
           "rate": "21.4%",
-          "desc": "Sustained passive healing."
+          "desc": "Damages physical contact attackers by 1/6 of their maximum HP."
         }
       ],
       "moves": [
@@ -1457,7 +1457,7 @@
         {
           "name": "Life Orb",
           "rate": "48.5%",
-          "desc": "Boosts move damage by 30%."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Red Card",
@@ -1467,7 +1467,7 @@
         {
           "name": "Focus Sash",
           "rate": "16.4%",
-          "desc": "Guarantees 2 free survival hits with Disguise."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -1571,17 +1571,17 @@
         {
           "name": "Mental Herb",
           "rate": "42.5%",
-          "desc": "Cures Taunt immediately to guarantee Trick Room execution."
+          "desc": "Cures infatuation, Taunt, Encore, Torment, and Disable once."
         },
         {
           "name": "Focus Sash",
           "rate": "28.2%",
-          "desc": "Maximum survivability against double-targets."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         },
         {
           "name": "Life Orb",
           "rate": "18.4%",
-          "desc": "Offensive pressure."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         }
       ],
       "moves": [
@@ -1698,17 +1698,17 @@
         {
           "name": "Leftovers",
           "rate": "42.5%",
-          "desc": "Passive recovery during Swords Dance setup."
+          "desc": "Restores 1/16 of maximum HP at the end of each turn."
         },
         {
           "name": "Black Glasses",
           "rate": "31.0%",
-          "desc": "Boosts Sucker Punch and Kowtow Cleave damage by 20%."
+          "desc": "Boosts the power of Dark-type moves by 20%."
         },
         {
           "name": "Lum Berry",
           "rate": "16.5%",
-          "desc": "Cures burns from Will-O-Wisp."
+          "desc": "Instantly cures any status condition (burn, paralysis, sleep, poison, confusion)."
         }
       ],
       "moves": [
@@ -1805,17 +1805,17 @@
         {
           "name": "Black Glasses",
           "rate": "48.0%",
-          "desc": "Boosts Dark moves by 20%."
+          "desc": "Boosts the power of Dark-type moves by 20%."
         },
         {
-          "name": "Safety Goggles",
+          "name": "Leftovers",
           "rate": "28.0%",
-          "desc": "Immunity to Spore and Rage Powder."
+          "desc": "Restores 1/16 of maximum HP at the end of each turn."
         },
         {
-          "name": "Clear Amulet",
+          "name": "Lum Berry",
           "rate": "24.0%",
-          "desc": "Prevents stat drops from opponents."
+          "desc": "Instantly cures any status condition (burn, paralysis, sleep, poison, confusion)."
         }
       ],
       "moves": [
@@ -1925,17 +1925,17 @@
         {
           "name": "Choice Scarf",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         },
         {
-          "name": "Booster Energy",
+          "name": "Life Orb",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -2093,19 +2093,19 @@
       ],
       "items": [
         {
-          "name": "Booster Energy",
-          "rate": "35.0%",
-          "desc": "Top meta item."
-        },
-        {
           "name": "Choice Scarf",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
+        },
+        {
+          "name": "Life Orb",
+          "rate": "35.0%",
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -2283,17 +2283,17 @@
         {
           "name": "Life Orb",
           "rate": "23.9%",
-          "desc": "Boosts damage by 30% at cost of 10% max HP per attack."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Miracle Seed",
           "rate": "23.5%",
-          "desc": "Boosts Grass moves power by 20% without recoil."
+          "desc": "Boosts the power of Grass-type moves by 20%."
         },
         {
           "name": "Terrain Extender",
           "rate": "17.0%",
-          "desc": "Extends Grassy Terrain duration from 5 to 8 turns."
+          "desc": "Extends the duration of terrain effects from 5 to 8 turns."
         }
       ],
       "moves": [
@@ -2454,17 +2454,17 @@
         {
           "name": "Miracle Seed",
           "rate": "60.0%",
-          "desc": "Boosts Grass moves by 20% with zero recoil drawback."
+          "desc": "Boosts the power of Grass-type moves by 20%."
         },
         {
           "name": "Life Orb",
           "rate": "9.9%",
-          "desc": "Boosts all move damage by 30% for lethal priority finishes."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Sitrus Berry",
           "rate": "8.9%",
-          "desc": "Recovers 25% max HP when falling below half."
+          "desc": "Restores 25% of maximum HP when dropping below 50% HP."
         }
       ],
       "moves": [
@@ -2638,17 +2638,17 @@
         {
           "name": "Air Balloon",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Grants immunity to Ground-type attacks and hazards until popped by an attack."
         },
         {
-          "name": "Loaded Dice",
+          "name": "Dragoninite",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Mega Stone allowing Dragonite to Mega Evolve with Multiscale resilience."
         },
         {
           "name": "Choice Scarf",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         }
       ],
       "moves": [
@@ -2813,17 +2813,17 @@
         {
           "name": "Choice Scarf",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         },
         {
-          "name": "Clear Amulet",
+          "name": "Dragoninite",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Mega Stone allowing Dragonite to Mega Evolve with Multiscale resilience."
         },
         {
           "name": "Lum Berry",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Instantly cures any status condition (burn, paralysis, sleep, poison, confusion)."
         }
       ],
       "moves": [
@@ -3011,7 +3011,7 @@
         {
           "name": "Choice Scarf",
           "rate": "0.2%",
-          "desc": "Boosts Speed by 50%."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         }
       ],
       "moves": [
@@ -3164,7 +3164,7 @@
         {
           "name": "Choice Scarf",
           "rate": "0.4%",
-          "desc": "Speed booster."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         }
       ],
       "moves": [
@@ -3308,17 +3308,17 @@
         {
           "name": "Focus Sash",
           "rate": "48.0%",
-          "desc": "Survives lethal hit, consuming item to trigger Unburden."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         },
         {
           "name": "Choice Scarf",
           "rate": "32.0%",
-          "desc": "Instant speed tier boost."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         },
         {
           "name": "Normal Gem",
           "rate": "12.0%",
-          "desc": "Consumes item on Fake Out to double Speed."
+          "desc": "Boosts the power of a Normal-type move by 30% once (huge for Extreme Speed / Fake Out)."
         }
       ],
       "moves": [
@@ -3395,12 +3395,12 @@
         {
           "name": "Grassy Seed",
           "rate": "58.0%",
-          "desc": "Eaten instantly on Grassy Terrain (+1 Def & Unburden double speed)."
+          "desc": "Boosts Defense by 1 stage when Grassy Terrain is active."
         },
         {
           "name": "Focus Sash",
           "rate": "26.0%",
-          "desc": "Survives lethal hit."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -3506,17 +3506,17 @@
         {
           "name": "Choice Scarf",
           "rate": "46.2%",
-          "desc": "Speed boost for revenge KOs."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         },
         {
           "name": "Leftovers",
           "rate": "28.4%",
-          "desc": "Passive recovery for Nasty Plot sets."
+          "desc": "Restores 1/16 of maximum HP at the end of each turn."
         },
         {
-          "name": "Covert Cloak",
+          "name": "Life Orb",
           "rate": "18.0%",
-          "desc": "Immunity to secondary effects."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         }
       ],
       "moves": [
@@ -3609,17 +3609,17 @@
         {
           "name": "Life Orb",
           "rate": "42.0%",
-          "desc": "Colossal spread Make It Rain damage."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Choice Scarf",
           "rate": "32.0%",
-          "desc": "Surprise fast Make It Rain lead."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         },
         {
-          "name": "Covert Cloak",
+          "name": "Air Balloon",
           "rate": "18.0%",
-          "desc": "Immunity to Fake Out flinch."
+          "desc": "Grants immunity to Ground-type attacks and hazards until popped by an attack."
         }
       ],
       "moves": [
@@ -3736,17 +3736,17 @@
         {
           "name": "Choice Scarf",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         },
         {
-          "name": "Choice Scarf",
+          "name": "Life Orb",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -3906,17 +3906,17 @@
         {
           "name": "Focus Sash",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         },
         {
           "name": "Choice Scarf",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         },
         {
           "name": "Mystic Water",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts the power of Water-type moves by 20%."
         }
       ],
       "moves": [
@@ -4094,17 +4094,17 @@
         {
           "name": "Choice Scarf",
           "rate": "42.0%",
-          "desc": "Boosts Attack by 50%."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         },
         {
           "name": "Life Orb",
           "rate": "28.0%",
-          "desc": "Boosts damage by 30%."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "18.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -4269,17 +4269,17 @@
         {
           "name": "Sitrus Berry",
           "rate": "38.0%",
-          "desc": "VGC staple healing."
+          "desc": "Restores 25% of maximum HP when dropping below 50% HP."
         },
         {
-          "name": "Clear Amulet",
+          "name": "Smooth Rock",
           "rate": "32.0%",
-          "desc": "Prevents stat drops."
+          "desc": "Extends sandstorm weather created by the user from 5 to 8 turns."
         },
         {
           "name": "Focus Sash",
           "rate": "20.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -4462,17 +4462,17 @@
         {
           "name": "Lucarionite Z",
           "rate": "68.4%",
-          "desc": "Mega Stone granting Adaptability (2x STAB boost to Fighting/Steel)."
+          "desc": "Special Mega Stone allowing Lucario to Mega Evolve with enhanced Adaptability."
         },
         {
           "name": "Focus Sash",
           "rate": "18.2%",
-          "desc": "Survives lethal hit from full HP with 1 HP remaining."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         },
         {
           "name": "Life Orb",
           "rate": "8.5%",
-          "desc": "Boosts move power by 30% at the cost of 10% max HP."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         }
       ],
       "moves": [
@@ -4601,17 +4601,17 @@
         {
           "name": "Lucarionite Z",
           "rate": "74.5%",
-          "desc": "Mega Stone providing massive Adaptability offensive pressure."
+          "desc": "Special Mega Stone allowing Lucario to Mega Evolve with enhanced Adaptability."
         },
         {
           "name": "Focus Sash",
           "rate": "16.2%",
-          "desc": "Survives lethal hit."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         },
         {
           "name": "Life Orb",
           "rate": "9.3%",
-          "desc": "Colossal damage boost."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         }
       ],
       "moves": [
@@ -4751,19 +4751,19 @@
       ],
       "items": [
         {
-          "name": "Loaded Dice",
+          "name": "Baxcalibrite",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Mega Stone allowing Baxcalibur to Mega Evolve with amplified Glaive Rush power."
         },
         {
           "name": "Choice Scarf",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         },
         {
           "name": "Air Balloon",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Grants immunity to Ground-type attacks and hazards until popped by an attack."
         }
       ],
       "moves": [
@@ -4926,19 +4926,19 @@
       ],
       "items": [
         {
-          "name": "Loaded Dice",
+          "name": "Baxcalibrite",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Mega Stone allowing Baxcalibur to Mega Evolve with amplified Glaive Rush power."
         },
         {
-          "name": "Clear Amulet",
+          "name": "White Herb",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Immediately restores any lowered stat stage back to neutral once."
         },
         {
           "name": "Life Orb",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         }
       ],
       "moves": [
@@ -5116,17 +5116,17 @@
         {
           "name": "Leftovers",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Restores 1/16 of maximum HP at the end of each turn."
         },
         {
           "name": "Rocky Helmet",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Damages physical contact attackers by 1/6 of their maximum HP."
         },
         {
           "name": "Air Balloon",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Grants immunity to Ground-type attacks and hazards until popped by an attack."
         }
       ],
       "moves": [
@@ -5291,17 +5291,17 @@
         {
           "name": "Sitrus Berry",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Restores 25% of maximum HP when dropping below 50% HP."
         },
         {
           "name": "Rocky Helmet",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Damages physical contact attackers by 1/6 of their maximum HP."
         },
         {
           "name": "Leftovers",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Restores 1/16 of maximum HP at the end of each turn."
         }
       ],
       "moves": [
@@ -5477,19 +5477,19 @@
       ],
       "items": [
         {
-          "name": "Metagrossite Z",
+          "name": "Metagrossite",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Mega Stone allowing Metagross to Mega Evolve with Tough Claws."
         },
         {
           "name": "Choice Scarf",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         },
         {
-          "name": "Clear Amulet",
+          "name": "Leftovers",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Restores 1/16 of maximum HP at the end of each turn."
         }
       ],
       "moves": [
@@ -5652,19 +5652,19 @@
       ],
       "items": [
         {
-          "name": "Metagrossite Z",
+          "name": "Metagrossite",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Mega Stone allowing Metagross to Mega Evolve with Tough Claws."
         },
         {
-          "name": "Clear Amulet",
+          "name": "White Herb",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Immediately restores any lowered stat stage back to neutral once."
         },
         {
-          "name": "Clear Amulet",
+          "name": "Lum Berry",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Instantly cures any status condition (burn, paralysis, sleep, poison, confusion)."
         }
       ],
       "moves": [
@@ -5840,19 +5840,19 @@
       ],
       "items": [
         {
-          "name": "Salamencite Z",
+          "name": "Salamencite",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Mega Stone allowing Salamence to Mega Evolve with Aerilate."
         },
         {
           "name": "Choice Scarf",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         },
         {
           "name": "Life Orb",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         }
       ],
       "moves": [
@@ -6015,19 +6015,19 @@
       ],
       "items": [
         {
-          "name": "Salamencite Z",
+          "name": "Salamencite",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Mega Stone allowing Salamence to Mega Evolve with Aerilate."
         },
         {
           "name": "Choice Scarf",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         },
         {
-          "name": "Covert Cloak",
+          "name": "White Herb",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Immediately restores any lowered stat stage back to neutral once."
         }
       ],
       "moves": [
@@ -6198,19 +6198,19 @@
       ],
       "items": [
         {
-          "name": "Gengarite Z",
+          "name": "Gengarite",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Mega Stone allowing Gengar to Mega Evolve with Shadow Tag."
         },
         {
           "name": "Focus Sash",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         },
         {
           "name": "Life Orb",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         }
       ],
       "moves": [
@@ -6368,19 +6368,19 @@
       ],
       "items": [
         {
-          "name": "Gengarite Z",
+          "name": "Gengarite",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Mega Stone allowing Gengar to Mega Evolve with Shadow Tag."
         },
         {
           "name": "Focus Sash",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         },
         {
-          "name": "Covert Cloak",
+          "name": "Life Orb",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         }
       ],
       "moves": [
@@ -6556,19 +6556,19 @@
       ],
       "items": [
         {
-          "name": "Tyranitarite Z",
+          "name": "Tyranitarite",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Mega Stone allowing Tyranitar to Mega Evolve with Sand Stream."
         },
         {
           "name": "Choice Scarf",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         },
         {
           "name": "Leftovers",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Restores 1/16 of maximum HP at the end of each turn."
         }
       ],
       "moves": [
@@ -6731,19 +6731,19 @@
       ],
       "items": [
         {
-          "name": "Tyranitarite Z",
+          "name": "Tyranitarite",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Mega Stone allowing Tyranitar to Mega Evolve with Sand Stream."
         },
         {
-          "name": "Clear Amulet",
+          "name": "Smooth Rock",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Extends sandstorm weather created by the user from 5 to 8 turns."
         },
         {
-          "name": "Clear Amulet",
+          "name": "White Herb",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Immediately restores any lowered stat stage back to neutral once."
         }
       ],
       "moves": [
@@ -6914,19 +6914,19 @@
       ],
       "items": [
         {
-          "name": "Scizorite Z",
+          "name": "Scizorite",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Mega Stone allowing Scizor to Mega Evolve with Technician."
         },
         {
           "name": "Choice Scarf",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         },
         {
           "name": "Life Orb",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         }
       ],
       "moves": [
@@ -7084,19 +7084,19 @@
       ],
       "items": [
         {
-          "name": "Scizorite Z",
+          "name": "Scizorite",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Mega Stone allowing Scizor to Mega Evolve with Technician."
         },
         {
           "name": "Life Orb",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
-          "name": "Clear Amulet",
+          "name": "White Herb",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Immediately restores any lowered stat stage back to neutral once."
         }
       ],
       "moves": [
@@ -7272,19 +7272,19 @@
       ],
       "items": [
         {
-          "name": "Gyaradosite Z",
+          "name": "Gyaradosite",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Mega Stone allowing Gyarados to Mega Evolve with Mold Breaker."
         },
         {
           "name": "Leftovers",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Restores 1/16 of maximum HP at the end of each turn."
         },
         {
           "name": "Lum Berry",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Instantly cures any status condition (burn, paralysis, sleep, poison, confusion)."
         }
       ],
       "moves": [
@@ -7447,19 +7447,19 @@
       ],
       "items": [
         {
-          "name": "Gyaradosite Z",
+          "name": "Gyaradosite",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Mega Stone allowing Gyarados to Mega Evolve with Mold Breaker."
         },
         {
           "name": "Sitrus Berry",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Restores 25% of maximum HP when dropping below 50% HP."
         },
         {
-          "name": "Clear Amulet",
+          "name": "White Herb",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Immediately restores any lowered stat stage back to neutral once."
         }
       ],
       "moves": [
@@ -7635,19 +7635,19 @@
       ],
       "items": [
         {
-          "name": "Swampertite Z",
+          "name": "Swampertite",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Mega Stone allowing Swampert to Mega Evolve with Swift Swim."
         },
         {
           "name": "Leftovers",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Restores 1/16 of maximum HP at the end of each turn."
         },
         {
           "name": "Rocky Helmet",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Damages physical contact attackers by 1/6 of their maximum HP."
         }
       ],
       "moves": [
@@ -7810,19 +7810,19 @@
       ],
       "items": [
         {
-          "name": "Swampertite Z",
+          "name": "Swampertite",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Mega Stone allowing Swampert to Mega Evolve with Swift Swim."
         },
         {
-          "name": "Clear Amulet",
+          "name": "White Herb",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Immediately restores any lowered stat stage back to neutral once."
         },
         {
           "name": "Sitrus Berry",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Restores 25% of maximum HP when dropping below 50% HP."
         }
       ],
       "moves": [
@@ -7998,19 +7998,19 @@
       ],
       "items": [
         {
-          "name": "Blazikenite Z",
+          "name": "Blazikenite",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Mega Stone allowing Blaziken to Mega Evolve with Speed Boost."
         },
         {
           "name": "Life Orb",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -8173,19 +8173,19 @@
       ],
       "items": [
         {
-          "name": "Blazikenite Z",
+          "name": "Blazikenite",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Mega Stone allowing Blaziken to Mega Evolve with Speed Boost."
         },
         {
           "name": "Life Orb",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -8361,19 +8361,19 @@
       ],
       "items": [
         {
-          "name": "Gardevoirite Z",
+          "name": "Gardevoirite",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Mega Stone allowing Gardevoir to Mega Evolve with Pixilate."
         },
         {
           "name": "Choice Scarf",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         },
         {
-          "name": "Choice Scarf",
+          "name": "Life Orb",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         }
       ],
       "moves": [
@@ -8536,19 +8536,19 @@
       ],
       "items": [
         {
-          "name": "Gardevoirite Z",
+          "name": "Gardevoirite",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Mega Stone allowing Gardevoir to Mega Evolve with Pixilate."
         },
         {
           "name": "Choice Scarf",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         },
         {
           "name": "Focus Sash",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -8724,19 +8724,19 @@
       ],
       "items": [
         {
-          "name": "Mawilite Z",
+          "name": "Mawilite",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Mega Stone allowing Mawile to Mega Evolve with Huge Power."
         },
         {
           "name": "Life Orb",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -8899,19 +8899,19 @@
       ],
       "items": [
         {
-          "name": "Mawilite Z",
+          "name": "Mawilite",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Mega Stone allowing Mawile to Mega Evolve with Huge Power."
         },
         {
           "name": "Life Orb",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -9087,19 +9087,19 @@
       ],
       "items": [
         {
-          "name": "Kangaskhanite Z",
+          "name": "Kangaskhanite",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Mega Stone allowing Kangaskhan to Mega Evolve with Parental Bond."
         },
         {
           "name": "Silk Scarf",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts the power of Normal-type moves by 20%."
         },
         {
           "name": "Leftovers",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Restores 1/16 of maximum HP at the end of each turn."
         }
       ],
       "moves": [
@@ -9262,19 +9262,19 @@
       ],
       "items": [
         {
-          "name": "Kangaskhanite Z",
+          "name": "Kangaskhanite",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Mega Stone allowing Kangaskhan to Mega Evolve with Parental Bond."
         },
         {
-          "name": "Covert Cloak",
+          "name": "White Herb",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Immediately restores any lowered stat stage back to neutral once."
         },
         {
           "name": "Sitrus Berry",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Restores 25% of maximum HP when dropping below 50% HP."
         }
       ],
       "moves": [
@@ -9450,19 +9450,19 @@
       ],
       "items": [
         {
-          "name": "Venusaurite Z",
+          "name": "Venusaurite",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Mega Stone allowing Venusaur to Mega Evolve with Thick Fat."
         },
         {
           "name": "Life Orb",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
-          "name": "Black Sludge",
+          "name": "Leftovers",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Restores 1/16 of maximum HP at the end of each turn."
         }
       ],
       "moves": [
@@ -9625,19 +9625,19 @@
       ],
       "items": [
         {
-          "name": "Venusaurite Z",
+          "name": "Venusaurite",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Mega Stone allowing Venusaur to Mega Evolve with Thick Fat."
         },
         {
           "name": "Focus Sash",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         },
         {
           "name": "Life Orb",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         }
       ],
       "moves": [
@@ -9813,19 +9813,19 @@
       ],
       "items": [
         {
-          "name": "Blastoisinite Z",
+          "name": "Blastoisinite",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Mega Stone allowing Blastoise to Mega Evolve with Mega Launcher."
         },
         {
           "name": "White Herb",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Immediately restores any lowered stat stage back to neutral once."
         },
         {
           "name": "Leftovers",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Restores 1/16 of maximum HP at the end of each turn."
         }
       ],
       "moves": [
@@ -9988,19 +9988,19 @@
       ],
       "items": [
         {
-          "name": "Blastoisinite Z",
+          "name": "Blastoisinite",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Mega Stone allowing Blastoise to Mega Evolve with Mega Launcher."
         },
         {
           "name": "Sitrus Berry",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Restores 25% of maximum HP when dropping below 50% HP."
         },
         {
           "name": "Rocky Helmet",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Damages physical contact attackers by 1/6 of their maximum HP."
         }
       ],
       "moves": [
@@ -10178,17 +10178,17 @@
         {
           "name": "Air Balloon",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Grants immunity to Ground-type attacks and hazards until popped by an attack."
         },
         {
           "name": "Leftovers",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Restores 1/16 of maximum HP at the end of each turn."
         },
         {
           "name": "Life Orb",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         }
       ],
       "moves": [
@@ -10353,17 +10353,17 @@
         {
           "name": "Sitrus Berry",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Restores 25% of maximum HP when dropping below 50% HP."
         },
         {
-          "name": "Covert Cloak",
+          "name": "Life Orb",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -10541,17 +10541,17 @@
         {
           "name": "Choice Scarf",
           "rate": "35.0%",
-          "desc": "Top meta item."
-        },
-        {
-          "name": "Choice Scarf",
-          "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         },
         {
           "name": "Life Orb",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
+        },
+        {
+          "name": "Focus Sash",
+          "rate": "35.0%",
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -10716,17 +10716,17 @@
         {
           "name": "Choice Scarf",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         },
         {
           "name": "Life Orb",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -10897,19 +10897,19 @@
       ],
       "items": [
         {
-          "name": "Toxic Orb",
-          "rate": "35.0%",
-          "desc": "Top meta item."
-        },
-        {
           "name": "Leftovers",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Restores 1/16 of maximum HP at the end of each turn."
+        },
+        {
+          "name": "Sitrus Berry",
+          "rate": "35.0%",
+          "desc": "Restores 25% of maximum HP when dropping below 50% HP."
         },
         {
           "name": "Air Balloon",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Grants immunity to Ground-type attacks and hazards until popped by an attack."
         }
       ],
       "moves": [
@@ -11067,19 +11067,19 @@
       ],
       "items": [
         {
-          "name": "Toxic Orb",
+          "name": "Leftovers",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Restores 1/16 of maximum HP at the end of each turn."
         },
         {
           "name": "Sitrus Berry",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Restores 25% of maximum HP when dropping below 50% HP."
         },
         {
-          "name": "Clear Amulet",
+          "name": "Yache Berry",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Halves damage taken from a super-effective Ice-type attack once."
         }
       ],
       "moves": [
@@ -11257,7 +11257,7 @@
         {
           "name": "Leftovers",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Restores 1/16 of maximum HP at the end of each turn."
         },
         {
           "name": "Chesto Berry",
@@ -11267,7 +11267,7 @@
         {
           "name": "Air Balloon",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Grants immunity to Ground-type attacks and hazards until popped by an attack."
         }
       ],
       "moves": [
@@ -11432,17 +11432,17 @@
         {
           "name": "Leftovers",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Restores 1/16 of maximum HP at the end of each turn."
         },
         {
-          "name": "Clear Amulet",
+          "name": "White Herb",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Immediately restores any lowered stat stage back to neutral once."
         },
         {
           "name": "Sitrus Berry",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Restores 25% of maximum HP when dropping below 50% HP."
         }
       ],
       "moves": [
@@ -11615,17 +11615,17 @@
         {
           "name": "Damp Rock",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Extends rain weather created by the user from 5 to 8 turns."
         },
         {
           "name": "Air Balloon",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Grants immunity to Ground-type attacks and hazards until popped by an attack."
         },
         {
           "name": "Leftovers",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Restores 1/16 of maximum HP at the end of each turn."
         }
       ],
       "moves": [
@@ -11785,17 +11785,17 @@
         {
           "name": "Focus Sash",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         },
         {
-          "name": "Covert Cloak",
+          "name": "Damp Rock",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Extends rain weather created by the user from 5 to 8 turns."
         },
         {
           "name": "Sitrus Berry",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Restores 25% of maximum HP when dropping below 50% HP."
         }
       ],
       "moves": [
@@ -11968,17 +11968,17 @@
         {
           "name": "Heat Rock",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Extends sunny weather created by the user from 5 to 8 turns."
         },
         {
           "name": "Air Balloon",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Grants immunity to Ground-type attacks and hazards until popped by an attack."
         },
         {
           "name": "Leftovers",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Restores 1/16 of maximum HP at the end of each turn."
         }
       ],
       "moves": [
@@ -12138,17 +12138,17 @@
         {
           "name": "Charcoal",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts the power of Fire-type moves by 20%."
         },
         {
           "name": "Choice Scarf",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         },
         {
           "name": "Sitrus Berry",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Restores 25% of maximum HP when dropping below 50% HP."
         }
       ],
       "moves": [
@@ -12321,17 +12321,17 @@
         {
           "name": "Light Clay",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Extends the duration of Reflect and Light Screen from 5 to 8 turns."
         },
         {
           "name": "Leftovers",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Restores 1/16 of maximum HP at the end of each turn."
         },
         {
           "name": "Babiri Berry",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Halves damage taken from a super-effective Steel-type attack once."
         }
       ],
       "moves": [
@@ -12491,17 +12491,17 @@
         {
           "name": "Light Clay",
           "rate": "35.0%",
-          "desc": "Top meta item."
-        },
-        {
-          "name": "Covert Cloak",
-          "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Extends the duration of Reflect and Light Screen from 5 to 8 turns."
         },
         {
           "name": "Sitrus Berry",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Restores 25% of maximum HP when dropping below 50% HP."
+        },
+        {
+          "name": "White Herb",
+          "rate": "35.0%",
+          "desc": "Immediately restores any lowered stat stage back to neutral once."
         }
       ],
       "moves": [
@@ -12674,17 +12674,17 @@
         {
           "name": "Air Balloon",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Grants immunity to Ground-type attacks and hazards until popped by an attack."
         },
         {
           "name": "Choice Scarf",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         },
         {
           "name": "Life Orb",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         }
       ],
       "moves": [
@@ -12842,19 +12842,19 @@
       ],
       "items": [
         {
-          "name": "Covert Cloak",
+          "name": "White Herb",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Immediately restores any lowered stat stage back to neutral once."
         },
         {
           "name": "Focus Sash",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         },
         {
-          "name": "Safety Goggles",
+          "name": "Lum Berry",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Instantly cures any status condition (burn, paralysis, sleep, poison, confusion)."
         }
       ],
       "moves": [
@@ -13032,17 +13032,17 @@
         {
           "name": "Leftovers",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Restores 1/16 of maximum HP at the end of each turn."
         },
         {
           "name": "Air Balloon",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Grants immunity to Ground-type attacks and hazards until popped by an attack."
         },
         {
           "name": "Life Orb",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         }
       ],
       "moves": [
@@ -13207,17 +13207,17 @@
         {
           "name": "Sitrus Berry",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Restores 25% of maximum HP when dropping below 50% HP."
         },
         {
           "name": "Rocky Helmet",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Damages physical contact attackers by 1/6 of their maximum HP."
         },
         {
-          "name": "Covert Cloak",
+          "name": "Clefablite",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Mega Stone allowing Clefable to Mega Evolve with Magic Guard aura."
         }
       ],
       "moves": [
@@ -13395,7 +13395,7 @@
         {
           "name": "Leftovers",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Restores 1/16 of maximum HP at the end of each turn."
         },
         {
           "name": "Chesto Berry",
@@ -13405,7 +13405,7 @@
         {
           "name": "Air Balloon",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Grants immunity to Ground-type attacks and hazards until popped by an attack."
         }
       ],
       "moves": [
@@ -13570,17 +13570,17 @@
         {
           "name": "Sitrus Berry",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Restores 25% of maximum HP when dropping below 50% HP."
         },
         {
-          "name": "Figy Berry",
+          "name": "Leftovers",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Restores 1/16 of maximum HP at the end of each turn."
         },
         {
-          "name": "Clear Amulet",
+          "name": "Chesto Berry",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Competitive battle item."
         }
       ],
       "moves": [
@@ -13758,17 +13758,17 @@
         {
           "name": "Air Balloon",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Grants immunity to Ground-type attacks and hazards until popped by an attack."
         },
         {
           "name": "Choice Scarf",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         },
         {
           "name": "Life Orb",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         }
       ],
       "moves": [
@@ -13933,17 +13933,17 @@
         {
           "name": "Focus Sash",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         },
         {
-          "name": "Covert Cloak",
+          "name": "White Herb",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Immediately restores any lowered stat stage back to neutral once."
         },
         {
           "name": "Life Orb",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         }
       ],
       "moves": [
@@ -14116,17 +14116,17 @@
         {
           "name": "Leftovers",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Restores 1/16 of maximum HP at the end of each turn."
         },
         {
           "name": "Air Balloon",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Grants immunity to Ground-type attacks and hazards until popped by an attack."
         },
         {
           "name": "Focus Sash",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -14286,17 +14286,17 @@
         {
           "name": "Focus Sash",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         },
         {
-          "name": "Covert Cloak",
+          "name": "Life Orb",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Mental Herb",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Cures infatuation, Taunt, Encore, Torment, and Disable once."
         }
       ],
       "moves": [
@@ -14474,17 +14474,17 @@
         {
           "name": "Absolite Z",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Special Mega Stone allowing Absol to Mega Evolve with Magic Bounce."
         },
         {
           "name": "Life Orb",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -14649,17 +14649,17 @@
         {
           "name": "Absolite Z",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Special Mega Stone allowing Absol to Mega Evolve with Magic Bounce."
         },
         {
           "name": "Focus Sash",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         },
         {
           "name": "Life Orb",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         }
       ],
       "moves": [
@@ -14830,19 +14830,19 @@
       ],
       "items": [
         {
-          "name": "Weakness Policy",
-          "rate": "35.0%",
-          "desc": "Top meta item."
-        },
-        {
           "name": "Leftovers",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Restores 1/16 of maximum HP at the end of each turn."
         },
         {
           "name": "Air Balloon",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Grants immunity to Ground-type attacks and hazards until popped by an attack."
+        },
+        {
+          "name": "Spell Tag",
+          "rate": "35.0%",
+          "desc": "Boosts the power of Ghost-type moves by 20%."
         }
       ],
       "moves": [
@@ -15000,19 +15000,19 @@
       ],
       "items": [
         {
-          "name": "Weakness Policy",
-          "rate": "35.0%",
-          "desc": "Top meta item."
-        },
-        {
           "name": "Leftovers",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Restores 1/16 of maximum HP at the end of each turn."
+        },
+        {
+          "name": "Air Balloon",
+          "rate": "35.0%",
+          "desc": "Grants immunity to Ground-type attacks and hazards until popped by an attack."
         },
         {
           "name": "Spell Tag",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts the power of Ghost-type moves by 20%."
         }
       ],
       "moves": [
@@ -15188,19 +15188,19 @@
       ],
       "items": [
         {
-          "name": "Aerodactylite Z",
+          "name": "Aerodactylite",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Mega Stone allowing Aerodactyl to Mega Evolve with Tough Claws."
         },
         {
           "name": "Focus Sash",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         },
         {
           "name": "Life Orb",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         }
       ],
       "moves": [
@@ -15363,19 +15363,19 @@
       ],
       "items": [
         {
-          "name": "Aerodactylite Z",
+          "name": "Aerodactylite",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Mega Stone allowing Aerodactyl to Mega Evolve with Tough Claws."
         },
         {
           "name": "Focus Sash",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         },
         {
-          "name": "Covert Cloak",
+          "name": "White Herb",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Immediately restores any lowered stat stage back to neutral once."
         }
       ],
       "moves": [
@@ -15551,19 +15551,19 @@
       ],
       "items": [
         {
-          "name": "Alakazite Z",
+          "name": "Alakazite",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Mega Stone allowing Alakazam to Mega Evolve with Trace."
         },
         {
           "name": "Focus Sash",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         },
         {
           "name": "Life Orb",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         }
       ],
       "moves": [
@@ -15726,19 +15726,19 @@
       ],
       "items": [
         {
-          "name": "Alakazite Z",
+          "name": "Alakazite",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Mega Stone allowing Alakazam to Mega Evolve with Trace."
         },
         {
           "name": "Focus Sash",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         },
         {
           "name": "Choice Scarf",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         }
       ],
       "moves": [
@@ -15914,19 +15914,19 @@
       ],
       "items": [
         {
-          "name": "Altarianite Z",
+          "name": "Altarianite",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Mega Stone allowing Altaria to Mega Evolve with Pixilate."
         },
         {
           "name": "Leftovers",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Restores 1/16 of maximum HP at the end of each turn."
         },
         {
           "name": "Air Balloon",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Grants immunity to Ground-type attacks and hazards until popped by an attack."
         }
       ],
       "moves": [
@@ -16089,19 +16089,19 @@
       ],
       "items": [
         {
-          "name": "Altarianite Z",
+          "name": "Altarianite",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Mega Stone allowing Altaria to Mega Evolve with Pixilate."
         },
         {
           "name": "Sitrus Berry",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Restores 25% of maximum HP when dropping below 50% HP."
         },
         {
           "name": "Life Orb",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         }
       ],
       "moves": [
@@ -16279,17 +16279,17 @@
         {
           "name": "Leftovers",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Restores 1/16 of maximum HP at the end of each turn."
         },
         {
           "name": "Choice Scarf",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         },
         {
-          "name": "Punching Glove",
+          "name": "Sitrus Berry",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Restores 25% of maximum HP when dropping below 50% HP."
         }
       ],
       "moves": [
@@ -16454,17 +16454,17 @@
         {
           "name": "Leftovers",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Restores 1/16 of maximum HP at the end of each turn."
         },
         {
           "name": "Choice Scarf",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         },
         {
           "name": "Sitrus Berry",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Restores 25% of maximum HP when dropping below 50% HP."
         }
       ],
       "moves": [
@@ -16640,19 +16640,19 @@
       ],
       "items": [
         {
-          "name": "Waterium Z",
+          "name": "Mystic Water",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts the power of Water-type moves by 20%."
         },
         {
           "name": "Leftovers",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Restores 1/16 of maximum HP at the end of each turn."
         },
         {
           "name": "Choice Scarf",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         }
       ],
       "moves": [
@@ -16817,17 +16817,17 @@
         {
           "name": "Mystic Water",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts the power of Water-type moves by 20%."
         },
         {
           "name": "Sitrus Berry",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Restores 25% of maximum HP when dropping below 50% HP."
         },
         {
-          "name": "Clear Amulet",
+          "name": "Choice Scarf",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         }
       ],
       "moves": [
@@ -17005,17 +17005,17 @@
         {
           "name": "Leftovers",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Restores 1/16 of maximum HP at the end of each turn."
         },
         {
           "name": "Sitrus Berry",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Restores 25% of maximum HP when dropping below 50% HP."
         },
         {
-          "name": "Clear Amulet",
+          "name": "Choice Scarf",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         }
       ],
       "moves": [
@@ -17180,17 +17180,17 @@
         {
           "name": "Sitrus Berry",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Restores 25% of maximum HP when dropping below 50% HP."
         },
         {
-          "name": "Throat Spray",
+          "name": "Life Orb",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Leftovers",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Restores 1/16 of maximum HP at the end of each turn."
         }
       ],
       "moves": [
@@ -17368,17 +17368,17 @@
         {
           "name": "Choice Scarf",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         },
         {
-          "name": "Choice Scarf",
+          "name": "Life Orb",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Air Balloon",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Grants immunity to Ground-type attacks and hazards until popped by an attack."
         }
       ],
       "moves": [
@@ -17543,17 +17543,17 @@
         {
           "name": "Choice Scarf",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         },
         {
-          "name": "Clear Amulet",
+          "name": "White Herb",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Immediately restores any lowered stat stage back to neutral once."
         },
         {
-          "name": "Clear Amulet",
+          "name": "Lum Berry",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Instantly cures any status condition (burn, paralysis, sleep, poison, confusion)."
         }
       ],
       "moves": [
@@ -17729,19 +17729,19 @@
       ],
       "items": [
         {
-          "name": "Weakness Policy",
-          "rate": "35.0%",
-          "desc": "Top meta item."
-        },
-        {
           "name": "Life Orb",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
+        },
+        {
+          "name": "Focus Sash",
+          "rate": "35.0%",
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         },
         {
           "name": "Choice Scarf",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         }
       ],
       "moves": [
@@ -17906,17 +17906,17 @@
         {
           "name": "Twisted Spoon",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts the power of Psychic-type moves by 20%."
         },
         {
           "name": "Life Orb",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -18089,17 +18089,17 @@
         {
           "name": "Sitrus Berry",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Restores 25% of maximum HP when dropping below 50% HP."
         },
         {
           "name": "Choice Scarf",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         },
         {
-          "name": "Clear Amulet",
+          "name": "Life Orb",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         }
       ],
       "moves": [
@@ -18259,17 +18259,17 @@
         {
           "name": "Sitrus Berry",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Restores 25% of maximum HP when dropping below 50% HP."
         },
         {
           "name": "Choice Scarf",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         },
         {
-          "name": "Clear Amulet",
+          "name": "Life Orb",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         }
       ],
       "moves": [
@@ -18445,19 +18445,19 @@
       ],
       "items": [
         {
-          "name": "Banettite Z",
+          "name": "Banettite",
           "rate": "78.4%",
-          "desc": "Mega Stone granting 165 Attack and Prankster status moves."
+          "desc": "Mega Stone allowing Banette to Mega Evolve with Prankster."
         },
         {
           "name": "Life Orb",
           "rate": "24.0%",
-          "desc": "Damage amplifier."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "18.0%",
-          "desc": "Survives fatal hit."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -18620,19 +18620,19 @@
       ],
       "items": [
         {
-          "name": "Banettite Z",
+          "name": "Banettite",
           "rate": "78.4%",
-          "desc": "Mega Stone granting 165 Attack and Prankster status moves."
+          "desc": "Mega Stone allowing Banette to Mega Evolve with Prankster."
         },
         {
           "name": "Sitrus Berry",
           "rate": "28.0%",
-          "desc": "Recovers 25% max HP."
+          "desc": "Restores 25% of maximum HP when dropping below 50% HP."
         },
         {
-          "name": "Clear Amulet",
+          "name": "White Herb",
           "rate": "22.0%",
-          "desc": "Blocks Intimidate."
+          "desc": "Immediately restores any lowered stat stage back to neutral once."
         }
       ],
       "moves": [
@@ -18810,17 +18810,17 @@
         {
           "name": "Choice Scarf",
           "rate": "42.0%",
-          "desc": "Boosts Attack by 50%."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         },
         {
           "name": "Life Orb",
           "rate": "28.0%",
-          "desc": "Boosts damage by 30%."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "18.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -18985,17 +18985,17 @@
         {
           "name": "Sitrus Berry",
           "rate": "38.0%",
-          "desc": "VGC staple healing."
+          "desc": "Restores 25% of maximum HP when dropping below 50% HP."
         },
         {
-          "name": "Clear Amulet",
+          "name": "White Herb",
           "rate": "32.0%",
-          "desc": "Prevents stat drops."
+          "desc": "Immediately restores any lowered stat stage back to neutral once."
         },
         {
           "name": "Focus Sash",
           "rate": "20.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -19173,17 +19173,17 @@
         {
           "name": "Choice Scarf",
           "rate": "44.0%",
-          "desc": "Boosts Sp. Atk by 50%."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         },
         {
           "name": "Life Orb",
           "rate": "26.0%",
-          "desc": "Damage amplifier."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "16.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -19348,17 +19348,17 @@
         {
           "name": "Sitrus Berry",
           "rate": "38.0%",
-          "desc": "VGC staple healing."
+          "desc": "Restores 25% of maximum HP when dropping below 50% HP."
         },
         {
-          "name": "Clear Amulet",
+          "name": "Life Orb",
           "rate": "32.0%",
-          "desc": "Prevents stat drops."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "20.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -19536,17 +19536,17 @@
         {
           "name": "Choice Scarf",
           "rate": "44.0%",
-          "desc": "Boosts Sp. Atk by 50%."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         },
         {
           "name": "Life Orb",
           "rate": "26.0%",
-          "desc": "Damage amplifier."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "16.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -19711,17 +19711,17 @@
         {
           "name": "Sitrus Berry",
           "rate": "38.0%",
-          "desc": "VGC staple healing."
+          "desc": "Restores 25% of maximum HP when dropping below 50% HP."
         },
         {
-          "name": "Clear Amulet",
+          "name": "Life Orb",
           "rate": "32.0%",
-          "desc": "Prevents stat drops."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "20.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -19897,19 +19897,19 @@
       ],
       "items": [
         {
-          "name": "Cameruptite Z",
+          "name": "Cameruptite",
           "rate": "72.0%",
-          "desc": "Mega Stone granting 145 Sp. Atk and Sheer Force."
+          "desc": "Mega Stone allowing Camerupt to Mega Evolve with Sheer Force."
         },
         {
           "name": "Life Orb",
           "rate": "24.0%",
-          "desc": "Damage amplifier."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "18.0%",
-          "desc": "Survives fatal hit."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -20072,19 +20072,19 @@
       ],
       "items": [
         {
-          "name": "Cameruptite Z",
+          "name": "Cameruptite",
           "rate": "72.0%",
-          "desc": "Mega Stone granting 145 Sp. Atk and Sheer Force."
+          "desc": "Mega Stone allowing Camerupt to Mega Evolve with Sheer Force."
         },
         {
           "name": "Sitrus Berry",
           "rate": "28.0%",
-          "desc": "Recovers 25% max HP."
+          "desc": "Restores 25% of maximum HP when dropping below 50% HP."
         },
         {
-          "name": "Clear Amulet",
+          "name": "Life Orb",
           "rate": "22.0%",
-          "desc": "Blocks Intimidate."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         }
       ],
       "moves": [
@@ -20262,17 +20262,17 @@
         {
           "name": "Focus Sash",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         },
         {
           "name": "Life Orb",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Leftovers",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Restores 1/16 of maximum HP at the end of each turn."
         }
       ],
       "moves": [
@@ -20437,17 +20437,17 @@
         {
           "name": "Focus Sash",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         },
         {
           "name": "Life Orb",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
-          "name": "Clear Amulet",
+          "name": "White Herb",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Immediately restores any lowered stat stage back to neutral once."
         }
       ],
       "moves": [
@@ -20630,17 +20630,17 @@
         {
           "name": "Choice Scarf",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         },
         {
-          "name": "Choice Scarf",
+          "name": "Chandelurite",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Mega Stone allowing Chandelure to Mega Evolve with Shadow Tag/Flash Fire boost."
         },
         {
           "name": "Focus Sash",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -20810,17 +20810,17 @@
         {
           "name": "Focus Sash",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         },
         {
           "name": "Choice Scarf",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         },
         {
-          "name": "Covert Cloak",
+          "name": "Chandelurite",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Mega Stone allowing Chandelure to Mega Evolve with Shadow Tag/Flash Fire boost."
         }
       ],
       "moves": [
@@ -20998,17 +20998,17 @@
         {
           "name": "Air Balloon",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Grants immunity to Ground-type attacks and hazards until popped by an attack."
         },
         {
           "name": "Life Orb",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Choice Scarf",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         }
       ],
       "moves": [
@@ -21173,17 +21173,17 @@
         {
           "name": "Life Orb",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         },
         {
           "name": "Choice Scarf",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         }
       ],
       "moves": [
@@ -21361,17 +21361,17 @@
         {
           "name": "Choice Scarf",
           "rate": "44.0%",
-          "desc": "Boosts Sp. Atk by 50%."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         },
         {
           "name": "Life Orb",
           "rate": "26.0%",
-          "desc": "Damage amplifier."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "16.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -21536,17 +21536,17 @@
         {
           "name": "Sitrus Berry",
           "rate": "38.0%",
-          "desc": "VGC staple healing."
+          "desc": "Restores 25% of maximum HP when dropping below 50% HP."
         },
         {
-          "name": "Clear Amulet",
+          "name": "Delphoxite",
           "rate": "32.0%",
-          "desc": "Prevents stat drops."
+          "desc": "Mega Stone allowing Delphox to Mega Evolve with Magician psychic flare."
         },
         {
           "name": "Focus Sash",
           "rate": "20.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -21719,17 +21719,17 @@
         {
           "name": "Choice Scarf",
           "rate": "42.0%",
-          "desc": "Boosts Attack by 50%."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         },
         {
           "name": "Life Orb",
           "rate": "28.0%",
-          "desc": "Boosts damage by 30%."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "18.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -21889,17 +21889,17 @@
         {
           "name": "Sitrus Berry",
           "rate": "38.0%",
-          "desc": "VGC staple healing."
+          "desc": "Restores 25% of maximum HP when dropping below 50% HP."
         },
         {
-          "name": "Clear Amulet",
+          "name": "White Herb",
           "rate": "32.0%",
-          "desc": "Prevents stat drops."
+          "desc": "Immediately restores any lowered stat stage back to neutral once."
         },
         {
           "name": "Focus Sash",
           "rate": "20.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -22077,17 +22077,17 @@
         {
           "name": "Choice Scarf",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         },
         {
           "name": "Life Orb",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
-          "name": "Clear Amulet",
+          "name": "Dragalgite",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Mega Stone allowing Dragalge to Mega Evolve with Adaptability potency."
         }
       ],
       "moves": [
@@ -22250,19 +22250,19 @@
       ],
       "items": [
         {
-          "name": "Clear Amulet",
+          "name": "Dragalgite",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Mega Stone allowing Dragalge to Mega Evolve with Adaptability potency."
         },
         {
           "name": "Choice Scarf",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         },
         {
           "name": "Sitrus Berry",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Restores 25% of maximum HP when dropping below 50% HP."
         }
       ],
       "moves": [
@@ -22440,17 +22440,17 @@
         {
           "name": "Choice Scarf",
           "rate": "44.0%",
-          "desc": "Boosts Sp. Atk by 50%."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         },
         {
           "name": "Life Orb",
           "rate": "26.0%",
-          "desc": "Damage amplifier."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "16.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -22615,17 +22615,17 @@
         {
           "name": "Sitrus Berry",
           "rate": "38.0%",
-          "desc": "VGC staple healing."
+          "desc": "Restores 25% of maximum HP when dropping below 50% HP."
         },
         {
-          "name": "Clear Amulet",
+          "name": "Life Orb",
           "rate": "32.0%",
-          "desc": "Prevents stat drops."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "20.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -22803,17 +22803,17 @@
         {
           "name": "Choice Scarf",
           "rate": "44.0%",
-          "desc": "Boosts Sp. Atk by 50%."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         },
         {
           "name": "Life Orb",
           "rate": "26.0%",
-          "desc": "Damage amplifier."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "16.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -22978,17 +22978,17 @@
         {
           "name": "Sitrus Berry",
           "rate": "38.0%",
-          "desc": "VGC staple healing."
+          "desc": "Restores 25% of maximum HP when dropping below 50% HP."
         },
         {
-          "name": "Clear Amulet",
+          "name": "Life Orb",
           "rate": "32.0%",
-          "desc": "Prevents stat drops."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "20.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -23166,17 +23166,17 @@
         {
           "name": "Choice Scarf",
           "rate": "44.0%",
-          "desc": "Boosts Sp. Atk by 50%."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         },
         {
           "name": "Life Orb",
           "rate": "26.0%",
-          "desc": "Damage amplifier."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "16.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -23341,17 +23341,17 @@
         {
           "name": "Sitrus Berry",
           "rate": "38.0%",
-          "desc": "VGC staple healing."
+          "desc": "Restores 25% of maximum HP when dropping below 50% HP."
         },
         {
-          "name": "Clear Amulet",
+          "name": "Life Orb",
           "rate": "32.0%",
-          "desc": "Prevents stat drops."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "20.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -23529,17 +23529,17 @@
         {
           "name": "Focus Sash",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         },
         {
           "name": "Life Orb",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Leftovers",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Restores 1/16 of maximum HP at the end of each turn."
         }
       ],
       "moves": [
@@ -23704,17 +23704,17 @@
         {
           "name": "Life Orb",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         },
         {
-          "name": "Clear Amulet",
+          "name": "Excadrite",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Mega Stone allowing Excadrill to Mega Evolve with Sand Rush momentum."
         }
       ],
       "moves": [
@@ -23892,17 +23892,17 @@
         {
           "name": "Choice Scarf",
           "rate": "44.0%",
-          "desc": "Boosts Sp. Atk by 50%."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         },
         {
           "name": "Life Orb",
           "rate": "26.0%",
-          "desc": "Damage amplifier."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "16.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -24067,17 +24067,17 @@
         {
           "name": "Sitrus Berry",
           "rate": "38.0%",
-          "desc": "VGC staple healing."
+          "desc": "Restores 25% of maximum HP when dropping below 50% HP."
         },
         {
-          "name": "Clear Amulet",
+          "name": "Life Orb",
           "rate": "32.0%",
-          "desc": "Prevents stat drops."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "20.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -24255,17 +24255,17 @@
         {
           "name": "Floettite",
           "rate": "95.2%",
-          "desc": "Mega Stone enabling Eternal Flower Floette to Mega Evolve with Fairy Aura and colossal Special Attack."
+          "desc": "Mega Stone allowing Floette to Mega Evolve with Light of Ruin radiance."
         },
         {
           "name": "Life Orb",
           "rate": "3.2%",
-          "desc": "Non-Mega offensive variant boosting all damage by 30%."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "1.6%",
-          "desc": "Guarantees surviving lethal hit at 1 HP to unleash Light of Ruin."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -24430,17 +24430,17 @@
         {
           "name": "Floettite",
           "rate": "96.5%",
-          "desc": "Mega Stone enabling Mega Floette's Fairy Aura and astronomical Special Attack."
+          "desc": "Mega Stone allowing Floette to Mega Evolve with Light of Ruin radiance."
         },
         {
           "name": "Focus Sash",
           "rate": "2.1%",
-          "desc": "Guarantees survival to fire off decisive Light of Ruin nuke."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         },
         {
           "name": "Life Orb",
           "rate": "1.4%",
-          "desc": "Flat 30% offensive damage amplifier."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         }
       ],
       "moves": [
@@ -24618,17 +24618,17 @@
         {
           "name": "Choice Scarf",
           "rate": "42.0%",
-          "desc": "Boosts Attack by 50%."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         },
         {
           "name": "Life Orb",
           "rate": "28.0%",
-          "desc": "Boosts damage by 30%."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "18.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -24793,17 +24793,17 @@
         {
           "name": "Sitrus Berry",
           "rate": "38.0%",
-          "desc": "VGC staple healing."
+          "desc": "Restores 25% of maximum HP when dropping below 50% HP."
         },
         {
-          "name": "Clear Amulet",
+          "name": "Froslassite",
           "rate": "32.0%",
-          "desc": "Prevents stat drops."
+          "desc": "Mega Stone allowing Froslass to Mega Evolve with Snow Cloak chill."
         },
         {
           "name": "Focus Sash",
           "rate": "20.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -24979,19 +24979,19 @@
       ],
       "items": [
         {
-          "name": "Galladite Z",
+          "name": "Galladite",
           "rate": "64.0%",
-          "desc": "Mega Stone granting 165 Attack and 110 Speed with Inner Focus."
+          "desc": "Mega Stone allowing Gallade to Mega Evolve with Inner Focus."
         },
         {
           "name": "Life Orb",
           "rate": "24.0%",
-          "desc": "Damage amplifier."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "18.0%",
-          "desc": "Survives fatal hit."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -25154,19 +25154,19 @@
       ],
       "items": [
         {
-          "name": "Galladite Z",
+          "name": "Galladite",
           "rate": "64.0%",
-          "desc": "Mega Stone granting 165 Attack and 110 Speed with Inner Focus."
+          "desc": "Mega Stone allowing Gallade to Mega Evolve with Inner Focus."
         },
         {
           "name": "Sitrus Berry",
           "rate": "28.0%",
-          "desc": "Recovers 25% max HP."
+          "desc": "Restores 25% of maximum HP when dropping below 50% HP."
         },
         {
-          "name": "Clear Amulet",
+          "name": "White Herb",
           "rate": "22.0%",
-          "desc": "Blocks Intimidate."
+          "desc": "Immediately restores any lowered stat stage back to neutral once."
         }
       ],
       "moves": [
@@ -25344,7 +25344,7 @@
         {
           "name": "Focus Sash",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         },
         {
           "name": "Red Card",
@@ -25352,9 +25352,9 @@
           "desc": "Top meta item."
         },
         {
-          "name": "Clear Amulet",
+          "name": "Glimmoranite",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Mega Stone allowing Glimmora to Mega Evolve with Toxic Debris surge."
         }
       ],
       "moves": [
@@ -25519,17 +25519,17 @@
         {
           "name": "Focus Sash",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         },
         {
-          "name": "Covert Cloak",
+          "name": "Glimmoranite",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Mega Stone allowing Glimmora to Mega Evolve with Toxic Debris surge."
         },
         {
-          "name": "Power Herb",
+          "name": "Life Orb",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         }
       ],
       "moves": [
@@ -25702,17 +25702,17 @@
         {
           "name": "Air Balloon",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Grants immunity to Ground-type attacks and hazards until popped by an attack."
         },
         {
-          "name": "Clear Amulet",
+          "name": "Golisopite",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Mega Stone allowing Golisopod to Mega Evolve with Emergency Exit overdrive."
         },
         {
           "name": "Choice Scarf",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         }
       ],
       "moves": [
@@ -25870,19 +25870,19 @@
       ],
       "items": [
         {
-          "name": "Clear Amulet",
+          "name": "Golisopite",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Mega Stone allowing Golisopod to Mega Evolve with Emergency Exit overdrive."
         },
         {
           "name": "Sitrus Berry",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Restores 25% of maximum HP when dropping below 50% HP."
         },
         {
           "name": "Life Orb",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         }
       ],
       "moves": [
@@ -26065,17 +26065,17 @@
         {
           "name": "Choice Scarf",
           "rate": "44.0%",
-          "desc": "Boosts Sp. Atk by 50%."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         },
         {
           "name": "Life Orb",
           "rate": "26.0%",
-          "desc": "Damage amplifier."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "16.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -26245,17 +26245,17 @@
         {
           "name": "Sitrus Berry",
           "rate": "38.0%",
-          "desc": "VGC staple healing."
+          "desc": "Restores 25% of maximum HP when dropping below 50% HP."
         },
         {
-          "name": "Clear Amulet",
+          "name": "Life Orb",
           "rate": "32.0%",
-          "desc": "Prevents stat drops."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "20.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -26433,17 +26433,17 @@
         {
           "name": "Choice Scarf",
           "rate": "42.0%",
-          "desc": "Boosts Attack by 50%."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         },
         {
           "name": "Life Orb",
           "rate": "28.0%",
-          "desc": "Boosts damage by 30%."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "18.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -26608,17 +26608,17 @@
         {
           "name": "Sitrus Berry",
           "rate": "38.0%",
-          "desc": "VGC staple healing."
+          "desc": "Restores 25% of maximum HP when dropping below 50% HP."
         },
         {
-          "name": "Clear Amulet",
+          "name": "White Herb",
           "rate": "32.0%",
-          "desc": "Prevents stat drops."
+          "desc": "Immediately restores any lowered stat stage back to neutral once."
         },
         {
           "name": "Focus Sash",
           "rate": "20.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -26801,17 +26801,17 @@
         {
           "name": "Life Orb",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Choice Scarf",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         },
         {
           "name": "Focus Sash",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -26981,17 +26981,17 @@
         {
           "name": "Life Orb",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         },
         {
           "name": "Choice Scarf",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         }
       ],
       "moves": [
@@ -27164,17 +27164,17 @@
         {
           "name": "Leftovers",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Restores 1/16 of maximum HP at the end of each turn."
         },
         {
           "name": "Life Orb",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -27334,17 +27334,17 @@
         {
           "name": "Life Orb",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         },
         {
-          "name": "Covert Cloak",
+          "name": "Choice Scarf",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         }
       ],
       "moves": [
@@ -27517,17 +27517,17 @@
         {
           "name": "Choice Scarf",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         },
         {
-          "name": "Choice Scarf",
+          "name": "Leftovers",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Restores 1/16 of maximum HP at the end of each turn."
         },
         {
           "name": "Life Orb",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         }
       ],
       "moves": [
@@ -27687,17 +27687,17 @@
         {
           "name": "Life Orb",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Choice Scarf",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         },
         {
-          "name": "Covert Cloak",
+          "name": "Focus Sash",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -27870,17 +27870,17 @@
         {
           "name": "Choice Scarf",
           "rate": "44.0%",
-          "desc": "Boosts Sp. Atk by 50%."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         },
         {
           "name": "Life Orb",
           "rate": "26.0%",
-          "desc": "Damage amplifier."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "16.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -28040,17 +28040,17 @@
         {
           "name": "Sitrus Berry",
           "rate": "38.0%",
-          "desc": "VGC staple healing."
+          "desc": "Restores 25% of maximum HP when dropping below 50% HP."
         },
         {
-          "name": "Clear Amulet",
+          "name": "Terrain Extender",
           "rate": "32.0%",
-          "desc": "Prevents stat drops."
+          "desc": "Extends the duration of terrain effects from 5 to 8 turns."
         },
         {
           "name": "Focus Sash",
           "rate": "20.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -28223,17 +28223,17 @@
         {
           "name": "Choice Scarf",
           "rate": "44.0%",
-          "desc": "Boosts Sp. Atk by 50%."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         },
         {
           "name": "Life Orb",
           "rate": "26.0%",
-          "desc": "Damage amplifier."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "16.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -28393,17 +28393,17 @@
         {
           "name": "Sitrus Berry",
           "rate": "38.0%",
-          "desc": "VGC staple healing."
+          "desc": "Restores 25% of maximum HP when dropping below 50% HP."
         },
         {
-          "name": "Clear Amulet",
+          "name": "Terrain Extender",
           "rate": "32.0%",
-          "desc": "Prevents stat drops."
+          "desc": "Extends the duration of terrain effects from 5 to 8 turns."
         },
         {
           "name": "Focus Sash",
           "rate": "20.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -28581,17 +28581,17 @@
         {
           "name": "Choice Scarf",
           "rate": "44.0%",
-          "desc": "Boosts Sp. Atk by 50%."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         },
         {
           "name": "Life Orb",
           "rate": "26.0%",
-          "desc": "Damage amplifier."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "16.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -28756,17 +28756,17 @@
         {
           "name": "Sitrus Berry",
           "rate": "38.0%",
-          "desc": "VGC staple healing."
+          "desc": "Restores 25% of maximum HP when dropping below 50% HP."
         },
         {
-          "name": "Clear Amulet",
+          "name": "Life Orb",
           "rate": "32.0%",
-          "desc": "Prevents stat drops."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "20.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -28944,17 +28944,17 @@
         {
           "name": "Choice Scarf",
           "rate": "42.0%",
-          "desc": "Boosts Attack by 50%."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         },
         {
           "name": "Life Orb",
           "rate": "28.0%",
-          "desc": "Boosts damage by 30%."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "18.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -29119,17 +29119,17 @@
         {
           "name": "Sitrus Berry",
           "rate": "38.0%",
-          "desc": "VGC staple healing."
+          "desc": "Restores 25% of maximum HP when dropping below 50% HP."
         },
         {
-          "name": "Clear Amulet",
+          "name": "White Herb",
           "rate": "32.0%",
-          "desc": "Prevents stat drops."
+          "desc": "Immediately restores any lowered stat stage back to neutral once."
         },
         {
           "name": "Focus Sash",
           "rate": "20.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -29310,19 +29310,19 @@
       ],
       "items": [
         {
-          "name": "Throat Spray",
+          "name": "Choice Scarf",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         },
         {
           "name": "Leftovers",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Restores 1/16 of maximum HP at the end of each turn."
         },
         {
           "name": "Life Orb",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         }
       ],
       "moves": [
@@ -29490,19 +29490,19 @@
       ],
       "items": [
         {
-          "name": "Throat Spray",
+          "name": "White Herb",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Immediately restores any lowered stat stage back to neutral once."
         },
         {
-          "name": "Clear Amulet",
+          "name": "Lum Berry",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Instantly cures any status condition (burn, paralysis, sleep, poison, confusion)."
         },
         {
           "name": "Sitrus Berry",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Restores 25% of maximum HP when dropping below 50% HP."
         }
       ],
       "moves": [
@@ -29678,19 +29678,19 @@
       ],
       "items": [
         {
-          "name": "Lopunnite Z",
+          "name": "Lopunnite",
           "rate": "74.0%",
-          "desc": "Mega Stone granting 136 Attack and 135 Speed with Scrappy."
+          "desc": "Mega Stone allowing Lopunny to Mega Evolve with Scrappy."
         },
         {
           "name": "Life Orb",
           "rate": "24.0%",
-          "desc": "Damage amplifier."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "18.0%",
-          "desc": "Survives fatal hit."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -29853,19 +29853,19 @@
       ],
       "items": [
         {
-          "name": "Lopunnite Z",
+          "name": "Lopunnite",
           "rate": "74.0%",
-          "desc": "Mega Stone granting 136 Attack and 135 Speed with Scrappy."
+          "desc": "Mega Stone allowing Lopunny to Mega Evolve with Scrappy."
         },
         {
           "name": "Sitrus Berry",
           "rate": "28.0%",
-          "desc": "Recovers 25% max HP."
+          "desc": "Restores 25% of maximum HP when dropping below 50% HP."
         },
         {
-          "name": "Clear Amulet",
+          "name": "White Herb",
           "rate": "22.0%",
-          "desc": "Blocks Intimidate."
+          "desc": "Immediately restores any lowered stat stage back to neutral once."
         }
       ],
       "moves": [
@@ -30043,17 +30043,17 @@
         {
           "name": "Focus Sash",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         },
         {
           "name": "Life Orb",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Choice Scarf",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         }
       ],
       "moves": [
@@ -30218,17 +30218,17 @@
         {
           "name": "Life Orb",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         },
         {
-          "name": "Clear Amulet",
+          "name": "White Herb",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Immediately restores any lowered stat stage back to neutral once."
         }
       ],
       "moves": [
@@ -30406,17 +30406,17 @@
         {
           "name": "Choice Scarf",
           "rate": "42.0%",
-          "desc": "Boosts Attack by 50%."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         },
         {
           "name": "Life Orb",
           "rate": "28.0%",
-          "desc": "Boosts damage by 30%."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "18.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -30581,17 +30581,17 @@
         {
           "name": "Sitrus Berry",
           "rate": "38.0%",
-          "desc": "VGC staple healing."
+          "desc": "Restores 25% of maximum HP when dropping below 50% HP."
         },
         {
-          "name": "Clear Amulet",
+          "name": "White Herb",
           "rate": "32.0%",
-          "desc": "Prevents stat drops."
+          "desc": "Immediately restores any lowered stat stage back to neutral once."
         },
         {
           "name": "Focus Sash",
           "rate": "20.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -30769,17 +30769,17 @@
         {
           "name": "Choice Scarf",
           "rate": "44.0%",
-          "desc": "Boosts Sp. Atk by 50%."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         },
         {
           "name": "Life Orb",
           "rate": "26.0%",
-          "desc": "Damage amplifier."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "16.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -30944,17 +30944,17 @@
         {
           "name": "Sitrus Berry",
           "rate": "38.0%",
-          "desc": "VGC staple healing."
+          "desc": "Restores 25% of maximum HP when dropping below 50% HP."
         },
         {
-          "name": "Clear Amulet",
+          "name": "Meganiumite",
           "rate": "32.0%",
-          "desc": "Prevents stat drops."
+          "desc": "Mega Stone allowing Meganium to Mega Evolve with enhanced Grass support."
         },
         {
           "name": "Focus Sash",
           "rate": "20.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -31132,17 +31132,17 @@
         {
           "name": "Choice Scarf",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         },
         {
-          "name": "Choice Scarf",
+          "name": "Life Orb",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -31307,17 +31307,17 @@
         {
           "name": "Focus Sash",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         },
         {
           "name": "Choice Scarf",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         },
         {
           "name": "Life Orb",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         }
       ],
       "moves": [
@@ -31495,17 +31495,17 @@
         {
           "name": "Choice Scarf",
           "rate": "44.0%",
-          "desc": "Boosts Sp. Atk by 50%."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         },
         {
           "name": "Life Orb",
           "rate": "26.0%",
-          "desc": "Damage amplifier."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "16.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -31670,17 +31670,17 @@
         {
           "name": "Sitrus Berry",
           "rate": "38.0%",
-          "desc": "VGC staple healing."
+          "desc": "Restores 25% of maximum HP when dropping below 50% HP."
         },
         {
-          "name": "Clear Amulet",
+          "name": "Life Orb",
           "rate": "32.0%",
-          "desc": "Prevents stat drops."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "20.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -31856,19 +31856,19 @@
       ],
       "items": [
         {
-          "name": "Flame Orb",
-          "rate": "35.0%",
-          "desc": "Top meta item."
-        },
-        {
           "name": "Leftovers",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Restores 1/16 of maximum HP at the end of each turn."
+        },
+        {
+          "name": "Sitrus Berry",
+          "rate": "35.0%",
+          "desc": "Restores 25% of maximum HP when dropping below 50% HP."
         },
         {
           "name": "Air Balloon",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Grants immunity to Ground-type attacks and hazards until popped by an attack."
         }
       ],
       "moves": [
@@ -32033,17 +32033,17 @@
         {
           "name": "Leftovers",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Restores 1/16 of maximum HP at the end of each turn."
         },
         {
           "name": "Sitrus Berry",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Restores 25% of maximum HP when dropping below 50% HP."
         },
         {
-          "name": "Adrenaline Orb",
+          "name": "Rocky Helmet",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Damages physical contact attackers by 1/6 of their maximum HP."
         }
       ],
       "moves": [
@@ -32221,17 +32221,17 @@
         {
           "name": "Choice Scarf",
           "rate": "44.0%",
-          "desc": "Boosts Sp. Atk by 50%."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         },
         {
           "name": "Life Orb",
           "rate": "26.0%",
-          "desc": "Damage amplifier."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "16.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -32396,17 +32396,17 @@
         {
           "name": "Sitrus Berry",
           "rate": "38.0%",
-          "desc": "VGC staple healing."
+          "desc": "Restores 25% of maximum HP when dropping below 50% HP."
         },
         {
-          "name": "Clear Amulet",
+          "name": "Heat Rock",
           "rate": "32.0%",
-          "desc": "Prevents stat drops."
+          "desc": "Extends sunny weather created by the user from 5 to 8 turns."
         },
         {
           "name": "Focus Sash",
           "rate": "20.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -32579,17 +32579,17 @@
         {
           "name": "Choice Scarf",
           "rate": "44.0%",
-          "desc": "Boosts Sp. Atk by 50%."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         },
         {
           "name": "Life Orb",
           "rate": "26.0%",
-          "desc": "Damage amplifier."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "16.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -32749,17 +32749,17 @@
         {
           "name": "Sitrus Berry",
           "rate": "38.0%",
-          "desc": "VGC staple healing."
+          "desc": "Restores 25% of maximum HP when dropping below 50% HP."
         },
         {
-          "name": "Clear Amulet",
+          "name": "Icy Rock",
           "rate": "32.0%",
-          "desc": "Prevents stat drops."
+          "desc": "Extends snow/hail weather created by the user from 5 to 8 turns."
         },
         {
           "name": "Focus Sash",
           "rate": "20.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -32932,17 +32932,17 @@
         {
           "name": "Choice Scarf",
           "rate": "42.0%",
-          "desc": "Boosts Attack by 50%."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         },
         {
           "name": "Life Orb",
           "rate": "28.0%",
-          "desc": "Boosts damage by 30%."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "18.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -33102,17 +33102,17 @@
         {
           "name": "Sitrus Berry",
           "rate": "38.0%",
-          "desc": "VGC staple healing."
+          "desc": "Restores 25% of maximum HP when dropping below 50% HP."
         },
         {
-          "name": "Clear Amulet",
+          "name": "White Herb",
           "rate": "32.0%",
-          "desc": "Prevents stat drops."
+          "desc": "Immediately restores any lowered stat stage back to neutral once."
         },
         {
           "name": "Focus Sash",
           "rate": "20.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -33295,17 +33295,17 @@
         {
           "name": "Choice Scarf",
           "rate": "42.0%",
-          "desc": "Boosts Attack by 50%."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         },
         {
           "name": "Life Orb",
           "rate": "28.0%",
-          "desc": "Boosts damage by 30%."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "18.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -33475,17 +33475,17 @@
         {
           "name": "Sitrus Berry",
           "rate": "38.0%",
-          "desc": "VGC staple healing."
+          "desc": "Restores 25% of maximum HP when dropping below 50% HP."
         },
         {
-          "name": "Clear Amulet",
+          "name": "White Herb",
           "rate": "32.0%",
-          "desc": "Prevents stat drops."
+          "desc": "Immediately restores any lowered stat stage back to neutral once."
         },
         {
           "name": "Focus Sash",
           "rate": "20.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -33663,17 +33663,17 @@
         {
           "name": "Choice Scarf",
           "rate": "42.0%",
-          "desc": "Boosts Attack by 50%."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         },
         {
           "name": "Life Orb",
           "rate": "28.0%",
-          "desc": "Boosts damage by 30%."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "18.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -33838,17 +33838,17 @@
         {
           "name": "Sitrus Berry",
           "rate": "38.0%",
-          "desc": "VGC staple healing."
+          "desc": "Restores 25% of maximum HP when dropping below 50% HP."
         },
         {
-          "name": "Clear Amulet",
+          "name": "White Herb",
           "rate": "32.0%",
-          "desc": "Prevents stat drops."
+          "desc": "Immediately restores any lowered stat stage back to neutral once."
         },
         {
           "name": "Focus Sash",
           "rate": "20.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -34021,17 +34021,17 @@
         {
           "name": "Choice Scarf",
           "rate": "42.0%",
-          "desc": "Boosts Attack by 50%."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         },
         {
           "name": "Life Orb",
           "rate": "28.0%",
-          "desc": "Boosts damage by 30%."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "18.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -34191,17 +34191,17 @@
         {
           "name": "Sitrus Berry",
           "rate": "38.0%",
-          "desc": "VGC staple healing."
+          "desc": "Restores 25% of maximum HP when dropping below 50% HP."
         },
         {
-          "name": "Clear Amulet",
+          "name": "Terrain Extender",
           "rate": "32.0%",
-          "desc": "Prevents stat drops."
+          "desc": "Extends the duration of terrain effects from 5 to 8 turns."
         },
         {
           "name": "Focus Sash",
           "rate": "20.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -34374,17 +34374,17 @@
         {
           "name": "Choice Scarf",
           "rate": "44.0%",
-          "desc": "Boosts Sp. Atk by 50%."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         },
         {
           "name": "Life Orb",
           "rate": "26.0%",
-          "desc": "Damage amplifier."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "16.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -34544,17 +34544,17 @@
         {
           "name": "Sitrus Berry",
           "rate": "38.0%",
-          "desc": "VGC staple healing."
+          "desc": "Restores 25% of maximum HP when dropping below 50% HP."
         },
         {
-          "name": "Clear Amulet",
+          "name": "Damp Rock",
           "rate": "32.0%",
-          "desc": "Prevents stat drops."
+          "desc": "Extends rain weather created by the user from 5 to 8 turns."
         },
         {
           "name": "Focus Sash",
           "rate": "20.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -34732,17 +34732,17 @@
         {
           "name": "White Herb",
           "rate": "26.0%",
-          "desc": "Restores dropped defenses after Shell Smash."
+          "desc": "Immediately restores any lowered stat stage back to neutral once."
         },
         {
           "name": "Life Orb",
           "rate": "24.0%",
-          "desc": "Damage amplifier."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "18.0%",
-          "desc": "Survives fatal hit."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -34907,17 +34907,17 @@
         {
           "name": "White Herb",
           "rate": "26.0%",
-          "desc": "Restores dropped defenses after Shell Smash."
+          "desc": "Immediately restores any lowered stat stage back to neutral once."
         },
         {
           "name": "Sitrus Berry",
           "rate": "28.0%",
-          "desc": "Recovers 25% max HP."
+          "desc": "Restores 25% of maximum HP when dropping below 50% HP."
         },
         {
-          "name": "Clear Amulet",
+          "name": "Life Orb",
           "rate": "22.0%",
-          "desc": "Blocks Intimidate."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         }
       ],
       "moves": [
@@ -35095,17 +35095,17 @@
         {
           "name": "Choice Scarf",
           "rate": "44.0%",
-          "desc": "Boosts Sp. Atk by 50%."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         },
         {
           "name": "Life Orb",
           "rate": "26.0%",
-          "desc": "Damage amplifier."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "16.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -35270,17 +35270,17 @@
         {
           "name": "Sitrus Berry",
           "rate": "38.0%",
-          "desc": "VGC staple healing."
+          "desc": "Restores 25% of maximum HP when dropping below 50% HP."
         },
         {
-          "name": "Clear Amulet",
+          "name": "Pyroarite",
           "rate": "32.0%",
-          "desc": "Prevents stat drops."
+          "desc": "Mega Stone allowing Pyroar to Mega Evolve with Unnerve battle roar."
         },
         {
           "name": "Focus Sash",
           "rate": "20.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -35453,17 +35453,17 @@
         {
           "name": "Choice Scarf",
           "rate": "42.0%",
-          "desc": "Boosts Attack by 50%."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         },
         {
           "name": "Life Orb",
           "rate": "28.0%",
-          "desc": "Boosts damage by 30%."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "18.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -35623,17 +35623,17 @@
         {
           "name": "Sitrus Berry",
           "rate": "38.0%",
-          "desc": "VGC staple healing."
+          "desc": "Restores 25% of maximum HP when dropping below 50% HP."
         },
         {
-          "name": "Clear Amulet",
+          "name": "White Herb",
           "rate": "32.0%",
-          "desc": "Prevents stat drops."
+          "desc": "Immediately restores any lowered stat stage back to neutral once."
         },
         {
           "name": "Focus Sash",
           "rate": "20.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -35806,17 +35806,17 @@
         {
           "name": "Choice Scarf",
           "rate": "44.0%",
-          "desc": "Boosts Sp. Atk by 50%."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         },
         {
           "name": "Life Orb",
           "rate": "26.0%",
-          "desc": "Damage amplifier."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "16.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -35976,17 +35976,17 @@
         {
           "name": "Sitrus Berry",
           "rate": "38.0%",
-          "desc": "VGC staple healing."
+          "desc": "Restores 25% of maximum HP when dropping below 50% HP."
         },
         {
-          "name": "Clear Amulet",
+          "name": "Life Orb",
           "rate": "32.0%",
-          "desc": "Prevents stat drops."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "20.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -36159,17 +36159,17 @@
         {
           "name": "Choice Scarf",
           "rate": "44.0%",
-          "desc": "Boosts Sp. Atk by 50%."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         },
         {
           "name": "Life Orb",
           "rate": "26.0%",
-          "desc": "Damage amplifier."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "16.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -36329,17 +36329,17 @@
         {
           "name": "Sitrus Berry",
           "rate": "38.0%",
-          "desc": "VGC staple healing."
+          "desc": "Restores 25% of maximum HP when dropping below 50% HP."
         },
         {
-          "name": "Clear Amulet",
+          "name": "Life Orb",
           "rate": "32.0%",
-          "desc": "Prevents stat drops."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "20.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -36515,19 +36515,19 @@
       ],
       "items": [
         {
-          "name": "Sablenite Z",
+          "name": "Sablenite",
           "rate": "58.0%",
-          "desc": "Mega Stone granting 125 Def & Sp. Def with Magic Bounce."
+          "desc": "Mega Stone allowing Sableye to Mega Evolve with Magic Bounce."
         },
         {
           "name": "Life Orb",
           "rate": "24.0%",
-          "desc": "Damage amplifier."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "18.0%",
-          "desc": "Survives fatal hit."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -36690,19 +36690,19 @@
       ],
       "items": [
         {
-          "name": "Sablenite Z",
+          "name": "Sablenite",
           "rate": "58.0%",
-          "desc": "Mega Stone granting 125 Def & Sp. Def with Magic Bounce."
+          "desc": "Mega Stone allowing Sableye to Mega Evolve with Magic Bounce."
         },
         {
           "name": "Sitrus Berry",
           "rate": "28.0%",
-          "desc": "Recovers 25% max HP."
+          "desc": "Restores 25% of maximum HP when dropping below 50% HP."
         },
         {
-          "name": "Clear Amulet",
+          "name": "White Herb",
           "rate": "22.0%",
-          "desc": "Blocks Intimidate."
+          "desc": "Immediately restores any lowered stat stage back to neutral once."
         }
       ],
       "moves": [
@@ -36880,17 +36880,17 @@
         {
           "name": "Choice Scarf",
           "rate": "44.0%",
-          "desc": "Boosts Sp. Atk by 50%."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         },
         {
           "name": "Life Orb",
           "rate": "26.0%",
-          "desc": "Damage amplifier."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "16.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -37055,17 +37055,17 @@
         {
           "name": "Sitrus Berry",
           "rate": "38.0%",
-          "desc": "VGC staple healing."
+          "desc": "Restores 25% of maximum HP when dropping below 50% HP."
         },
         {
-          "name": "Clear Amulet",
+          "name": "Life Orb",
           "rate": "32.0%",
-          "desc": "Prevents stat drops."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "20.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -37241,19 +37241,19 @@
       ],
       "items": [
         {
-          "name": "Sceptilite Z",
+          "name": "Sceptilite",
           "rate": "76.0%",
-          "desc": "Mega Stone granting Grass/Dragon type, 145 Sp. Atk, 145 Spe & Lightning Rod."
+          "desc": "Mega Stone allowing Sceptile to Mega Evolve with Lightning Rod."
         },
         {
           "name": "Life Orb",
           "rate": "24.0%",
-          "desc": "Damage amplifier."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "18.0%",
-          "desc": "Survives fatal hit."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -37416,19 +37416,19 @@
       ],
       "items": [
         {
-          "name": "Sceptilite Z",
+          "name": "Sceptilite",
           "rate": "76.0%",
-          "desc": "Mega Stone granting Grass/Dragon type, 145 Sp. Atk, 145 Spe & Lightning Rod."
+          "desc": "Mega Stone allowing Sceptile to Mega Evolve with Lightning Rod."
         },
         {
           "name": "Sitrus Berry",
           "rate": "28.0%",
-          "desc": "Recovers 25% max HP."
+          "desc": "Restores 25% of maximum HP when dropping below 50% HP."
         },
         {
-          "name": "Clear Amulet",
+          "name": "Life Orb",
           "rate": "22.0%",
-          "desc": "Blocks Intimidate."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         }
       ],
       "moves": [
@@ -37601,17 +37601,17 @@
         {
           "name": "Choice Scarf",
           "rate": "42.0%",
-          "desc": "Boosts Attack by 50%."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         },
         {
           "name": "Life Orb",
           "rate": "28.0%",
-          "desc": "Boosts damage by 30%."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "18.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -37771,17 +37771,17 @@
         {
           "name": "Sitrus Berry",
           "rate": "38.0%",
-          "desc": "VGC staple healing."
+          "desc": "Restores 25% of maximum HP when dropping below 50% HP."
         },
         {
-          "name": "Clear Amulet",
+          "name": "Scolipite",
           "rate": "32.0%",
-          "desc": "Prevents stat drops."
+          "desc": "Mega Stone allowing Scolipede to Mega Evolve with Speed Boost momentum."
         },
         {
           "name": "Focus Sash",
           "rate": "20.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -37959,17 +37959,17 @@
         {
           "name": "Choice Scarf",
           "rate": "42.0%",
-          "desc": "Boosts Attack by 50%."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         },
         {
           "name": "Life Orb",
           "rate": "28.0%",
-          "desc": "Boosts damage by 30%."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "18.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -38134,17 +38134,17 @@
         {
           "name": "Sitrus Berry",
           "rate": "38.0%",
-          "desc": "VGC staple healing."
+          "desc": "Restores 25% of maximum HP when dropping below 50% HP."
         },
         {
-          "name": "Clear Amulet",
+          "name": "Scovillainite",
           "rate": "32.0%",
-          "desc": "Prevents stat drops."
+          "desc": "Mega Stone allowing Scovillain to Mega Evolve with Chlorophyll/Moody flame."
         },
         {
           "name": "Focus Sash",
           "rate": "20.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -38322,17 +38322,17 @@
         {
           "name": "Choice Scarf",
           "rate": "44.0%",
-          "desc": "Boosts Sp. Atk by 50%."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         },
         {
           "name": "Life Orb",
           "rate": "26.0%",
-          "desc": "Damage amplifier."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "16.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -38497,17 +38497,17 @@
         {
           "name": "Sitrus Berry",
           "rate": "38.0%",
-          "desc": "VGC staple healing."
+          "desc": "Restores 25% of maximum HP when dropping below 50% HP."
         },
         {
-          "name": "Clear Amulet",
+          "name": "Life Orb",
           "rate": "32.0%",
-          "desc": "Prevents stat drops."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "20.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -38680,17 +38680,17 @@
         {
           "name": "Choice Scarf",
           "rate": "42.0%",
-          "desc": "Boosts Attack by 50%."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         },
         {
           "name": "Life Orb",
           "rate": "28.0%",
-          "desc": "Boosts damage by 30%."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "18.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -38850,17 +38850,17 @@
         {
           "name": "Sitrus Berry",
           "rate": "38.0%",
-          "desc": "VGC staple healing."
+          "desc": "Restores 25% of maximum HP when dropping below 50% HP."
         },
         {
-          "name": "Clear Amulet",
+          "name": "Skarmorite",
           "rate": "32.0%",
-          "desc": "Prevents stat drops."
+          "desc": "Mega Stone allowing Skarmory to Mega Evolve with reinforced Sturdy spikes."
         },
         {
           "name": "Focus Sash",
           "rate": "20.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -39033,17 +39033,17 @@
         {
           "name": "Air Balloon",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Grants immunity to Ground-type attacks and hazards until popped by an attack."
         },
         {
           "name": "Leftovers",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Restores 1/16 of maximum HP at the end of each turn."
         },
         {
-          "name": "Throat Spray",
+          "name": "Rocky Helmet",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Damages physical contact attackers by 1/6 of their maximum HP."
         }
       ],
       "moves": [
@@ -39201,19 +39201,19 @@
       ],
       "items": [
         {
-          "name": "Throat Spray",
+          "name": "Life Orb",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Sitrus Berry",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Restores 25% of maximum HP when dropping below 50% HP."
         },
         {
-          "name": "Covert Cloak",
+          "name": "Choice Scarf",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         }
       ],
       "moves": [
@@ -39389,19 +39389,19 @@
       ],
       "items": [
         {
-          "name": "Slowbronite Z",
+          "name": "Slowbronite",
           "rate": "64.0%",
-          "desc": "Mega Stone granting 180 base Defense with Shell Armor crit immunity."
+          "desc": "Mega Stone allowing Slowbro to Mega Evolve with Shell Armor."
         },
         {
           "name": "Life Orb",
           "rate": "24.0%",
-          "desc": "Damage amplifier."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "18.0%",
-          "desc": "Survives fatal hit."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -39564,19 +39564,19 @@
       ],
       "items": [
         {
-          "name": "Slowbronite Z",
+          "name": "Slowbronite",
           "rate": "64.0%",
-          "desc": "Mega Stone granting 180 base Defense with Shell Armor crit immunity."
+          "desc": "Mega Stone allowing Slowbro to Mega Evolve with Shell Armor."
         },
         {
           "name": "Sitrus Berry",
           "rate": "28.0%",
-          "desc": "Recovers 25% max HP."
+          "desc": "Restores 25% of maximum HP when dropping below 50% HP."
         },
         {
-          "name": "Clear Amulet",
+          "name": "Life Orb",
           "rate": "22.0%",
-          "desc": "Blocks Intimidate."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         }
       ],
       "moves": [
@@ -39754,17 +39754,17 @@
         {
           "name": "Choice Scarf",
           "rate": "44.0%",
-          "desc": "Boosts Sp. Atk by 50%."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         },
         {
           "name": "Life Orb",
           "rate": "26.0%",
-          "desc": "Damage amplifier."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "16.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -39929,17 +39929,17 @@
         {
           "name": "Sitrus Berry",
           "rate": "38.0%",
-          "desc": "VGC staple healing."
+          "desc": "Restores 25% of maximum HP when dropping below 50% HP."
         },
         {
-          "name": "Clear Amulet",
+          "name": "Life Orb",
           "rate": "32.0%",
-          "desc": "Prevents stat drops."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "20.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -40112,17 +40112,17 @@
         {
           "name": "Choice Scarf",
           "rate": "44.0%",
-          "desc": "Boosts Sp. Atk by 50%."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         },
         {
           "name": "Life Orb",
           "rate": "26.0%",
-          "desc": "Damage amplifier."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "16.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -40282,17 +40282,17 @@
         {
           "name": "Sitrus Berry",
           "rate": "38.0%",
-          "desc": "VGC staple healing."
+          "desc": "Restores 25% of maximum HP when dropping below 50% HP."
         },
         {
-          "name": "Clear Amulet",
+          "name": "Life Orb",
           "rate": "32.0%",
-          "desc": "Prevents stat drops."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "20.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -40470,17 +40470,17 @@
         {
           "name": "Choice Scarf",
           "rate": "42.0%",
-          "desc": "Boosts Attack by 50%."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         },
         {
           "name": "Life Orb",
           "rate": "28.0%",
-          "desc": "Boosts damage by 30%."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "18.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -40645,17 +40645,17 @@
         {
           "name": "Sitrus Berry",
           "rate": "38.0%",
-          "desc": "VGC staple healing."
+          "desc": "Restores 25% of maximum HP when dropping below 50% HP."
         },
         {
-          "name": "Clear Amulet",
+          "name": "Staraptite",
           "rate": "32.0%",
-          "desc": "Prevents stat drops."
+          "desc": "Mega Stone allowing Staraptor to Mega Evolve with Reckless flight."
         },
         {
           "name": "Focus Sash",
           "rate": "20.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -40833,17 +40833,17 @@
         {
           "name": "Choice Scarf",
           "rate": "44.0%",
-          "desc": "Boosts Sp. Atk by 50%."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         },
         {
           "name": "Life Orb",
           "rate": "26.0%",
-          "desc": "Damage amplifier."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "16.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -41008,17 +41008,17 @@
         {
           "name": "Sitrus Berry",
           "rate": "38.0%",
-          "desc": "VGC staple healing."
+          "desc": "Restores 25% of maximum HP when dropping below 50% HP."
         },
         {
-          "name": "Clear Amulet",
+          "name": "Life Orb",
           "rate": "32.0%",
-          "desc": "Prevents stat drops."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "20.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -41191,17 +41191,17 @@
         {
           "name": "Choice Scarf",
           "rate": "44.0%",
-          "desc": "Boosts Sp. Atk by 50%."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         },
         {
           "name": "Life Orb",
           "rate": "26.0%",
-          "desc": "Damage amplifier."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "16.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -41361,17 +41361,17 @@
         {
           "name": "Sitrus Berry",
           "rate": "38.0%",
-          "desc": "VGC staple healing."
+          "desc": "Restores 25% of maximum HP when dropping below 50% HP."
         },
         {
-          "name": "Clear Amulet",
+          "name": "Life Orb",
           "rate": "32.0%",
-          "desc": "Prevents stat drops."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "20.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -41549,17 +41549,17 @@
         {
           "name": "Leftovers",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Restores 1/16 of maximum HP at the end of each turn."
         },
         {
           "name": "Air Balloon",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Grants immunity to Ground-type attacks and hazards until popped by an attack."
         },
         {
           "name": "Rocky Helmet",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Damages physical contact attackers by 1/6 of their maximum HP."
         }
       ],
       "moves": [
@@ -41722,19 +41722,19 @@
       ],
       "items": [
         {
-          "name": "Covert Cloak",
+          "name": "White Herb",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Immediately restores any lowered stat stage back to neutral once."
         },
         {
           "name": "Sitrus Berry",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Restores 25% of maximum HP when dropping below 50% HP."
         },
         {
           "name": "Air Balloon",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Grants immunity to Ground-type attacks and hazards until popped by an attack."
         }
       ],
       "moves": [
@@ -41912,17 +41912,17 @@
         {
           "name": "Choice Scarf",
           "rate": "42.0%",
-          "desc": "Boosts Attack by 50%."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         },
         {
           "name": "Life Orb",
           "rate": "28.0%",
-          "desc": "Boosts damage by 30%."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "18.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -42087,17 +42087,17 @@
         {
           "name": "Sitrus Berry",
           "rate": "38.0%",
-          "desc": "VGC staple healing."
+          "desc": "Restores 25% of maximum HP when dropping below 50% HP."
         },
         {
-          "name": "Clear Amulet",
+          "name": "White Herb",
           "rate": "32.0%",
-          "desc": "Prevents stat drops."
+          "desc": "Immediately restores any lowered stat stage back to neutral once."
         },
         {
           "name": "Focus Sash",
           "rate": "20.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -42268,19 +42268,19 @@
       ],
       "items": [
         {
-          "name": "Black Sludge",
-          "rate": "35.0%",
-          "desc": "Top meta item."
-        },
-        {
           "name": "Leftovers",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Restores 1/16 of maximum HP at the end of each turn."
         },
         {
           "name": "Rocky Helmet",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Damages physical contact attackers by 1/6 of their maximum HP."
+        },
+        {
+          "name": "Sitrus Berry",
+          "rate": "35.0%",
+          "desc": "Restores 25% of maximum HP when dropping below 50% HP."
         }
       ],
       "moves": [
@@ -42438,19 +42438,19 @@
       ],
       "items": [
         {
-          "name": "Black Sludge",
+          "name": "Leftovers",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Restores 1/16 of maximum HP at the end of each turn."
         },
         {
           "name": "Sitrus Berry",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Restores 25% of maximum HP when dropping below 50% HP."
         },
         {
           "name": "Rocky Helmet",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Damages physical contact attackers by 1/6 of their maximum HP."
         }
       ],
       "moves": [
@@ -42623,17 +42623,17 @@
         {
           "name": "Choice Scarf",
           "rate": "44.0%",
-          "desc": "Boosts Sp. Atk by 50%."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         },
         {
           "name": "Life Orb",
           "rate": "26.0%",
-          "desc": "Damage amplifier."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "16.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -42793,17 +42793,17 @@
         {
           "name": "Sitrus Berry",
           "rate": "38.0%",
-          "desc": "VGC staple healing."
+          "desc": "Restores 25% of maximum HP when dropping below 50% HP."
         },
         {
-          "name": "Clear Amulet",
+          "name": "Life Orb",
           "rate": "32.0%",
-          "desc": "Prevents stat drops."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "20.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -42976,17 +42976,17 @@
         {
           "name": "Choice Scarf",
           "rate": "42.0%",
-          "desc": "Boosts Attack by 50%."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         },
         {
           "name": "Life Orb",
           "rate": "28.0%",
-          "desc": "Boosts damage by 30%."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "18.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -43146,17 +43146,17 @@
         {
           "name": "Sitrus Berry",
           "rate": "38.0%",
-          "desc": "VGC staple healing."
+          "desc": "Restores 25% of maximum HP when dropping below 50% HP."
         },
         {
-          "name": "Clear Amulet",
+          "name": "White Herb",
           "rate": "32.0%",
-          "desc": "Prevents stat drops."
+          "desc": "Immediately restores any lowered stat stage back to neutral once."
         },
         {
           "name": "Focus Sash",
           "rate": "20.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -43334,17 +43334,17 @@
         {
           "name": "Choice Scarf",
           "rate": "44.0%",
-          "desc": "Boosts Sp. Atk by 50%."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         },
         {
           "name": "Life Orb",
           "rate": "26.0%",
-          "desc": "Damage amplifier."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "16.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -43509,17 +43509,17 @@
         {
           "name": "Sitrus Berry",
           "rate": "38.0%",
-          "desc": "VGC staple healing."
+          "desc": "Restores 25% of maximum HP when dropping below 50% HP."
         },
         {
-          "name": "Clear Amulet",
+          "name": "Life Orb",
           "rate": "32.0%",
-          "desc": "Prevents stat drops."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "20.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -43697,17 +43697,17 @@
         {
           "name": "Choice Scarf",
           "rate": "42.0%",
-          "desc": "Boosts Attack by 50%."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         },
         {
           "name": "Life Orb",
           "rate": "28.0%",
-          "desc": "Boosts damage by 30%."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "18.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -43872,17 +43872,17 @@
         {
           "name": "Sitrus Berry",
           "rate": "38.0%",
-          "desc": "VGC staple healing."
+          "desc": "Restores 25% of maximum HP when dropping below 50% HP."
         },
         {
-          "name": "Clear Amulet",
+          "name": "White Herb",
           "rate": "32.0%",
-          "desc": "Prevents stat drops."
+          "desc": "Immediately restores any lowered stat stage back to neutral once."
         },
         {
           "name": "Focus Sash",
           "rate": "20.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -44055,17 +44055,17 @@
         {
           "name": "Choice Scarf",
           "rate": "44.0%",
-          "desc": "Boosts Sp. Atk by 50%."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         },
         {
           "name": "Life Orb",
           "rate": "26.0%",
-          "desc": "Damage amplifier."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "16.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -44225,17 +44225,17 @@
         {
           "name": "Sitrus Berry",
           "rate": "38.0%",
-          "desc": "VGC staple healing."
+          "desc": "Restores 25% of maximum HP when dropping below 50% HP."
         },
         {
-          "name": "Clear Amulet",
+          "name": "Icy Rock",
           "rate": "32.0%",
-          "desc": "Prevents stat drops."
+          "desc": "Extends snow/hail weather created by the user from 5 to 8 turns."
         },
         {
           "name": "Focus Sash",
           "rate": "20.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -44408,17 +44408,17 @@
         {
           "name": "Choice Scarf",
           "rate": "42.0%",
-          "desc": "Boosts Attack by 50%."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         },
         {
           "name": "Life Orb",
           "rate": "28.0%",
-          "desc": "Boosts damage by 30%."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "18.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -44578,17 +44578,17 @@
         {
           "name": "Sitrus Berry",
           "rate": "38.0%",
-          "desc": "VGC staple healing."
+          "desc": "Restores 25% of maximum HP when dropping below 50% HP."
         },
         {
-          "name": "Clear Amulet",
+          "name": "Victreebelite",
           "rate": "32.0%",
-          "desc": "Prevents stat drops."
+          "desc": "Mega Stone allowing Victreebel to Mega Evolve with Chlorophyll acid."
         },
         {
           "name": "Focus Sash",
           "rate": "20.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -44761,17 +44761,17 @@
         {
           "name": "Choice Scarf",
           "rate": "44.0%",
-          "desc": "Boosts Sp. Atk by 50%."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         },
         {
           "name": "Life Orb",
           "rate": "26.0%",
-          "desc": "Damage amplifier."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "16.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -44931,17 +44931,17 @@
         {
           "name": "Sitrus Berry",
           "rate": "38.0%",
-          "desc": "VGC staple healing."
+          "desc": "Restores 25% of maximum HP when dropping below 50% HP."
         },
         {
-          "name": "Clear Amulet",
+          "name": "Life Orb",
           "rate": "32.0%",
-          "desc": "Prevents stat drops."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Focus Sash",
           "rate": "20.0%",
-          "desc": "Guarantees survival."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         }
       ],
       "moves": [
@@ -45114,17 +45114,17 @@
         {
           "name": "Focus Sash",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         },
         {
           "name": "Life Orb",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
           "name": "Choice Scarf",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         }
       ],
       "moves": [
@@ -45284,17 +45284,17 @@
         {
           "name": "Focus Sash",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Survives any lethal attack with 1 HP remaining from full health."
         },
         {
           "name": "Life Orb",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
         },
         {
-          "name": "Covert Cloak",
+          "name": "Choice Scarf",
           "rate": "35.0%",
-          "desc": "Top meta item."
+          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
         }
       ],
       "moves": [
