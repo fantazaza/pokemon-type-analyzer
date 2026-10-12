@@ -18,6 +18,7 @@ import {
 } from './typeData.js';
 import { RadarChart } from './radarChart.js';
 import defaultMetaData from './meta.json';
+import { getPokemonBuild } from './pokemonBuilds.js';
 
 // ── App State ──────────────────────────────────────────────────
 const state = {
@@ -34,6 +35,7 @@ let radarAttack;
 let currentMetaMode = 'single';
 let metaData = { single: [], double: [] };
 let searchQuery = '';
+let currentModalPokemon = null;
 
 // ── Boot ───────────────────────────────────────────────────────
 function init() {
@@ -44,6 +46,7 @@ function init() {
   initResetButton();
   initSearch();
   initMetaToggle();
+  initModalHandlers();
   loadMetaPokemonData();
 
   requestAnimationFrame(() => {
@@ -198,7 +201,7 @@ function updateSelectedDisplay() {
     const rankVal = pkmn.rank || '-';
     display.innerHTML = `
       <div class="selected-showcase-chip">
-        <div class="showcase-thumb-box">
+        <div class="showcase-thumb-box" title="Click to view OP.GG Build">
           <img src="${pkmn.image}" alt="${pkmn.originalName}" class="showcase-thumb" />
           <span class="showcase-rank-tag">#${rankVal}</span>
         </div>
@@ -207,13 +210,33 @@ function updateSelectedDisplay() {
             <span class="showcase-pkmn-name">${pkmn.originalName}</span>
             <span class="showcase-meta-label">${currentMetaMode.toUpperCase()} META</span>
           </div>
-          <div class="showcase-types-row">${typeBadges}</div>
+          <div class="showcase-types-row">
+            ${typeBadges}
+            <button id="btn-showcase-build" class="btn-showcase-build" title="View OP.GG Build Profile">BUILD</button>
+          </div>
         </div>
         <button id="btn-clear-selection" class="btn-showcase-clear" title="Clear selection" aria-label="Clear selection">
           <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
         </button>
       </div>
     `;
+
+    const buildBtn = document.getElementById('btn-showcase-build');
+    if (buildBtn) {
+      buildBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        openPokemonModal(pkmn);
+      });
+    }
+
+    const thumbBox = display.querySelector('.showcase-thumb-box');
+    if (thumbBox) {
+      thumbBox.addEventListener('click', (e) => {
+        e.stopPropagation();
+        openPokemonModal(pkmn);
+      });
+    }
+
     const clearBtn = document.getElementById('btn-clear-selection');
     if (clearBtn) {
       clearBtn.addEventListener('click', (e) => {
@@ -621,7 +644,7 @@ function renderMetaTable() {
   });
 
   if (filtered.length === 0) {
-    tbody.innerHTML = `<tr><td colspan="3" class="table-empty-row">No Pokémon found matching "${searchQuery}"</td></tr>`;
+    tbody.innerHTML = `<tr><td colspan="4" class="table-empty-row">No Pokémon found matching "${searchQuery}"</td></tr>`;
     return;
   }
 
@@ -699,7 +722,7 @@ function renderMetaTable() {
       <td class="td-rank">${rankHtml}</td>
       <td class="td-pokemon">
         <div class="pokemon-meta-cell">
-          <div class="table-avatar-wrap">
+          <div class="table-avatar-wrap" title="Click to view OP.GG Build">
             <img src="${pkmn.image}" alt="${pkmn.originalName}" class="table-avatar" loading="lazy" />
           </div>
           <div class="pkmn-name-types-group">
@@ -715,7 +738,26 @@ function renderMetaTable() {
       <td class="td-types">
         <div class="table-types-wrap">${typeChips}</div>
       </td>
+      <td class="td-build">
+        <button class="table-btn-build" title="View OP.GG Build for ${pkmn.originalName}">BUILD</button>
+      </td>
     `;
+
+    const buildBtn = tr.querySelector('.table-btn-build');
+    if (buildBtn) {
+      buildBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        openPokemonModal(pkmn, currentMetaMode);
+      });
+    }
+
+    const avatarWrap = tr.querySelector('.table-avatar-wrap');
+    if (avatarWrap) {
+      avatarWrap.addEventListener('click', (e) => {
+        e.stopPropagation();
+        openPokemonModal(pkmn, currentMetaMode);
+      });
+    }
 
     tr.addEventListener('click', () => {
       selectPokemonTypes(pkmn);
@@ -774,6 +816,372 @@ function initMetaToggle() {
     renderMetaTable();
     if (state.type1) updateCharts();
   });
+}
+
+// ── Pokémon OP.GG Build Modal Logic ────────────────────────────
+let currentModalMode = 'single';
+
+function initModalHandlers() {
+  const modal = document.getElementById('pokemon-build-modal');
+  if (!modal) return;
+
+  const btnClose = document.getElementById('modal-btn-close');
+  const btnCloseFooter = document.getElementById('btn-modal-close-footer');
+  const btnAnalyze = document.getElementById('btn-modal-select-analyzer');
+  const btnFormatSingle = document.getElementById('modal-format-single');
+  const btnFormatDouble = document.getElementById('modal-format-double');
+
+  if (btnClose) btnClose.addEventListener('click', closePokemonModal);
+  if (btnCloseFooter) btnCloseFooter.addEventListener('click', closePokemonModal);
+
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      closePokemonModal();
+    }
+  });
+
+  window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+      closePokemonModal();
+    }
+  });
+
+  if (btnAnalyze) {
+    btnAnalyze.addEventListener('click', () => {
+      if (currentModalPokemon) {
+        selectPokemonTypes(currentModalPokemon);
+        closePokemonModal();
+      }
+    });
+  }
+
+  // Format Switcher inside Modal
+  if (btnFormatSingle && btnFormatDouble) {
+    btnFormatSingle.addEventListener('click', () => {
+      if (currentModalMode === 'single') return;
+      currentModalMode = 'single';
+      btnFormatSingle.classList.add('active');
+      btnFormatDouble.classList.remove('active');
+      if (currentModalPokemon) renderModalData(currentModalPokemon, 'single');
+    });
+
+    btnFormatDouble.addEventListener('click', () => {
+      if (currentModalMode === 'double') return;
+      currentModalMode = 'double';
+      btnFormatDouble.classList.add('active');
+      btnFormatSingle.classList.remove('active');
+      if (currentModalPokemon) renderModalData(currentModalPokemon, 'double');
+    });
+  }
+}
+
+export function openPokemonModal(pkmn, mode = null) {
+  if (!pkmn) return;
+  currentModalPokemon = pkmn;
+  currentModalMode = mode || currentMetaMode || 'single';
+
+  const modal = document.getElementById('pokemon-build-modal');
+  if (!modal) return;
+
+  // Sync format buttons
+  const btnFormatSingle = document.getElementById('modal-format-single');
+  const btnFormatDouble = document.getElementById('modal-format-double');
+  if (btnFormatSingle && btnFormatDouble) {
+    if (currentModalMode === 'double') {
+      btnFormatDouble.classList.add('active');
+      btnFormatSingle.classList.remove('active');
+    } else {
+      btnFormatSingle.classList.add('active');
+      btnFormatDouble.classList.remove('active');
+    }
+  }
+
+  renderModalData(pkmn, currentModalMode);
+
+  // Show modal
+  modal.classList.remove('hidden');
+  document.body.classList.add('modal-open');
+}
+
+function renderModalData(pkmn, mode) {
+  const modal = document.getElementById('pokemon-build-modal');
+  if (!modal || !pkmn) return;
+
+  const build = getPokemonBuild(pkmn, mode);
+  const capitalize = (s) => s.charAt(0).toUpperCase() + s.slice(1);
+
+  // 1. Header Info
+  const avatarImg = document.getElementById('modal-pokemon-avatar');
+  const nameEl = document.getElementById('modal-pokemon-name');
+  const dexEl = document.getElementById('modal-pokemon-dex');
+  const roleEl = document.getElementById('modal-pokemon-role');
+  const rankEl = document.getElementById('modal-pokemon-rank');
+  const typesEl = document.getElementById('modal-pokemon-types');
+  const opggLink = document.getElementById('modal-opgg-link');
+  const bstBadge = document.getElementById('modal-bst-badge');
+  const movesSubtitle = document.getElementById('modal-moves-subtitle');
+
+  if (avatarImg) {
+    avatarImg.src = pkmn.image;
+    avatarImg.alt = pkmn.originalName;
+  }
+  if (nameEl) nameEl.textContent = pkmn.originalName;
+  if (dexEl) dexEl.textContent = `#${build.dexNumber || pkmn.rank || '---'}`;
+  if (roleEl) roleEl.textContent = build.role || 'Competitive Battler';
+  if (rankEl) rankEl.textContent = `#${pkmn.rank || '1'}`;
+  if (bstBadge) bstBadge.textContent = `TOTAL BST: ${build.baseStats?.total || 530}`;
+  if (movesSubtitle) {
+    movesSubtitle.textContent = mode === 'double' ? 'Double Battle sets (VGC Spread & Control)' : 'Single Battle sets (1v1 Hazards & Setup)';
+  }
+
+  if (opggLink) {
+    opggLink.href = build.opggUrl || `https://op.gg/pokemon-champions/pokedex/${pkmn.name || pkmn.originalName.toLowerCase()}`;
+  }
+
+  if (typesEl) {
+    typesEl.innerHTML = pkmn.types.map(t => {
+      const tCap = capitalize(t);
+      const bg = TYPE_COLORS[tCap] || '#666';
+      const fg = TYPE_TEXT[tCap] || '#fff';
+      return `<span class="modal-type-chip" style="background:${bg};color:${fg};">${tCap}</span>`;
+    }).join('');
+  }
+
+  // 2. Base Stats Bars
+  const statsContainer = document.getElementById('modal-stats-container');
+  if (statsContainer && build.baseStats) {
+    const statsDef = [
+      { key: 'hp',  label: 'HP',       color: '#10b981' },
+      { key: 'atk', label: 'Attack',   color: '#f59e0b' },
+      { key: 'def', label: 'Defense',  color: '#eab308' },
+      { key: 'spa', label: 'Sp. Atk',  color: '#06b6d4' },
+      { key: 'spd', label: 'Sp. Def',  color: '#3b82f6' },
+      { key: 'spe', label: 'Speed',    color: '#ec4899' },
+    ];
+
+    statsContainer.innerHTML = statsDef.map(st => {
+      const val = build.baseStats[st.key] || 0;
+      const pct = Math.min(100, Math.round((val / 160) * 100));
+      return `
+        <div class="stat-bar-card">
+          <div class="stat-card-top">
+            <span class="stat-card-label">${st.label}</span>
+            <span class="stat-card-val" style="color:${st.color};">${val}</span>
+          </div>
+          <div class="stat-bar-track">
+            <div class="stat-bar-fill" style="width:${pct}%;background:${st.color};"></div>
+          </div>
+        </div>
+      `;
+    }).join('');
+  }
+
+  // 3. Recommended Moves
+  const movesContainer = document.getElementById('modal-moves-list');
+  if (movesContainer) {
+    movesContainer.innerHTML = (build.moves || []).map((m, idx) => {
+      const typeBg = TYPE_COLORS[m.type] || '#666';
+      const typeFg = TYPE_TEXT[m.type] || '#fff';
+      const catClass = `cat-${m.category.toLowerCase()}`;
+      const rateNum = parseFloat(m.rate) || 0;
+
+      return `
+        <div class="modal-move-row">
+          <div class="move-row-top">
+            <div class="move-title-wrap">
+              <span class="move-rank-num">#${idx + 1}</span>
+              <span class="move-name">${m.name}</span>
+              <span class="move-type-pill" style="background:${typeBg};color:${typeFg};">${m.type}</span>
+              <span class="move-cat-pill ${catClass}">${m.category}</span>
+            </div>
+            <div class="move-rate-wrap">
+              <span class="move-rate-pct">${m.rate}</span>
+            </div>
+          </div>
+          <div class="move-progress-track">
+            <div class="move-progress-fill" style="width:${rateNum}%;"></div>
+          </div>
+          <div class="move-row-bottom">
+            <div class="move-props">
+              <span class="move-prop-item"><b>Power:</b> ${m.power}</span>
+              <span class="move-prop-item"><b>Acc:</b> ${m.accuracy}${m.accuracy === '-' ? '' : '%'}</span>
+            </div>
+            <div class="move-desc">${m.desc}</div>
+          </div>
+        </div>
+      `;
+    }).join('');
+  }
+
+  // 4. Held Items
+  const itemsContainer = document.getElementById('modal-items-list');
+  if (itemsContainer) {
+    itemsContainer.innerHTML = (build.items || []).map((it, idx) => {
+      const rateNum = parseFloat(it.rate) || 0;
+      return `
+        <div class="modal-item-row">
+          <div class="item-row-top">
+            <div class="item-title-wrap">
+              <span class="item-rank-num">#${idx + 1}</span>
+              <span class="item-name">${it.name}</span>
+            </div>
+            <div class="item-rate-wrap">
+              <span class="item-rate-pct">${it.rate}</span>
+            </div>
+          </div>
+          <div class="item-progress-track">
+            <div class="item-progress-fill" style="width:${rateNum}%;"></div>
+          </div>
+          <div class="item-desc">${it.desc}</div>
+        </div>
+      `;
+    }).join('');
+  }
+
+  // 5. Abilities
+  const abilitiesContainer = document.getElementById('modal-abilities-list');
+  if (abilitiesContainer) {
+    abilitiesContainer.innerHTML = (build.abilities || []).map((ab, idx) => {
+      const rateNum = parseFloat(ab.rate) || 0;
+      return `
+        <div class="modal-ability-row">
+          <div class="ability-row-top">
+            <div class="ability-title-wrap">
+              <span class="ability-rank-num">#${idx + 1}</span>
+              <span class="ability-name">${ab.name}</span>
+            </div>
+            <div class="ability-rate-wrap">
+              <span class="ability-rate-pct">${ab.rate}</span>
+            </div>
+          </div>
+          <div class="ability-progress-track">
+            <div class="ability-progress-fill" style="width:${rateNum}%;"></div>
+          </div>
+          <div class="ability-desc">${ab.desc}</div>
+        </div>
+      `;
+    }).join('');
+  }
+
+  // 6. Natures
+  const naturesContainer = document.getElementById('modal-natures-list');
+  if (naturesContainer) {
+    naturesContainer.innerHTML = (build.natures || []).map((nat, idx) => {
+      const rateNum = parseFloat(nat.rate) || 0;
+      return `
+        <div class="modal-nature-row">
+          <div class="nature-row-top">
+            <div class="nature-title-wrap">
+              <span class="nature-rank-num">#${idx + 1}</span>
+              <span class="nature-name">${nat.name}</span>
+              <span class="nature-mod-pill mod-boost">${nat.boost}</span>
+              <span class="nature-mod-pill mod-drop">${nat.drop}</span>
+            </div>
+            <div class="nature-rate-wrap">
+              <span class="nature-rate-pct">${nat.rate}</span>
+            </div>
+          </div>
+          <div class="nature-progress-track">
+            <div class="nature-progress-fill" style="width:${rateNum}%;"></div>
+          </div>
+          <div class="nature-desc">${nat.desc}</div>
+        </div>
+      `;
+    }).join('');
+  }
+
+  // 7. Stat Points (OP.GG format with 6 stats)
+  const statPointsContainer = document.getElementById('modal-stat-points-list');
+  if (statPointsContainer) {
+    const list = build.statPoints || [];
+    if (list.length === 0) {
+      statPointsContainer.innerHTML = `<div class="empty-stat-points">No stat point distribution data available</div>`;
+    } else {
+      statPointsContainer.innerHTML = list.map((sp) => {
+        const rateNum = parseFloat(sp.rate) || 0;
+        return `
+          <div class="stat-point-card">
+            <div class="sp-left-box">
+              <div class="sp-rank-num">${sp.rank}</div>
+              <div class="sp-rate-pct">${sp.rate}</div>
+              <div class="sp-diff">${sp.diff || '=(0%)'}</div>
+              <div class="sp-progress-track">
+                <div class="sp-progress-fill" style="width:${rateNum}%;"></div>
+              </div>
+            </div>
+            <div class="sp-stats-grid">
+              <div class="sp-stat-item">
+                <span class="sp-stat-lbl">HP</span>
+                <span class="sp-stat-val">${sp.hp}</span>
+              </div>
+              <div class="sp-stat-item">
+                <span class="sp-stat-lbl">Attack</span>
+                <span class="sp-stat-val">${sp.atk}</span>
+              </div>
+              <div class="sp-stat-item">
+                <span class="sp-stat-lbl">Defense</span>
+                <span class="sp-stat-val">${sp.def}</span>
+              </div>
+              <div class="sp-stat-item">
+                <span class="sp-stat-lbl">Sp. Atk</span>
+                <span class="sp-stat-val">${sp.spa}</span>
+              </div>
+              <div class="sp-stat-item">
+                <span class="sp-stat-lbl">Sp. Def</span>
+                <span class="sp-stat-val">${sp.spd}</span>
+              </div>
+              <div class="sp-stat-item">
+                <span class="sp-stat-lbl">Speed</span>
+                <span class="sp-stat-val">${sp.spe}</span>
+              </div>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+  }
+
+  // 8. Teammates (OP.GG format with partner Pokémon)
+  const teammatesContainer = document.getElementById('modal-teammates-list');
+  if (teammatesContainer) {
+    const list = build.teammates || [];
+    if (list.length === 0) {
+      teammatesContainer.innerHTML = `<div class="empty-stat-points">No partner synergy data available</div>`;
+    } else {
+      teammatesContainer.innerHTML = list.map((tm) => {
+        const typeChips = (tm.types || []).map(t => {
+          const tCap = capitalize(t);
+          const bg = TYPE_COLORS[tCap] || '#666';
+          const fg = TYPE_TEXT[tCap] || '#fff';
+          return `<span class="modal-type-chip mini-chip" style="background:${bg};color:${fg};">${tCap}</span>`;
+        }).join('');
+
+        return `
+          <div class="modal-teammate-row">
+            <div class="tm-left-col">
+              <span class="tm-rank-num">#${tm.rank}</span>
+            </div>
+            <div class="tm-center-col">
+              <div class="tm-name-row">
+                <span class="tm-name">${tm.name}</span>
+                <span class="tm-rate">${tm.rate || ''}</span>
+              </div>
+              <div class="tm-types-row">${typeChips}</div>
+              ${tm.desc ? `<div class="tm-desc">${tm.desc}</div>` : ''}
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+  }
+}
+
+export function closePokemonModal() {
+  const modal = document.getElementById('pokemon-build-modal');
+  if (modal) {
+    modal.classList.add('hidden');
+  }
+  document.body.classList.remove('modal-open');
 }
 
 // ── Run on DOM Ready ───────────────────────────────────────────

@@ -274,6 +274,7 @@
                   <th class="th-rank">#</th>
                   <th class="th-pokemon">POKÉMON</th>
                   <th class="th-types">TYPES</th>
+                  <th class="th-build">BUILD</th>
                 </tr>
               </thead>
               <tbody id="pokemon-table-body">
@@ -287,6 +288,170 @@
     </main>
 
   </div><!-- /app -->
+
+  <!-- Pokémon Competitive Build Modal (OP.GG Style) -->
+  <div id="pokemon-build-modal" class="modal-backdrop hidden" role="dialog" aria-modal="true" aria-labelledby="modal-pokemon-name">
+    <div class="modal-card">
+      
+      <!-- Modal Header -->
+      <header class="modal-header">
+        <div class="modal-header-left">
+          <div class="modal-avatar-box">
+            <img id="modal-pokemon-avatar" src="" alt="Pokémon" class="modal-avatar-img" />
+            <span id="modal-pokemon-rank" class="modal-rank-badge">#1</span>
+          </div>
+          <div class="modal-title-info">
+            <div class="modal-name-row">
+              <h2 id="modal-pokemon-name" class="modal-title">Garchomp</h2>
+              <span id="modal-pokemon-dex" class="modal-dex-tag">#445</span>
+              <span id="modal-pokemon-role" class="modal-role-pill">Physical Sweeper</span>
+            </div>
+            <div id="modal-pokemon-types" class="modal-types-row">
+              <!-- Type pills injected dynamically -->
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-header-actions">
+          <div class="modal-format-toggle" role="group" aria-label="Battle Format">
+            <button id="modal-format-single" class="btn-format-toggle active" type="button">SINGLE</button>
+            <button id="modal-format-double" class="btn-format-toggle" type="button">DOUBLE</button>
+          </div>
+          <a id="modal-opgg-link" href="https://op.gg/pokemon-champions" target="_blank" rel="noopener noreferrer" class="btn-opgg-link" title="Open Pokémon on OP.GG">
+            <span>OP.GG</span>
+          </a>
+          <button id="modal-btn-close" class="modal-close-btn" aria-label="Close modal">✕</button>
+        </div>
+      </header>
+
+      <!-- Modal Body (Scrollable) -->
+      <div class="modal-body-content">
+        
+        <!-- Section: Base Stats & Status Profile -->
+        <section class="modal-section modal-stats-section">
+          <div class="modal-section-hdr">
+            <div class="modal-sec-title">
+              <span class="sec-label">BASE STATS &amp; STATUS</span>
+              <span class="sec-sub">Base stats &amp; combat potential (Total BST)</span>
+            </div>
+            <div id="modal-bst-badge" class="modal-bst-tag">TOTAL: 600</div>
+          </div>
+          <div id="modal-stats-container" class="modal-stat-bars-grid">
+            <!-- Dynamic stat bars (HP, Atk, Def, SpA, SpD, Spe) -->
+          </div>
+        </section>
+
+        <!-- Section: Moves & Items Grid -->
+        <div class="modal-dual-grid">
+          
+          <!-- Column 1: Moves -->
+          <section class="modal-section modal-moves-section">
+            <div class="modal-section-hdr">
+              <div class="modal-sec-title">
+                <span class="sec-label">RECOMMENDED MOVES</span>
+                <span class="sec-sub" id="modal-moves-subtitle">Popular competitive movesets (Single / Double)</span>
+              </div>
+            </div>
+            <div id="modal-moves-list" class="modal-moves-list">
+              <!-- Dynamic moves -->
+            </div>
+          </section>
+
+          <!-- Column 2: Items -->
+          <section class="modal-section modal-items-section">
+            <div class="modal-section-hdr">
+              <div class="modal-sec-title">
+                <span class="sec-label">HELD ITEMS</span>
+                <span class="sec-sub">Most utilized battle items (Popular Items)</span>
+              </div>
+            </div>
+            <div id="modal-items-list" class="modal-items-list">
+              <!-- Dynamic items -->
+            </div>
+          </section>
+
+        </div><!-- /modal-dual-grid -->
+
+        <!-- Section: Abilities & Stat Alignment (Natures) -->
+        <div class="modal-dual-grid">
+
+          <!-- Column 1: Abilities -->
+          <section class="modal-section modal-abilities-section">
+            <div class="modal-section-hdr">
+              <div class="modal-sec-title">
+                <span class="sec-label">ABILITY</span>
+                <span class="sec-sub">Ability traits &amp; pick rates (Ability Pick Rate)</span>
+              </div>
+            </div>
+            <div id="modal-abilities-list" class="modal-abilities-list">
+              <!-- Dynamic abilities -->
+            </div>
+          </section>
+
+          <!-- Column 2: Stat Alignment (Natures) -->
+          <section class="modal-section modal-nature-section">
+            <div class="modal-section-hdr">
+              <div class="modal-sec-title">
+                <span class="sec-label">STAT ALIGNMENT</span>
+                <span class="sec-sub">Competitive natures &amp; stat modifications</span>
+              </div>
+            </div>
+            <div id="modal-natures-list" class="modal-natures-list">
+              <!-- Dynamic natures -->
+            </div>
+          </section>
+
+        </div><!-- /modal-dual-grid -->
+
+        <!-- Section: Stat Points & Teammates (Matches OP.GG Row 3) -->
+        <div class="modal-dual-grid">
+
+          <!-- Column 1: Stat Points -->
+          <section class="modal-section modal-statpoints-section">
+            <div class="modal-section-hdr">
+              <div class="modal-sec-title">
+                <span class="sec-label">STAT POINTS</span>
+                <span class="sec-sub">Competitive points distribution (Max 66 Points)</span>
+              </div>
+              <span class="stat-points-max-badge">66 PTS TOTAL</span>
+            </div>
+            <div id="modal-stat-points-list" class="modal-stat-points-list">
+              <!-- Dynamic Stat Points matching OP.GG format -->
+            </div>
+          </section>
+
+          <!-- Column 2: Teammates -->
+          <section class="modal-section modal-teammates-section">
+            <div class="modal-section-hdr">
+              <div class="modal-sec-title">
+                <span class="sec-label">TEAMMATES</span>
+                <span class="sec-sub">Highest synergy meta partners &amp; cores</span>
+              </div>
+            </div>
+            <div id="modal-teammates-list" class="modal-teammates-list">
+              <!-- Dynamic Teammates matching OP.GG format -->
+            </div>
+          </section>
+
+        </div><!-- /modal-dual-grid -->
+
+      </div><!-- /modal-body-content -->
+
+      <!-- Modal Footer -->
+      <footer class="modal-footer">
+        <div class="modal-footer-attribution">
+          Data benchmarked from <a href="https://op.gg/pokemon-champions" target="_blank" rel="noopener noreferrer">OP.GG Pokémon Champions</a> Ranked Meta
+        </div>
+        <div class="modal-footer-actions">
+          <button id="btn-modal-select-analyzer" class="btn-primary-action">
+            <span>Analyze in Type Radar</span>
+          </button>
+          <button id="btn-modal-close-footer" class="btn-secondary-action">Close</button>
+        </div>
+      </footer>
+
+    </div><!-- /modal-card -->
+  </div><!-- /modal-backdrop -->
 
   <!-- Global tooltip -->
   <div id="tooltip" class="tooltip" role="tooltip" aria-hidden="true"></div>
