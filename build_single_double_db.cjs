@@ -427,12 +427,14 @@ for (const [key, val] of Object.entries(currentDb)) {
       baseStats: val.baseStats,
       single: {
         ...EXACT_MAP[key].single,
+        moves: EXACT_MAP[key].single.moves.slice(0, 10),
         items: EXACT_MAP[key].single.items.slice(0, 3),
         statPoints: EXACT_MAP[key].single.statPoints.slice(0, 3),
         teammates: EXACT_MAP[key].single.teammates.slice(0, 3)
       },
       double: {
         ...EXACT_MAP[key].double,
+        moves: EXACT_MAP[key].double.moves.slice(0, 10),
         items: EXACT_MAP[key].double.items.slice(0, 3),
         statPoints: EXACT_MAP[key].double.statPoints.slice(0, 3),
         teammates: EXACT_MAP[key].double.teammates.slice(0, 3)
@@ -449,13 +451,13 @@ for (const [key, val] of Object.entries(currentDb)) {
   let doubleMoves = [];
   const doublePool = DOUBLE_TYPE_POOLS[primaryType] || DOUBLE_TYPE_POOLS.normal;
   doublePool.forEach(m => {
-    if (!doubleMoves.some(x => x.name === m.name) && doubleMoves.length < 3) {
+    if (!doubleMoves.some(x => x.name === m.name)) {
       doubleMoves.push(m);
     }
   });
   if (secondaryType && DOUBLE_TYPE_POOLS[secondaryType]) {
     DOUBLE_TYPE_POOLS[secondaryType].forEach(m => {
-      if (!doubleMoves.some(x => x.name === m.name) && doubleMoves.length < 5) {
+      if (!doubleMoves.some(x => x.name === m.name)) {
         doubleMoves.push(m);
       }
     });
@@ -481,7 +483,7 @@ for (const [key, val] of Object.entries(currentDb)) {
       { name: "Competitive Instinct", rate: "85.0%", desc: "Primary competitive battle trait." }
     ],
     items: doubleItems,
-    moves: doubleMoves,
+    moves: doubleMoves.slice(0, 10),
     natures: val.natures || val.double?.natures || val.single?.natures || [
       { name: isPhysical ? "Jolly" : "Timid", rate: "62.0%", boost: "+Spe", drop: isPhysical ? "-SpA" : "-Atk", desc: "Optimal competitive speed tier." },
       { name: isPhysical ? "Adamant" : "Modest", rate: "38.0%", boost: isPhysical ? "+Atk" : "+SpA", drop: isPhysical ? "-SpA" : "-Atk", desc: "Maximum burst offensive damage." }
@@ -494,13 +496,13 @@ for (const [key, val] of Object.entries(currentDb)) {
   let singleMoves = [];
   const singlePool = SINGLE_TYPE_POOLS[primaryType] || SINGLE_TYPE_POOLS.normal;
   singlePool.forEach(m => {
-    if (!singleMoves.some(x => x.name === m.name) && singleMoves.length < 3) {
+    if (!singleMoves.some(x => x.name === m.name)) {
       singleMoves.push(m);
     }
   });
   if (secondaryType && SINGLE_TYPE_POOLS[secondaryType]) {
     SINGLE_TYPE_POOLS[secondaryType].forEach(m => {
-      if (!singleMoves.some(x => x.name === m.name) && singleMoves.length < 5) {
+      if (!singleMoves.some(x => x.name === m.name)) {
         singleMoves.push(m);
       }
     });
@@ -530,7 +532,7 @@ for (const [key, val] of Object.entries(currentDb)) {
       { name: "Competitive Instinct", rate: "85.0%", desc: "Primary competitive battle trait." }
     ],
     items: singleItems,
-    moves: singleMoves,
+    moves: singleMoves.slice(0, 10),
     natures: val.natures || val.single?.natures || val.double?.natures || [
       { name: isPhysical ? "Jolly" : "Timid", rate: "58.0%", boost: "+Spe", drop: isPhysical ? "-SpA" : "-Atk", desc: "Optimal competitive speed tier." },
       { name: isPhysical ? "Adamant" : "Modest", rate: "42.0%", boost: isPhysical ? "+Atk" : "+SpA", drop: isPhysical ? "-SpA" : "-Atk", desc: "Maximum wallbreaker power." }

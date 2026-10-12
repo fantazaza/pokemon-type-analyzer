@@ -918,6 +918,8 @@ function renderModalData(pkmn, mode) {
   const rankEl = document.getElementById('modal-pokemon-rank');
   const typesEl = document.getElementById('modal-pokemon-types');
   const opggLink = document.getElementById('modal-opgg-link');
+  const pikalyticsLink = document.getElementById('modal-pikalytics-link');
+  const smogonLink = document.getElementById('modal-smogon-link');
   const bstBadge = document.getElementById('modal-bst-badge');
   const movesSubtitle = document.getElementById('modal-moves-subtitle');
 
@@ -931,11 +933,18 @@ function renderModalData(pkmn, mode) {
   if (rankEl) rankEl.textContent = `#${pkmn.rank || '1'}`;
   if (bstBadge) bstBadge.textContent = `TOTAL BST: ${build.baseStats?.total || 530}`;
   if (movesSubtitle) {
-    movesSubtitle.textContent = mode === 'double' ? 'Double Battle sets (VGC Spread & Control)' : 'Single Battle sets (1v1 Hazards & Setup)';
+    movesSubtitle.textContent = mode === 'double' ? 'Double Battle top moves (VGC Spread & Control)' : 'Single Battle top moves (1v1 Hazards & Setup)';
   }
 
+  const slug = (pkmn.name || pkmn.originalName || '').toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
   if (opggLink) {
-    opggLink.href = build.opggUrl || `https://op.gg/pokemon-champions/pokedex/${pkmn.name || pkmn.originalName.toLowerCase()}`;
+    opggLink.href = build.opggUrl || `https://op.gg/pokemon-champions/pokedex/${slug}`;
+  }
+  if (pikalyticsLink) {
+    pikalyticsLink.href = `https://www.pikalytics.com/pokedex/gen9vgc2024regh/${slug}`;
+  }
+  if (smogonLink) {
+    smogonLink.href = `https://www.smogon.com/dex/sv/pokemon/${slug}/`;
   }
 
   if (typesEl) {
@@ -976,10 +985,11 @@ function renderModalData(pkmn, mode) {
     }).join('');
   }
 
-  // 3. Recommended Moves
+  // 3. Recommended Moves (Top 10 moves per mode)
   const movesContainer = document.getElementById('modal-moves-list');
   if (movesContainer) {
-    movesContainer.innerHTML = (build.moves || []).map((m, idx) => {
+    const topMoves = (build.moves || []).slice(0, 10);
+    movesContainer.innerHTML = topMoves.map((m, idx) => {
       const typeBg = TYPE_COLORS[m.type] || '#666';
       const typeFg = TYPE_TEXT[m.type] || '#fff';
       const catClass = `cat-${m.category.toLowerCase()}`;
@@ -1091,7 +1101,7 @@ function renderModalData(pkmn, mode) {
     }).join('');
   }
 
-  // 7. Stat Points (OP.GG format with 6 stats) - Top 3
+  // 7. Stat Points (OP.GG format with 6 stats) - Top 3 (No %)
   const statPointsContainer = document.getElementById('modal-stat-points-list');
   if (statPointsContainer) {
     const list = (build.statPoints || []).slice(0, 3);
@@ -1099,16 +1109,11 @@ function renderModalData(pkmn, mode) {
       statPointsContainer.innerHTML = `<div class="empty-stat-points">No stat point distribution data available</div>`;
     } else {
       statPointsContainer.innerHTML = list.map((sp) => {
-        const rateNum = parseFloat(sp.rate) || 0;
+        const rankClass = sp.rank === 1 ? 'rank-1' : (sp.rank === 2 ? 'rank-2' : (sp.rank === 3 ? 'rank-3' : ''));
         return `
           <div class="stat-point-card">
             <div class="sp-left-box">
-              <div class="sp-rank-num">${sp.rank}</div>
-              <div class="sp-rate-pct">${sp.rate}</div>
-              <div class="sp-diff">${sp.diff || '=(0%)'}</div>
-              <div class="sp-progress-track">
-                <div class="sp-progress-fill" style="width:${rateNum}%;"></div>
-              </div>
+              <span class="sp-rank-badge ${rankClass}">#${sp.rank}</span>
             </div>
             <div class="sp-stats-grid">
               <div class="sp-stat-item">
@@ -1135,41 +1140,6 @@ function renderModalData(pkmn, mode) {
                 <span class="sp-stat-lbl">Speed</span>
                 <span class="sp-stat-val">${sp.spe}</span>
               </div>
-            </div>
-          </div>
-        `;
-      }).join('');
-    }
-  }
-
-  // 8. Teammates (OP.GG format with partner Pokémon) - Top 3
-  const teammatesContainer = document.getElementById('modal-teammates-list');
-  if (teammatesContainer) {
-    const list = (build.teammates || []).slice(0, 3);
-    if (list.length === 0) {
-      teammatesContainer.innerHTML = `<div class="empty-stat-points">No partner synergy data available</div>`;
-    } else {
-      teammatesContainer.innerHTML = list.map((tm) => {
-        const typeChips = (tm.types || []).map(t => {
-          const tCap = capitalize(t);
-          const bg = TYPE_COLORS[tCap] || '#666';
-          const fg = TYPE_TEXT[tCap] || '#fff';
-          return `<span class="modal-type-chip mini-chip" style="background:${bg};color:${fg};">${tCap}</span>`;
-        }).join('');
-
-        return `
-          <div class="modal-teammate-row">
-            <div class="tm-left-col">
-              <span class="tm-rank-num">#${tm.rank}</span>
-            </div>
-            <div class="tm-center-col">
-              <div class="tm-name-row">
-                <span class="tm-name">${tm.name}</span>
-                <span class="tm-rate">${tm.rate || ''}</span>
-              </div>
-              <div class="tm-types-row">${typeChips}</div>
-              ${tm.desc ? `<div class="tm-desc">${tm.desc}</div>` : ''}
-            </div>
           </div>
         `;
       }).join('');

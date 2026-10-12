@@ -317,9 +317,11 @@
             <button id="modal-format-single" class="btn-format-toggle active" type="button">SINGLE</button>
             <button id="modal-format-double" class="btn-format-toggle" type="button">DOUBLE</button>
           </div>
-          <a id="modal-opgg-link" href="https://op.gg/pokemon-champions" target="_blank" rel="noopener noreferrer" class="btn-opgg-link" title="Open Pokémon on OP.GG">
-            <span>OP.GG</span>
-          </a>
+          <div class="modal-sources-bar">
+            <a id="modal-opgg-link" href="https://op.gg/pokemon-champions" target="_blank" rel="noopener noreferrer" class="btn-source-pill source-opgg" title="View on OP.GG">OP.GG</a>
+            <a id="modal-pikalytics-link" href="https://www.pikalytics.com" target="_blank" rel="noopener noreferrer" class="btn-source-pill source-pikalytics" title="View VGC/Double stats on Pikalytics">Pikalytics</a>
+            <a id="modal-smogon-link" href="https://www.smogon.com/dex" target="_blank" rel="noopener noreferrer" class="btn-source-pill source-smogon" title="View Singles analyses on Smogon">Smogon</a>
+          </div>
           <button id="modal-btn-close" class="modal-close-btn" aria-label="Close modal">✕</button>
         </div>
       </header>
@@ -349,7 +351,7 @@
             <div class="modal-section-hdr">
               <div class="modal-sec-title">
                 <span class="sec-label">RECOMMENDED MOVES</span>
-                <span class="sec-sub" id="modal-moves-subtitle">Popular competitive movesets (Single / Double)</span>
+                <span class="sec-sub" id="modal-moves-subtitle">Top competitive movesets by usage rate</span>
               </div>
             </div>
             <div id="modal-moves-list" class="modal-moves-list">
@@ -403,44 +405,26 @@
 
         </div><!-- /modal-dual-grid -->
 
-        <!-- Section: Stat Points & Teammates (Matches OP.GG Row 3) -->
-        <div class="modal-dual-grid">
-
-          <!-- Column 1: Stat Points -->
-          <section class="modal-section modal-statpoints-section">
-            <div class="modal-section-hdr">
-              <div class="modal-sec-title">
-                <span class="sec-label">STAT POINTS</span>
-                <span class="sec-sub">Top 3 points distributions (Max 66 Points)</span>
-              </div>
-              <span class="stat-points-max-badge">66 PTS TOTAL</span>
+        <!-- Section: Stat Points (Matches OP.GG Row 3) -->
+        <section class="modal-section modal-statpoints-section">
+          <div class="modal-section-hdr">
+            <div class="modal-sec-title">
+              <span class="sec-label">STAT POINTS</span>
+              <span class="sec-sub">Top 3 points distributions (Max 66 Points)</span>
             </div>
-            <div id="modal-stat-points-list" class="modal-stat-points-list">
-              <!-- Dynamic Stat Points matching OP.GG format -->
-            </div>
-          </section>
-
-          <!-- Column 2: Teammates -->
-          <section class="modal-section modal-teammates-section">
-            <div class="modal-section-hdr">
-              <div class="modal-sec-title">
-                <span class="sec-label">TEAMMATES</span>
-                <span class="sec-sub">Top 3 highest synergy meta partners &amp; cores</span>
-              </div>
-            </div>
-            <div id="modal-teammates-list" class="modal-teammates-list">
-              <!-- Dynamic Teammates matching OP.GG format -->
-            </div>
-          </section>
-
-        </div><!-- /modal-dual-grid -->
+            <span class="stat-points-max-badge">66 PTS TOTAL</span>
+          </div>
+          <div id="modal-stat-points-list" class="modal-stat-points-list">
+            <!-- Dynamic Stat Points matching OP.GG format -->
+          </div>
+        </section>
 
       </div><!-- /modal-body-content -->
 
       <!-- Modal Footer -->
       <footer class="modal-footer">
         <div class="modal-footer-attribution">
-          Data benchmarked from <a href="https://op.gg/pokemon-champions" target="_blank" rel="noopener noreferrer">OP.GG Pokémon Champions</a> Ranked Meta
+          Data benchmarked &amp; synthesized across <a href="https://op.gg/pokemon-champions" target="_blank" rel="noopener noreferrer">OP.GG</a> • <a href="https://www.pikalytics.com" target="_blank" rel="noopener noreferrer">Pikalytics</a> • <a href="https://www.smogon.com/dex" target="_blank" rel="noopener noreferrer">Smogon</a> • <a href="https://champdex.com" target="_blank" rel="noopener noreferrer">ChampDex</a> Meta
         </div>
         <div class="modal-footer-actions">
           <button id="btn-modal-select-analyzer" class="btn-primary-action">

@@ -116,13 +116,13 @@ const UNIVERSAL_MOVES = [
 
 const POPULAR_ITEMS = [
   { name: "Focus Sash", rate: "28.5%", desc: "Survives any single fatal hit with 1 HP when at 100% full health." },
-  { name: "Choice Scarf", rate: "24.2%", desc: "Boosts Speed by 50%, locking user into the first move selected." },
-  { name: "Assault Vest", rate: "21.6%", desc: "Raises Sp. Def by 50% but restricts usage of status moves." },
-  { name: "Life Orb", rate: "18.4%", desc: "Boosts move damage by 30% at the cost of 10% max HP per attack." },
-  { name: "Leftovers", rate: "15.8%", desc: "Restores 1/16 of max HP at the end of each turn." },
-  { name: "Sitrus Berry", rate: "12.4%", desc: "Restores 25% max HP when dropping below 50% HP." },
-  { name: "Choice Band", rate: "10.2%", desc: "Boosts Attack by 50%, locking user into one move." },
-  { name: "Choice Specs", rate: "9.8%", desc: "Boosts Sp. Atk by 50%, locking user into one move." }
+  { name: "Choice Scarf", rate: "24.2%", desc: "Boosts Speed by 50%, locking user into the first move selected (Only legal Choice item in Champions)." },
+  { name: "Sitrus Berry", rate: "22.4%", desc: "Restores 25% max HP when dropping below 50% HP." },
+  { name: "Leftovers", rate: "19.8%", desc: "Restores 1/16 of max HP at the end of each turn." },
+  { name: "Clear Amulet", rate: "18.2%", desc: "Protects the holder from having its stats lowered by opponents (counters Intimidate)." },
+  { name: "Covert Cloak", rate: "15.6%", desc: "Protects the holder from additional secondary effects of enemy attacks (blocks Fake Out flinch)." },
+  { name: "Rocky Helmet", rate: "14.2%", desc: "Damages contact attackers by 1/6 of their maximum HP." },
+  { name: "Life Orb", rate: "12.4%", desc: "Boosts move damage by 30% at the cost of 10% max HP per attack." }
 ];
 
 /**
@@ -156,12 +156,11 @@ export function getPokemonBuild(pkmn, mode = 'single') {
       generation: entry.generation || "Competitive Meta",
       baseStats: entry.baseStats,
       role: modeData.role || entry.role || "Competitive Battler",
-      moves: modeData.moves || entry.moves || [],
+      moves: (modeData.moves || entry.moves || []).slice(0, 10),
       items: (modeData.items || entry.items || []).slice(0, 3),
       abilities: modeData.abilities || entry.abilities || [],
       natures: modeData.natures || entry.natures || [],
       statPoints: (modeData.statPoints || []).slice(0, 3),
-      teammates: (modeData.teammates || []).slice(0, 3),
       evSpreads: modeData.evSpreads || [],
       mode: battleMode,
       pokemon: pkmn,
