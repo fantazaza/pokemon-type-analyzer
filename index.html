@@ -127,8 +127,14 @@
 
         <!-- Empty state placeholder -->
         <div id="empty-state" class="empty-state-panel" aria-live="polite">
-          <h2>READY FOR BATTLE ANALYSIS</h2>
-          <p>Select a Primary Type above or click any Pokémon from the meta table below to calculate matchups.</p>
+          <div class="empty-radar-icon">
+            <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              <path d="m9 12 2 2 4-4"/>
+            </svg>
+          </div>
+          <h2>TACTICAL BATTLE ANALYZER READY</h2>
+          <p>Configure single or dual types above, or select any meta Pokémon below to evaluate strengths, weaknesses, and partner synergy.</p>
         </div>
 
         <!-- Active Analysis Workspace -->
@@ -196,8 +202,10 @@
               <div class="matchup-col threats-col">
                 <div class="matchup-col-header">
                   <div class="matchup-header-title">
-                    <span class="title-text">TOP 3 THREATS</span>
-                    <span class="subtitle-text">High-damage threats in meta</span>
+                    <div class="matchup-title-text-group">
+                      <span class="title-text">TOP 3 THREATS</span>
+                      <span class="subtitle-text">Deals high incoming damage</span>
+                    </div>
                   </div>
                 </div>
                 <div class="big-cards-grid" id="threat-grid"></div>
@@ -207,11 +215,26 @@
               <div class="matchup-col targets-col">
                 <div class="matchup-col-header">
                   <div class="matchup-header-title">
-                    <span class="title-text">TOP 3 TARGETS</span>
-                    <span class="subtitle-text">Vulnerable targets in meta</span>
+                    <div class="matchup-title-text-group">
+                      <span class="title-text">TOP 3 TARGETS</span>
+                      <span class="subtitle-text">Takes super-effective damage</span>
+                    </div>
                   </div>
                 </div>
                 <div class="big-cards-grid" id="target-grid"></div>
+              </div>
+
+              <!-- Column 3: Top 3 Partners (Recommended Synergy) -->
+              <div class="matchup-col partners-col">
+                <div class="matchup-col-header">
+                  <div class="matchup-header-title">
+                    <div class="matchup-title-text-group">
+                      <span class="title-text">TOP 3 PARTNERS</span>
+                      <span class="subtitle-text">Best synergy &amp; defense cover</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="big-cards-grid" id="partner-grid"></div>
               </div>
 
             </div>

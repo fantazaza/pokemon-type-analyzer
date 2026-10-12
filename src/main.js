@@ -23,6 +23,8 @@ import defaultMetaData from './meta.json';
 const state = {
   type1: null,
   type2: null,
+  selectedPokemon: null,
+  selectedPokemonData: null,
 };
 
 let radarDefense;
@@ -71,7 +73,12 @@ function buildTypeButtons() {
   none.id = 'type2-none';
   none.innerHTML = '<span class="type-btn-label">None</span>';
   none.setAttribute('aria-pressed', 'true');
-  none.addEventListener('click', () => { state.type2 = null; refresh(); });
+  none.addEventListener('click', () => { 
+    state.type2 = null; 
+    state.selectedPokemon = null;
+    state.selectedPokemonData = null;
+    refresh(); 
+  });
   g2.appendChild(none);
 
   TYPES.forEach(type => {
@@ -100,11 +107,15 @@ function onType1Click(type) {
   }
   state.type1 = type;
   if (state.type2 === type) state.type2 = null;
+  state.selectedPokemon = null;
+  state.selectedPokemonData = null;
   refresh();
 }
 
 function onType2Click(type) {
   state.type2 = (state.type2 === type) ? null : type;
+  state.selectedPokemon = null;
+  state.selectedPokemonData = null;
   refresh();
 }
 
@@ -114,6 +125,8 @@ function initResetButton() {
     btn.addEventListener('click', () => {
       state.type1 = null;
       state.type2 = null;
+      state.selectedPokemon = null;
+      state.selectedPokemonData = null;
       refresh();
     });
   }
@@ -164,12 +177,12 @@ function updateSelectedDisplay() {
   if (!display) return;
 
   if (!state.type1) {
-    display.innerHTML = '<span class="placeholder-tag">Select types to begin analysis</span>';
+    display.innerHTML = '<span class="placeholder-tag">Select types or Pokémon to begin analysis</span>';
     return;
   }
 
   const types = state.type2 ? [state.type1, state.type2] : [state.type1];
-  display.innerHTML = types.map((t, i) => {
+  const typeBadges = types.map((t, i) => {
     const bg = TYPE_COLORS[t];
     const fg = TYPE_TEXT[t] || '#fff';
     return (i > 0 ? '<span class="preview-plus">+</span>' : '') +
@@ -177,6 +190,63 @@ function updateSelectedDisplay() {
          ${t}
        </span>`;
   }).join('');
+
+  const pkmnList = metaData[currentMetaMode] || [];
+  const pkmn = state.selectedPokemonData || pkmnList.find(p => p.originalName === state.selectedPokemon);
+
+  if (state.selectedPokemon && pkmn) {
+    const rankVal = pkmn.rank || '-';
+    display.innerHTML = `
+      <div class="selected-showcase-chip">
+        <div class="showcase-thumb-box">
+          <img src="${pkmn.image}" alt="${pkmn.originalName}" class="showcase-thumb" />
+          <span class="showcase-rank-tag">#${rankVal}</span>
+        </div>
+        <div class="showcase-body">
+          <div class="showcase-title-row">
+            <span class="showcase-pkmn-name">${pkmn.originalName}</span>
+            <span class="showcase-meta-label">${currentMetaMode.toUpperCase()} META</span>
+          </div>
+          <div class="showcase-types-row">${typeBadges}</div>
+        </div>
+        <button id="btn-clear-selection" class="btn-showcase-clear" title="Clear selection" aria-label="Clear selection">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+    `;
+    const clearBtn = document.getElementById('btn-clear-selection');
+    if (clearBtn) {
+      clearBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        state.type1 = null;
+        state.type2 = null;
+        state.selectedPokemon = null;
+        state.selectedPokemonData = null;
+        refresh();
+      });
+    }
+  } else {
+    display.innerHTML = `
+      <div class="selected-custom-strip">
+        <span class="custom-config-tag">CUSTOM CONFIG</span>
+        <div class="custom-types-wrap">${typeBadges}</div>
+        <button id="btn-clear-selection" class="btn-showcase-clear" title="Reset types" aria-label="Reset types">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+    `;
+    const clearBtn = document.getElementById('btn-clear-selection');
+    if (clearBtn) {
+      clearBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        state.type1 = null;
+        state.type2 = null;
+        state.selectedPokemon = null;
+        state.selectedPokemonData = null;
+        refresh();
+      });
+    }
+  }
 }
 
 // ── Show/hide content area ──────────────────────────────────────
@@ -336,7 +406,7 @@ function groupByValue(vals) {
   return map;
 }
 
-// ── Top 3 Threats & Top 3 Targets (Clean Big Cards) ─────────────
+// ── Top 3 Threats, Top 3 Targets & Top 3 Partners (Clean Big Cards) ─────────────
 function updateMetaMatchups(defTypes, atkTypes) {
   const container = document.getElementById('meta-matchups');
   if (!container) return;
@@ -374,8 +444,71 @@ function updateMetaMatchups(defTypes, atkTypes) {
     return { pkmn, val: maxDmg };
   }).filter(x => x.val >= 2).sort((a, b) => b.val - a.val).slice(0, 3);
 
+  // Top Partners: Best defensive synergy & weakness coverage from current meta
+  const weaknesses = TYPES.map(t => ({
+    type: t,
+    mult: getEffectiveness(t, defTypes)
+  })).filter(x => x.mult >= 2);
+
+  const partners = pokemonList
+    .filter(pkmn => {
+      if (state.selectedPokemon && pkmn.originalName === state.selectedPokemon) return false;
+      const pTypes = pkmn.types.filter(t => t !== 'unknown').map(capitalize);
+      if (pTypes.length === 0) return false;
+      if (pTypes.length === defTypes.length && pTypes.every(t => defTypes.includes(t))) return false;
+      return true;
+    })
+    .map(pkmn => {
+      const pTypes = pkmn.types.filter(t => t !== 'unknown').map(capitalize);
+      let score = 50;
+      const covered = [];
+      const shared = [];
+
+      // Defensive cover for selected types' weaknesses
+      weaknesses.forEach(w => {
+        const pDmg = getEffectiveness(w.type, pTypes);
+        if (pDmg === 0) {
+          score += (w.mult >= 4 ? 35 : 25);
+          covered.push({ type: w.type, mult: 0 });
+        } else if (pDmg <= 0.5) {
+          score += (w.mult >= 4 ? 25 : 18);
+          covered.push({ type: w.type, mult: pDmg });
+        } else if (pDmg >= 2) {
+          score -= (w.mult >= 4 ? 35 : 22);
+          shared.push(w.type);
+        }
+      });
+
+      // Mutual protection (selected types protecting partner's weaknesses)
+      TYPES.forEach(t => {
+        const pDmg = getEffectiveness(t, pTypes);
+        if (pDmg >= 2) {
+          const sDmg = getEffectiveness(t, defTypes);
+          if (sDmg === 0) score += 16;
+          else if (sDmg <= 0.5) score += 10;
+        }
+      });
+
+      // Bonus for 0 shared weaknesses
+      if (shared.length === 0) score += 15;
+
+      const synergyPct = Math.min(99, Math.max(45, Math.round(score)));
+      let detailLabel = covered.length > 0 ? `Covers ${covered[0].type}` : (shared.length === 0 ? 'No shared weak' : 'Balanced Core');
+
+      return {
+        pkmn,
+        val: synergyPct,
+        tagLabel: `${synergyPct}% SYNERGY`,
+        detailLabel,
+        covered
+      };
+    })
+    .sort((a, b) => b.val - a.val)
+    .slice(0, 3);
+
   renderBigCards('threat-grid', threats, 'threat');
   renderBigCards('target-grid', targets, 'target');
+  renderBigCards('partner-grid', partners, 'partner');
 }
 
 function renderBigCards(gridId, items, mode) {
@@ -401,15 +534,31 @@ function renderBigCards(gridId, items, mode) {
       return `<span class="card-type-chip" style="background:${bg};color:${fg};">${tCap}</span>`;
     }).join('');
 
-    const multClass = item.val >= 4 ? 'mult-4x' : 'mult-2x';
-    const tagLabel = mode === 'threat' ? `DEALS ${item.val}×` : `TAKES ${item.val}×`;
+    let multClass = '';
+    let tagLabel = '';
+
+    if (mode === 'threat') {
+      multClass = item.val >= 4 ? 'mult-4x' : 'mult-2x';
+      tagLabel = `DEALS ${item.val}×`;
+    } else if (mode === 'target') {
+      multClass = item.val >= 4 ? 'mult-4x' : 'mult-2x';
+      tagLabel = `TAKES ${item.val}×`;
+    } else if (mode === 'partner') {
+      multClass = 'mult-partner';
+      tagLabel = item.detailLabel || 'Cover';
+    }
+
+    const rankVal = item.pkmn.rank || idx + 1;
+    const rankClass = rankVal === 1 ? 'rank-gold' : (rankVal === 2 ? 'rank-silver' : (rankVal === 3 ? 'rank-bronze' : ''));
+    const rankHtml = mode === 'partner' ? '' : `<span class="card-rank ${rankClass}">#${rankVal}</span>`;
 
     card.innerHTML = `
-      <div class="card-top-bar">
-        <span class="card-rank">#${item.pkmn.rank || idx + 1}</span>
+      <div class="card-top-bar ${mode === 'partner' ? 'card-top-bar-centered' : ''}">
+        ${rankHtml}
         <span class="card-mult-badge ${multClass}">${tagLabel}</span>
       </div>
       <div class="card-artwork">
+        <div class="card-artwork-aura aura-${mode}"></div>
         <img src="${item.pkmn.image}" alt="${item.pkmn.originalName}" loading="lazy" />
       </div>
       <div class="card-info">
@@ -483,6 +632,11 @@ function renderMetaTable() {
     const tr = document.createElement('tr');
     tr.className = 'table-row-item';
 
+    const isSelected = state.selectedPokemon === pkmn.originalName;
+    if (isSelected) {
+      tr.classList.add('row-selected');
+    }
+
     const typeChips = pkmn.types.map(t => {
       const tCap = capitalize(t);
       const bg = TYPE_COLORS[tCap] || '#666';
@@ -529,14 +683,29 @@ function renderMetaTable() {
       }
     }
 
+    const rankVal = pkmn.rank || '-';
+    let rankHtml = `#${rankVal}`;
+    if (rankVal === 1) {
+      rankHtml = `<span class="table-rank-pill rank-gold">#1</span>`;
+    } else if (rankVal === 2) {
+      rankHtml = `<span class="table-rank-pill rank-silver">#2</span>`;
+    } else if (rankVal === 3) {
+      rankHtml = `<span class="table-rank-pill rank-bronze">#3</span>`;
+    }
+
+    const selectedIndicator = isSelected ? `<span class="badge-row-active">SELECTED</span>` : '';
+
     tr.innerHTML = `
-      <td class="td-rank">#${pkmn.rank || '-'}</td>
+      <td class="td-rank">${rankHtml}</td>
       <td class="td-pokemon">
         <div class="pokemon-meta-cell">
-          <img src="${pkmn.image}" alt="${pkmn.originalName}" class="table-avatar" loading="lazy" />
+          <div class="table-avatar-wrap">
+            <img src="${pkmn.image}" alt="${pkmn.originalName}" class="table-avatar" loading="lazy" />
+          </div>
           <div class="pkmn-name-types-group">
             <div class="pkmn-name-row">
               <span class="table-pkmn-name">${pkmn.originalName}</span>
+              ${selectedIndicator}
               ${matchupBadges}
             </div>
             <div class="table-types-mobile">${typeChips}</div>
@@ -563,6 +732,8 @@ function selectPokemonTypes(pkmn) {
 
   state.type1 = t1;
   state.type2 = (t2 === t1) ? null : t2;
+  state.selectedPokemon = pkmn.originalName;
+  state.selectedPokemonData = pkmn;
 
   refresh();
 
