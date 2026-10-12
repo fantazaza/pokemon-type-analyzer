@@ -1114,32 +1114,34 @@ function renderModalData(pkmn, mode) {
           <div class="stat-point-card">
             <div class="sp-left-box">
               <span class="sp-rank-badge ${rankClass}">#${sp.rank}</span>
+              ${sp.rate ? `<span class="sp-rate-pill">${sp.rate}</span>` : ''}
             </div>
             <div class="sp-stats-grid">
-              <div class="sp-stat-item">
+              <div class="sp-stat-item ${sp.hp > 0 ? 'is-allocated' : ''}">
                 <span class="sp-stat-lbl">HP</span>
-                <span class="sp-stat-val">${sp.hp}</span>
+                <span class="sp-stat-val ${sp.hp > 0 ? 'nonzero' : 'zero'}">${sp.hp}</span>
               </div>
-              <div class="sp-stat-item">
+              <div class="sp-stat-item ${sp.atk > 0 ? 'is-allocated' : ''}">
                 <span class="sp-stat-lbl">Attack</span>
-                <span class="sp-stat-val">${sp.atk}</span>
+                <span class="sp-stat-val ${sp.atk > 0 ? 'nonzero' : 'zero'}">${sp.atk}</span>
               </div>
-              <div class="sp-stat-item">
+              <div class="sp-stat-item ${sp.def > 0 ? 'is-allocated' : ''}">
                 <span class="sp-stat-lbl">Defense</span>
-                <span class="sp-stat-val">${sp.def}</span>
+                <span class="sp-stat-val ${sp.def > 0 ? 'nonzero' : 'zero'}">${sp.def}</span>
               </div>
-              <div class="sp-stat-item">
+              <div class="sp-stat-item ${sp.spa > 0 ? 'is-allocated' : ''}">
                 <span class="sp-stat-lbl">Sp. Atk</span>
-                <span class="sp-stat-val">${sp.spa}</span>
+                <span class="sp-stat-val ${sp.spa > 0 ? 'nonzero' : 'zero'}">${sp.spa}</span>
               </div>
-              <div class="sp-stat-item">
+              <div class="sp-stat-item ${sp.spd > 0 ? 'is-allocated' : ''}">
                 <span class="sp-stat-lbl">Sp. Def</span>
-                <span class="sp-stat-val">${sp.spd}</span>
+                <span class="sp-stat-val ${sp.spd > 0 ? 'nonzero' : 'zero'}">${sp.spd}</span>
               </div>
-              <div class="sp-stat-item">
+              <div class="sp-stat-item ${sp.spe > 0 ? 'is-allocated' : ''}">
                 <span class="sp-stat-lbl">Speed</span>
-                <span class="sp-stat-val">${sp.spe}</span>
+                <span class="sp-stat-val ${sp.spe > 0 ? 'nonzero' : 'zero'}">${sp.spe}</span>
               </div>
+            </div>
           </div>
         `;
       }).join('');
