@@ -8,6 +8,15 @@
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/812.png"
   },
   {
+    "originalName": "Garchomp",
+    "name": "garchomp",
+    "types": [
+      "dragon",
+      "ground"
+    ],
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/445.png"
+  },
+  {
     "originalName": "Sneasler",
     "name": "sneasler",
     "types": [
@@ -15,15 +24,6 @@
       "poison"
     ],
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/903.png"
-  },
-  {
-    "originalName": "Salamence",
-    "name": "salamence",
-    "types": [
-      "dragon",
-      "flying"
-    ],
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/373.png"
   },
   {
     "originalName": "Incineroar",
@@ -35,67 +35,13 @@
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/727.png"
   },
   {
-    "originalName": "Indeedee (Female)",
-    "name": "indeedee-female",
+    "originalName": "Charizard",
+    "name": "charizard",
     "types": [
-      "psychic",
-      "normal"
-    ],
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10186.png"
-  },
-  {
-    "originalName": "Kingambit",
-    "name": "kingambit",
-    "types": [
-      "dark",
-      "steel"
-    ],
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/983.png"
-  },
-  {
-    "originalName": "Basculegion (Male)",
-    "name": "basculegion-male",
-    "types": [
-      "water",
-      "ghost"
-    ],
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/902.png"
-  },
-  {
-    "originalName": "Golisopod",
-    "name": "golisopod",
-    "types": [
-      "bug",
-      "water"
-    ],
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/768.png"
-  },
-  {
-    "originalName": "Garchomp",
-    "name": "garchomp",
-    "types": [
-      "dragon",
-      "ground"
-    ],
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/445.png"
-  },
-  {
-    "originalName": "Gholdengo",
-    "name": "gholdengo",
-    "types": [
-      "steel",
-      "ghost"
-    ],
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1000.png"
-  },
-  {
-    "originalName": "Pelipper",
-    "name": "pelipper",
-    "types": [
-      "water",
+      "fire",
       "flying"
     ],
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/279.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/6.png"
   },
   {
     "originalName": "Archaludon",
@@ -107,12 +53,57 @@
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1018.png"
   },
   {
-    "originalName": "Milotic",
-    "name": "milotic",
+    "originalName": "Kingambit",
+    "name": "kingambit",
     "types": [
-      "water"
+      "dark",
+      "steel"
     ],
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/350.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/983.png"
+  },
+  {
+    "originalName": "Raichu",
+    "name": "raichu",
+    "types": [
+      "electric"
+    ],
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/26.png"
+  },
+  {
+    "originalName": "Indeedee (Female)",
+    "name": "indeedee-female",
+    "types": [
+      "psychic",
+      "normal"
+    ],
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10186.png"
+  },
+  {
+    "originalName": "Pelipper",
+    "name": "pelipper",
+    "types": [
+      "water",
+      "flying"
+    ],
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/279.png"
+  },
+  {
+    "originalName": "Gholdengo",
+    "name": "gholdengo",
+    "types": [
+      "steel",
+      "ghost"
+    ],
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1000.png"
+  },
+  {
+    "originalName": "Basculegion (Male)",
+    "name": "basculegion-male",
+    "types": [
+      "water",
+      "ghost"
+    ],
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/902.png"
   },
   {
     "originalName": "Farigiraf",
@@ -124,56 +115,13 @@
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/981.png"
   },
   {
-    "originalName": "Charizard",
-    "name": "charizard",
+    "originalName": "Salamence",
+    "name": "salamence",
     "types": [
-      "fire",
+      "dragon",
       "flying"
     ],
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/6.png"
-  },
-  {
-    "originalName": "Gardevoir",
-    "name": "gardevoir",
-    "types": [
-      "psychic",
-      "fairy"
-    ],
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/282.png"
-  },
-  {
-    "originalName": "Raichu",
-    "name": "raichu",
-    "types": [
-      "electric"
-    ],
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/26.png"
-  },
-  {
-    "originalName": "Arcanine",
-    "name": "arcanine-hisui",
-    "types": [
-      "fire",
-      "rock"
-    ],
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10230.png"
-  },
-  {
-    "originalName": "Sylveon",
-    "name": "sylveon",
-    "types": [
-      "fairy"
-    ],
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/700.png"
-  },
-  {
-    "originalName": "Tyranitar",
-    "name": "tyranitar",
-    "types": [
-      "rock",
-      "dark"
-    ],
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/248.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/373.png"
   },
   {
     "originalName": "Whimsicott",
@@ -185,48 +133,13 @@
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/547.png"
   },
   {
-    "originalName": "Armarouge",
-    "name": "armarouge",
+    "originalName": "Golisopod",
+    "name": "golisopod",
     "types": [
-      "fire",
-      "psychic"
+      "bug",
+      "water"
     ],
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/936.png"
-  },
-  {
-    "originalName": "Staraptor",
-    "name": "staraptor",
-    "types": [
-      "normal",
-      "flying"
-    ],
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/398.png"
-  },
-  {
-    "originalName": "Torkoal",
-    "name": "torkoal",
-    "types": [
-      "fire"
-    ],
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/324.png"
-  },
-  {
-    "originalName": "Sinistcha",
-    "name": "sinistcha",
-    "types": [
-      "grass",
-      "ghost"
-    ],
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1013.png"
-  },
-  {
-    "originalName": "Metagross",
-    "name": "metagross",
-    "types": [
-      "steel",
-      "psychic"
-    ],
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/376.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/768.png"
   },
   {
     "originalName": "Indeedee (Male)",
@@ -238,23 +151,6 @@
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/876.png"
   },
   {
-    "originalName": "Floette",
-    "name": "floette",
-    "types": [
-      "fairy"
-    ],
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/670.png"
-  },
-  {
-    "originalName": "Excadrill",
-    "name": "excadrill",
-    "types": [
-      "ground",
-      "steel"
-    ],
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/530.png"
-  },
-  {
     "originalName": "Volcarona",
     "name": "volcarona",
     "types": [
@@ -264,21 +160,73 @@
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/637.png"
   },
   {
-    "originalName": "Politoed",
-    "name": "politoed",
+    "originalName": "Sylveon",
+    "name": "sylveon",
+    "types": [
+      "fairy"
+    ],
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/700.png"
+  },
+  {
+    "originalName": "Staraptor",
+    "name": "staraptor",
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/398.png"
+  },
+  {
+    "originalName": "Metagross",
+    "name": "metagross",
+    "types": [
+      "steel",
+      "psychic"
+    ],
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/376.png"
+  },
+  {
+    "originalName": "Gardevoir",
+    "name": "gardevoir",
+    "types": [
+      "psychic",
+      "fairy"
+    ],
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/282.png"
+  },
+  {
+    "originalName": "Milotic",
+    "name": "milotic",
     "types": [
       "water"
     ],
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/186.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/350.png"
   },
   {
-    "originalName": "Lucario",
-    "name": "lucario",
+    "originalName": "Floette",
+    "name": "floette",
     "types": [
-      "fighting",
-      "steel"
+      "fairy"
     ],
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/448.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/670.png"
+  },
+  {
+    "originalName": "Tyranitar",
+    "name": "tyranitar",
+    "types": [
+      "rock",
+      "dark"
+    ],
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/248.png"
+  },
+  {
+    "originalName": "Armarouge",
+    "name": "armarouge",
+    "types": [
+      "fire",
+      "psychic"
+    ],
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/936.png"
   },
   {
     "originalName": "Grimmsnarl",
@@ -290,85 +238,12 @@
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/861.png"
   },
   {
-    "originalName": "Swampert",
-    "name": "swampert",
+    "originalName": "Politoed",
+    "name": "politoed",
     "types": [
-      "water",
-      "ground"
+      "water"
     ],
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/260.png"
-  },
-  {
-    "originalName": "Froslass",
-    "name": "froslass",
-    "types": [
-      "ice",
-      "ghost"
-    ],
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/478.png"
-  },
-  {
-    "originalName": "Baxcalibur",
-    "name": "baxcalibur",
-    "types": [
-      "dragon",
-      "ice"
-    ],
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/998.png"
-  },
-  {
-    "originalName": "Gengar",
-    "name": "gengar",
-    "types": [
-      "ghost",
-      "poison"
-    ],
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/94.png"
-  },
-  {
-    "originalName": "Alolan Ninetales",
-    "name": "ninetales-alola",
-    "types": [
-      "ice",
-      "fairy"
-    ],
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10104.png"
-  },
-  {
-    "originalName": "Dragonite",
-    "name": "dragonite",
-    "types": [
-      "dragon",
-      "flying"
-    ],
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/149.png"
-  },
-  {
-    "originalName": "Glimmora",
-    "name": "glimmora",
-    "types": [
-      "rock",
-      "poison"
-    ],
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/970.png"
-  },
-  {
-    "originalName": "Pawmot",
-    "name": "pawmot",
-    "types": [
-      "electric",
-      "fighting"
-    ],
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/923.png"
-  },
-  {
-    "originalName": "Aerodactyl",
-    "name": "aerodactyl",
-    "types": [
-      "rock",
-      "flying"
-    ],
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/142.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/186.png"
   },
   {
     "originalName": "Venusaur",
@@ -380,39 +255,93 @@
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/3.png"
   },
   {
-    "originalName": "Primarina",
-    "name": "primarina",
+    "originalName": "Dragonite",
+    "name": "dragonite",
+    "types": [
+      "dragon",
+      "flying"
+    ],
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/149.png"
+  },
+  {
+    "originalName": "Swampert",
+    "name": "swampert",
     "types": [
       "water",
-      "fairy"
+      "ground"
     ],
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/730.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/260.png"
   },
   {
-    "originalName": "Sableye",
-    "name": "sableye",
+    "originalName": "Sinistcha",
+    "name": "sinistcha",
     "types": [
-      "dark",
+      "grass",
       "ghost"
     ],
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/302.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1013.png"
   },
   {
-    "originalName": "Hatterene",
-    "name": "hatterene",
+    "originalName": "Excadrill",
+    "name": "excadrill",
     "types": [
-      "psychic",
-      "fairy"
+      "ground",
+      "steel"
     ],
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/858.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/530.png"
   },
   {
-    "originalName": "Blastoise",
-    "name": "blastoise",
+    "originalName": "Kommo-o",
+    "name": "kommo-o",
     "types": [
-      "water"
+      "dragon",
+      "fighting"
     ],
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/9.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/784.png"
+  },
+  {
+    "originalName": "Arcanine",
+    "name": "arcanine-hisui",
+    "types": [
+      "fire",
+      "rock"
+    ],
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10230.png"
+  },
+  {
+    "originalName": "Torkoal",
+    "name": "torkoal",
+    "types": [
+      "fire"
+    ],
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/324.png"
+  },
+  {
+    "originalName": "Glimmora",
+    "name": "glimmora",
+    "types": [
+      "rock",
+      "poison"
+    ],
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/970.png"
+  },
+  {
+    "originalName": "Basculegion (Female)",
+    "name": "basculegion-female",
+    "types": [
+      "water",
+      "ghost"
+    ],
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10248.png"
+  },
+  {
+    "originalName": "Gengar",
+    "name": "gengar",
+    "types": [
+      "ghost",
+      "poison"
+    ],
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/94.png"
   },
   {
     "originalName": "Delphox",
@@ -433,56 +362,74 @@
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/979.png"
   },
   {
+    "originalName": "Froslass",
+    "name": "froslass",
+    "types": [
+      "ice",
+      "ghost"
+    ],
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/478.png"
+  },
+  {
+    "originalName": "Primarina",
+    "name": "primarina",
+    "types": [
+      "water",
+      "fairy"
+    ],
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/730.png"
+  },
+  {
+    "originalName": "Blastoise",
+    "name": "blastoise",
+    "types": [
+      "water"
+    ],
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/9.png"
+  },
+  {
+    "originalName": "Aerodactyl",
+    "name": "aerodactyl",
+    "types": [
+      "rock",
+      "flying"
+    ],
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/142.png"
+  },
+  {
+    "originalName": "Alolan Ninetales",
+    "name": "ninetales-alola",
+    "types": [
+      "ice",
+      "fairy"
+    ],
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10104.png"
+  },
+  {
+    "originalName": "Sableye",
+    "name": "sableye",
+    "types": [
+      "dark",
+      "ghost"
+    ],
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/302.png"
+  },
+  {
+    "originalName": "Lucario",
+    "name": "lucario",
+    "types": [
+      "fighting",
+      "steel"
+    ],
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/448.png"
+  },
+  {
     "originalName": "Absol",
     "name": "absol",
     "types": [
       "dark"
     ],
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/359.png"
-  },
-  {
-    "originalName": "Corviknight",
-    "name": "corviknight",
-    "types": [
-      "flying",
-      "steel"
-    ],
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/823.png"
-  },
-  {
-    "originalName": "Maushold (Family of Three)",
-    "name": "maushold-family-of-three",
-    "types": [
-      "normal"
-    ],
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10257.png"
-  },
-  {
-    "originalName": "Talonflame",
-    "name": "talonflame",
-    "types": [
-      "fire",
-      "flying"
-    ],
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/663.png"
-  },
-  {
-    "originalName": "Kommo-o",
-    "name": "kommo-o",
-    "types": [
-      "dragon",
-      "fighting"
-    ],
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/784.png"
-  },
-  {
-    "originalName": "Ceruledge",
-    "name": "ceruledge",
-    "types": [
-      "fire",
-      "ghost"
-    ],
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/937.png"
   },
   {
     "originalName": "Dragapult",
@@ -503,13 +450,30 @@
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/323.png"
   },
   {
-    "originalName": "Hydreigon",
-    "name": "hydreigon",
+    "originalName": "Espathra",
+    "name": "espathra",
     "types": [
-      "dark",
-      "dragon"
+      "psychic"
     ],
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/635.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/956.png"
+  },
+  {
+    "originalName": "Corviknight",
+    "name": "corviknight",
+    "types": [
+      "flying",
+      "steel"
+    ],
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/823.png"
+  },
+  {
+    "originalName": "Talonflame",
+    "name": "talonflame",
+    "types": [
+      "fire",
+      "flying"
+    ],
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/663.png"
   },
   {
     "originalName": "Blaziken",
@@ -521,6 +485,23 @@
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/257.png"
   },
   {
+    "originalName": "Hydreigon",
+    "name": "hydreigon",
+    "types": [
+      "dark",
+      "dragon"
+    ],
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/635.png"
+  },
+  {
+    "originalName": "Maushold (Family of Three)",
+    "name": "maushold-family-of-three",
+    "types": [
+      "normal"
+    ],
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10257.png"
+  },
+  {
     "originalName": "Mawile",
     "name": "mawile",
     "types": [
@@ -528,6 +509,15 @@
       "fairy"
     ],
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/303.png"
+  },
+  {
+    "originalName": "Hatterene",
+    "name": "hatterene",
+    "types": [
+      "psychic",
+      "fairy"
+    ],
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/858.png"
   },
   {
     "originalName": "Typhlosion",
@@ -539,178 +529,13 @@
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10233.png"
   },
   {
-    "originalName": "Sirfetch’d",
-    "name": "sirfetchd",
+    "originalName": "Baxcalibur",
+    "name": "baxcalibur",
     "types": [
-      "fighting"
-    ],
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/865.png"
-  },
-  {
-    "originalName": "Gallade",
-    "name": "gallade",
-    "types": [
-      "psychic",
-      "fighting"
-    ],
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/475.png"
-  },
-  {
-    "originalName": "Inteleon",
-    "name": "inteleon",
-    "types": [
-      "water"
-    ],
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/818.png"
-  },
-  {
-    "originalName": "Vivillon",
-    "name": "vivillon",
-    "types": [
-      "bug",
-      "flying"
-    ],
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/666.png"
-  },
-  {
-    "originalName": "Zoroark",
-    "name": "zoroark-hisui",
-    "types": [
-      "normal",
-      "ghost"
-    ],
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10239.png"
-  },
-  {
-    "originalName": "Tsareena",
-    "name": "tsareena",
-    "types": [
-      "grass"
-    ],
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/763.png"
-  },
-  {
-    "originalName": "Wash Rotom",
-    "name": "rotom-wash",
-    "types": [
-      "electric",
-      "water"
-    ],
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10009.png"
-  },
-  {
-    "originalName": "Kleavor",
-    "name": "kleavor",
-    "types": [
-      "bug",
-      "rock"
-    ],
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/900.png"
-  },
-  {
-    "originalName": "Meowscarada",
-    "name": "meowscarada",
-    "types": [
-      "grass",
-      "dark"
-    ],
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/908.png"
-  },
-  {
-    "originalName": "Alakazam",
-    "name": "alakazam",
-    "types": [
-      "psychic"
-    ],
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/65.png"
-  },
-  {
-    "originalName": "Empoleon",
-    "name": "empoleon",
-    "types": [
-      "water",
-      "steel"
-    ],
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/395.png"
-  },
-  {
-    "originalName": "Scovillain",
-    "name": "scovillain",
-    "types": [
-      "grass",
-      "fire"
-    ],
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/952.png"
-  },
-  {
-    "originalName": "Weavile",
-    "name": "weavile",
-    "types": [
-      "dark",
+      "dragon",
       "ice"
     ],
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/461.png"
-  },
-  {
-    "originalName": "Chandelure",
-    "name": "chandelure",
-    "types": [
-      "ghost",
-      "fire"
-    ],
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/609.png"
-  },
-  {
-    "originalName": "Aegislash (Shield Forme)",
-    "name": "aegislash-shield",
-    "types": [
-      "steel",
-      "ghost"
-    ],
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/681.png"
-  },
-  {
-    "originalName": "Pincurchin",
-    "name": "pincurchin",
-    "types": [
-      "electric"
-    ],
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/871.png"
-  },
-  {
-    "originalName": "Espathra",
-    "name": "espathra",
-    "types": [
-      "psychic"
-    ],
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/956.png"
-  },
-  {
-    "originalName": "Scizor",
-    "name": "scizor",
-    "types": [
-      "bug",
-      "steel"
-    ],
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/212.png"
-  },
-  {
-    "originalName": "Toxtricity (Amped Form)",
-    "name": "toxtricity-amped",
-    "types": [
-      "electric",
-      "poison"
-    ],
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/849.png"
-  },
-  {
-    "originalName": "Malamar",
-    "name": "malamar",
-    "types": [
-      "dark",
-      "psychic"
-    ],
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/687.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/998.png"
   },
   {
     "originalName": "Toxapex",
@@ -722,73 +547,75 @@
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/748.png"
   },
   {
-    "originalName": "Clefable",
-    "name": "clefable",
+    "originalName": "Vivillon",
+    "name": "vivillon",
     "types": [
-      "fairy"
+      "bug",
+      "flying"
     ],
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/36.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/666.png"
   },
   {
-    "originalName": "Cinderace",
-    "name": "cinderace",
+    "originalName": "Kleavor",
+    "name": "kleavor",
     "types": [
-      "fire"
+      "bug",
+      "rock"
     ],
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/815.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/900.png"
   },
   {
-    "originalName": "Mimikyu",
-    "name": "mimikyu-disguised",
+    "originalName": "Pyroar",
+    "name": "pyroar",
     "types": [
-      "ghost",
-      "fairy"
+      "fire",
+      "normal"
     ],
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/778.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/668.png"
   },
   {
-    "originalName": "Meganium",
-    "name": "meganium",
+    "originalName": "Drampa",
+    "name": "drampa",
     "types": [
-      "grass"
-    ],
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/154.png"
-  },
-  {
-    "originalName": "Mamoswine",
-    "name": "mamoswine",
-    "types": [
-      "ice",
-      "ground"
-    ],
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/473.png"
-  },
-  {
-    "originalName": "Goodra",
-    "name": "goodra-hisui",
-    "types": [
-      "steel",
+      "normal",
       "dragon"
     ],
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10242.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/780.png"
   },
   {
-    "originalName": "Greninja",
-    "name": "greninja",
+    "originalName": "Meowstic (Female)",
+    "name": "meowstic-female",
     "types": [
-      "water",
-      "dark"
+      "psychic"
     ],
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/658.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10025.png"
   },
   {
-    "originalName": "Samurott",
-    "name": "samurott",
+    "originalName": "Pawmot",
+    "name": "pawmot",
     "types": [
-      "water",
-      "dark"
+      "electric",
+      "fighting"
     ],
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/503.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/923.png"
+  },
+  {
+    "originalName": "Ceruledge",
+    "name": "ceruledge",
+    "types": [
+      "fire",
+      "ghost"
+    ],
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/937.png"
+  },
+  {
+    "originalName": "Gallade",
+    "name": "gallade",
+    "types": [
+      "psychic",
+      "fighting"
+    ],
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/475.png"
   },
   {
     "originalName": "Kangaskhan",
@@ -799,6 +626,49 @@
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/115.png"
   },
   {
+    "originalName": "Gliscor",
+    "name": "gliscor",
+    "types": [
+      "ground",
+      "flying"
+    ],
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/472.png"
+  },
+  {
+    "originalName": "Tsareena",
+    "name": "tsareena",
+    "types": [
+      "grass"
+    ],
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/763.png"
+  },
+  {
+    "originalName": "Sceptile",
+    "name": "sceptile",
+    "types": [
+      "grass"
+    ],
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/254.png"
+  },
+  {
+    "originalName": "Zoroark",
+    "name": "zoroark-hisui",
+    "types": [
+      "normal",
+      "ghost"
+    ],
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10239.png"
+  },
+  {
+    "originalName": "Meowscarada",
+    "name": "meowscarada",
+    "types": [
+      "grass",
+      "dark"
+    ],
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/908.png"
+  },
+  {
     "originalName": "Grapploct",
     "name": "grapploct",
     "types": [
@@ -807,49 +677,12 @@
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/853.png"
   },
   {
-    "originalName": "Oranguru",
-    "name": "oranguru",
+    "originalName": "Ninetales",
+    "name": "ninetales",
     "types": [
-      "normal",
-      "psychic"
+      "fire"
     ],
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/765.png"
-  },
-  {
-    "originalName": "Gyarados",
-    "name": "gyarados",
-    "types": [
-      "water",
-      "flying"
-    ],
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/130.png"
-  },
-  {
-    "originalName": "Overqwil",
-    "name": "overqwil",
-    "types": [
-      "dark",
-      "poison"
-    ],
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/904.png"
-  },
-  {
-    "originalName": "Basculegion (Female)",
-    "name": "basculegion-female",
-    "types": [
-      "water",
-      "ghost"
-    ],
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10248.png"
-  },
-  {
-    "originalName": "Scrafty",
-    "name": "scrafty",
-    "types": [
-      "dark",
-      "fighting"
-    ],
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/560.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/38.png"
   },
   {
     "originalName": "Heat Rotom",
@@ -861,12 +694,125 @@
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10008.png"
   },
   {
-    "originalName": "Lycanroc (Dusk Form)",
-    "name": "lycanroc-dusk",
+    "originalName": "Meganium",
+    "name": "meganium",
     "types": [
-      "rock"
+      "grass"
     ],
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10152.png"
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/154.png"
+  },
+  {
+    "originalName": "Cinderace",
+    "name": "cinderace",
+    "types": [
+      "fire"
+    ],
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/815.png"
+  },
+  {
+    "originalName": "Chandelure",
+    "name": "chandelure",
+    "types": [
+      "ghost",
+      "fire"
+    ],
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/609.png"
+  },
+  {
+    "originalName": "Mimikyu",
+    "name": "mimikyu-disguised",
+    "types": [
+      "ghost",
+      "fairy"
+    ],
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/778.png"
+  },
+  {
+    "originalName": "Overqwil",
+    "name": "overqwil",
+    "types": [
+      "dark",
+      "poison"
+    ],
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/904.png"
+  },
+  {
+    "originalName": "Alakazam",
+    "name": "alakazam",
+    "types": [
+      "psychic"
+    ],
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/65.png"
+  },
+  {
+    "originalName": "Wash Rotom",
+    "name": "rotom-wash",
+    "types": [
+      "electric",
+      "water"
+    ],
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10009.png"
+  },
+  {
+    "originalName": "Clefable",
+    "name": "clefable",
+    "types": [
+      "fairy"
+    ],
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/36.png"
+  },
+  {
+    "originalName": "Altaria",
+    "name": "altaria",
+    "types": [
+      "dragon",
+      "flying"
+    ],
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/334.png"
+  },
+  {
+    "originalName": "Scovillain",
+    "name": "scovillain",
+    "types": [
+      "grass",
+      "fire"
+    ],
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/952.png"
+  },
+  {
+    "originalName": "Greninja",
+    "name": "greninja",
+    "types": [
+      "water",
+      "dark"
+    ],
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/658.png"
+  },
+  {
+    "originalName": "Inteleon",
+    "name": "inteleon",
+    "types": [
+      "water"
+    ],
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/818.png"
+  },
+  {
+    "originalName": "Goodra",
+    "name": "goodra-hisui",
+    "types": [
+      "steel",
+      "dragon"
+    ],
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10242.png"
+  },
+  {
+    "originalName": "Scizor",
+    "name": "scizor",
+    "types": [
+      "bug",
+      "steel"
+    ],
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/212.png"
   },
   {
     "originalName": "Snorlax",
@@ -875,5 +821,56 @@
       "normal"
     ],
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/143.png"
+  },
+  {
+    "originalName": "Mamoswine",
+    "name": "mamoswine",
+    "types": [
+      "ice",
+      "ground"
+    ],
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/473.png"
+  },
+  {
+    "originalName": "Lopunny",
+    "name": "lopunny",
+    "types": [
+      "normal"
+    ],
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/428.png"
+  },
+  {
+    "originalName": "Empoleon",
+    "name": "empoleon",
+    "types": [
+      "water",
+      "steel"
+    ],
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/395.png"
+  },
+  {
+    "originalName": "Hippowdon",
+    "name": "hippowdon",
+    "types": [
+      "ground"
+    ],
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/450.png"
+  },
+  {
+    "originalName": "Weavile",
+    "name": "weavile",
+    "types": [
+      "dark",
+      "ice"
+    ],
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/461.png"
+  },
+  {
+    "originalName": "Pincurchin",
+    "name": "pincurchin",
+    "types": [
+      "electric"
+    ],
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/871.png"
   }
 ]

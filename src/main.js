@@ -429,7 +429,7 @@ function renderBigCards(gridId, items, mode) {
 // ── Top 100 Meta Pokémon Table ──────────────────────────────────
 async function loadMetaPokemonData() {
   try {
-    const res = await fetch('/meta.json');
+    const res = await fetch(`/meta.json?t=${Date.now()}`);
     if (res.ok) {
       const data = await res.json();
       metaData.single = data.single || defaultMetaData.single || [];
