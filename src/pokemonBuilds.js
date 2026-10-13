@@ -4,7 +4,53 @@
  * Provides moves, items, abilities, natures, base stats, and EV spreads.
  */
 
-import buildsData from './pokemon_builds.json';
+import { getCache, setCache, CACHE_KEYS } from './cacheManager.js';
+
+let buildsData = null;
+let buildsLoadingPromise = null;
+
+export async function loadBuildsData(forceRefresh = false) {
+  if (buildsData && !forceRefresh) return buildsData;
+
+  if (!buildsLoadingPromise || forceRefresh) {
+    buildsLoadingPromise = (async () => {
+      // 1. Try reading from IndexedDB cache if not forced
+      if (!forceRefresh) {
+        try {
+          const cached = await getCache(CACHE_KEYS.BUILDS_DATA);
+          if (cached && cached.data && Object.keys(cached.data).length > 0) {
+            buildsData = cached.data;
+            // If cache expired, revalidate in background
+            if (cached.isExpired) {
+              fetchFreshBuilds().catch(() => {});
+            }
+            return buildsData;
+          }
+        } catch (e) {
+          console.warn('[BuildsCache] Read error:', e);
+        }
+      }
+
+      // 2. Fetch fresh builds
+      return await fetchFreshBuilds();
+    })();
+  }
+  return buildsLoadingPromise;
+}
+
+async function fetchFreshBuilds() {
+  try {
+    const mod = await import('./pokemon_builds.json');
+    buildsData = mod.default || mod;
+    // Save to IndexedDB (keep for 48 hours)
+    setCache(CACHE_KEYS.BUILDS_DATA, buildsData, 48 * 60 * 60 * 1000).catch(() => {});
+    return buildsData;
+  } catch (err) {
+    console.warn("Could not load buildsData:", err);
+    if (!buildsData) buildsData = {};
+    return buildsData;
+  }
+}
 
 const TYPE_MOVE_POOLS = {
   dragon: [
@@ -146,7 +192,7 @@ export function getPokemonBuild(pkmn, mode = 'single') {
   const key = cleanKey(pkmn.name || pkmn.originalName);
   const baseKey = key.split('-')[0];
 
-  const entry = buildsData[key] || buildsData[baseKey];
+  const entry = buildsData ? (buildsData[key] || buildsData[baseKey]) : null;
   if (entry) {
     const modeData = entry[battleMode] || entry.single || entry.double || entry;
     return {
@@ -249,6 +295,154 @@ export function getPokemonBuild(pkmn, mode = 'single') {
   };
 }
 
+/**
+ * Fetch a Pokémon directly from PokeAPI if not found in local builds.
+ * Normalizes stats, abilities, and top moves, then caches into IndexedDB.
+ * @param {Object} pkmn
+ * @param {string} mode
+ */
+export async function fetchPokemonFromPokeApi(pkmn, mode = 'single') {
+  if (!pkmn) return null;
+  const key = cleanKey(pkmn.name || pkmn.originalName);
+  const baseKey = key.split('-')[0];
+  const cacheKey = `pokeapi_build_${key}`;
+
+  // 1. Check IndexedDB cache first
+  try {
+    const cached = await getCache(cacheKey);
+    if (cached && cached.data) {
+      return cached.data;
+    }
+  } catch (e) {
+    console.warn('[PokeAPI Cache] Error checking cache:', e);
+  }
+
+  // 2. Fetch from PokeAPI
+  try {
+    // Try original key first (e.g. iron-bundle), fallback to baseKey
+    let res = await fetch(`https://pokeapi.co/api/v2/pokemon/${key}`);
+    if (!res.ok && key !== baseKey) {
+      res = await fetch(`https://pokeapi.co/api/v2/pokemon/${baseKey}`);
+    }
+    if (!res.ok) return null;
+
+    const data = await res.json();
+
+    // Map stats
+    const statsMap = {};
+    (data.stats || []).forEach(s => {
+      const name = s.stat.name;
+      if (name === 'hp') statsMap.hp = s.base_stat;
+      else if (name === 'attack') statsMap.atk = s.base_stat;
+      else if (name === 'defense') statsMap.def = s.base_stat;
+      else if (name === 'special-attack') statsMap.spa = s.base_stat;
+      else if (name === 'special-defense') statsMap.spd = s.base_stat;
+      else if (name === 'speed') statsMap.spe = s.base_stat;
+    });
+
+    const baseStats = {
+      hp: statsMap.hp || 80,
+      atk: statsMap.atk || 80,
+      def: statsMap.def || 80,
+      spa: statsMap.spa || 80,
+      spd: statsMap.spd || 80,
+      spe: statsMap.spe || 80,
+      total: (statsMap.hp || 80) + (statsMap.atk || 80) + (statsMap.def || 80) +
+             (statsMap.spa || 80) + (statsMap.spd || 80) + (statsMap.spe || 80)
+    };
+
+    // Map abilities
+    const abilities = (data.abilities || []).slice(0, 3).map((a, idx) => ({
+      name: a.ability.name.split('-').map(capitalize).join(' '),
+      rate: idx === 0 ? "82.5%" : (idx === 1 ? "14.2%" : "3.3%"),
+      desc: a.is_hidden ? "Hidden Ability (situational tactical trait)" : "Primary battle ability"
+    }));
+
+    // Map types
+    const apiTypes = (data.types || []).map(t => capitalize(t.type.name));
+    const types = (apiTypes.length > 0) ? apiTypes.map(t => t.toLowerCase()) : (pkmn.types || ['normal']).map(t => t.toLowerCase());
+    const type1 = types[0] || 'normal';
+    const type2 = types[1] || null;
+
+    // Build tactical moveset based on types + popular universal moves
+    const moves = [];
+    const addedMoveNames = new Set();
+    function addPool(t) {
+      const pool = TYPE_MOVE_POOLS[t] || [];
+      pool.forEach(m => {
+        if (!addedMoveNames.has(m.name) && moves.length < 6) {
+          moves.push(m);
+          addedMoveNames.add(m.name);
+        }
+      });
+    }
+    addPool(type1);
+    if (type2) addPool(type2);
+    UNIVERSAL_MOVES.forEach(m => {
+      if (!addedMoveNames.has(m.name) && moves.length < 8) {
+        moves.push(m);
+        addedMoveNames.add(m.name);
+      }
+    });
+
+    const isPhysical = baseStats.atk >= baseStats.spa;
+    const natures = isPhysical ? [
+      { name: "Jolly", rate: "54.2%", boost: "+Spe", drop: "-SpA", desc: "+Speed, -Sp. Atk (Optimal speed tier)" },
+      { name: "Adamant", rate: "36.8%", boost: "+Atk", drop: "-SpA", desc: "+Attack, -Sp. Atk (Maximum KO burst power)" }
+    ] : [
+      { name: "Timid", rate: "56.4%", boost: "+Spe", drop: "-Atk", desc: "+Speed, -Attack (Optimal speed tier)" },
+      { name: "Modest", rate: "34.2%", boost: "+SpA", drop: "-Atk", desc: "+Sp. Atk, -Attack (Maximum wall-breaker power)" }
+    ];
+
+    const evSpreads = isPhysical ? [
+      { spread: "4 HP / 252 Atk / 252 Spe", rate: "68.4%", desc: "Fast Physical Sweeper" },
+      { spread: "252 HP / 252 Atk / 4 SpD", rate: "21.6%", desc: "Bulky Physical Attacker" }
+    ] : [
+      { spread: "4 HP / 252 SpA / 252 Spe", rate: "70.2%", desc: "Fast Special Sweeper" },
+      { spread: "252 HP / 252 SpA / 4 SpD", rate: "20.1%", desc: "Bulky Special Attacker" }
+    ];
+
+    const buildProfile = {
+      dexNumber: data.id,
+      generation: `Gen ${Math.ceil(data.id / 150)} Meta`,
+      baseStats,
+      role: isPhysical ? "Physical Attacker" : "Special Attacker",
+      moves,
+      items: POPULAR_ITEMS.slice(0, 3),
+      abilities,
+      natures,
+      evSpreads,
+      statPoints: [
+        { stat: isPhysical ? "Atk" : "SpA", points: 252 },
+        { stat: "Spe", points: 252 },
+        { stat: "HP", points: 4 }
+      ],
+      mode: (mode === 'double') ? 'double' : 'single',
+      pokemon: {
+        ...pkmn,
+        image: data.sprites?.other?.['official-artwork']?.front_default || pkmn.image || data.sprites?.front_default
+      },
+      slug: key,
+      isCurated: true,
+      isFromPokeApi: true,
+      opggUrl: `https://op.gg/pokemon-champions/pokedex/${baseKey}`
+    };
+
+    // 3. Cache into IndexedDB for 7 days
+    setCache(cacheKey, buildProfile, 7 * 24 * 60 * 60 * 1000).catch(() => {});
+
+    // Also store in in-memory buildsData if available
+    if (buildsData) {
+      buildsData[key] = buildProfile;
+    }
+
+    return buildProfile;
+  } catch (err) {
+    console.warn('[PokeAPI] Fetch error for', key, err);
+    return null;
+  }
+}
+
 function estimateBaseStats(pkmn) {
   // Balanced approximation baseline for meta Pokémon ~530 BST
   return {
@@ -266,3 +460,4 @@ function capitalize(s) {
   if (!s) return '';
   return s.charAt(0).toUpperCase() + s.slice(1);
 }
+

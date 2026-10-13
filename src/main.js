@@ -1,6 +1,6 @@
 /**
  * main.js
- * Pokémon Battle Type Analyzer — Controller
+ * TypeDex — Tactical Pokémon Battle Matchup & Meta Analyzer
  *
  * Tactical Battle Analyzer with:
  * - Hero Type Selector
@@ -18,7 +18,8 @@ import {
 } from './typeData.js';
 import { RadarChart } from './radarChart.js';
 import defaultMetaData from './meta.json';
-import { getPokemonBuild } from './pokemonBuilds.js';
+import { getPokemonBuild, loadBuildsData, fetchPokemonFromPokeApi } from './pokemonBuilds.js';
+import { getCache, setCache, CACHE_KEYS } from './cacheManager.js';
 
 // ── App State ──────────────────────────────────────────────────
 const state = {
@@ -44,8 +45,10 @@ function init() {
 
   buildTypeButtons();
   initResetButton();
+  initToggleTop100Button();
   initSearch();
   initMetaToggle();
+  initSyncPatchButton();
   initModalHandlers();
   loadMetaPokemonData();
 
@@ -133,6 +136,39 @@ function initResetButton() {
       refresh();
     });
   }
+}
+
+function initToggleTop100Button() {
+  const btn = document.getElementById('btn-toggle-meta');
+  const section = document.getElementById('meta-table-section');
+  const label = document.getElementById('toggle-meta-label');
+  if (!btn || !section) return;
+
+  const STORAGE_KEY = 'pokemon_analyzer_hide_top100';
+  let isHidden = localStorage.getItem(STORAGE_KEY) === 'true';
+
+  function applyState(hidden) {
+    if (hidden) {
+      section.classList.add('section-hidden');
+      btn.classList.add('active-hidden');
+      if (label) label.textContent = 'SHOW TOP 100';
+      btn.setAttribute('aria-expanded', 'false');
+    } else {
+      section.classList.remove('section-hidden');
+      btn.classList.remove('active-hidden');
+      if (label) label.textContent = 'HIDE TOP 100';
+      btn.setAttribute('aria-expanded', 'true');
+    }
+  }
+
+  // Restore previous user preference
+  applyState(isHidden);
+
+  btn.addEventListener('click', () => {
+    isHidden = !isHidden;
+    localStorage.setItem(STORAGE_KEY, isHidden ? 'true' : 'false');
+    applyState(isHidden);
+  });
 }
 
 // ── Refresh ────────────────────────────────────────────────────
@@ -598,14 +634,48 @@ function renderBigCards(gridId, items, mode) {
   });
 }
 
-// ── Top 100 Meta Pokémon Table ──────────────────────────────────
-async function loadMetaPokemonData() {
+// ── Top 100 Meta Pokémon Table & Patch Cache ───────────────────
+async function loadMetaPokemonData(forceRefresh = false) {
+  // 1. Try loading from IndexedDB first for instant UI response (< 1ms)
+  if (!forceRefresh) {
+    try {
+      const cached = await getCache(CACHE_KEYS.META_DATA);
+      if (cached && cached.data && (cached.data.single || cached.data.double)) {
+        metaData.single = cached.data.single || [];
+        metaData.double = cached.data.double || [];
+        processAndRenderMeta();
+
+        // If cache expired (older than 24h), fetch fresh patch data in background
+        if (cached.isExpired) {
+          fetchFreshMetaData(false).catch(() => {});
+        }
+        return;
+      }
+    } catch (e) {
+      console.warn('[MetaCache] Cache read error:', e);
+    }
+  }
+
+  // 2. Fallback / fresh fetch
+  await fetchFreshMetaData(forceRefresh);
+}
+
+async function fetchFreshMetaData(isManualSync = false) {
+  const syncBtn = document.getElementById('btn-sync-meta');
+  const syncLabel = document.getElementById('sync-btn-label');
+  if (isManualSync && syncBtn && syncLabel) {
+    syncBtn.classList.add('syncing');
+    syncLabel.textContent = 'SYNCING...';
+  }
+
   try {
     const res = await fetch(`/meta.json?t=${Date.now()}`);
     if (res.ok) {
       const data = await res.json();
       metaData.single = data.single || defaultMetaData.single || [];
       metaData.double = data.double || defaultMetaData.double || [];
+      // Save into IndexedDB cache (24 hours TTL)
+      setCache(CACHE_KEYS.META_DATA, data, 24 * 60 * 60 * 1000).catch(() => {});
     } else {
       metaData.single = defaultMetaData.single || [];
       metaData.double = defaultMetaData.double || [];
@@ -614,15 +684,32 @@ async function loadMetaPokemonData() {
     console.warn("Using bundled meta.json fallback:", err);
     metaData.single = defaultMetaData.single || [];
     metaData.double = defaultMetaData.double || [];
+  } finally {
+    if (isManualSync && syncBtn && syncLabel) {
+      syncBtn.classList.remove('syncing');
+      syncLabel.textContent = 'UPDATED';
+      setTimeout(() => {
+        syncLabel.textContent = 'SYNC PATCH';
+      }, 2000);
+    }
   }
 
-  // Ensure rank property is present
+  processAndRenderMeta();
+}
+
+function processAndRenderMeta() {
+  // Pre-index search fields and ensure rank property is present
   ['single', 'double'].forEach(m => {
     if (Array.isArray(metaData[m])) {
-      metaData[m].forEach((p, i) => { if (!p.rank) p.rank = i + 1; });
+      metaData[m].forEach((p, i) => {
+        if (!p.rank) p.rank = i + 1;
+        p._searchName = p.originalName.toLowerCase();
+        p._searchTypes = p.types.map(t => t.toLowerCase());
+      });
     }
   });
 
+  attachTableDelegation();
   renderMetaTable();
 }
 
@@ -638,8 +725,8 @@ function renderMetaTable() {
   const filtered = pokemonList.filter(p => {
     if (p.types[0] === 'unknown') return false;
     if (!q) return true;
-    const nameMatch = p.originalName.toLowerCase().includes(q);
-    const typeMatch = p.types.some(t => t.toLowerCase().includes(q));
+    const nameMatch = (p._searchName || p.originalName.toLowerCase()).includes(q);
+    const typeMatch = (p._searchTypes || p.types).some(t => t.includes(q));
     return nameMatch || typeMatch;
   });
 
@@ -651,9 +738,12 @@ function renderMetaTable() {
   const defTypes = state.type1 ? [state.type1, ...(state.type2 ? [state.type2] : [])] : null;
   const atkTypes = defTypes;
 
+  const fragment = document.createDocumentFragment();
+
   filtered.forEach(pkmn => {
     const tr = document.createElement('tr');
     tr.className = 'table-row-item';
+    tr.dataset.pkmnName = pkmn.originalName;
 
     const isSelected = state.selectedPokemon === pkmn.originalName;
     if (isSelected) {
@@ -722,7 +812,7 @@ function renderMetaTable() {
       <td class="td-rank">${rankHtml}</td>
       <td class="td-pokemon">
         <div class="pokemon-meta-cell">
-          <div class="table-avatar-wrap" title="Click to view OP.GG Build">
+          <div class="table-avatar-wrap" data-action="build" title="Click to view OP.GG Build">
             <img src="${pkmn.image}" alt="${pkmn.originalName}" class="table-avatar" loading="lazy" />
           </div>
           <div class="pkmn-name-types-group">
@@ -739,31 +829,38 @@ function renderMetaTable() {
         <div class="table-types-wrap">${typeChips}</div>
       </td>
       <td class="td-build">
-        <button class="table-btn-build" title="View OP.GG Build for ${pkmn.originalName}">BUILD</button>
+        <button class="table-btn-build" data-action="build" title="View OP.GG Build for ${pkmn.originalName}">BUILD</button>
       </td>
     `;
 
-    const buildBtn = tr.querySelector('.table-btn-build');
-    if (buildBtn) {
-      buildBtn.addEventListener('click', (e) => {
-        e.stopPropagation();
-        openPokemonModal(pkmn, currentMetaMode);
-      });
-    }
+    fragment.appendChild(tr);
+  });
 
-    const avatarWrap = tr.querySelector('.table-avatar-wrap');
-    if (avatarWrap) {
-      avatarWrap.addEventListener('click', (e) => {
-        e.stopPropagation();
-        openPokemonModal(pkmn, currentMetaMode);
-      });
-    }
+  tbody.appendChild(fragment);
+}
 
-    tr.addEventListener('click', () => {
+// Attach delegated listener on tbody once
+let tableListenerAttached = false;
+function attachTableDelegation() {
+  const tbody = document.getElementById('pokemon-table-body');
+  if (!tbody || tableListenerAttached) return;
+  tableListenerAttached = true;
+
+  tbody.addEventListener('click', (e) => {
+    const tr = e.target.closest('.table-row-item');
+    if (!tr) return;
+    const pkmnName = tr.dataset.pkmnName;
+    const pokemonList = metaData[currentMetaMode] || [];
+    const pkmn = pokemonList.find(p => p.originalName === pkmnName);
+    if (!pkmn) return;
+
+    const buildActionEl = e.target.closest('[data-action="build"]');
+    if (buildActionEl) {
+      e.stopPropagation();
+      openPokemonModal(pkmn, currentMetaMode);
+    } else {
       selectPokemonTypes(pkmn);
-    });
-
-    tbody.appendChild(tr);
+    }
   });
 }
 
@@ -786,13 +883,17 @@ function selectPokemonTypes(pkmn) {
   }
 }
 
+let searchDebounceTimer = null;
 function initSearch() {
   const input = document.getElementById('pokemon-search');
   if (!input) return;
 
   input.addEventListener('input', (e) => {
     searchQuery = e.target.value;
-    renderMetaTable();
+    clearTimeout(searchDebounceTimer);
+    searchDebounceTimer = setTimeout(() => {
+      renderMetaTable();
+    }, 60);
   });
 }
 
@@ -815,6 +916,17 @@ function initMetaToggle() {
     btnSingle.classList.remove('active');
     renderMetaTable();
     if (state.type1) updateCharts();
+  });
+}
+
+function initSyncPatchButton() {
+  const btnSync = document.getElementById('btn-sync-meta');
+  if (!btnSync) return;
+
+  btnSync.addEventListener('click', () => {
+    // Force refresh meta data & builds data from server/file
+    loadMetaPokemonData(true);
+    loadBuildsData(true).catch(() => {});
   });
 }
 
@@ -875,7 +987,7 @@ function initModalHandlers() {
   }
 }
 
-export function openPokemonModal(pkmn, mode = null) {
+export async function openPokemonModal(pkmn, mode = null) {
   if (!pkmn) return;
   currentModalPokemon = pkmn;
   currentModalMode = mode || currentMetaMode || 'single';
@@ -896,25 +1008,103 @@ export function openPokemonModal(pkmn, mode = null) {
     }
   }
 
-  renderModalData(pkmn, currentModalMode);
+  let build = getPokemonBuild(pkmn, currentModalMode);
+  renderModalData(pkmn, currentModalMode, build);
 
   // Show modal
   modal.classList.remove('hidden');
   document.body.classList.add('modal-open');
+
+  // Background Task: Ensure full builds are loaded OR fetch from PokeAPI if newly released
+  (async () => {
+    try {
+      await loadBuildsData();
+      build = getPokemonBuild(pkmn, currentModalMode);
+
+      // If still not curated or missing in local DB, fetch real data from PokeAPI
+      if (!build || !build.isCurated) {
+        const apiBuild = await fetchPokemonFromPokeApi(pkmn, currentModalMode);
+        if (apiBuild) {
+          build = apiBuild;
+        }
+      }
+
+      if (currentModalPokemon === pkmn && !modal.classList.contains('hidden')) {
+        renderModalData(pkmn, currentModalMode, build);
+      }
+    } catch (err) {
+      console.warn("Could not load enhanced build data:", err);
+    }
+  })();
 }
 
-function renderModalData(pkmn, mode) {
+// ── Held Item Sprite Resolver & Error Fallback ────────────────
+function getItemSpriteUrl(itemName) {
+  if (!itemName) return '';
+  const clean = itemName.trim().toLowerCase();
+
+  // Mega stone variants (e.g. "Garchompite Z" -> "garchompite")
+  let baseName = clean.replace(/\s+z$/i, '');
+
+  const overrideMap = {
+    'charizardite x': 'charizardite-x',
+    'charizardite y': 'charizardite-y',
+    'mewtwonite x': 'mewtwonite-x',
+    'mewtwonite y': 'mewtwonite-y',
+  };
+
+  if (overrideMap[clean]) {
+    baseName = overrideMap[clean];
+  }
+
+  const slug = baseName
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-|-$/g, '');
+
+  return `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/${slug}.png`;
+}
+
+window.handleItemImgError = function(img, rawName) {
+  if (!img) return;
+  const cleanName = (rawName || '').trim().toLowerCase();
+  const isMega = /ite\b|stone|mega/i.test(cleanName);
+
+  if (!img.dataset.retryStage) {
+    // Stage 1: Try Pokémon Showdown item icon
+    img.dataset.retryStage = '1';
+    const slugNoDash = cleanName
+      .replace(/\s+z$/i, '')
+      .replace(/[^a-z0-9]/g, '');
+    img.src = `https://play.pokemonshowdown.com/sprites/itemicons/${slugNoDash}.png`;
+  } else if (img.dataset.retryStage === '1') {
+    // Stage 2: If mega stone, try generic Showdown megastone.png
+    img.dataset.retryStage = '2';
+    if (isMega) {
+      img.src = 'https://play.pokemonshowdown.com/sprites/itemicons/megastone.png';
+    } else {
+      img.style.display = 'none';
+      const box = img.closest('.item-icon-box');
+      if (box) box.classList.add('item-icon-has-fallback');
+    }
+  } else {
+    // Final fallback: hide image, reveal fallback badge
+    img.style.display = 'none';
+    const box = img.closest('.item-icon-box');
+    if (box) box.classList.add('item-icon-has-fallback');
+  }
+};
+
+function renderModalData(pkmn, mode, customBuild = null) {
   const modal = document.getElementById('pokemon-build-modal');
   if (!modal || !pkmn) return;
 
-  const build = getPokemonBuild(pkmn, mode);
+  const build = customBuild || getPokemonBuild(pkmn, mode);
   const capitalize = (s) => s.charAt(0).toUpperCase() + s.slice(1);
 
   // 1. Header Info
   const avatarImg = document.getElementById('modal-pokemon-avatar');
   const nameEl = document.getElementById('modal-pokemon-name');
   const dexEl = document.getElementById('modal-pokemon-dex');
-  const roleEl = document.getElementById('modal-pokemon-role');
   const rankEl = document.getElementById('modal-pokemon-rank');
   const typesEl = document.getElementById('modal-pokemon-types');
   const opggLink = document.getElementById('modal-opgg-link');
@@ -929,7 +1119,6 @@ function renderModalData(pkmn, mode) {
   }
   if (nameEl) nameEl.textContent = pkmn.originalName;
   if (dexEl) dexEl.textContent = `#${build.dexNumber || pkmn.rank || '---'}`;
-  if (roleEl) roleEl.textContent = build.role || 'Competitive Battler';
   if (rankEl) rankEl.textContent = `#${pkmn.rank || '1'}`;
   if (bstBadge) bstBadge.textContent = `TOTAL BST: ${build.baseStats?.total || 530}`;
   if (movesSubtitle) {
@@ -1029,11 +1218,26 @@ function renderModalData(pkmn, mode) {
     const topItems = (build.items || []).slice(0, 3);
     itemsContainer.innerHTML = topItems.map((it, idx) => {
       const rateNum = parseFloat(it.rate) || 0;
+      const spriteUrl = getItemSpriteUrl(it.name);
+      const safeName = it.name.replace(/'/g, "\\'");
       return `
         <div class="modal-item-row">
           <div class="item-row-top">
             <div class="item-title-wrap">
               <span class="item-rank-num">#${idx + 1}</span>
+              <div class="item-icon-box" title="${it.name}">
+                <img
+                  class="item-sprite"
+                  src="${spriteUrl}"
+                  alt="${it.name}"
+                  loading="lazy"
+                  onerror="window.handleItemImgError(this, '${safeName}')"
+                />
+                <svg class="item-fallback-svg" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="9" stroke="rgba(245, 158, 11, 0.7)" fill="rgba(245, 158, 11, 0.15)"/>
+                  <path d="M12 7v10M7 12h10" stroke="#f59e0b" stroke-linecap="round"/>
+                </svg>
+              </div>
               <span class="item-name">${it.name}</span>
             </div>
             <div class="item-rate-wrap">

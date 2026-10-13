@@ -41895,72 +41895,123 @@
       "total": 485
     },
     "single": {
-      "role": "Singles Physical Wallbreaker",
+      "role": "Skill Link Physical Attacker / Beak Blast Burn Support",
       "abilities": [
         {
           "name": "Skill Link",
-          "rate": "88.5%",
-          "desc": "Multi-hit moves always hit the maximum 5 times (Bullet Seed & Rock Blast deal 125 guaranteed BP!)."
+          "rate": "90.7%",
+          "desc": "Multi-hit moves always hit the maximum 5 times (Bullet Seed & Rock Blast deal guaranteed 125 BP!)."
+        },
+        {
+          "name": "Keen Eye",
+          "rate": "5.3%",
+          "desc": "Prevents accuracy reduction and ignores target's evasiveness boosts."
         },
         {
           "name": "Sheer Force",
-          "rate": "11.5%",
-          "desc": "Boosts moves with secondary effects."
+          "rate": "4.0%",
+          "desc": "Removes additional move effects to boost base attack power by 30%."
         }
       ],
       "items": [
         {
-          "name": "Choice Scarf",
-          "rate": "42.0%",
-          "desc": "Boosts Speed by 50%, locking the user into the first move selected."
+          "name": "Sitrus Berry",
+          "rate": "33.3%",
+          "desc": "Restores 25% max HP when falling below half health."
         },
         {
-          "name": "Life Orb",
-          "rate": "28.0%",
-          "desc": "Boosts the power of moves by 30% at the cost of 10% maximum HP."
+          "name": "Red Card",
+          "rate": "15.9%",
+          "desc": "Forces attacker to switch out randomly when hit by an attack."
+        },
+        {
+          "name": "Rocky Helmet",
+          "rate": "10.8%",
+          "desc": "Damages contact attackers by 1/6 max HP."
         },
         {
           "name": "Focus Sash",
-          "rate": "18.0%",
-          "desc": "Survives any lethal attack with 1 HP remaining from full health."
+          "rate": "10.2%",
+          "desc": "Survives lethal hit from full HP with 1 HP remaining."
+        },
+        {
+          "name": "Life Orb",
+          "rate": "5.9%",
+          "desc": "Boosts moves by 30% at the cost of 10% max HP per attack."
         }
       ],
       "moves": [
         {
-          "name": "Body Slam",
-          "type": "Normal",
+          "name": "Beak Blast",
+          "type": "Flying",
           "category": "Physical",
-          "power": 85,
+          "power": 100,
           "accuracy": 100,
-          "rate": "88.4%",
-          "desc": "Heavy physical body tackle with 30% paralysis chance."
+          "rate": "99.3%",
+          "desc": "Signature move: charges beak to burn contact attackers; strikes with 100 BP Flying STAB."
         },
         {
-          "name": "Double-Edge",
-          "type": "Normal",
+          "name": "Bullet Seed",
+          "type": "Grass",
           "category": "Physical",
-          "power": 120,
+          "power": 25,
           "accuracy": 100,
-          "rate": "81.2%",
-          "desc": "Colossal physical tackle dealing 33% recoil damage."
+          "rate": "80.0%",
+          "desc": "Always hits 5 times with Skill Link (125 BP total); crushes Water and Ground walls."
         },
         {
-          "name": "Hyper Voice",
-          "type": "Normal",
-          "category": "Special",
-          "power": 90,
-          "accuracy": 100,
-          "rate": "74.5%",
-          "desc": "Sound-based special spread damage; strikes through Substitute."
+          "name": "Rock Blast",
+          "type": "Rock",
+          "category": "Physical",
+          "power": 25,
+          "accuracy": 90,
+          "rate": "72.2%",
+          "desc": "Always hits 5 times with Skill Link (125 BP total); destroys Fire and Flying foes."
         },
         {
-          "name": "Extreme Speed",
+          "name": "Encore",
           "type": "Normal",
-          "category": "Physical",
-          "power": 80,
+          "category": "Status",
+          "power": "-",
           "accuracy": 100,
-          "rate": "68.0%",
-          "desc": "+2 Priority physical Normal strike; devastating revenge KO tool."
+          "rate": "52.5%",
+          "desc": "Locks the target into repeating its last used move for 3 turns."
+        },
+        {
+          "name": "Roost",
+          "type": "Flying",
+          "category": "Status",
+          "power": "-",
+          "accuracy": "-",
+          "rate": "33.7%",
+          "desc": "Restores 50% max HP and grounds user during the turn."
+        },
+        {
+          "name": "U-turn",
+          "type": "Bug",
+          "category": "Physical",
+          "power": 70,
+          "accuracy": 100,
+          "rate": "12.4%",
+          "desc": "Pivots out after dealing damage to maintain tactical momentum."
+        },
+        {
+          "name": "Temper Flare",
+          "type": "Fire",
+          "category": "Physical",
+          "power": 75,
+          "accuracy": 100,
+          "rate": "10.2%",
+          "desc": "Fire physical coverage; power doubles to 150 if previous move failed."
+        },
+        {
+          "name": "Knock Off",
+          "type": "Dark",
+          "category": "Physical",
+          "power": 65,
+          "accuracy": 100,
+          "rate": "9.4%",
+          "desc": "Removes opponent held item and deals 1.5× damage if item is lost."
         },
         {
           "name": "Swords Dance",
@@ -41968,86 +42019,68 @@
           "category": "Status",
           "power": "-",
           "accuracy": "-",
-          "rate": "52.4%",
-          "desc": "Sharply raises user Attack by 2 stages (+100%)."
+          "rate": "3.9%",
+          "desc": "Sharply raises user Attack stat by 2 stages (+100%)."
         },
         {
-          "name": "Facade",
-          "type": "Normal",
-          "category": "Physical",
-          "power": 80,
-          "accuracy": 100,
-          "rate": "44.8%",
-          "desc": "Competitive attack."
-        },
-        {
-          "name": "Yawn",
-          "type": "Normal",
+          "name": "Tailwind",
+          "type": "Flying",
           "category": "Status",
           "power": "-",
           "accuracy": "-",
-          "rate": "38.2%",
-          "desc": "Makes target drowsy, putting them to sleep at end of next turn."
-        },
-        {
-          "name": "Shadow Claw",
-          "type": "Ghost",
-          "category": "Physical",
-          "power": 70,
-          "accuracy": 100,
-          "rate": "31.5%",
-          "desc": "High critical-hit ratio physical Ghost claw."
-        },
-        {
-          "name": "Brave Bird",
-          "type": "Flying",
-          "category": "Physical",
-          "power": 120,
-          "accuracy": 100,
-          "rate": "25.0%",
-          "desc": "Premier physical Flying STAB with 33% recoil."
-        },
-        {
-          "name": "Hurricane",
-          "type": "Flying",
-          "category": "Special",
-          "power": 110,
-          "accuracy": 70,
-          "rate": "19.4%",
-          "desc": "Devastating flying tempest; never misses in rain; 30% confusion."
+          "rate": "3.5%",
+          "desc": "Doubles the Speed of the user and all allies for 4 turns."
         }
       ],
       "natures": [
         {
-          "name": "Jolly",
-          "rate": "58.0%",
-          "boost": "+Spe",
-          "drop": "-SpA",
-          "desc": "Speed tier."
-        },
-        {
           "name": "Adamant",
-          "rate": "42.0%",
+          "rate": "64.7%",
           "boost": "+Atk",
           "drop": "-SpA",
-          "desc": "Offensive power."
+          "desc": "+Attack, -Sp. Atk (Maximum physical KO burst power)"
+        },
+        {
+          "name": "Impish",
+          "rate": "24.1%",
+          "boost": "+Def",
+          "drop": "-SpA",
+          "desc": "+Defense, -Sp. Atk (Bulky physical contact punisher)"
+        },
+        {
+          "name": "Jolly",
+          "rate": "2.9%",
+          "boost": "+Spe",
+          "drop": "-SpA",
+          "desc": "+Speed, -Sp. Atk (Speed benchmark tier)"
         }
       ],
       "statPoints": [
         {
           "rank": 1,
-          "rate": "54.2%",
+          "rate": "14.8%",
           "diff": "=(0%)",
-          "hp": 2,
+          "hp": 32,
+          "atk": 2,
+          "def": 32,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        {
+          "rank": 2,
+          "rate": "6.9%",
+          "diff": "=(0%)",
+          "hp": 32,
           "atk": 32,
           "def": 0,
           "spa": 0,
           "spd": 0,
-          "spe": 32
+          "spe": 2
         },
         {
-          "rank": 2,
-          "rate": "28.5%",
+          "rank": 3,
+          "rate": "6.0%",
           "diff": "=(0%)",
           "hp": 32,
           "atk": 32,
@@ -42055,49 +42088,43 @@
           "spa": 0,
           "spd": 0,
           "spe": 0
-        },
-        {
-          "rank": 3,
-          "rate": "17.3%",
-          "diff": "=(0%)",
-          "hp": 32,
-          "atk": 0,
-          "def": 16,
-          "spa": 0,
-          "spd": 18,
-          "spe": 0
         }
       ]
     },
     "double": {
-      "role": "VGC Physical Sweeper",
+      "role": "Skill Link Tailwind Lead / Beak Blast Disrupter",
       "abilities": [
         {
           "name": "Skill Link",
-          "rate": "88.5%",
-          "desc": "Multi-hit moves always hit the maximum 5 times (Bullet Seed & Rock Blast deal 125 guaranteed BP!)."
+          "rate": "90.7%",
+          "desc": "Multi-hit moves always hit the maximum 5 times (Bullet Seed & Rock Blast deal guaranteed 125 BP!)."
+        },
+        {
+          "name": "Keen Eye",
+          "rate": "5.3%",
+          "desc": "Prevents accuracy reduction and ignores target's evasiveness boosts."
         },
         {
           "name": "Sheer Force",
-          "rate": "11.5%",
-          "desc": "Boosts moves with secondary effects."
+          "rate": "4.0%",
+          "desc": "Removes additional move effects to boost base attack power by 30%."
         }
       ],
       "items": [
         {
           "name": "Sitrus Berry",
-          "rate": "38.0%",
-          "desc": "Restores 25% of maximum HP when dropping below 50% HP."
+          "rate": "33.3%",
+          "desc": "Restores 25% max HP when falling below half health."
         },
         {
-          "name": "White Herb",
-          "rate": "32.0%",
-          "desc": "Immediately restores any lowered stat stage back to neutral once."
+          "name": "Red Card",
+          "rate": "15.9%",
+          "desc": "Forces attacker to switch out randomly when hit by an attack."
         },
         {
-          "name": "Focus Sash",
-          "rate": "20.0%",
-          "desc": "Survives any lethal attack with 1 HP remaining from full health."
+          "name": "Rocky Helmet",
+          "rate": "10.8%",
+          "desc": "Damages contact attackers by 1/6 max HP."
         }
       ],
       "moves": [
@@ -42107,139 +42134,139 @@
           "category": "Status",
           "power": "-",
           "accuracy": "-",
-          "rate": "88.4%",
+          "rate": "85.0%",
           "desc": "Completely evades incoming attacks and damage for 1 turn."
         },
         {
-          "name": "Body Slam",
-          "type": "Normal",
+          "name": "Beak Blast",
+          "type": "Flying",
           "category": "Physical",
-          "power": 85,
+          "power": 100,
           "accuracy": 100,
-          "rate": "81.2%",
-          "desc": "Heavy physical body tackle with 30% paralysis chance."
+          "rate": "99.3%",
+          "desc": "Signature move: charges beak to burn contact attackers; strikes with 100 BP Flying STAB."
         },
         {
-          "name": "Double-Edge",
-          "type": "Normal",
-          "category": "Physical",
-          "power": 120,
-          "accuracy": 100,
-          "rate": "74.5%",
-          "desc": "Colossal physical tackle dealing 33% recoil damage."
-        },
-        {
-          "name": "Hyper Voice",
-          "type": "Normal",
-          "category": "Special",
-          "power": 90,
-          "accuracy": 100,
-          "rate": "68.0%",
-          "desc": "Sound-based special spread damage; strikes through Substitute."
-        },
-        {
-          "name": "Extreme Speed",
-          "type": "Normal",
-          "category": "Physical",
-          "power": 80,
-          "accuracy": 100,
-          "rate": "52.4%",
-          "desc": "+2 Priority physical Normal strike; devastating revenge KO tool."
-        },
-        {
-          "name": "Swords Dance",
-          "type": "Normal",
+          "name": "Tailwind",
+          "type": "Flying",
           "category": "Status",
           "power": "-",
           "accuracy": "-",
-          "rate": "44.8%",
-          "desc": "Sharply raises user Attack by 2 stages (+100%)."
+          "rate": "72.4%",
+          "desc": "Doubles the Speed of user and allies for 4 turns."
         },
         {
-          "name": "Facade",
-          "type": "Normal",
+          "name": "Bullet Seed",
+          "type": "Grass",
           "category": "Physical",
-          "power": 80,
+          "power": 25,
           "accuracy": 100,
-          "rate": "38.2%",
-          "desc": "Competitive attack."
+          "rate": "80.0%",
+          "desc": "Always hits 5 times with Skill Link (125 BP total); crushes Water and Ground walls."
         },
         {
-          "name": "Yawn",
+          "name": "Rock Blast",
+          "type": "Rock",
+          "category": "Physical",
+          "power": 25,
+          "accuracy": 90,
+          "rate": "72.2%",
+          "desc": "Always hits 5 times with Skill Link (125 BP total); destroys Fire and Flying foes."
+        },
+        {
+          "name": "Encore",
           "type": "Normal",
           "category": "Status",
           "power": "-",
-          "accuracy": "-",
-          "rate": "31.5%",
-          "desc": "Makes target drowsy, putting them to sleep at end of next turn."
+          "accuracy": 100,
+          "rate": "52.5%",
+          "desc": "Locks the target into repeating its last used move for 3 turns."
         },
         {
-          "name": "Helping Hand",
-          "type": "Normal",
+          "name": "Roost",
+          "type": "Flying",
           "category": "Status",
           "power": "-",
           "accuracy": "-",
-          "rate": "25.0%",
-          "desc": "+5 Priority boost increasing ally's move damage by 50%."
+          "rate": "33.7%",
+          "desc": "Restores 50% max HP and grounds user during the turn."
         },
         {
-          "name": "Shadow Claw",
-          "type": "Ghost",
+          "name": "U-turn",
+          "type": "Bug",
           "category": "Physical",
           "power": 70,
           "accuracy": 100,
-          "rate": "19.4%",
-          "desc": "High critical-hit ratio physical Ghost claw."
+          "rate": "12.4%",
+          "desc": "Pivots out after dealing damage to maintain tactical momentum."
+        },
+        {
+          "name": "Temper Flare",
+          "type": "Fire",
+          "category": "Physical",
+          "power": 75,
+          "accuracy": 100,
+          "rate": "10.2%",
+          "desc": "Fire physical coverage; power doubles to 150 if previous move failed."
+        },
+        {
+          "name": "Knock Off",
+          "type": "Dark",
+          "category": "Physical",
+          "power": 65,
+          "accuracy": 100,
+          "rate": "9.4%",
+          "desc": "Removes opponent held item and deals 1.5× damage if item is lost."
         }
       ],
       "natures": [
         {
           "name": "Adamant",
-          "rate": "54.0%",
+          "rate": "64.7%",
           "boost": "+Atk",
           "drop": "-SpA",
-          "desc": "Offensive power."
+          "desc": "+Attack, -Sp. Atk (Maximum physical KO burst power)"
         },
         {
-          "name": "Jolly",
-          "rate": "46.0%",
-          "boost": "+Spe",
+          "name": "Impish",
+          "rate": "24.1%",
+          "boost": "+Def",
           "drop": "-SpA",
-          "desc": "Speed tier."
+          "desc": "+Defense, -Sp. Atk (Bulky physical contact punisher)"
         }
       ],
       "statPoints": [
         {
           "rank": 1,
-          "rate": "54.2%",
+          "rate": "14.8%",
           "diff": "=(0%)",
-          "hp": 2,
+          "hp": 32,
+          "atk": 2,
+          "def": 32,
+          "spa": 0,
+          "spd": 0,
+          "spe": 0
+        },
+        {
+          "rank": 2,
+          "rate": "6.9%",
+          "diff": "=(0%)",
+          "hp": 32,
           "atk": 32,
           "def": 0,
           "spa": 0,
           "spd": 0,
-          "spe": 32
+          "spe": 2
         },
         {
-          "rank": 2,
-          "rate": "28.5%",
+          "rank": 3,
+          "rate": "6.0%",
           "diff": "=(0%)",
           "hp": 32,
           "atk": 32,
           "def": 2,
           "spa": 0,
           "spd": 0,
-          "spe": 0
-        },
-        {
-          "rank": 3,
-          "rate": "17.3%",
-          "diff": "=(0%)",
-          "hp": 32,
-          "atk": 0,
-          "def": 16,
-          "spa": 0,
-          "spd": 18,
           "spe": 0
         }
       ]

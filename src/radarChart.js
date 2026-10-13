@@ -434,10 +434,14 @@ export class RadarChart {
     });
 
     canvas.addEventListener('touchmove', e => {
-      e.preventDefault();
+      if (e.cancelable) {
+        e.preventDefault();
+      }
       const t = e.touches[0];
-      const { mx, my } = pos(t.clientX, t.clientY);
-      this._hover(mx, my, t.clientX, t.clientY);
+      if (t) {
+        const { mx, my } = pos(t.clientX, t.clientY);
+        this._hover(mx, my, t.clientX, t.clientY);
+      }
     }, { passive: false });
 
     canvas.addEventListener('touchend', () => {

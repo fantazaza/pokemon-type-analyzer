@@ -1,6 +1,6 @@
-# Pokémon Type Matchup Analyzer
+# TypeDex (Pokémon Battle Type & Meta Analyzer)
 
-A modern, responsive web application for analyzing Pokémon type effectiveness (Gen VI+). It features interactive dual polygon radar charts (Defense & Attack) built with Vanilla JavaScript and Canvas API.
+A modern, responsive tactical web application for analyzing Pokémon type effectiveness and competitive meta builds. It features interactive dual polygon radar charts (Defense & Attack) built with Vanilla JavaScript and Canvas API.
 
 ## Features
 - **Dual Radar Charts**: Visually compare Defensive (Damage Taken) and Offensive (Damage Dealt) capabilities.

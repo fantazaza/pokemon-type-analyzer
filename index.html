@@ -6,12 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 
   <!-- Primary Meta Tags -->
-  <title>Pokémon Battle Type Analyzer | Type Matchup &amp; Effectiveness</title>
-  <meta name="title" content="Pokémon Battle Type Analyzer | Type Matchup &amp; Effectiveness">
+  <title>TypeDex | Tactical Pokémon Matchup &amp; Meta Analyzer</title>
+  <meta name="title" content="TypeDex | Tactical Pokémon Matchup &amp; Meta Analyzer">
   <meta name="description"
-    content="Tactical Pokémon Type Matchup Analyzer. Visualize weaknesses, resistances, and immunities for any single or dual type combination using dual radar charts.">
+    content="TypeDex — Tactical Pokémon Type Matchup Analyzer. Visualize weaknesses, resistances, and immunities for any single or dual type combination using dual radar charts.">
   <meta name="keywords"
-    content="pokemon type calculator, pokemon type chart, type matchup, pokemon battle analyzer, radar chart, weaknesses, resistances, pokemon vgc, scarlet violet">
+    content="typedex, pokemon type calculator, pokemon type chart, type matchup, pokemon battle analyzer, radar chart, weaknesses, resistances, pokemon vgc, scarlet violet">
   <meta name="author" content="Fantazaza">
 
   <!-- Canonical URL -->
@@ -20,18 +20,23 @@
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://pokemon-type-analyzer.vercel.app/">
-  <meta property="og:title" content="Pokémon Battle Type Analyzer | Interactive Matchup Chart">
+  <meta property="og:title" content="TypeDex | Tactical Pokémon Matchup &amp; Meta Analyzer">
   <meta property="og:description"
-    content="Visualize Pokémon type effectiveness, weaknesses, and resistances for any dual type combination using interactive radar charts.">
+    content="TypeDex — Visualize Pokémon type effectiveness, weaknesses, and resistances for any dual type combination using interactive radar charts.">
   <meta property="og:image" content="https://pokemon-type-analyzer.vercel.app/og-image.png">
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="https://pokemon-type-analyzer.vercel.app/">
-  <meta property="twitter:title" content="Pokémon Battle Type Analyzer | Interactive Matchup Chart">
+  <meta property="twitter:title" content="TypeDex | Tactical Pokémon Matchup &amp; Meta Analyzer">
   <meta property="twitter:description"
-    content="Visualize Pokémon type effectiveness, weaknesses, and resistances for any dual type combination using interactive radar charts.">
+    content="TypeDex — Visualize Pokémon type effectiveness, weaknesses, and resistances for any dual type combination using interactive radar charts.">
   <meta property="twitter:image" content="https://pokemon-type-analyzer.vercel.app/og-image.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="alternate icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="shortcut icon" href="/favicon.ico">
 
   <!-- Fonts & Styles -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -46,9 +51,9 @@
   {
     "@context": "https://schema.org",
     "@type": "WebApplication",
-    "name": "Pokémon Battle Type Analyzer",
+    "name": "TypeDex",
     "url": "https://pokemon-type-analyzer.vercel.app/",
-    "description": "Tactical Pokémon Type Matchup Analyzer with Dual Radar Matrix and Meta Threat Evaluator.",
+    "description": "TypeDex — Tactical Pokémon Type Matchup Analyzer with Dual Radar Matrix and Meta Threat Evaluator.",
     "applicationCategory": "UtilitiesApplication",
     "operatingSystem": "All",
     "offers": {
@@ -67,10 +72,14 @@
       <div class="container header-container">
         <div class="brand-block">
           <div class="brand-badge">BATTLE ANALYSIS SYSTEM</div>
-          <h1 class="brand-title">POKÉMON TYPE ANALYZER</h1>
+          <h1 class="brand-title">TYPEDEX</h1>
           <p class="brand-sub">Dual-Radar Matchup Matrix &amp; Meta Threat Evaluator</p>
         </div>
         <div class="header-actions">
+          <button id="btn-toggle-meta" class="btn-tactical-outline btn-toggle-top100" title="Hide/Show Top 100 Meta section (Focus on Type Analysis)">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+            <span id="toggle-meta-label">HIDE TOP 100</span>
+          </button>
           <button id="btn-reset-types" class="btn-tactical-outline" title="Reset type selections">
             <span>RESET</span>
           </button>
@@ -243,7 +252,7 @@
         </div><!-- /content-area -->
 
         <!-- ── 4. TOP 100 META POKÉMON (CLEAN TACTICAL TABLE) ── -->
-        <section class="meta-table-section">
+        <section class="meta-table-section" id="meta-table-section">
           <div class="table-toolbar">
             <div class="toolbar-left">
               <div class="toolbar-title">
@@ -260,6 +269,10 @@
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
                 <input type="text" id="pokemon-search" placeholder="Search Pokémon or type..." autocomplete="off">
               </div>
+              <button id="btn-sync-meta" class="btn-sync-patch" title="Check for latest balance patch / update cache">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/></svg>
+                <span id="sync-btn-label">SYNC PATCH</span>
+              </button>
               <span class="source-credit">
                 Rank by <a href="https://op.gg/pokemon-champions" target="_blank" rel="noopener noreferrer">op.gg</a>
               </span>
@@ -304,7 +317,6 @@
             <div class="modal-name-row">
               <h2 id="modal-pokemon-name" class="modal-title">Garchomp</h2>
               <span id="modal-pokemon-dex" class="modal-dex-tag">#445</span>
-              <span id="modal-pokemon-role" class="modal-role-pill">Physical Sweeper</span>
             </div>
             <div id="modal-pokemon-types" class="modal-types-row">
               <!-- Type pills injected dynamically -->
@@ -316,11 +328,6 @@
           <div class="modal-format-toggle" role="group" aria-label="Battle Format">
             <button id="modal-format-single" class="btn-format-toggle active" type="button">SINGLE</button>
             <button id="modal-format-double" class="btn-format-toggle" type="button">DOUBLE</button>
-          </div>
-          <div class="modal-sources-bar">
-            <a id="modal-opgg-link" href="https://op.gg/pokemon-champions" target="_blank" rel="noopener noreferrer" class="btn-source-pill source-opgg" title="View on OP.GG">OP.GG</a>
-            <a id="modal-pikalytics-link" href="https://www.pikalytics.com" target="_blank" rel="noopener noreferrer" class="btn-source-pill source-pikalytics" title="View VGC/Double stats on Pikalytics">Pikalytics</a>
-            <a id="modal-smogon-link" href="https://www.smogon.com/dex" target="_blank" rel="noopener noreferrer" class="btn-source-pill source-smogon" title="View Singles analyses on Smogon">Smogon</a>
           </div>
           <button id="modal-btn-close" class="modal-close-btn" aria-label="Close modal">✕</button>
         </div>
@@ -423,14 +430,16 @@
 
       <!-- Modal Footer -->
       <footer class="modal-footer">
-        <div class="modal-footer-attribution">
-          Data benchmarked &amp; synthesized across <a href="https://op.gg/pokemon-champions" target="_blank" rel="noopener noreferrer">OP.GG</a> • <a href="https://www.pikalytics.com" target="_blank" rel="noopener noreferrer">Pikalytics</a> • <a href="https://www.smogon.com/dex" target="_blank" rel="noopener noreferrer">Smogon</a> • <a href="https://champdex.com" target="_blank" rel="noopener noreferrer">ChampDex</a> Meta
+        <div class="modal-sources-bar">
+          <span class="sources-label">Sources:</span>
+          <a id="modal-opgg-link" href="https://op.gg/pokemon-champions" target="_blank" rel="noopener noreferrer" class="btn-source-pill source-opgg" title="View on OP.GG">OP.GG</a>
+          <a id="modal-pikalytics-link" href="https://www.pikalytics.com" target="_blank" rel="noopener noreferrer" class="btn-source-pill source-pikalytics" title="View VGC/Double stats on Pikalytics">Pikalytics</a>
+          <a id="modal-smogon-link" href="https://www.smogon.com/dex" target="_blank" rel="noopener noreferrer" class="btn-source-pill source-smogon" title="View Singles analyses on Smogon">Smogon</a>
         </div>
         <div class="modal-footer-actions">
           <button id="btn-modal-select-analyzer" class="btn-primary-action">
             <span>Analyze in Type Radar</span>
           </button>
-          <button id="btn-modal-close-footer" class="btn-secondary-action">Close</button>
         </div>
       </footer>
 

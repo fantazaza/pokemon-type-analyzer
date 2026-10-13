@@ -4145,33 +4145,33 @@ In 2v2 Doubles, battles are defined by turn denial, board positioning, and burst
 ### 118. Toucannon (Dex #733)
 | Mode | Tier / Rank | Optimal 4 Moves | Top Held Items | Best Nature |
 | :--- | :---: | :--- | :--- | :--- |
-| **Single Battle** | #96 | Body Slam, Double-Edge, Hyper Voice, Extreme Speed | Choice Scarf, Life Orb, Focus Sash | Jolly |
-| **Double Battle** | - | Protect, Body Slam, Double-Edge, Hyper Voice | Sitrus Berry, White Herb, Focus Sash | Adamant |
+| **Single Battle** | #96 | Beak Blast, Bullet Seed, Rock Blast, Encore | Sitrus Berry, Red Card, Rocky Helmet | Adamant |
+| **Double Battle** | - | Protect, Beak Blast, Tailwind, Bullet Seed | Sitrus Berry, Red Card, Rocky Helmet | Adamant |
 
 * **Single Battle 10-Move Pool:**
-   1. **Body Slam (Normal | Physical | 85 BP)**
-   2. **Double-Edge (Normal | Physical | 120 BP)**
-   3. **Hyper Voice (Normal | Special | 90 BP)**
-   4. **Extreme Speed (Normal | Physical | 80 BP)**
-   5. **Swords Dance (Normal | Status)**
-   6. **Facade (Normal | Physical | 80 BP)**
-   7. **Yawn (Normal | Status)**
-   8. **Shadow Claw (Ghost | Physical | 70 BP)**
-   9. **Brave Bird (Flying | Physical | 120 BP)**
-   10. **Hurricane (Flying | Special | 110 BP)**
+   1. **Beak Blast (Flying | Physical | 100 BP)**
+   2. **Bullet Seed (Grass | Physical | 25 BP)**
+   3. **Rock Blast (Rock | Physical | 25 BP)**
+   4. **Encore (Normal | Status)**
+   5. **Roost (Flying | Status)**
+   6. **U-turn (Bug | Physical | 70 BP)**
+   7. **Temper Flare (Fire | Physical | 75 BP)**
+   8. **Knock Off (Dark | Physical | 65 BP)**
+   9. **Swords Dance (Normal | Status)**
+   10. **Tailwind (Flying | Status)**
 * **Double Battle 10-Move Pool:**
    1. **Protect (Normal | Status)**
-   2. **Body Slam (Normal | Physical | 85 BP)**
-   3. **Double-Edge (Normal | Physical | 120 BP)**
-   4. **Hyper Voice (Normal | Special | 90 BP)**
-   5. **Extreme Speed (Normal | Physical | 80 BP)**
-   6. **Swords Dance (Normal | Status)**
-   7. **Facade (Normal | Physical | 80 BP)**
-   8. **Yawn (Normal | Status)**
-   9. **Helping Hand (Normal | Status)**
-   10. **Shadow Claw (Ghost | Physical | 70 BP)**
-* **Stat Points (Single):** #1 (HP:2 Atk:32 Def:0 SpA:0 SpD:0 Spe:32) • #2 (HP:32 Atk:32 Def:2 SpA:0 SpD:0 Spe:0) • #3 (HP:32 Atk:0 Def:16 SpA:0 SpD:18 Spe:0)
-* **Stat Points (Double):** #1 (HP:2 Atk:32 Def:0 SpA:0 SpD:0 Spe:32) • #2 (HP:32 Atk:32 Def:2 SpA:0 SpD:0 Spe:0) • #3 (HP:32 Atk:0 Def:16 SpA:0 SpD:18 Spe:0)
+   2. **Beak Blast (Flying | Physical | 100 BP)**
+   3. **Tailwind (Flying | Status)**
+   4. **Bullet Seed (Grass | Physical | 25 BP)**
+   5. **Rock Blast (Rock | Physical | 25 BP)**
+   6. **Encore (Normal | Status)**
+   7. **Roost (Flying | Status)**
+   8. **U-turn (Bug | Physical | 70 BP)**
+   9. **Temper Flare (Fire | Physical | 75 BP)**
+   10. **Knock Off (Dark | Physical | 65 BP)**
+* **Stat Points (Single):** #1 (HP:32 Atk:2 Def:32 SpA:0 SpD:0 Spe:0) • #2 (HP:32 Atk:32 Def:0 SpA:0 SpD:0 Spe:2) • #3 (HP:32 Atk:32 Def:2 SpA:0 SpD:0 Spe:0)
+* **Stat Points (Double):** #1 (HP:32 Atk:2 Def:32 SpA:0 SpD:0 Spe:0) • #2 (HP:32 Atk:32 Def:0 SpA:0 SpD:0 Spe:2) • #3 (HP:32 Atk:32 Def:2 SpA:0 SpD:0 Spe:0)
 
 ---
 

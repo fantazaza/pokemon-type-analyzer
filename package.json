@@ -1,7 +1,7 @@
 {
-  "name": "pokemon-type-analyzer",
+  "name": "typedex",
   "version": "1.0.0",
-  "description": "Pokémon Type Matchup Analyzer with Radar Chart",
+  "description": "TypeDex — Tactical Pokémon Battle Matchup & Meta Analyzer",
   "type": "module",
   "scripts": {
     "dev": "vite",
