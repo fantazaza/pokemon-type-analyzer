@@ -52,6 +52,23 @@ async function fetchFreshBuilds() {
   }
 }
 
+export function setCustomBuildsData(customBuilds) {
+  if (!customBuilds || typeof customBuilds !== 'object') return;
+  buildsData = { ...(buildsData || {}), ...customBuilds };
+  setCache(CACHE_KEYS.BUILDS_DATA, buildsData, 48 * 60 * 60 * 1000).catch(() => {});
+}
+
+export function getBuildsCount() {
+  return buildsData ? Object.keys(buildsData).length : 128;
+}
+
+export async function resetBuildsToDefault() {
+  buildsLoadingPromise = null;
+  buildsData = null;
+  return await fetchFreshBuilds();
+}
+
+
 const TYPE_MOVE_POOLS = {
   dragon: [
     { name: "Draco Meteor", type: "Dragon", category: "Special", power: 130, accuracy: 90, rate: "76.4%", desc: "Devastating burst damage; lowers user Sp. Atk by 2 stages." },

@@ -270,8 +270,8 @@
                 <input type="text" id="pokemon-search" placeholder="Search Pokémon or type..." autocomplete="off">
               </div>
               <button id="btn-sync-meta" class="btn-sync-patch" title="Check for latest balance patch / update cache">
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/></svg>
-                <span id="sync-btn-label">SYNC PATCH</span>
+                <svg class="sync-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/></svg>
+                <span id="sync-btn-label">UPDATE DATA</span>
               </button>
               <span class="source-credit">
                 Rank by <a href="https://op.gg/pokemon-champions" target="_blank" rel="noopener noreferrer">op.gg</a>
@@ -445,6 +445,17 @@
 
     </div><!-- /modal-card -->
   </div><!-- /modal-backdrop -->
+
+  <!-- Tactical Toast Notification Banner -->
+  <div id="tactical-toast" class="tactical-toast hidden" role="status" aria-live="polite">
+    <div class="toast-icon-box">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+    </div>
+    <div class="toast-body">
+      <div id="toast-title" class="toast-title">DATABASE UPDATED</div>
+      <div id="toast-msg" class="toast-msg">Meta rankings &amp; 128 competitive builds synchronized.</div>
+    </div>
+  </div>
 
   <!-- Global tooltip -->
   <div id="tooltip" class="tooltip" role="tooltip" aria-hidden="true"></div>

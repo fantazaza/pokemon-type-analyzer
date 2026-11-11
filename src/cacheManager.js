@@ -12,9 +12,9 @@ const STORE_NAME = 'app_cache';
 
 // Cache TTL configuration
 export const CACHE_KEYS = {
-  META_DATA: 'meta_data_v1',
+  META_DATA: 'meta_data_v2',
   BUILDS_DATA: 'builds_data_v2',
-  PATCH_INFO: 'patch_info_v1'
+  PATCH_INFO: 'patch_info_v2'
 };
 
 const DEFAULT_TTL_MS = 24 * 60 * 60 * 1000; // 24 hours
@@ -123,3 +123,19 @@ export async function clearCache(key = null) {
     return false;
   }
 }
+
+/**
+ * Get active patch and synchronization metadata
+ */
+export async function getPatchInfo() {
+  const cached = await getCache(CACHE_KEYS.PATCH_INFO);
+  return cached ? cached.data : null;
+}
+
+/**
+ * Save active patch and synchronization metadata
+ */
+export async function setPatchInfo(info) {
+  return await setCache(CACHE_KEYS.PATCH_INFO, info, 365 * 24 * 60 * 60 * 1000);
+}
+

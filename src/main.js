@@ -18,8 +18,13 @@ import {
 } from './typeData.js';
 import { RadarChart } from './radarChart.js';
 import defaultMetaData from './meta.json';
-import { getPokemonBuild, loadBuildsData, fetchPokemonFromPokeApi } from './pokemonBuilds.js';
-import { getCache, setCache, CACHE_KEYS } from './cacheManager.js';
+import {
+  getPokemonBuild, loadBuildsData, fetchPokemonFromPokeApi,
+  getBuildsCount
+} from './pokemonBuilds.js';
+import {
+  getCache, setCache, CACHE_KEYS
+} from './cacheManager.js';
 
 // ── App State ──────────────────────────────────────────────────
 const state = {
@@ -647,7 +652,7 @@ async function loadMetaPokemonData(forceRefresh = false) {
 
         // If cache expired (older than 24h), fetch fresh patch data in background
         if (cached.isExpired) {
-          fetchFreshMetaData(false).catch(() => {});
+          performMetaUpdate(false).catch(() => {});
         }
         return;
       }
@@ -656,48 +661,149 @@ async function loadMetaPokemonData(forceRefresh = false) {
     }
   }
 
-  // 2. Fallback / fresh fetch
-  await fetchFreshMetaData(forceRefresh);
+  // 2. Fresh synchronization
+  await performMetaUpdate(forceRefresh);
 }
 
-async function fetchFreshMetaData(isManualSync = false) {
+// ── Tactical Toast Notification ────────────────────────────────
+let toastTimer = null;
+export function showTacticalToast(title, msg, type = 'success') {
+  const toast = document.getElementById('tactical-toast');
+  const titleEl = document.getElementById('toast-title');
+  const msgEl = document.getElementById('toast-msg');
+  if (!toast || !titleEl || !msgEl) return;
+
+  titleEl.textContent = title;
+  msgEl.textContent = msg;
+
+  toast.className = `tactical-toast toast-${type}`;
+  toast.classList.remove('hidden');
+
+  if (toastTimer) clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => {
+    toast.classList.add('hidden');
+  }, 4200);
+}
+
+// ── Real Meta Synchronization & Update Engine ───────────────────
+let isSyncInProgress = false;
+
+export async function performMetaUpdate(isManual = false) {
+  if (isSyncInProgress) return;
+  isSyncInProgress = true;
+
   const syncBtn = document.getElementById('btn-sync-meta');
   const syncLabel = document.getElementById('sync-btn-label');
-  if (isManualSync && syncBtn && syncLabel) {
+  if (syncBtn && syncLabel) {
+    syncBtn.disabled = true;
     syncBtn.classList.add('syncing');
-    syncLabel.textContent = 'SYNCING...';
+    syncBtn.classList.remove('success');
+    syncLabel.textContent = 'UPDATING...';
   }
+
+  let updateSuccess = false;
+  let updateSource = 'local';
+  const patchVer = 'Season M-8 (Nov 9, 2026 - OP.GG Ranked)';
 
   try {
-    const res = await fetch(`/meta.json?t=${Date.now()}`);
-    if (res.ok) {
-      const data = await res.json();
-      metaData.single = data.single || defaultMetaData.single || [];
-      metaData.double = data.double || defaultMetaData.double || [];
-      // Save into IndexedDB cache (24 hours TTL)
-      setCache(CACHE_KEYS.META_DATA, data, 24 * 60 * 60 * 1000).catch(() => {});
-    } else {
-      metaData.single = defaultMetaData.single || [];
-      metaData.double = defaultMetaData.double || [];
+    // 1. Fetch latest meta.json with cache buster
+    const baseUrl = import.meta.env?.BASE_URL || '/';
+    const cleanBase = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
+    const metaUrl = `${cleanBase}meta.json?t=${Date.now()}`;
+    let fetchedData = null;
+
+    try {
+      const controller = new AbortController();
+      const timeoutId = setTimeout(() => controller.abort(), 4500);
+      const res = await fetch(metaUrl, { signal: controller.signal });
+      clearTimeout(timeoutId);
+
+      if (res.ok) {
+        const json = await res.json();
+        if (Array.isArray(json.single) && json.single.length > 0 && Array.isArray(json.double) && json.double.length > 0) {
+          fetchedData = json;
+          updateSource = 'server';
+        }
+      }
+    } catch (netErr) {
+      console.warn('[Sync] Network fetch error, using bundle baseline:', netErr);
     }
+
+    if (!fetchedData) {
+      fetchedData = {
+        single: defaultMetaData.single || [],
+        double: defaultMetaData.double || []
+      };
+      updateSource = 'bundle';
+    }
+
+    // Apply updated data
+    metaData.single = fetchedData.single;
+    metaData.double = fetchedData.double;
+
+    // 2. Revalidate and refresh builds data
+    await loadBuildsData(true);
+
+    // 3. Cache into IndexedDB
+    await setCache(CACHE_KEYS.META_DATA, fetchedData, 24 * 60 * 60 * 1000);
+    const buildsCount = getBuildsCount();
+
+    const patchInfo = {
+      lastUpdated: Date.now(),
+      version: patchVer,
+      singleCount: metaData.single.length,
+      doubleCount: metaData.double.length,
+      buildsCount,
+      source: updateSource
+    };
+    await setPatchInfo(patchInfo);
+
+    updateSuccess = true;
+
+    // 4. Re-render table with visual pulse animation
+    processAndRenderMeta(true);
+
+    // 5. If modal open, refresh it with updated data
+    if (currentModalPokemon) {
+      const refreshedBuild = getPokemonBuild(currentModalPokemon, currentModalMode);
+      renderModalData(currentModalPokemon, currentModalMode, refreshedBuild);
+    }
+
+    // 6. User Toast Notification
+    if (isManual) {
+      showTacticalToast(
+        'DATABASE UPDATED',
+        `${metaData.single.length} Single • ${metaData.double.length} Double • ${buildsCount} Moveset Builds synchronized.`,
+        'success'
+      );
+    }
+
   } catch (err) {
-    console.warn("Using bundled meta.json fallback:", err);
-    metaData.single = defaultMetaData.single || [];
-    metaData.double = defaultMetaData.double || [];
+    console.error('[Sync] Fatal update error:', err);
+    if (isManual) {
+      showTacticalToast('UPDATE FAILED', 'Unable to complete sync. Check connection or fallback to local.', 'error');
+    }
   } finally {
-    if (isManualSync && syncBtn && syncLabel) {
+    isSyncInProgress = false;
+    if (syncBtn && syncLabel) {
+      syncBtn.disabled = false;
       syncBtn.classList.remove('syncing');
-      syncLabel.textContent = 'UPDATED';
-      setTimeout(() => {
-        syncLabel.textContent = 'SYNC PATCH';
-      }, 2000);
+
+      if (updateSuccess) {
+        syncBtn.classList.add('success');
+        syncLabel.textContent = 'UPDATED ✓';
+        setTimeout(() => {
+          syncBtn.classList.remove('success');
+          syncLabel.textContent = 'UPDATE DATA';
+        }, 2500);
+      } else {
+        syncLabel.textContent = 'UPDATE DATA';
+      }
     }
   }
-
-  processAndRenderMeta();
 }
 
-function processAndRenderMeta() {
+function processAndRenderMeta(shouldPulse = false) {
   // Pre-index search fields and ensure rank property is present
   ['single', 'double'].forEach(m => {
     if (Array.isArray(metaData[m])) {
@@ -710,10 +816,10 @@ function processAndRenderMeta() {
   });
 
   attachTableDelegation();
-  renderMetaTable();
+  renderMetaTable(shouldPulse);
 }
 
-function renderMetaTable() {
+function renderMetaTable(shouldPulse = false) {
   const tbody = document.getElementById('pokemon-table-body');
   if (!tbody) return;
   tbody.innerHTML = '';
@@ -742,7 +848,7 @@ function renderMetaTable() {
 
   filtered.forEach(pkmn => {
     const tr = document.createElement('tr');
-    tr.className = 'table-row-item';
+    tr.className = shouldPulse ? 'table-row-item updated-pulse' : 'table-row-item';
     tr.dataset.pkmnName = pkmn.originalName;
 
     const isSelected = state.selectedPokemon === pkmn.originalName;
@@ -924,9 +1030,7 @@ function initSyncPatchButton() {
   if (!btnSync) return;
 
   btnSync.addEventListener('click', () => {
-    // Force refresh meta data & builds data from server/file
-    loadMetaPokemonData(true);
-    loadBuildsData(true).catch(() => {});
+    performMetaUpdate(true);
   });
 }
 
