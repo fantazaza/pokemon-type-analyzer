@@ -23,7 +23,7 @@ import {
   getBuildsCount
 } from './pokemonBuilds.js';
 import {
-  getCache, setCache, CACHE_KEYS
+  getCache, setCache, CACHE_KEYS, setPatchInfo
 } from './cacheManager.js';
 
 // ── App State ──────────────────────────────────────────────────
@@ -742,22 +742,31 @@ export async function performMetaUpdate(isManual = false) {
     metaData.double = fetchedData.double;
 
     // 2. Revalidate and refresh builds data
-    await loadBuildsData(true);
+    try {
+      await loadBuildsData(true);
+    } catch (bErr) {
+      console.warn('[Sync] Builds revalidation warning:', bErr);
+    }
 
     // 3. Cache into IndexedDB
-    await setCache(CACHE_KEYS.META_DATA, fetchedData, 24 * 60 * 60 * 1000);
+    try {
+      await setCache(CACHE_KEYS.META_DATA, fetchedData, 24 * 60 * 60 * 1000);
+      const buildsCount = getBuildsCount();
+
+      const patchInfo = {
+        lastUpdated: Date.now(),
+        version: patchVer,
+        singleCount: metaData.single.length,
+        doubleCount: metaData.double.length,
+        buildsCount,
+        source: updateSource
+      };
+      await setPatchInfo(patchInfo);
+    } catch (cErr) {
+      console.warn('[Sync] Cache write warning:', cErr);
+    }
+
     const buildsCount = getBuildsCount();
-
-    const patchInfo = {
-      lastUpdated: Date.now(),
-      version: patchVer,
-      singleCount: metaData.single.length,
-      doubleCount: metaData.double.length,
-      buildsCount,
-      source: updateSource
-    };
-    await setPatchInfo(patchInfo);
-
     updateSuccess = true;
 
     // 4. Re-render table with visual pulse animation
